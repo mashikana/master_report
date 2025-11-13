@@ -4,30 +4,30 @@
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Module for controlling collective pitch}}{9}{}%
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Variable pitch multirotor aircraft AXM-1000}}{10}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Overview of the multirotor analysis model\relax }}{11}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Overview of the rotor analysis model\relax }}{12}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Blade viewed from $xy$ plane\relax }}{13}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Blade viewed from $yz$ plane\relax }}{13}{}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Blade model\relax }}{15}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Overview of the multirotor analysis model}}{11}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Overview of the rotor analysis model}}{12}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Blade viewed from $xy$ plane}}{13}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Blade viewed from $yz$ plane}}{13}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Blade model}}{15}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Analysis grid\relax }}{17}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Relationship between pitch angle and thrust\relax }}{18}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Relationship between pitch angle and Figure of Merit\relax }}{18}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Relationship between pitch angle, angular velocity and thrust\relax }}{20}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Relationship between pitch angle, angular velocity and Figure of Merit\relax }}{21}{}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Counterweight at 0 degree pitch angle\relax }}{23}{}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Counterweight when pitch angle is taken\relax }}{23}{}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Flowchart of calculation of counterweight\relax }}{24}{}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Flowchart of calculation of power\relax }}{26}{}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Twisting down moment\relax }}{28}{}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Pitch angle increase\relax }}{29}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Analysis grid}}{17}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Relationship between pitch angle and thrust}}{18}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Relationship between pitch angle and Figure of Merit}}{18}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Relationship between pitch angle, angular velocity and thrust}}{20}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Relationship between pitch angle, angular velocity and Figure of Merit}}{21}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Counterweight at 0 degree pitch angle}}{23}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Counterweight when pitch angle is taken}}{23}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Flowchart of calculation of counterweight}}{24}{}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Flowchart of calculation of power}}{26}{}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Twisting down moment}}{28}{}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Pitch angle increase}}{29}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Relationship between pitch angle and twisting down moment\relax }}{32}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Relationship between pitch angle, angular velocity and Twisting down moment\relax }}{33}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Twisting down moment by aerodynamic force\relax }}{34}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of twisting down moment due to aerodynamic foece vs. centrifugal force\relax }}{35}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Relationship between airfoil and twisting down moment\relax }}{36}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Airfoil\relax }}{37}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison by airfoil and twisting down\relax }}{38}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Twisting down at design\relax }}{39}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Relationship between pitch angle and twisting down moment}}{32}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Relationship between pitch angle, angular velocity and Twisting down moment}}{33}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Twisting down moment by aerodynamic force}}{34}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of twisting down moment due to aerodynamic foece vs. centrifugal force}}{35}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Relationship between airfoil and twisting down moment}}{36}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Airfoil}}{37}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison by airfoil and twisting down}}{38}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Twisting down at design}}{39}{}%
 \addvspace {10\jsc@mpt }
