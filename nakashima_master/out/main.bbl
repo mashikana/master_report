@@ -1,0 +1,83 @@
+\begin{thebibliography}{10}
+
+\bibitem{飛躍するドローン}
+野波健蔵（自律制御システム研究所代表取締役）／赤坂剛史（金沢工業大学講師）／劉浩（千葉大学大学院教授）, 田中博人（東京工業大学准教授）／青野光（東京理科大学助教）／浦久保孝光（神戸大学助教）, ほか鈴木智（信州大学准教授）／山田学（名古屋工業大学教授）.
+\newblock 飛躍するドローンーマルチ回転翼型無人航空機の開発と応用研究、海外動向、リスク対策まで.
+\newblock エヌティーエス, 2016.
+
+\bibitem{ドローン産業応用}
+健蔵野波.
+\newblock ドローン産業応用のすべてー開発の基礎から活用の実際までー.
+\newblock オーム社, 2018.
+
+\bibitem{ドローン物資輸送}
+重量物の物流・運搬が可能な国産の産業用ドローン｜株式会社skydrive.
+\newblock \url{https://skydrive2020.com/cargo-drone/}.
+\newblock (Accessed on 12/20/2023).
+
+\bibitem{空のロードマップ}
+小型無人機に関する関係府省庁連絡会議.
+\newblock \url{https://www.kantei.go.jp/jp/singi/kogatamujinki/index.html}.
+\newblock (Accessed on 12/20/2023).
+
+\bibitem{ドローンの安定性}
+隆滝本.
+\newblock 無人航空機入門: ドローンと安全な空社会.
+\newblock 共立出版, 2019.
+
+\bibitem{国土交通省}
+001585162.pdf.
+\newblock \url{chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.mlit.go.jp/common/001585162.pdf}.
+\newblock (Accessed on 12/20/2023).
+
+\bibitem{drone_agri}
+農薬散布 ^^e2^^80^^93 エアリアルワークス.
+\newblock \url{https://arws.jp/agriculture/}.
+\newblock (Accessed on 12/18/2023).
+
+\bibitem{drone_infra}
+Oil \& gas - safe, efficient asset inspection with drones - dji.
+\newblock \url{https://enterprise.dji.com/jp/oil-and-gas}.
+\newblock (Accessed on 12/18/2023).
+
+\bibitem{マルチロータ機の性能向上}
+砂田茂, 田辺安忠, 米澤宏一, 得竹浩, 梅崎修一, 山口皓平, 菅原瑛明.
+\newblock マルチロータ機の性能向上に関する一検討.
+\newblock 日本ロボット学会誌, Vol.~39, No.~4, pp. 357--362, 2021.
+
+\bibitem{コレクティブピッチ}
+梅崎修一, 砂田茂, 山口皓平, 菅原瑛明, 田辺安忠, 米澤宏一, 得竹浩.
+\newblock コレクティブピッチ変化型マルチロータドローンにおける低アスペクト比ロータの空力性能について.
+\newblock 第51回流体力学講演会/第37回航空宇宙数値シミュレーション技術シンポジウム, 2019.
+
+\bibitem{遠心力}
+康平斉藤.
+\newblock ヘリコプタ (航空工学講座).
+\newblock 日本航空技術協会, 2008.
+
+\bibitem{TAYA}
+無人機、無人機用部品 - 田屋エンジニアリング株式会社.
+\newblock \url{http://www.taya-eng.co.jp/?page_id=557}.
+\newblock (Accessed on 01/17/2024).
+
+\bibitem{加藤寛一郎1985-04}
+寛一郎加藤, 勇生今永.
+\newblock ヘリコプタ入門.
+\newblock 東京大学出版会, 1985.
+
+\bibitem{可変ピッチドローン}
+Shunsuke KOMIZUNAI, Masashi URAOKA, and Atsushi KONNO.
+\newblock Development and thrust response evaluation of a variable pitch propeller quad tilt-rotor drone.
+\newblock {\em Transactions of the Society of Instrument and Control Engineers}, Vol.~56, No.~5, pp. 310--316, 2020.
+
+\bibitem{TANABE2016}
+Yasutada TANABE, Takashi AOYAMA, Masahiko SUGIURA, Hideaki Sugawara, Shigeru SUNADA, Koichi YONEZAWA, and Hiroshi TOKUTAKE.
+\newblock Cfd analysis of the aerodynamic characteristics of a multi-rotor drone.
+\newblock {\em The Proceedings of JSME annual Conference on Robotics and Mechatronics (Robomec)}, Vol. 2016, No.~0, pp. 1P1--09b3, 2016.
+
+\bibitem{空力干渉}
+田辺安忠, 青山剛史, 砂田茂（大阪府立大学), 得竹浩（金沢大学）.
+\newblock マルチコプターのロータ間の空力干渉.
+\newblock 第34回航空宇宙数値シミュレーション技術シンポジウム論文集.
+
+\end{thebibliography}

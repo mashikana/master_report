@@ -1,0 +1,206 @@
+\chapter{問題設定・モデル化}
+\begin{flushright}
+	\begin{minipage}{0.8\hsize}
+		\quad 本章では，可変ピッチロータ搭載型のマルチロータ機に関して，遠心力によるねじり下げ発生の要因と解析対象の機体について示す.
+		まず，課題となっている遠心力によるねじり下げモーメントについて機体モデルを設定する．
+        次に，ねじり下げモーメント導出の際の手順について示す．
+        最後に解析対象のブレードのモデルについて示す．
+	\end{minipage}
+\end{flushright}
+    \section{解析対象機体}
+    \par
+    解析対象機体としては，Fig.\ref{fig:body}のように4発のマルチロータ機を検討する．ホバリング状態を考えると，
+    1つのロータが必要とする推力は以下のように求められる．
+    \begin{equation}
+        T = \frac{mg}{N_\mathrm{rotor}} 
+    \end{equation}
+    また，ロータに関してはFig.\ref{fig:rotor}のようにロータに固定した直交座標系を用いて考える．ブレードのスパン方向に$x$軸，
+    翼弦長の方向に$y$軸，推力を発生する方向に$z$軸をとる．
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/body_model.png}
+        \caption{Overview of the multirotor analysis model}
+        \label{fig:body}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/rotor_fixed_axis.jpg}
+        \caption{Overview of the rotor analysis model}
+        \label{fig:rotor}
+    \end{figure}
+
+    \section{ねじり下げモーメント発生の原理}
+    \par
+    Fig.\ref{fig:blade xy}に$xy$平面から見たブレードを示す．$dF$は，ブレードの微小要素にはたらく遠心力であり，Eq.\eqref{centri1}で表される．
+    また，$dF$が$x$軸となす角度を$\psi$とする．この時，$dF\sin{\psi}$はEq.\eqref{centri2}で表される．
+    \begin{gather}
+        dF = \rho_{b}\sqrt{x^2+y^2}\omega^2dV \label{centri1}\\
+        dF\sin{\psi} = \rho_{b}y\omega^2dV  \label{centri2}  
+    \end{gather}
+    
+    Fig.\ref{fig:blade yz}に$yz$平面から見たブレードを示す．ブレードの微小要素にはたらく遠心力がつくるねじり下げモーメントは
+    Eq.\eqref{pitching1}で表される．ねじり下げモーメントは頭下げ方向を正とする．ブレード全体にはたらくねじり下げモーメントは
+    Eq.\eqref{pitching2}で求められる．
+    
+    \begin{gather}
+        dM = dF\sin{\psi} \cdot z = \rho_{b}yz\omega^2dV \label{pitching1}\\
+        M  = \int dM =  \rho_{b}\omega^2 \int yz dV  \label{pitching2}  
+    \end{gather} 
+
+    \clearpage 
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[keepaspectratio, width=0.4\linewidth]{photo/blade_xy_axis.jpg}
+        \caption{Blade viewed from $xy$ plane}
+        \label{fig:blade xy}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/blade_yz_axis.jpg}
+        \caption{Blade viewed from $yz$ plane}
+        \label{fig:blade yz}
+    \end{figure}
+
+    \section{ロータブレード}
+
+    \par 
+    Table.\ref{table:rotor type}にロータのピッチタイプを示す．ロータの種類については固定ピッチロータと可変ピッチロータがある．
+    固定ピッチロータは低コスト，軽量で扱いやすいのが利点としてあげられる．しかしながら，角速度の変化で制御を行うため，突風のような外乱による姿勢変動に
+    対しての応答が遅いという欠点がある．それに対して，可変ピッチロータはピッチ角の増加によって制御を行うことで，応答を早くすることが可能である．
+    可変ピッチロータはピッチを変化させるためのサーボモータが必要であり，搭載するサーボモータの規格に応じて，応答の速さは決まる．
+    本研究ではアスペクト比，ソリディティの二つの観点に着目して検討を行う．Table.\ref{table:ar}，Table.\ref{table:solidity}にそれぞれの特徴を示す．高アスペクト比のブレードは揚抗比が大きく，空力性能が高い．
+    しかし，翼端失速が発生する限界ピッチ角が小さく，可変ピッチロータ搭載型マルチロータ機には適していない．また，空気抵抗が大きいという欠点もある．
+    低アスペクト比のブレードは揚抗比は高アスペクト比のものに劣るが，空気抵抗も小さく，翼端失速が発生する限界ピッチ角も大きい．
+    ソリディティについては，低いと重量，空気抵抗が小さく，構造も単純である．ソリディティが高いと揚力，推力が大きくなり，空力性能は向上する．
+    
+    
+    \begin{table}[H]
+        \centering
+        \caption{Rotor type}
+        \label{table:rotor type}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|c|c|c|} \hline
+            Rotor type & Fixed pitch rotor & Variable pitch rotor \\ \hline
+            merit & 
+            \begin{tabular}[c]{@{}c@{}}
+                low cost \\
+                light weight \\
+                easy to handle
+            \end{tabular}
+            &
+            \begin{tabular}[c]{@{}c@{}}
+                fast response
+            \end{tabular}
+            \\ \hline
+            demerit & 
+            \begin{tabular}[c]{@{}c@{}}
+                slow response
+            \end{tabular}
+            & 
+            \begin{tabular}[c]{@{}c@{}}
+                high cost \\
+                heavyweight \\
+                difficult to handle
+            \end{tabular}
+            \\ \hline
+        \end{tabular}
+    \end{table}    
+    
+
+    \begin{table}[H]
+        \centering
+        \caption{Aspect ratio}
+        \label{table:ar}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|c|c|c|} \hline
+            Aspect ratio &   Low &   High \\ \hline
+            merit &   
+            \begin{tabular}[c]{@{}c@{}}
+                large critical pitch angle  \\
+                low aerodynamic drag
+            \end{tabular}
+            &
+            \begin{tabular}[c]{@{}c@{}}
+                high lift-drag ratio
+            \end{tabular}
+            \\ \hline
+            demerit & 
+            \begin{tabular}[c]{@{}c@{}}
+                low lift-drag ratio
+            \end{tabular}
+            & 
+            \begin{tabular}[c]{@{}c@{}}
+                small critical pitch angle  \\
+                high aerodynamic drag
+            \end{tabular}
+            \\ \hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \caption{Solidity}
+        \label{table:solidity}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|c|c|c|} \hline
+            Solidity    &   Low & High \\ \hline
+            merit &   
+            \begin{tabular}[c]{@{}c@{}}
+                light weight, low aerodynamic drag \\
+                simple structure
+            \end{tabular}
+            &
+            \begin{tabular}[c]{@{}c@{}}
+                large lift and thrust
+            \end{tabular}
+            \\ \hline
+            demerit & 
+            \begin{tabular}[c]{@{}c@{}}
+                small lift and thrust
+            \end{tabular}
+            & 
+            \begin{tabular}[c]{@{}c@{}}
+                heavy weight, high aerodynamic drag \\
+                complex structure
+            \end{tabular}
+            \\ \hline
+        \end{tabular}
+    \end{table}
+    
+
+    \clearpage
+
+    \section{ブレード解析モデル}
+    \par
+    Fig.\ref{fig:blade model}に解析対象となるブレードモデルを示す．ブレードの直径は$0.686\ \mathrm{m}$，平面形はテーパ比0.603のテーパ翼で統一した．
+    ブレードの翼型はOAF117で検討する．ブレードの表皮はすべて$3\ \mathrm{mm}$であるとする．Table.\ref{table:blade spec}のようなブレード諸元について
+    それぞれのパターンでねじり下げモーメントを計算する．2種類の翼弦長，翼枚数2枚または4枚の組み合わせで比較を行う．ブレード全体にはたらくねじり下げモーメントは21度の
+    線形のねじり下げがあるものとする．WB2は翼弦長が同じであり，他の2ブレードに対して翼弦長が大きく，低アスペクト比のブレードが用いられており，
+    NB2，NB4の翼弦長(アスペクト比)は同一で，WB2の翼弦長の半分である．翼枚数を考慮したブレードソリディティは
+    WB2，NB4で同一の値となり，これらに対してNB2のソリディティは半分である．
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/blade_calc_model.jpg}
+        \caption{Blade model}
+        \label{fig:blade model}
+    \end{figure}
+
+    \begin{table}[H]
+        \centering
+        \caption{Blade specification}
+        \label{table:blade spec}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{cccccccc} \hline
+            Name & Airfoil & Number of blades & Twist[deg] & $c_{1}$[m] & $c_{2}$[m] & Aspect Ratio & Solidity \\    \hline
+            WB2  & OAF117  &       2          &    -21     &  0.0724    &  0.12      &    2.566     & 0.1286   \\    
+            NB2  & OAF117  &       2          &    -21     &  0.0362    &  0.06      &    5.133     & 0.0642   \\    
+            NB4  & OAF117  &       4          &    -21     &  0.0362    &  0.06      &    5.133     & 0.1286   \\    \hline
+        \end{tabular}
+    \end{table}
+    
+
+    

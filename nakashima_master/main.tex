@@ -1,0 +1,50 @@
+\documentclass[autodetect-engine,ja=standard,a4paper,11pt]{jsreport}
+\usepackage{bm}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{ascmac}
+\usepackage{usebib}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{url}
+\usepackage{ar}
+\usepackage{subcaption}
+\usepackage{float}
+\urlstyle{same}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Table.}
+\setcounter{tocdepth}{3}
+
+\begin{document}
+  \input{title.tex}
+  %\input{summary.tex}
+
+  \tableofcontents
+  \addcontentsline{toc}{chapter}{目次}
+
+  \listoffigures
+	\addcontentsline{toc}{chapter}{図目次}
+	\clearpage
+
+	\listoftables
+	\addcontentsline{toc}{chapter}{表目次}
+	\clearpage
+  
+  \input{symbols.tex}
+
+  \input{chapter1.tex}
+
+  \input{chapter2.tex}
+
+  \input{chapter3.tex}
+  
+  \input{chapter4.tex}
+
+  \input{chapter5.tex}
+
+  \input{ref.tex}
+  
+  \input{thank.tex}
+
+  %\input{appendix.tex}
+  
+\end{document}

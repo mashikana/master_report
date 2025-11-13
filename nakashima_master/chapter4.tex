@@ -1,0 +1,263 @@
+\chapter{考察}
+
+\begin{flushright}
+	\begin{minipage}{0.8\hsize}
+		\quad 本章では，最適なブレード設計を行うために考慮すべき点について述べ，その効果について考察する．
+		    まず，CFD解析より，空気力によるねじり下げモーメントについて述べる．遠心力によるねじり下げモーメントの重要性について考察する．
+        次に翼型がねじり下げモーメントに与える影響について考察する．最後に，設計時のねじり下げがねじり下げモーメントに与える影響について考察する．
+        
+	\end{minipage}
+\end{flushright}
+
+% \section{境界層剥離}
+% \par 
+% Fig.\ref{fig:velo}にロータブレードの80％スパン断面における相対速度ベクトルを示す．なお，ブレードピッチ角は20度であり，ねじり下げがあるブレード
+% 3種類について示している．また，ベクトルの色は代表音速で無次元化した相対速度の値を表している．
+% WB2を見ると翼の負圧面に逆流は見られない．一方NB2では，翼の負圧面で逆流がみられ大規模な境界層剥離が生じている．
+% 一方，NB4については，小さな剥離泡がみられるが，WB2に近い付着流となっていることがわかる．NB2とNB4は同一のブレード形状
+% であることから，高いピッチ角では性能だけでなく，ロータ周りの流れの特性に対してもアスペクト比に加えて，翼枚数も重要な影響因子
+% になっていることがわかる．
+
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/vector.png}
+%   \caption{Relative velocity vector at 80\% span section (blade pitch angle 20°)}
+%   \label{fig:velo}
+% \end{figure}
+
+%\clearpage 
+
+\section{空力によるねじり下げモーメント}
+\par
+Fig.\ref{fig:cfd pm}にブレードピッチ角を変化させた場合のねじり下げモーメントの変化を示す．
+このグラフではねじり下げ方向を正としている．どの角速度においてもWB2が最も大きくなっている．またどの角速度においても
+ピッチ角の変化に対するねじり下げモーメントの変化は同様の傾向がみられる.WB2については，ピッチ角が上がるにつれて
+ねじり下げモーメントが減少している．NB2については，15度まではほぼ変わらないが，20度になると約1.5倍ほど増加している．
+NB4はピッチ角の変化に対してはねじり下げモーメントがほぼ変化しないことがわかる．また，角速度が約1.5倍になると，ねじり下げモーメントが
+約2.25倍になっており，ねじり下げモーメントは角速度の2乗に比例していることがわかる．したがって，空気力によるねじり下げモーメントでは
+ピッチ角よりもロータの角速度による影響が大きいといえる．
+\begin{figure}[H]
+  \centering
+  
+  \begin{subfigure}{0.32\linewidth} % 3つのサブフィギュアを横に配置
+      \centering
+      \includegraphics[keepaspectratio, width=\linewidth]{photo/pm_209.png}
+      \caption{$\Omega=209\ \mathrm{rad/s}$}
+  \end{subfigure}
+  \begin{subfigure}{0.32\linewidth}
+      \centering
+      \includegraphics[keepaspectratio, width=\linewidth]{photo/pm_314.png}
+      \caption{$\Omega=314\ \mathrm{rad/s}$}
+  \end{subfigure}
+  \begin{subfigure}{0.32\linewidth}
+      \centering
+      \includegraphics[keepaspectratio, width=\linewidth]{photo/pm_444.png}
+      \caption{$\Omega=444\ \mathrm{rad/s}$}
+  \end{subfigure}
+  
+  \caption{Relationship between pitch angle and twisting down moment}
+  \label{fig:cfd pm}
+\end{figure}
+
+Fig.\ref{fig:hokan pm}はFig.\ref{fig:cfd pm}で得たデータを補間したものである．補間方法としては双3次補間を用いた．
+Fig.\ref{fig:hokan pm1}は角速度が低い領域ではほぼ線形であり，ピッチ角の増加に対するねじり下げモーメントの減少量も小さい．
+高い角速度の領域では，ピッチが上がると急激にねじり下げモーメントも減少している．角速度の変化に対しては，低ピッチ角ではほぼ
+2乗の大きさで増加している．一方，10度を超えるとその傾向が薄れ，20度付近ではほぼ線形に増加している． 
+Fig.\ref{fig:hokan pm2}はピッチ角20度の時に急激にねじり下げモーメントが増加するという傾向がすべての角速度の範囲でみられる．
+角速度は，低いピッチ角においては線形に増加しており，15度以降においてはその傾きが増加している．
+Fig.\ref{fig:hokan pm3}はピッチ角15度まではFig.\ref{fig:hokan pm2}と同様の傾向がみられる．15度から20度にかけてわずかにねじり下げモーメントが
+増加している．Wb2,NB2,NB4どのグラフにおいても，角速度の変化がねじり下げモーメントの増減に大きく寄与していることが示唆されている．
+
+Fig.\ref{fig:pm}はTable.\ref{table:new fom}で示した条件から推力を$10\ \mathrm{N}$増加した際のピッチ角までの空気力によるねじり下げモーメントを表している．
+Fig.\ref{fig:pm1}では，ピッチ角が増加するに従って，ねじり下げモーメントが減少している．Fig.\ref{fig:pm2}では，12度付近で最小値がみられ，それ以降は増加している．
+Fig.\ref{fig:pm3}では最小値が15.5度ほどの点に変化している．WB2とNB2では約2倍ほどの差があり，NB2とNB4でも約2倍ほどの差がある．
+よって，空気力によるねじり下げモーメントを考慮して場合も，NB4がロータブレードの設計としては最適であると考えられる．
+Fig.\ref{fig:total pm}に推力を$10\ \mathrm{N}$増加した際の空気力によるねじり下げモーメントと
+遠心力によるねじり下げモーメントを示す．なお，空気力によるねじり下げモーメントと遠心力によるねじり下げモーメントを比較するため，カウンターウェイトは
+搭載していない．どのグラフにおいても，遠心力によるねじり下げモーメントに比べて，空気力によるねじり下げモーメントは小さい．
+また，ピッチ角が変化した時の増加量も遠心力によるねじり下げモーメントと比較すると小さくなっている．
+したがってブレード設計においては，遠心力によるねじり下げモーメントを重視して形状を決定することが重要であると考えられる．
+
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/pitch_rpm_pm_wb2.png}
+    \caption{WB2}
+    \label{fig:hokan pm1}
+  \end{subfigure}
+  
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/pitch_rpm_pm_nb2.png}
+    \caption{NB2}
+    \label{fig:hokan pm2}
+  \end{subfigure}
+
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/pitch_rpm_pm_nb4.png}
+    \caption{NB4}
+    \label{fig:hokan pm3}
+  \end{subfigure}
+
+  \caption{Relationship between pitch angle, angular velocity and Twisting down moment}
+  \label{fig:hokan pm}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=\linewidth]{photo/air_moment_wb2.png}
+    \caption{WB2}
+    \label{fig:pm1}
+  \end{subfigure}
+  
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=\linewidth]{photo/air_moment_nb2.png}
+    \caption{NB2}
+    \label{fig:pm2}
+  \end{subfigure}
+
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=\linewidth]{photo/air_moment_nb4.png}
+    \caption{NB4}
+    \label{fig:pm3}
+  \end{subfigure}
+
+  \caption{Twisting down moment by aerodynamic force}
+  \label{fig:pm}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=\linewidth]{photo/total_moment_wb2.png}
+    \caption{WB2}
+    \label{fig:total pm1}
+  \end{subfigure}
+  
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=\linewidth]{photo/total_moment_nb2.png}
+    \caption{NB2}
+    \label{fig:total pm2}
+  \end{subfigure}
+
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=\linewidth]{photo/total_moment_nb4.png}
+    \caption{NB4}
+    \label{fig:total pm3}
+  \end{subfigure}
+
+  \caption{Comparison of twisting down moment due to aerodynamic foece vs. centrifugal force}
+  \label{fig:total pm}
+\end{figure}
+
+\section{翼型の影響}
+
+\par
+本研究では，これまで翼型をOAF117として検討を行ってきた．これは，ねじり下げを有するブレードであるOAF117が対称翼のNACA0009よりも空力性能が良いことが先行研究\cite{コレクティブピッチ}
+より得られており，最適なブレード設計においては空力性能が良いことは重要といえるからである．しかしながら，翼型が遠心力によるねじり下げモーメントに与える影響を考慮することで，
+より最適なブレードの設計が可能であると考える．本節では，そのような経緯から，翼型の影響について考察する．
+Fig.\ref{fig:yokugata yosou}に翼型が遠心力によるねじり下げモーメントに与える影響について示す．
+グラフの赤い部分がねじり下げに影響がある部分で，青い部分がねじり上げに影響がある部分である．対称翼に関しては，ピッチが上がるにつれてねじり下げモーメントが増加していくと考えられる．
+一方でOAF117のような非対称翼については，ねじり上げに影響がある部分が対称翼に比べて多く，高いピッチにおいても遠心力によるねじり下げモーメントを低減できると考えられる．
+また，設計時にねじり下げを付けることで回転軸から距離が離れている部分も，ねじり下げモーメントの増加を抑えることが出来ると考えられる．したがって，非対称翼で，ねじり下げを有しているブレード形状が
+最適であると考えられる．
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/yokugata.png}
+  \caption{Relationship between airfoil and twisting down moment}
+  \label{fig:yokugata yosou}
+\end{figure}
+
+翼型については，設計時には空力性能も重視する必要があるが，本節ではねじり下げモーメントのみに注目して，非対称翼と設計時のねじり下げの有用性について検討する．
+Table.\ref{table:yokugata}に検討するブレードのモデルを示す．ブレードの直径は$0.686\ \mathrm{m}$，平面形はテーパ比0.603のテーパ翼で統一した．
+ロータの角速度は$314\ \mathrm{rad/s}$で統一した．
+ブレードの翼型はNACA0009とOAF117で検討する．ブレードの表皮はすべて$3\ \mathrm{mm}$であるとする．WB2，WC2には21度の線形のねじり下げがついているものとする．
+翼弦長，アスペクト比，翼枚数は同一とする．ねじり下げモーメントの変化が大きい低アスペクト比のブレードで検討する．また，NACA0009,OAF117の翼型について，Fig.\ref{fig:yokugata}に示す．
+
+\begin{table}[H]
+  \centering
+  \caption{Blade type}
+  \label{table:yokugata}
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{cccccccc} \hline
+      Name & Airfoil  & Number of blades & Twist[deg] & $c_{1}$[m] & $c_{2}$[m] & Aspect Ratio & Solidity \\    \hline
+      WA2  & NACA0009 &       2          &     0      &  0.0724    &  0.12      &    2.566     & 0.1286   \\    
+      WB2  & OAF117   &       2          &    -21     &  0.0724    &  0.12      &    2.566     & 0.1286   \\    
+      WC2  & NACA0009 &       2          &    -21     &  0.0724    &  0.12      &    2.566     & 0.1286   \\ 
+      WD2  & OAF117   &       2          &     0      &  0.0724    &  0.12      &    2.566     & 0.1286   \\    \hline
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=\linewidth]{photo/NACA0009.png}
+    \caption{NACA0009}
+    \label{fig:NACA0009}
+  \end{subfigure}
+  
+  \begin{subfigure}{0.6\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, width=\linewidth]{photo/OAF117.png}
+    \caption{OAF117}
+    \label{fig:OAF117}
+  \end{subfigure}
+
+  \caption{Airfoil}
+  \label{fig:yokugata}
+\end{figure}
+
+Fig.\ref{fig:moment yokugata}にブレードピッチ角を0度から20度まで変化させた場合のねじり下げモーメントを示す．
+どのグラフにもピッチ角が増加するにつれて線形的に同様の増加率でねじり下げモーメントが増加している．これは，翼型と設計時のねじり下げが
+ねじり下げモーメントの増加率には影響を与えないことを示している．
+ねじり下げのついてないWA2,WD2については，WD2のほうが値は小さくなっている．対称翼と非対称翼では，非対称翼のほうがねじり下げモーメントが小さい．
+しかしながら，翼型が同じであるWA2,WC2を見ると，WC2は20度までねじり上げモーメントがはたらいており，設計時のねじり下げは定常時のピッチ角によって
+効果的であるかどうかが変化するといえる．そのため，トリム時のピッチ角に応じて，設計時にねじり下げを付けるか判断する必要があると考えられる．
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/moment_yokugata.png}
+  \caption{Comparison by airfoil and twisting down}
+  \label{fig:moment yokugata}
+\end{figure}
+
+最後に，設計時のねじり下げの影響の大きさを検討する．WA2，WD2の翼型データについて，線形のねじり下げなしから20度まで5度刻みでねじり下げモーメントを計算した．この検討の目的は，
+Fig.\ref{fig:moment yokugata}でみられたねじり下げモーメントがねじり上げモーメントへと変化してしまうことへの対策として，最適な線形のねじり下げの
+角度を探索することにある．ブレードピッチ角を0度から20度まで変化させた場合のねじり下げモーメントをFig.\ref{fig:moment twist}に示す．
+どちらのブレードモデルについてもねじり下げの角度を変えたことによる増加率の変化は見られなかった．また，WA2とWD2では，設計時のねじり下げの影響はWA2のほうが大きい．
+WA2については，一般的な翼型において空力性能が良いと考えられるピッチ角10度でのねじり下げモーメントは設計時のねじり下げモーメントを10度に設定することで発生させないことが可能である．
+一方WD2については，ピッチ角10度の際は設計時のねじり下げを20度に設定することでねじり下げモーメントを小さくすることが出来る．
+以上の結果から可変ピッチロータ搭載型のマルチロータ機では，必要となる推力の幅に応じて設計時のねじり下げを決定することは有効である．
+しかしながら，ピッチ角によってはねじり上げモーメントが発生してしまうこともあるため，設計指針としてはカウンターウェイトを搭載することでねじり下げモーメントを低減するほうが望ましいと考えられる．
+
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.48\hsize}
+    \centering
+  \includegraphics[keepaspectratio, width=\linewidth]{photo/moment_twist_WA2.png}
+  \caption{WA2}
+  \label{fig:moment twist wa2}
+\end{subfigure}
+\begin{subfigure}{0.48\hsize}
+    \centering
+  \includegraphics[keepaspectratio, width=\linewidth]{photo/moment_twist_WB2.png}
+  \caption{WD2}
+  \label{fig:moment twist wb2}
+\end{subfigure}
+\caption{Twisting down at design}
+\label{fig:moment twist}
+\end{figure}

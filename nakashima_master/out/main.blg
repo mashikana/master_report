@@ -1,0 +1,49 @@
+This is upBibTeX, Version 0.99d-j0.36-u1.29 (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: junsrt.bst
+Database file #1: sample.bib
+Warning--empty year in 空力干渉
+You've used 16 entries,
+            2270 wiz_defined-function locations,
+            617 strings with 6840 characters,
+and the built_in function-call counts, 3816 in all, are:
+= -- 253
+> -- 124
+< -- 9
++ -- 52
+- -- 36
+* -- 127
+:= -- 453
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 11
+chr.to.int$ -- 0
+cite$ -- 17
+duplicate$ -- 257
+empty$ -- 422
+format.name$ -- 72
+if$ -- 946
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 15
+newline$ -- 83
+num.names$ -- 10
+pop$ -- 171
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 182
+stack$ -- 0
+substring$ -- 95
+swap$ -- 41
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 18
+width$ -- 18
+write$ -- 158
+is.kanji.str$ -- 155
+(There was 1 warning)

@@ -1,0 +1,411 @@
+\chapter{結果}
+\begin{flushright}
+	\begin{minipage}{0.8\hsize}
+		\quad 本章では，ねじり下げモーメントを相殺するカウンターウェイトの検討と，消費パワーの計算結果を示す．
+		      まず，ホバリング状態における必要推力を決定し，ホバリング時の性能指数を用いて，ピッチ角，角速度を決定する．
+          トリム時に発生する遠心力によるねじり下げモーメントを相殺するカウンターウェイトを搭載し，推力を増加させた際の
+          ねじり下げモーメントの変化について述べる．最後に，ねじり下げモーメントによって発生する消費パワーを計算し，
+          サーボモータに与える負荷を検討する．
+	\end{minipage}
+\end{flushright}
+
+
+    \section{トリムの決定}
+    \par
+    定常時のピッチ角，ブレード回転速度を決定するにあたって，設計上Figure of Merit(FoM)の最高点が良いと考えられる．
+    Figure of Meritとは，ホバリングするロータの効率をはかる指標であり，Eq.\eqref{fom}で表される．分子は可能な限り
+    最小なパワーという意味で，これは誘導速度と推力の積で求まる．
+    \begin{equation}
+      \mathrm{FoM} = \frac{ホバーに必要な最小のパワー}{ホバーに実際使われたパワー} = \frac{Tv_{\mathrm{0}}}{P}  \label{fom}
+    \end{equation}
+
+    Figure of Meritの最高点を決定するにあたって，CFD解析によりホバリング時のロータ周りの3次元流れ場を求め，評価した．
+    ソルバーはJAXAで開発されたrFlow3Dを用いた．rFlow3Dでは対流項の離散化制度が4次制度となっており，ロータの翼面や後流
+    における渦の捕獲制度が高い．また，時間積分は陰解法により行われ，疑似時間項を付加したLU-SGS法で，各時間ステップにおける
+    内部反復を行うことで数値粘性を軽減しつつ，非定常流れを捕獲することが可能である．また，rFlow3Dでは重合格子法が採用されている．
+    Fig.\ref{fig:koushi}に示すように，本研究で用いた解析格子の構成はブレード格子，内部背景格子，外部背景格子からなる．
+    外部背景格子の寸法は，縦，横，高さ，いずれもロータ直径の100倍の立方体とし，格子点数は$193\times193\times135$とした．
+    内部背景格子は縦，横がロータ直径の2倍，高さが0.75倍の矩形で，格子点数は$95\times95\times37$である．ブレード格子は
+    翼端・翼根に特異点を持つ円筒(SOH)格子で格子点数は$121\times143\times61$である．
+
+    \clearpage
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/kaisekikoushi.png}
+      \caption{Analysis grid}
+      \label{fig:koushi}
+    \end{figure}
+    
+    解析条件としては角速度$209\ \mathrm{rad/s}$，$314\ \mathrm{rad/s}$，$444\ \mathrm{rad/s}$で検討した．Fig.\ref{fig:cfd thrust}にブレードピッチ角を変化させた場合の推力の変化を示す．
+    翼枚数が2枚のWB2とNB2を比較すると推力はブレード面積が2倍大きなWB2の方が大きい，ただし，推力の値はWB2がNB2の約1.5倍にとどまっている．
+    一方，NB4の推力はWB2と同程度の大きさとなっていることがわかる．ピッチ角の変化に対する推力変化の勾配を比較すると，WB2とNB4は解析を行った5度から
+    20度 の範囲では直線的に変化している．一方，NB2については，ピッチ角が15度付近 で推力の勾配が変化しており，ピッチ角が大きくなると失速の傾向がやや表れていると考えられる.
+    Fig.\ref{fig:cfd fom}にピッチ角の変化に対するFigure of Meritの変化を示す．
+    翼弦長が大きなWB2のFigure of MeritがNB2と比較して大きな値となっており，高いピッチ角でのFoMの落ち込みも緩やかである．
+    一方、翼弦長が小さなNB2はピッチ角が12度を超えると減少に転じている．
+    しかし，同じ翼弦長で翼枚数のみが異なるNB4を見ると，ピッチ角が12度までは正の勾配を維持しており，高いピッチ角でのFoMの落ち込みも緩やかである．
+    したがって，高いピッチ角におけるプロペラの性能低下を抑制する要因としては，翼のアスペクト比で単純に議論できるものではないことが示唆されている．
+    また，Figure of Meritの最大値は翼弦長が小さく，羽枚数が4枚のNB4のほうがWB2よりも大きい．これは、相対流れ角が最適化されているねじり下げがあるブレードにおいては，
+    翼面での剥離がない場合に翼端の影響が小さな高アスペクト比翼の利点が現れているためであると考えられる．
+
+    \begin{figure}[H]
+      \centering
+      
+      \begin{subfigure}{0.32\linewidth} % 3つのサブフィギュアを横に配置
+          \centering
+          \includegraphics[keepaspectratio, width=\linewidth]{photo/thrust_209.png}
+          \caption{$\Omega=209\ \mathrm{rad/s}$}
+      \end{subfigure}
+      \begin{subfigure}{0.32\linewidth}
+          \centering
+          \includegraphics[keepaspectratio, width=\linewidth]{photo/thrust_314.png}
+          \caption{$\Omega=314\ \mathrm{rad/s}$}
+      \end{subfigure}
+      \begin{subfigure}{0.32\linewidth}
+          \centering
+          \includegraphics[keepaspectratio, width=\linewidth]{photo/thrust_444.png}
+          \caption{$\Omega=444\ \mathrm{rad/s}$}
+      \end{subfigure}
+      
+      \caption{Relationship between pitch angle and thrust}
+      \label{fig:cfd thrust}
+    \end{figure}
+
+    
+    \begin{figure}[H]
+      \centering
+      
+      \begin{subfigure}{0.32\linewidth} % 3つのサブフィギュアを横に配置
+          \centering
+          \includegraphics[keepaspectratio, width=\linewidth]{photo/fom_209.png}
+          \caption{$\Omega=209\ \mathrm{rad/s}$}
+      \end{subfigure}
+      \begin{subfigure}{0.32\linewidth}
+          \centering
+          \includegraphics[keepaspectratio, width=\linewidth]{photo/fom_314.png}
+          \caption{$\Omega=314\ \mathrm{rad/s}$}
+      \end{subfigure}
+      \begin{subfigure}{0.32\linewidth}
+          \centering
+          \includegraphics[keepaspectratio, width=\linewidth]{photo/fom_444.png}
+          \caption{$\Omega=444\ \mathrm{rad/s}$}
+      \end{subfigure}
+      
+      \caption{Relationship between pitch angle and Figure of Merit}
+      \label{fig:cfd fom}
+    \end{figure}
+
+    本解析では，推力が一定であるという条件からピッチ角と角速度の組み合わせを決定して，その組み合わせの中からFigure of Meritが最大になる点を探索した．
+    Fig.\ref{fig:trim}は$x$軸にピッチ角，$y$軸に角速度をとり，双線形補間を用いて推力の分布を表したものである．
+    グラフ上の赤の平面は$T=39.227\ \mathrm{N}$であり，この平面との交点が青のプロットである．Fig.\ref{fig:trim1},Fig.\ref{fig:trim3}を見ると，
+    どちらもピッチ角，角速度が大きくなるほど推力が増加している．また，最大値は$250\ \mathrm{N}$ほどになっている．一方でFig.\ref{fig:trim2}を見ると，WB2,NB4と比べると最大値が低く，
+    高いピッチ角では，増加量も低くなっている．これは，NB2がWB2と比べて翼面積が小さく，WB4と比べて翼枚数が少ないことが起因していると考えられる．
+    Fig.\ref{fig:fom}は$x$軸にピッチ角，$y$軸に角速度をとり，双3次補間を用いて推力の分布を表したものである．
+    推力についてと同様に，Fig.\ref{fig:fom1}とFig.\ref{fig:fom3}には似た特徴が見られる．まず，ピッチ角とFigure of Meritの関係については緩やかに増加し，12度から14度
+    の間で最大値を迎えている．高いピッチ角ではWB2のほうが緩やかにFigure of Meritが減少している．
+    一方，Fig.\ref{fig:fom2}では10度から12度の間で最大値を迎え，その後は急激に減少している．次に，角速度とFigure of Meritの関係について注目すると，
+    どのグラフにおいても，ピッチ角の値によって，グラフの変化が異なっていた．このことより，Figure of Meritにより影響を与えているのがピッチ角であることがわかる．
+    
+
+    Fig.\ref{fig:trim}で得たプロットの中でFigure of Meritが最大になる点を探索した結果をTable.\ref{table:fom}に示す．
+    NB2はピッチ角と角速度がWB2，NB4と比べて大きく，Figure of Meritが最も低くなっている．
+    Figure of Meritが最も大きいのはNB4であるが，これは相対流れ角が最適化されているねじり下げがあるブレードにおいては，
+    翼面での剥離がない場合に翼端の影響が小さな高アスペクト比翼の利点が現れているためであると考えられる．
+    以上の結果より，空力性能についてはNB4が最も優れていると考えられる．
+
+    \begin{table}[H]
+      \centering
+      \caption{Pitch angle and angular velocity($T = 39.227\ \mathrm{N}$)}
+      \label{table:fom}
+      \setlength{\tabcolsep}{5pt}
+      \begin{tabular}{cccc} \hline
+          Name & Pitch angle[deg]   & Angular velocity[rad/s]   & Figure of Merit   \\    \hline
+          WB2  &   12.879           &       218.495             &    0.6394         \\    
+          NB2  &   10.758           &       296.828             &    0.6266         \\    
+          NB4  &   13.333           &       213.747             &    0.6526         \\    \hline
+      \end{tabular}
+    \end{table}
+
+
+    \begin{figure}[H]
+      \centering
+      \begin{subfigure}{0.6\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/pitch_rpm_T_wb2.png}
+        \caption{WB2}
+        \label{fig:trim1}
+      \end{subfigure}
+      
+      \begin{subfigure}{0.6\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/pitch_rpm_T_nb2.png}
+        \caption{NB2}
+        \label{fig:trim2}
+      \end{subfigure}
+    
+      \begin{subfigure}{0.6\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/pitch_rpm_T_nb4.png}
+        \caption{NB4}
+        \label{fig:trim3}
+      \end{subfigure}
+    
+      \caption{Relationship between pitch angle, angular velocity and thrust}
+      \label{fig:trim}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \begin{subfigure}{0.6\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/pitch_rpm_fom_wb2.png}
+        \caption{WB2}
+        \label{fig:fom1}
+      \end{subfigure}
+      
+      \begin{subfigure}{0.6\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/pitch_rpm_fom_nb2.png}
+        \caption{NB2}
+        \label{fig:fom2}
+      \end{subfigure}
+    
+      \begin{subfigure}{0.6\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/pitch_rpm_fom_nb4.png}
+        \caption{NB4}
+        \label{fig:fom3}
+      \end{subfigure}
+    
+      \caption{Relationship between pitch angle, angular velocity and Figure of Merit}
+      \label{fig:fom}
+    \end{figure}
+
+    \clearpage
+    
+    \section{トリム時のねじり下げモーメント}
+    トリム時のねじり下げモーメントについて比較を行う．Table.\ref{table:neziri}に計算結果を示す．
+    ピッチングモーメントはWB2が最も大きく，NB2の約10倍ほどになっている．
+    これは，翼面積が大きくなったことにより，回転中心からの距離が大きくなり，遠心力が大きくなったことによるものであると考えられる．
+    また，NB2とNB4で比較を行うとNB4のほうが2倍以上大きくなっている．この結果から，翼枚数はねじり下げモーメントの要因の一つになるが，
+    それ以上に回転中心からの距離により，遠心力によるねじり下げモーメントは増加すると考えられる．
+
+    \begin{table}[H]
+      \centering
+      \caption{Twisting down moment at steady state}
+      \label{table:neziri}
+      \setlength{\tabcolsep}{5pt}
+      \begin{tabular}{cccc} \hline
+          Name & Pitch angle[deg]   & Angular velocity[rad/s]   & Twisting down moment[N$\cdot$m]   \\    \hline
+          WB2  &   12.879           &       218.495             &    2.1631                         \\    
+          NB2  &   10.758           &       296.828             &    0.2063                         \\    
+          NB4  &   13.333           &       213.747             &    0.5801                         \\    \hline
+      \end{tabular}
+    \end{table}
+    
+    \clearpage
+
+    \section{カウンターウェイトの搭載}
+    \par
+    本節では，Table.\ref{table:blade spec}に示した3パターンのブレード形状について遠心力によるねじり下げモーメントを計算し，
+    それを相殺するカウンターウェイトの搭載を検討する．Fig.\ref{fig:cw}に示すように，ブレードにピッチ角がついていない状態では
+    カウンターウェイトには$x$軸正方向に遠心力がはたらく．しかしながら，翼断面から見るとブレードには，モーメントがかかっていない．
+    一方，ピッチ角を付けた場合だと，Fig.\ref{fig:cw pitch}のように$x$軸と$y$軸の間に遠心力が発生し，$y$軸方向成分によって
+    ねじり上げモーメントが発生し，定常時のねじり下げモーメントを相殺することが出来る．
+    \begin{figure}[H]
+        \centering
+      \begin{minipage}{0.48\hsize}
+          \centering
+        \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/cw_xy.jpg}
+      \end{minipage}
+      \begin{minipage}{0.48\hsize}
+          \centering
+        \includegraphics[keepaspectratio, width=\linewidth]{photo/cw_yz.jpg}
+      \end{minipage}
+      \caption{Counterweight at 0 degree pitch angle}
+      \label{fig:cw}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+      \begin{minipage}{0.48\hsize}
+          \centering
+        \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/cw_pitch_xy.jpg}
+      \end{minipage}
+      \begin{minipage}{0.48\hsize}
+          \centering
+        \includegraphics[keepaspectratio, width=\linewidth]{photo/cw_pitch_yz.jpg}
+      \end{minipage}
+      \caption{Counterweight when pitch angle is taken}
+      \label{fig:cw pitch}
+    \end{figure}
+    
+    \clearpage
+
+    本研究では，カウンターウェイトの搭載についてFig.\ref{fig:chart1}のような手順で計算を行った．
+    まず，カウンターウェイトを搭載していない時に発生するねじり下げモーメントを計算する．次にカウンターウェイトが
+    そのねじり下げモーメントを相殺するだけに必要な重量を計算する．そして，その重量を追加してねじり下げモーメントを
+    計算する．この計算を繰り返して，誤差が$0.001\ \mathrm{N}\cdot \mathrm{m}$以内になったときに計算を終了する．なお，カウンターウェイトのうでの
+    長さは翼根の25％の長さと仮定して計算を行う．
+ 
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/flowchart_cw.png}
+      \caption{Flowchart of calculation of counterweight}
+      \label{fig:chart1}
+    \end{figure}
+     
+    以上の計算を行い,求めたカウンターウェイトの重量とその時のピッチングモーメントをTable.\ref{table:cw}に示す．
+    ピッチングモーメントはWB2が最も大きく，NB2の約10倍ほどになっている．これは，翼面積が大きくなったことにより，
+    回転中心からの距離が大きくなり，遠心力が大きくなったことによるものであると考えられる．
+    また，NB2とNB4で比較を行うとNB4のほうが2倍以上大きくなっているが
+    また，カウンターウェイトの設計にあたって，機体重量も増加し，Figure of Meritの最大値も変化することが考えられる．
+    カウンターウェイトの重量も考慮した際のピッチ角と角速度，Figure of MeritをTable.\ref{table:new fom} に示す．
+    Fig.\ref{table:fom}と比較してWB2のみFigure of Meritの最高点が変わっているがNB2，NB4については変わっていないことがわかる．
+    これらのピッチ角と角速度を定常時のピッチ角，角速度とし，これ以降の節では，角速度を固定して計算する．
+
+    \begin{table}[H]
+      \centering
+      \caption{Twisting down moment and counterweight}
+      \label{table:cw}
+      \setlength{\tabcolsep}{5pt}
+      \begin{tabular}{cccc} \hline
+          Name & Twisting down moment[N$\cdot$m]  &      Counteweight[kg]          \\    \hline
+          WB2  &   2.0261                         &       0.1085                   \\    
+          NB2  &   0.2063                         &       0.0285                   \\    
+          NB4  &   0.5801                         &       0.0628                   \\    \hline
+      \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+      \centering
+      \caption{Figure of Merit with counterweight}
+      \label{table:new fom}
+      \setlength{\tabcolsep}{5pt}
+      \begin{tabular}{cccc} \hline
+          Name & Pitch angle[deg]   & Angular velocity[rad/s]   & Figure of Merit   \\    \hline
+          WB2  &   12.576           &       220.869             &    0.6395         \\    
+          NB2  &   10.758           &       296.828             &    0.6266         \\    
+          NB4  &   13.333           &       213.747             &    0.6526         \\    \hline
+      \end{tabular}
+    \end{table}
+    
+    \clearpage
+
+    \section{推力増加時のねじり下げモーメントの計算}
+    \par 
+    前節ではカウンターウェイトを搭載することで，定常時のねじ下げモーメントは打ち消すことが出来た．しかしながら，推力増加時はコレクティブピッチ
+    制御により，ピッチ角を増加させるので，遠心力によるねじり下げモーメントも増加し，この変化によるサーボモータへの負荷を考慮する必要がある．
+    そこで，本節では推力を$10\ \mathrm{N}$増加した際のねじり下げモーメントの増加を計算する．計算方法としては，Fig.\ref{fig:chart2}のような手順で行う．
+    まず，Fig.\ref{fig:trim}より，推力を$10\ \mathrm{N}$増加した際のピッチ角を計算する．本解析では角速度を一定とするコレクティブピッチ制御の機体について
+    検討する．したがって，角速度の値はTable.\ref{table:new fom}で決定したものを用いる．
+    次に，ピッチ角を増加させた際のねじり下げモーメントを計算する．最後に0.1秒間でピッチ角を増加させるとした時の$x$軸周りの角速度を計算し，
+    ねじり下げモーメントによる消費パワーを計算する．ここで，$x$軸周りの角速度$\omega$はロータの角速度$\Omega$とは異なるため，注意が必要である．
+    $x$軸周りの角速度$\omega$と消費パワー$P$については第\ref{パワー}節で述べる．
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/flowchart_power.png}
+      \caption{Flowchart of calculation of power}
+      \label{fig:chart2}
+    \end{figure}
+    
+    推力を$10\ \mathrm{N}$増加した際のピッチ角と，増加した角度をTable.\ref{table:pitch}に示す．増加した角度についてはNB2が最も少なくなっている．
+    トリム時の角速度がWB2,NB4と比べて大きいため，ピッチ角の増加量が少なくなったと考えられる．
+
+    \begin{table}[H]
+      \centering
+      \caption{Pitch angle when thrust increases}
+      \label{table:pitch}
+      \setlength{\tabcolsep}{5pt}
+      \begin{tabular}{ccc} \hline
+          Name & Pitch angle[deg]   & Increase in pitch angle[deg]  \\    \hline
+          WB2  &   15.909           &       3.333                   \\    
+          NB2  &   13.333           &       2.575                   \\    
+          NB4  &   16.818           &       3.485                   \\    \hline
+      \end{tabular}
+    \end{table}
+
+    \clearpage
+
+    ねじり下げモーメントを計算した結果をFig.\ref{fig:neziri}に示す．
+    どのグラフにおいても解析を行った範囲では，線形性がみられている．グラフの傾きについては，WB2が0.4569，NB2が0.1191,NB4が0.1009であり，
+    WB2が最も増加率が高かった．これは，ブレード面積によるところが大きいと考えられる．翼枚数が異なるNB2とNB4で比較した際には，傾きは近い値で
+    あることから，ねじり下げモーメントにソリディティは影響が小さいのではないかと考えられる．
+    10 N増加後のねじり下げモーメントについては，WB2が最も大きくNB2の約5倍となっている．翼面積の違いにより，ねじり下げモーメントの大きさも
+    異なったと考えられる．また，ソリディティの異なるNB2,NB4を比較すると，NB4のほうがNB2よりも大きくなっているが，約1.2倍と大きな差にはなっていない．
+    これは，トリム時の角速度がNB2が大きく，それにより，遠心力も増加していることが原因であると考えられる．
+
+    \begin{figure}[H]
+      \centering
+      \begin{subfigure}{0.6\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=\linewidth]{photo/moment_wb2.png}
+        \caption{WB2}
+        \label{fig:neziri wb2}
+      \end{subfigure}
+      
+      \begin{subfigure}{0.6\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=\linewidth]{photo/moment_nb2.png}
+        \caption{NB2}
+        \label{fig:neziri nb2}
+      \end{subfigure}
+    
+      \begin{subfigure}{0.6\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=\linewidth]{photo/moment_nb4.png}
+        \caption{NB4}
+        \label{fig:neziri nb4}
+      \end{subfigure}
+    
+      \caption{Twisting down moment}
+      \label{fig:neziri}
+    \end{figure}
+
+    \clearpage
+
+    \section{消費パワーの計算} \label{パワー}
+    \par 
+    ねじり下げモーメントの増加がサーボモータにどれほどの負荷をかけるのかを考えるにあたって，指標として考えられるものにパワーがある．
+    ブレード形状によって一定の推力増加に必要なピッチ角の変化量は異なり，発生するねじり下げモーメントも異なる．
+    そのため，パワーという角度の変化量によらないもので比較することによって，サーボモータへの負荷を検討する．
+    角度の変化量が異なるので，まずは$x$軸周りの角速度を求める．角速度はEq.\eqref{omega}で表される．本研究では，ブレード形状による
+    消費パワーの比較を行うことが目的であるので，コレクティブピッチ制御にかかる時間は0.1秒間であると仮定して，計算を行う．
+    また，消費パワーはトルクと角速度の積で求めることができ，Eq.\eqref{power}で表される．
+
+    \begin{equation}
+      \omega = \frac{ピッチ角の増加量}{コレクティブピッチ制御にかかる時間}  \label{omega}
+    \end{equation}
+
+    \begin{equation}
+      P = M\omega  \label{power}
+    \end{equation}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/pitch_increase.png}
+      \caption{Pitch angle increase}
+      \label{fig:increase}
+    \end{figure}
+
+    Table.\ref{table:power}に結果を示す．WB2のパワーはNB2と比較して約6.5倍ほど大ききくなっている．低アスペクト比のブレードは
+    翼面積が大きくなるので，その影響により消費パワーも大きくなっていると考えられる．NB2とNB4を比較すると，NB4のほうが約1.5倍ほど大きくなっている．
+    同じ角速度，ピッチ角においては，ブレード枚数が2倍になると，サーボモータには2倍の負荷がかかるはずであるが，トリム時の角速度とピッチ角が異なるため，少し低くなっていると考えられる．
+    以上の結果より，サーボモータにかかるパワーを最小限にするには，NB4のような高アスペクト比でソリディティが大きいロータが最適であるといえる．
+
+    \begin{table}[H]
+      \centering
+      \caption{Power}
+      \label{table:power}
+      \setlength{\tabcolsep}{5pt}
+      \begin{tabular}{cccc} \hline
+          Name & Pitch angle increase[deg] &        $\omega$[rad/s]   &     $P$[W]     \\    \hline
+          WB2  &       3.333                  &        0.5817             &    0.8866       \\    
+          NB2  &       2.575                  &        0.4494             &    0.1374       \\    
+          NB4  &       3.485                  &        0.6082             &    0.2143       \\    \hline
+      \end{tabular}
+    \end{table}
+    
+    
