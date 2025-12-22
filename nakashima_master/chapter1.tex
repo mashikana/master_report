@@ -13,50 +13,35 @@
     マルチロータ機とは3発以上のロータを用いて飛行する航空機であり，近年その市場は拡大を
     続けている．その特徴として，空中の１点で静止するホバリングや上昇・下降といった鉛直方向の
     移動が可能であることが挙げられる．また，同じ回転翼機であるシングルロータヘリコプタと比較
-    して操縦が容易であり，フィードバック機能搭載による自律飛行が実現されている\cite{飛躍するドローン}．これらの
-    特徴を活かして現在はFig.\ref{fig:drone for agri}，Fig.\ref{fig:drone for infra}のように農薬散布やインフラ設備の点検監視などの用途
+    して操縦が容易であり，フィードバック機能搭載による自律飛行が実現されている．これらの
+    特徴を活かして現在はFig.のように農薬散布やインフラ設備の点検監視などの用途
     で使用されている．
 
      このように通常は人が行ってきた負担や危険が伴う作業をマルチロータ機に
     代替させることができるメリットは非常に大きく，現在も世界中で新たな用途に向けた研究開発が
-    進んでいる\cite{ドローン産業応用}．例えば，市街地から
+    進んでいる．例えば，市街地から
     離れた山岳部の田舎や離島への物資輸送などに使用されることが期待されている．道路の
-    整備状況や交通状況に左右されないので，従来の輸送方法よりも時間短縮され，省人化も可能となるからである\cite{ドローン物資輸送}．
+    整備状況や交通状況に左右されないので，従来の輸送方法よりも時間短縮され，省人化も可能となるからである．
     また，経済産業省ではドローンに関する政府の取り組みを工程表にまとめた
     「空の産業革命に向けたロードマップ」を
-    策定しており，法整備，技術開発，社会実装を促進している\cite{空のロードマップ}．
+    策定しており，法整備，技術開発，社会実装を促進している．
     このようにマルチロータ機は様々な分野での活躍が期待され，
     注目を集めている航空機である．
 
     \par
     現在盛んに研究開発が進むマルチロータ機であるが，運用上の課題がいくつか存在する．そのう
-    ちの１つが突風のような外乱に対する安定性の低さである\cite{ドローンの安定性}．マルチロータ機が飛行中に風を受
+    ちの１つが突風のような外乱に対する安定性の低さである．マルチロータ機が飛行中に風を受
     けると，風に流されながら機体が重心周りに傾いてしまう．特に小型機は大型機に比べて慣性モー
     メントが小さいため，このような姿勢変動を発生しやすい．また，突然の強風を受けた際には機体
     の姿勢が短時間の間に大きく変動してしまう．通常機体は制御によって復元モーメント
     を発生させることで姿勢を元の状態に戻すのだが，短時間で姿勢が大きく変動し，この姿勢の回復
     が間に合わない場合，機体は墜落してしまう可能性がある．国土交通省によると実際にその姿勢変
-    動による墜落事故が複数発生しているのが現状である\cite{国土交通省}．空撮や農業用のマルチロータ機など，姿勢の
+    動による墜落事故が複数発生しているのが現状である．空撮や農業用のマルチロータ機など，姿勢の
     安定性に重きを置かれる機体の運用時には，制御の即応性が求められる．しかしながら，現在多くの
     マルチロータ機では回転数制御を採用しているため，応答が遅くなっている．
     したがって，マルチロータ機を安全に運用かつ他分野での利用を推進するためには
     外乱による姿勢変動への制御の即応性の向上が必要である．
 
-   \begin{figure}[H]
-      \centering
-    \begin{minipage}{0.48\hsize}
-        \centering
-      \includegraphics[keepaspectratio, width=\linewidth]{photo/drone_agriculture.jpg}
-      \caption[Aerial Works ARGAS MG-1]{Aerial Works ARGAS MG-1 \cite{drone_agri}}
-      \label{fig:drone for agri}
-    \end{minipage}
-    \begin{minipage}{0.48\hsize}
-        \centering
-      \includegraphics[keepaspectratio, width=\linewidth]{photo/drone_infrastructure.jpg}
-      \caption[DJI Martice 300 RTK]{DJI Matrice 300 RTK \cite{drone_infra}}
-      \label{fig:drone for infra}
-    \end{minipage}
-   \end{figure}
 
     \clearpage 
 
@@ -65,28 +50,28 @@
     前節で述べた課題を解決するための方法として，可変ピッチロータを搭載することが考えられる．
     可変ピッチロータは，推力変化が速いことに加えて，推力調節をブレードピッチ角の変更で行うことで
     プロペラ回転数を高く保つことが可能となるため，機体の下降時など推力が低い状態でも
-    大きなヨーイングモーメントを発生することができ，飛行の安定性の向上につながる\cite{マルチロータ機の性能向上}．
+    大きなヨーイングモーメントを発生することができ，飛行の安定性の向上につながる．
     可変ピッチ搭載型ドローンの懸念点は，翼端失速を起こす限界ピッチ角であるが，この問題もブレードの
-    アスペクト比を小さくすることで失速が発生する限界ピッチ角を大きくし，解消することができる\cite{コレクティブピッチ}．
+    アスペクト比を小さくすることで失速が発生する限界ピッチ角を大きくし，解消することができる．
     したがって，マルチロータ型ドローンでは低アスペクト比ブレードを高速回転で用いることで
     飛行の安定性は大きく向上する．一方で，低アスペクト比のロータを高速で回転させると
     ブレードに生じる遠心力による，ねじり下げモーメントが大きくなる．これは，可変ピッチ機構に用いる
     サーボアクチュエータの大型化や，カウンターウェイトの搭載を必要とするなど，設計上の制約と
-    なることが知られている\cite{遠心力}．そこで，本研究では最適なブレード設計を行うための基礎研究として，ブレードのアスペクト比
+    なることが知られている．そこで，本研究では最適なブレード設計を行うための基礎研究として，ブレードのアスペクト比
     やソリディティを変化させた場合のねじり下げモーメントの影響と搭載必要と考えられる
     カウンターウェイトについて考察する．
 
     \begin{figure}[H]
       \centering
       \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/module.png}
-      \caption[Module for controlling collective pitch]{Module for controlling collective pitch \cite{マルチロータ機の性能向上}}
+      \caption[Module for controlling collective pitch]{Module for controlling collective pitch}
       \label{fig:sarbo}
     \end{figure}
 
     \begin{figure}[H]
       \centering
       \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/collective_drone.jpg}
-      \caption[Variable pitch multirotor aircraft AXM-1000]{Variable pitch multirotor aircraft AXM-1000 \cite{TAYA}}
+      \caption[Variable pitch multirotor aircraft AXM-1000]{Variable pitch multirotor aircraft AXM-1000 }
       \label{fig:collective}
     \end{figure}
     

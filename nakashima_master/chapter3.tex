@@ -37,11 +37,11 @@
       \label{fig:koushi}
     \end{figure}
     
-    解析条件としては角速度$209\ \mathrm{rad/s}$，$314\ \mathrm{rad/s}$，$444\ \mathrm{rad/s}$で検討した．Fig.\ref{fig:cfd thrust}にブレードピッチ角を変化させた場合の推力の変化を示す．
+    解析条件としては角速度$209\ \mathrm{rad/s}$，$314\ \mathrm{rad/s}$，$444\ \mathrm{rad/s}$で検討した．Fig.ブレードピッチ角を変化させた場合の推力の変化を示す．
     翼枚数が2枚のWB2とNB2を比較すると推力はブレード面積が2倍大きなWB2の方が大きい，ただし，推力の値はWB2がNB2の約1.5倍にとどまっている．
     一方，NB4の推力はWB2と同程度の大きさとなっていることがわかる．ピッチ角の変化に対する推力変化の勾配を比較すると，WB2とNB4は解析を行った5度から
     20度 の範囲では直線的に変化している．一方，NB2については，ピッチ角が15度付近 で推力の勾配が変化しており，ピッチ角が大きくなると失速の傾向がやや表れていると考えられる.
-    Fig.\ref{fig:cfd fom}にピッチ角の変化に対するFigure of Meritの変化を示す．
+    Fig.ピッチ角の変化に対するFigure of Meritの変化を示す．
     翼弦長が大きなWB2のFigure of MeritがNB2と比較して大きな値となっており，高いピッチ角でのFoMの落ち込みも緩やかである．
     一方、翼弦長が小さなNB2はピッチ角が12度を超えると減少に転じている．
     しかし，同じ翼弦長で翼枚数のみが異なるNB4を見ると，ピッチ角が12度までは正の勾配を維持しており，高いピッチ角でのFoMの落ち込みも緩やかである．
@@ -49,52 +49,7 @@
     また，Figure of Meritの最大値は翼弦長が小さく，羽枚数が4枚のNB4のほうがWB2よりも大きい．これは、相対流れ角が最適化されているねじり下げがあるブレードにおいては，
     翼面での剥離がない場合に翼端の影響が小さな高アスペクト比翼の利点が現れているためであると考えられる．
 
-    \begin{figure}[H]
-      \centering
-      
-      \begin{subfigure}{0.32\linewidth} % 3つのサブフィギュアを横に配置
-          \centering
-          \includegraphics[keepaspectratio, width=\linewidth]{photo/thrust_209.png}
-          \caption{$\Omega=209\ \mathrm{rad/s}$}
-      \end{subfigure}
-      \begin{subfigure}{0.32\linewidth}
-          \centering
-          \includegraphics[keepaspectratio, width=\linewidth]{photo/thrust_314.png}
-          \caption{$\Omega=314\ \mathrm{rad/s}$}
-      \end{subfigure}
-      \begin{subfigure}{0.32\linewidth}
-          \centering
-          \includegraphics[keepaspectratio, width=\linewidth]{photo/thrust_444.png}
-          \caption{$\Omega=444\ \mathrm{rad/s}$}
-      \end{subfigure}
-      
-      \caption{Relationship between pitch angle and thrust}
-      \label{fig:cfd thrust}
-    \end{figure}
 
-    
-    \begin{figure}[H]
-      \centering
-      
-      \begin{subfigure}{0.32\linewidth} % 3つのサブフィギュアを横に配置
-          \centering
-          \includegraphics[keepaspectratio, width=\linewidth]{photo/fom_209.png}
-          \caption{$\Omega=209\ \mathrm{rad/s}$}
-      \end{subfigure}
-      \begin{subfigure}{0.32\linewidth}
-          \centering
-          \includegraphics[keepaspectratio, width=\linewidth]{photo/fom_314.png}
-          \caption{$\Omega=314\ \mathrm{rad/s}$}
-      \end{subfigure}
-      \begin{subfigure}{0.32\linewidth}
-          \centering
-          \includegraphics[keepaspectratio, width=\linewidth]{photo/fom_444.png}
-          \caption{$\Omega=444\ \mathrm{rad/s}$}
-      \end{subfigure}
-      
-      \caption{Relationship between pitch angle and Figure of Merit}
-      \label{fig:cfd fom}
-    \end{figure}
 
     本解析では，推力が一定であるという条件からピッチ角と角速度の組み合わせを決定して，その組み合わせの中からFigure of Meritが最大になる点を探索した．
     Fig.\ref{fig:trim}は$x$軸にピッチ角，$y$軸に角速度をとり，双線形補間を用いて推力の分布を表したものである．
@@ -208,10 +163,10 @@
 
     \section{カウンターウェイトの搭載}
     \par
-    本節では，Table.\ref{table:blade spec}に示した3パターンのブレード形状について遠心力によるねじり下げモーメントを計算し，
+    本節では，Table.に示した3パターンのブレード形状について遠心力によるねじり下げモーメントを計算し，
     それを相殺するカウンターウェイトの搭載を検討する．Fig.\ref{fig:cw}に示すように，ブレードにピッチ角がついていない状態では
     カウンターウェイトには$x$軸正方向に遠心力がはたらく．しかしながら，翼断面から見るとブレードには，モーメントがかかっていない．
-    一方，ピッチ角を付けた場合だと，Fig.\ref{fig:cw pitch}のように$x$軸と$y$軸の間に遠心力が発生し，$y$軸方向成分によって
+    一方，ピッチ角を付けた場合だと，Fig.のように$x$軸と$y$軸の間に遠心力が発生し，$y$軸方向成分によって
     ねじり上げモーメントが発生し，定常時のねじり下げモーメントを相殺することが出来る．
     \begin{figure}[H]
         \centering
@@ -227,19 +182,7 @@
       \label{fig:cw}
     \end{figure}
 
-    \begin{figure}[H]
-        \centering
-      \begin{minipage}{0.48\hsize}
-          \centering
-        \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/cw_pitch_xy.jpg}
-      \end{minipage}
-      \begin{minipage}{0.48\hsize}
-          \centering
-        \includegraphics[keepaspectratio, width=\linewidth]{photo/cw_pitch_yz.jpg}
-      \end{minipage}
-      \caption{Counterweight when pitch angle is taken}
-      \label{fig:cw pitch}
-    \end{figure}
+
     
     \clearpage
 
@@ -261,7 +204,7 @@
     回転中心からの距離が大きくなり，遠心力が大きくなったことによるものであると考えられる．
     また，NB2とNB4で比較を行うとNB4のほうが2倍以上大きくなっているが
     また，カウンターウェイトの設計にあたって，機体重量も増加し，Figure of Meritの最大値も変化することが考えられる．
-    カウンターウェイトの重量も考慮した際のピッチ角と角速度，Figure of MeritをTable.\ref{table:new fom} に示す．
+    カウンターウェイトの重量も考慮した際のピッチ角と角速度，Figure of MeritをTable. に示す．
     Fig.\ref{table:fom}と比較してWB2のみFigure of Meritの最高点が変わっているがNB2，NB4については変わっていないことがわかる．
     これらのピッチ角と角速度を定常時のピッチ角，角速度とし，これ以降の節では，角速度を固定して計算する．
 
@@ -299,10 +242,10 @@
     制御により，ピッチ角を増加させるので，遠心力によるねじり下げモーメントも増加し，この変化によるサーボモータへの負荷を考慮する必要がある．
     そこで，本節では推力を$10\ \mathrm{N}$増加した際のねじり下げモーメントの増加を計算する．計算方法としては，Fig.\ref{fig:chart2}のような手順で行う．
     まず，Fig.\ref{fig:trim}より，推力を$10\ \mathrm{N}$増加した際のピッチ角を計算する．本解析では角速度を一定とするコレクティブピッチ制御の機体について
-    検討する．したがって，角速度の値はTable.\ref{table:new fom}で決定したものを用いる．
+    検討する．したがって，角速度の値はTable.で決定したものを用いる．
     次に，ピッチ角を増加させた際のねじり下げモーメントを計算する．最後に0.1秒間でピッチ角を増加させるとした時の$x$軸周りの角速度を計算し，
     ねじり下げモーメントによる消費パワーを計算する．ここで，$x$軸周りの角速度$\omega$はロータの角速度$\Omega$とは異なるため，注意が必要である．
-    $x$軸周りの角速度$\omega$と消費パワー$P$については第\ref{パワー}節で述べる．
+    $x$軸周りの角速度$\omega$と消費パワー$P$については第節で述べる．
 
     \begin{figure}[H]
       \centering
@@ -329,7 +272,7 @@
 
     \clearpage
 
-    ねじり下げモーメントを計算した結果をFig.\ref{fig:neziri}に示す．
+    ねじり下げモーメントを計算した結果をFig.に示す．
     どのグラフにおいても解析を行った範囲では，線形性がみられている．グラフの傾きについては，WB2が0.4569，NB2が0.1191,NB4が0.1009であり，
     WB2が最も増加率が高かった．これは，ブレード面積によるところが大きいと考えられる．翼枚数が異なるNB2とNB4で比較した際には，傾きは近い値で
     あることから，ねじり下げモーメントにソリディティは影響が小さいのではないかと考えられる．
@@ -337,32 +280,7 @@
     異なったと考えられる．また，ソリディティの異なるNB2,NB4を比較すると，NB4のほうがNB2よりも大きくなっているが，約1.2倍と大きな差にはなっていない．
     これは，トリム時の角速度がNB2が大きく，それにより，遠心力も増加していることが原因であると考えられる．
 
-    \begin{figure}[H]
-      \centering
-      \begin{subfigure}{0.6\linewidth}
-        \centering
-        \includegraphics[keepaspectratio, width=\linewidth]{photo/moment_wb2.png}
-        \caption{WB2}
-        \label{fig:neziri wb2}
-      \end{subfigure}
-      
-      \begin{subfigure}{0.6\linewidth}
-        \centering
-        \includegraphics[keepaspectratio, width=\linewidth]{photo/moment_nb2.png}
-        \caption{NB2}
-        \label{fig:neziri nb2}
-      \end{subfigure}
-    
-      \begin{subfigure}{0.6\linewidth}
-        \centering
-        \includegraphics[keepaspectratio, width=\linewidth]{photo/moment_nb4.png}
-        \caption{NB4}
-        \label{fig:neziri nb4}
-      \end{subfigure}
-    
-      \caption{Twisting down moment}
-      \label{fig:neziri}
-    \end{figure}
+
 
     \clearpage
 
