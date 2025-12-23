@@ -1,0 +1,25 @@
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Aerial Works ARGAS MG-1}}{6}{}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces DJI Martice 300 RTK}}{6}{}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Module for controlling collective pitch}}{7}{}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Variable pitch multirotor aircraft AXM-1000}}{8}{}%
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Overview of the multirotor analysis model}}{9}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Overview of the rotor analysis model}}{10}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Blade viewed from $xy$ plane}}{11}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Blade viewed from $yz$ plane}}{11}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Blade model}}{13}{}%
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Analysis grid}}{15}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Relationship between pitch angle and thrust}}{16}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Relationship between pitch angle and Figure of Merit}}{16}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Relationship between pitch angle, angular velocity and thrust}}{17}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Counterweight at 0 degree pitch angle}}{19}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Counterweight when pitch angle is taken}}{19}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Flowchart of calculation of counterweight}}{20}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Flowchart of calculation of power}}{21}{}%
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Relationship between pitch angle and twisting down moment}}{24}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Relationship between pitch angle, angular velocity and Twisting down moment}}{25}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Airfoil}}{26}{}%
+\addvspace {10\jsc@mpt }
