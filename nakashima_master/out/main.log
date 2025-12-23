@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  23 DEC 2025 14:04
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  23 DEC 2025 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -97,11 +97,6 @@ Package: tascmac 2020/01/15 v2.1 ascmac package (community edition)
 \@@bwsp=\box79
 \@bcal=\count284
 \shaderule=\dimen177
-)) (c:/texlive/2025/texmf-dist/tex/latex/usebib/usebib.sty
-Package: usebib 2012/03/17 v1.0 Reusing bib files
-(c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip52
@@ -146,7 +141,7 @@ LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
 \c@MaxMatrixCols=\count291
-\dotsspace@=\muskip18
+\dotsspace@=\muskip17
 \c@parentequation=\count292
 \dspbrk@lvl=\count293
 \tag@help=\toks21
@@ -184,8 +179,9 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@tables=\count300
 \c@LT@chunks=\count301
 \LT@p@ftn=\toks25
-) (c:/texlive/2025/texmf-dist/tex/latex/aspectratio/ar.sty
-Package: ar 2012/01/23 v.2.0 Aspect Ratio symbol: CM, TX, PX styles
+) (c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
@@ -298,41 +294,35 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 23.90964pt on input line 21.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 23.90964pt on input line 21.
-No file main.toc.
+(out/main.toc
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 6.
+[1
+
+])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
-[1
-
-]
-No file main.lof.
+[2] (out/main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
-[2
+[3
 
-]
-No file main.lot.
+] (out/main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
-[3
+[4
 
 
-] (./symbols.tex
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 18.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 18.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 18.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 18.
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1 on input line 44.
-
-) (./chapter1.tex [4
+] (./symbols.tex) (./chapter1.tex [5
 
 
 ]
@@ -341,146 +331,96 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 11.
-[5
+[6
+
+] [7] [8
 
 ]
-File: photo/drone_agriculture.jpg Graphic file (type bmp)
-<photo/drone_agriculture.jpg>
-File: photo/drone_infrastructure.jpg Graphic file (type bmp)
-<photo/drone_infrastructure.jpg>
-[6]
 File: photo/module.png Graphic file (type bmp)
 <photo/module.png>
+[9
+
+]
 File: photo/collective_drone.jpg Graphic file (type bmp)
 <photo/collective_drone.jpg>
-[7
-
-]) (./chapter2.tex [8]
+) [10] (./chapter2.tex [11]
 第2章
 File: photo/body_model.png Graphic file (type bmp)
 <photo/body_model.png>
 File: photo/rotor_fixed_axis.jpg Graphic file (type bmp)
 <photo/rotor_fixed_axis.jpg>
-[9
+[12
 
-]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 34.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 34.
+] [13] [14
 
-LaTeX Warning: Reference `centri1' on page 10 undefined on input line 34.
-
-
-LaTeX Warning: Reference `centri2' on page 10 undefined on input line 35.
-
-
-LaTeX Warning: Reference `pitching1' on page 10 undefined on input line 42.
-
-
-LaTeX Warning: Reference `pitching2' on page 10 undefined on input line 43.
-
-[10]
-File: photo/blade_xy_axis.jpg Graphic file (type bmp)
-<photo/blade_xy_axis.jpg>
-File: photo/blade_yz_axis.jpg Graphic file (type bmp)
-<photo/blade_yz_axis.jpg>
-[11
-
-] [12]
-File: photo/blade_calc_model.jpg Graphic file (type bmp)
-<photo/blade_calc_model.jpg>
-) (./chapter3.tex [13
+]) (./chapter3.tex [15
 
 ]
 第3章
-
-LaTeX Warning: Reference `fom' on page 14 undefined on input line 16.
-
-[14
+[16
 
 ]
 File: photo/kaisekikoushi.png Graphic file (type bmp)
 <photo/kaisekikoushi.png>
-File: photo/thrust_209.png Graphic file (type bmp)
-<photo/thrust_209.png>
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 57.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 57.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 57.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 57.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 57.
-File: photo/thrust_314.png Graphic file (type bmp)
-<photo/thrust_314.png>
-File: photo/thrust_444.png Graphic file (type bmp)
-<photo/thrust_444.png>
-[15
+[17
 
 ]
-File: photo/fom_209.png Graphic file (type bmp)
-<photo/fom_209.png>
-File: photo/fom_314.png Graphic file (type bmp)
-<photo/fom_314.png>
-File: photo/fom_444.png Graphic file (type bmp)
-<photo/fom_444.png>
 File: photo/pitch_rpm_T_wb2.png Graphic file (type bmp)
 <photo/pitch_rpm_T_wb2.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 91.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 91.
 File: photo/pitch_rpm_T_nb2.png Graphic file (type bmp)
 <photo/pitch_rpm_T_nb2.png>
 File: photo/pitch_rpm_T_nb4.png Graphic file (type bmp)
 <photo/pitch_rpm_T_nb4.png>
-[16] [17] [18
+[18]
+File: photo/pitch_rpm_fom_wb2.png Graphic file (type bmp)
+<photo/pitch_rpm_fom_wb2.png>
+File: photo/pitch_rpm_fom_nb2.png Graphic file (type bmp)
+<photo/pitch_rpm_fom_nb2.png>
+File: photo/pitch_rpm_fom_nb4.png Graphic file (type bmp)
+<photo/pitch_rpm_fom_nb4.png>
+[19] [20] [21
 
 ]
 File: photo/cw_xy.jpg Graphic file (type bmp)
 <photo/cw_xy.jpg>
 File: photo/cw_yz.jpg Graphic file (type bmp)
 <photo/cw_yz.jpg>
-File: photo/cw_pitch_xy.jpg Graphic file (type bmp)
-<photo/cw_pitch_xy.jpg>
-File: photo/cw_pitch_yz.jpg Graphic file (type bmp)
-<photo/cw_pitch_yz.jpg>
-[19
+[22
 
 ]
 File: photo/flowchart_cw.png Graphic file (type bmp)
 <photo/flowchart_cw.png>
-[20
-
-]
-File: photo/flowchart_power.png Graphic file (type bmp)
-<photo/flowchart_power.png>
-[21
-
-]) (./chapter4.tex [22
-
-]
-第4章
-File: photo/pm_209.png Graphic file (type bmp)
-<photo/pm_209.png>
-File: photo/pm_314.png Graphic file (type bmp)
-<photo/pm_314.png>
-File: photo/pm_444.png Graphic file (type bmp)
-<photo/pm_444.png>
 [23
 
+] [24]
+File: photo/flowchart_power.png Graphic file (type bmp)
+<photo/flowchart_power.png>
+[25
+
+] [26
+
 ]
-File: photo/pitch_rpm_pm_wb2.png Graphic file (type bmp)
-<photo/pitch_rpm_pm_wb2.png>
-File: photo/pitch_rpm_pm_nb2.png Graphic file (type bmp)
-<photo/pitch_rpm_pm_nb2.png>
-File: photo/pitch_rpm_pm_nb4.png Graphic file (type bmp)
-<photo/pitch_rpm_pm_nb4.png>
-[24] [25]
-Overfull \hbox (12.00772pt too wide) in paragraph at lines 106--113
+File: photo/pitch_increase.png Graphic file (type bmp)
+<photo/pitch_increase.png>
+[27
+
+]) (./chapter4.tex [28]
+第4章
+[29
+
+]
+File: photo/air_moment_wb2.png Graphic file (type bmp)
+<photo/air_moment_wb2.png>
+File: photo/air_moment_nb2.png Graphic file (type bmp)
+<photo/air_moment_nb2.png>
+File: photo/air_moment_nb4.png Graphic file (type bmp)
+<photo/air_moment_nb4.png>
+[30] [31]
+Overfull \hbox (12.00772pt too wide) in paragraph at lines 117--124
  [][][][] 
  []
 
@@ -488,15 +428,22 @@ File: photo/NACA0009.png Graphic file (type bmp)
 <photo/NACA0009.png>
 File: photo/OAF117.png Graphic file (type bmp)
 <photo/OAF117.png>
-) (./chapter5.tex [26]
+[32]) (./chapter5.tex [33]
 第5章
-) (./ref.tex [27
+) (./ref.tex [34
 
-] (out/main.bbl)) (./thank.tex)
+] (out/main.bbl
+LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 16.
+[35
 
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-[28
+])) (./thank.tex [36]) [37
 
 ] (out/main.aux)
  ***********
@@ -504,20 +451,14 @@ pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 4305 strings out of 468181
- 72180 string characters out of 5438189
- 481278 words of memory out of 5000000
- 33110 multiletter control sequences out of 15000+600000
- 645780 words of font info for 122 fonts, out of 8000000 for 9000
+ 4162 strings out of 468181
+ 69268 string characters out of 5438189
+ 479922 words of memory out of 5000000
+ 32992 multiletter control sequences out of 15000+600000
+ 642028 words of font info for 107 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 67i,14n,77p,322b,683s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,14n,77p,322b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (29 pages, 48000 bytes).
+Output written on out/main.dvi (38 pages, 93272 bytes).

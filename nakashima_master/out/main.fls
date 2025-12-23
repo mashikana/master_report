@@ -36,10 +36,6 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/ascmac/ascmac.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/ascmac/tascmac.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/ascmac/tascmac.sty
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/ascmac/ascgrp.tfm
-INPUT c:/texlive/2025/texmf-dist/tex/latex/usebib/usebib.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/usebib/usebib.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
@@ -52,8 +48,8 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/aspectratio/ar.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/aspectratio/ar.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
@@ -95,12 +91,9 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
-OUTPUT out/main.toc
-OUTPUT out/main.lof
-OUTPUT out/main.lot
-INPUT ./symbols.tex
-INPUT ./symbols.tex
-INPUT symbols.tex
+INPUT out/main.toc
+INPUT out/main.toc
+INPUT out/main.toc
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
@@ -116,6 +109,18 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+OUTPUT out/main.toc
+INPUT out/main.lof
+INPUT out/main.lof
+INPUT out/main.lof
+OUTPUT out/main.lof
+INPUT out/main.lot
+INPUT out/main.lot
+INPUT out/main.lot
+OUTPUT out/main.lot
+INPUT ./symbols.tex
+INPUT ./symbols.tex
+INPUT symbols.tex
 INPUT ./chapter1.tex
 INPUT ./chapter1.tex
 INPUT chapter1.tex
@@ -123,14 +128,6 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
-INPUT ./photo/drone_agriculture.jpg
-INPUT ./photo/drone_agriculture.jpg
-INPUT ./photo/drone_agriculture.jpg
-INPUT extractbb -B cropbox -O photo/drone_agriculture.jpg
-INPUT ./photo/drone_infrastructure.jpg
-INPUT ./photo/drone_infrastructure.jpg
-INPUT ./photo/drone_infrastructure.jpg
-INPUT extractbb -B cropbox -O photo/drone_infrastructure.jpg
 INPUT ./photo/module.png
 INPUT ./photo/module.png
 INPUT ./photo/module.png
@@ -150,18 +147,6 @@ INPUT ./photo/rotor_fixed_axis.jpg
 INPUT ./photo/rotor_fixed_axis.jpg
 INPUT ./photo/rotor_fixed_axis.jpg
 INPUT extractbb -B cropbox -O photo/rotor_fixed_axis.jpg
-INPUT ./photo/blade_xy_axis.jpg
-INPUT ./photo/blade_xy_axis.jpg
-INPUT ./photo/blade_xy_axis.jpg
-INPUT extractbb -B cropbox -O photo/blade_xy_axis.jpg
-INPUT ./photo/blade_yz_axis.jpg
-INPUT ./photo/blade_yz_axis.jpg
-INPUT ./photo/blade_yz_axis.jpg
-INPUT extractbb -B cropbox -O photo/blade_yz_axis.jpg
-INPUT ./photo/blade_calc_model.jpg
-INPUT ./photo/blade_calc_model.jpg
-INPUT ./photo/blade_calc_model.jpg
-INPUT extractbb -B cropbox -O photo/blade_calc_model.jpg
 INPUT ./chapter3.tex
 INPUT ./chapter3.tex
 INPUT chapter3.tex
@@ -169,53 +154,13 @@ INPUT ./photo/kaisekikoushi.png
 INPUT ./photo/kaisekikoushi.png
 INPUT ./photo/kaisekikoushi.png
 INPUT extractbb -B cropbox -O photo/kaisekikoushi.png
-INPUT ./photo/thrust_209.png
-INPUT ./photo/thrust_209.png
-INPUT ./photo/thrust_209.png
-INPUT extractbb -B cropbox -O photo/thrust_209.png
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT ./photo/thrust_314.png
-INPUT ./photo/thrust_314.png
-INPUT ./photo/thrust_314.png
-INPUT extractbb -B cropbox -O photo/thrust_314.png
-INPUT ./photo/thrust_444.png
-INPUT ./photo/thrust_444.png
-INPUT ./photo/thrust_444.png
-INPUT extractbb -B cropbox -O photo/thrust_444.png
-INPUT ./photo/fom_209.png
-INPUT ./photo/fom_209.png
-INPUT ./photo/fom_209.png
-INPUT extractbb -B cropbox -O photo/fom_209.png
-INPUT ./photo/fom_314.png
-INPUT ./photo/fom_314.png
-INPUT ./photo/fom_314.png
-INPUT extractbb -B cropbox -O photo/fom_314.png
-INPUT ./photo/fom_444.png
-INPUT ./photo/fom_444.png
-INPUT ./photo/fom_444.png
-INPUT extractbb -B cropbox -O photo/fom_444.png
 INPUT ./photo/pitch_rpm_T_wb2.png
 INPUT ./photo/pitch_rpm_T_wb2.png
 INPUT ./photo/pitch_rpm_T_wb2.png
 INPUT extractbb -B cropbox -O photo/pitch_rpm_T_wb2.png
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT ./photo/pitch_rpm_T_nb2.png
 INPUT ./photo/pitch_rpm_T_nb2.png
 INPUT ./photo/pitch_rpm_T_nb2.png
@@ -224,6 +169,18 @@ INPUT ./photo/pitch_rpm_T_nb4.png
 INPUT ./photo/pitch_rpm_T_nb4.png
 INPUT ./photo/pitch_rpm_T_nb4.png
 INPUT extractbb -B cropbox -O photo/pitch_rpm_T_nb4.png
+INPUT ./photo/pitch_rpm_fom_wb2.png
+INPUT ./photo/pitch_rpm_fom_wb2.png
+INPUT ./photo/pitch_rpm_fom_wb2.png
+INPUT extractbb -B cropbox -O photo/pitch_rpm_fom_wb2.png
+INPUT ./photo/pitch_rpm_fom_nb2.png
+INPUT ./photo/pitch_rpm_fom_nb2.png
+INPUT ./photo/pitch_rpm_fom_nb2.png
+INPUT extractbb -B cropbox -O photo/pitch_rpm_fom_nb2.png
+INPUT ./photo/pitch_rpm_fom_nb4.png
+INPUT ./photo/pitch_rpm_fom_nb4.png
+INPUT ./photo/pitch_rpm_fom_nb4.png
+INPUT extractbb -B cropbox -O photo/pitch_rpm_fom_nb4.png
 INPUT ./photo/cw_xy.jpg
 INPUT ./photo/cw_xy.jpg
 INPUT ./photo/cw_xy.jpg
@@ -232,14 +189,6 @@ INPUT ./photo/cw_yz.jpg
 INPUT ./photo/cw_yz.jpg
 INPUT ./photo/cw_yz.jpg
 INPUT extractbb -B cropbox -O photo/cw_yz.jpg
-INPUT ./photo/cw_pitch_xy.jpg
-INPUT ./photo/cw_pitch_xy.jpg
-INPUT ./photo/cw_pitch_xy.jpg
-INPUT extractbb -B cropbox -O photo/cw_pitch_xy.jpg
-INPUT ./photo/cw_pitch_yz.jpg
-INPUT ./photo/cw_pitch_yz.jpg
-INPUT ./photo/cw_pitch_yz.jpg
-INPUT extractbb -B cropbox -O photo/cw_pitch_yz.jpg
 INPUT ./photo/flowchart_cw.png
 INPUT ./photo/flowchart_cw.png
 INPUT ./photo/flowchart_cw.png
@@ -248,33 +197,25 @@ INPUT ./photo/flowchart_power.png
 INPUT ./photo/flowchart_power.png
 INPUT ./photo/flowchart_power.png
 INPUT extractbb -B cropbox -O photo/flowchart_power.png
+INPUT ./photo/pitch_increase.png
+INPUT ./photo/pitch_increase.png
+INPUT ./photo/pitch_increase.png
+INPUT extractbb -B cropbox -O photo/pitch_increase.png
 INPUT ./chapter4.tex
 INPUT ./chapter4.tex
 INPUT chapter4.tex
-INPUT ./photo/pm_209.png
-INPUT ./photo/pm_209.png
-INPUT ./photo/pm_209.png
-INPUT extractbb -B cropbox -O photo/pm_209.png
-INPUT ./photo/pm_314.png
-INPUT ./photo/pm_314.png
-INPUT ./photo/pm_314.png
-INPUT extractbb -B cropbox -O photo/pm_314.png
-INPUT ./photo/pm_444.png
-INPUT ./photo/pm_444.png
-INPUT ./photo/pm_444.png
-INPUT extractbb -B cropbox -O photo/pm_444.png
-INPUT ./photo/pitch_rpm_pm_wb2.png
-INPUT ./photo/pitch_rpm_pm_wb2.png
-INPUT ./photo/pitch_rpm_pm_wb2.png
-INPUT extractbb -B cropbox -O photo/pitch_rpm_pm_wb2.png
-INPUT ./photo/pitch_rpm_pm_nb2.png
-INPUT ./photo/pitch_rpm_pm_nb2.png
-INPUT ./photo/pitch_rpm_pm_nb2.png
-INPUT extractbb -B cropbox -O photo/pitch_rpm_pm_nb2.png
-INPUT ./photo/pitch_rpm_pm_nb4.png
-INPUT ./photo/pitch_rpm_pm_nb4.png
-INPUT ./photo/pitch_rpm_pm_nb4.png
-INPUT extractbb -B cropbox -O photo/pitch_rpm_pm_nb4.png
+INPUT ./photo/air_moment_wb2.png
+INPUT ./photo/air_moment_wb2.png
+INPUT ./photo/air_moment_wb2.png
+INPUT extractbb -B cropbox -O photo/air_moment_wb2.png
+INPUT ./photo/air_moment_nb2.png
+INPUT ./photo/air_moment_nb2.png
+INPUT ./photo/air_moment_nb2.png
+INPUT extractbb -B cropbox -O photo/air_moment_nb2.png
+INPUT ./photo/air_moment_nb4.png
+INPUT ./photo/air_moment_nb4.png
+INPUT ./photo/air_moment_nb4.png
+INPUT extractbb -B cropbox -O photo/air_moment_nb4.png
 INPUT ./photo/NACA0009.png
 INPUT ./photo/NACA0009.png
 INPUT ./photo/NACA0009.png
@@ -292,6 +233,7 @@ INPUT ref.tex
 INPUT out/main.bbl
 INPUT out/main.bbl
 INPUT out/main.bbl
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT ./thank.tex
 INPUT ./thank.tex
 INPUT thank.tex
