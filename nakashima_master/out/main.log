@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  23 DEC 2025 16:52
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  24 DEC 2025 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -234,7 +234,7 @@ File: l3backend-dvips.def 2025-10-09 L3 backend support: dvips
 LaTeX Warning: Unused global option(s):
     [ja].
 
-No file main.aux.
+(out/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -294,41 +294,35 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 23.90964pt on input line 21.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 23.90964pt on input line 21.
-No file main.toc.
+(out/main.toc
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 6.
+[1
+
+])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
-[1
-
-]
-No file main.lof.
+[2] (out/main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
-[2
+[3
 
-]
-No file main.lot.
+] (out/main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
-[3
+[4
 
 
-] (./symbols.tex
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 18.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 18.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 18.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 18.
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1 on input line 44.
-
-) (./chapter1.tex [4
+] (./symbols.tex) (./chapter1.tex [5
 
 
 ]
@@ -337,38 +331,132 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 11.
-[5
+[6
 
-] [6] [7
+] [7] [8
 
-] [8
+] [9
 
-] [9]
+] [10]
 File: photo/module.png Graphic file (type bmp)
 <photo/module.png>
 File: photo/collective_drone.jpg Graphic file (type bmp)
 <photo/collective_drone.jpg>
-[10]
+[11]) [12] (./chapter2.tex [13]
+第2章
+[14
 
-./chapter1.tex:173: LaTeX Error: Unicode character ^^f0^^9d^^91^^80 (U+1D440)
-               not set up for use with LaTeX.
+]
+File: photo/rotor_fixed_axis.jpg Graphic file (type bmp)
+<photo/rotor_fixed_axis.jpg>
+[15] [16
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173 ...座標系における 定常的な ^^f0^^9d^^91^^80
-                                                 ^^f0^^9d^^91^^a5 ^^f0^^9d^^91^
-You may provide a definition with
-\DeclareUnicodeCharacter 
+]) (./chapter3.tex [17
 
- 
+]
+第3章
+[18
+
+]
+File: photo/kaisekikoushi.png Graphic file (type bmp)
+<photo/kaisekikoushi.png>
+[19
+
+]
+File: photo/pitch_rpm_T_wb2.png Graphic file (type bmp)
+<photo/pitch_rpm_T_wb2.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 91.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 91.
+File: photo/pitch_rpm_T_nb2.png Graphic file (type bmp)
+<photo/pitch_rpm_T_nb2.png>
+File: photo/pitch_rpm_T_nb4.png Graphic file (type bmp)
+<photo/pitch_rpm_T_nb4.png>
+[20]
+File: photo/pitch_rpm_fom_wb2.png Graphic file (type bmp)
+<photo/pitch_rpm_fom_wb2.png>
+File: photo/pitch_rpm_fom_nb2.png Graphic file (type bmp)
+<photo/pitch_rpm_fom_nb2.png>
+File: photo/pitch_rpm_fom_nb4.png Graphic file (type bmp)
+<photo/pitch_rpm_fom_nb4.png>
+[21] [22] [23
+
+]
+File: photo/cw_xy.jpg Graphic file (type bmp)
+<photo/cw_xy.jpg>
+File: photo/cw_yz.jpg Graphic file (type bmp)
+<photo/cw_yz.jpg>
+[24
+
+]
+File: photo/flowchart_cw.png Graphic file (type bmp)
+<photo/flowchart_cw.png>
+[25
+
+] [26]
+File: photo/flowchart_power.png Graphic file (type bmp)
+<photo/flowchart_power.png>
+[27
+
+] [28
+
+]
+File: photo/pitch_increase.png Graphic file (type bmp)
+<photo/pitch_increase.png>
+[29
+
+]) (./chapter4.tex [30]
+第4章
+[31
+
+]
+File: photo/air_moment_wb2.png Graphic file (type bmp)
+<photo/air_moment_wb2.png>
+File: photo/air_moment_nb2.png Graphic file (type bmp)
+<photo/air_moment_nb2.png>
+File: photo/air_moment_nb4.png Graphic file (type bmp)
+<photo/air_moment_nb4.png>
+[32] [33]
+Overfull \hbox (12.00772pt too wide) in paragraph at lines 117--124
+ [][][][] 
+ []
+
+File: photo/NACA0009.png Graphic file (type bmp)
+<photo/NACA0009.png>
+File: photo/OAF117.png Graphic file (type bmp)
+<photo/OAF117.png>
+[34]) (./chapter5.tex [35]
+第5章
+) (./ref.tex [36
+
+] (out/main.bbl
+LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 16.
+[37
+
+])) (./thank.tex [38]) [39
+
+] (out/main.aux)
+ ***********
+pLaTeX2e <2023-02-14>+1, based on
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-10-24>
+ ***********
+ ) 
 Here is how much of TeX's memory you used:
- 3896 strings out of 468181
- 63959 string characters out of 5438189
- 479922 words of memory out of 5000000
- 32776 multiletter control sequences out of 15000+600000
- 641102 words of font info for 103 fonts, out of 8000000 for 9000
+ 4162 strings out of 468181
+ 69214 string characters out of 5438189
+ 481922 words of memory out of 5000000
+ 32992 multiletter control sequences out of 15000+600000
+ 643787 words of font info for 113 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 67i,7n,77p,322b,388s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on out/main.dvi (11 pages, 27976 bytes).
+ 67i,14n,77p,322b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on out/main.dvi (40 pages, 111100 bytes).
