@@ -1,12 +1,12 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  26 DEC 2025 16:43
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  26 DEC 2025 17:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/git/nakashima_master/main.tex
-(c:/git/nakashima_master/main.tex
+**c:/git/master_report/nakashima_master/main.tex
+(c:/git/master_report/nakashima_master/main.tex
 pLaTeX2e <2023-02-14>+1, based on
-LaTeX2e <2025-11-01>
+LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-24>
 (c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
 Document Class: jsreport 2025/04/27 jsclasses (okumura, texjporg)
@@ -51,7 +51,7 @@ LaTeX Info: Redefining \LaTeXe on input line 188.
 )
 \heisei=\count283
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup5
 \symboldletters=\mathgroup6
 \symboldsymbols=\mathgroup7
@@ -98,7 +98,7 @@ Package: tascmac 2020/01/15 v2.1 ascmac package (community edition)
 \@bcal=\count284
 \shaderule=\dimen177
 )) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2025/07/09 v2.17z AMS math features
+Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip52
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -159,10 +159,10 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \multlinegap=\skip53
 \multlinetaggap=\skip54
 \mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2950.
-LaTeX Info: Redefining \] on input line 2951.
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LTleft=\skip55
 \LTright=\skip56
 \LTpre=\skip57
@@ -279,6 +279,8 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 17.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 17.
+
+
 [1
 
 ])
@@ -303,15 +305,21 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 6.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 6.
+
+
 [1
 
 ])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
+
+
 [2] (out/main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
+
+
 
 [3
 
@@ -319,10 +327,14 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
+
+
 [4
 
 
-] (./symbols.tex) (./chapter1.tex [5
+] (./symbols.tex) (./chapter1.tex
+
+[5
 
 
 ]
@@ -331,32 +343,64 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 11.
+
+
 [6
 
-] [7] [8
+]
 
-] [9
+[7]
 
-] [10]
+[8
+
+]
+
+[9
+
+]
+
+[10]
 File: photo/module.png Graphic file (type bmp)
 <photo/module.png>
 File: photo/collective_drone.jpg Graphic file (type bmp)
 <photo/collective_drone.jpg>
-[11]) [12] (./chapter2.tex [13]
+
+
+[11])
+
+[12] (./chapter2.tex
+
+[13]
 第2章
+
+
 [14
 
-] [15] [16] [17
+]
 
-] [18]) (./chapter3.tex [19
+[15]
+
+[16]
+
+[17
+
+]
+
+[18]) (./chapter3.tex
+
+[19
 
 ]
 第3章
+
+
 [20
 
 ]
 File: photo/kaisekikoushi.png Graphic file (type bmp)
 <photo/kaisekikoushi.png>
+
+
 [21
 
 ]
@@ -370,6 +414,8 @@ File: photo/pitch_rpm_T_nb2.png Graphic file (type bmp)
 <photo/pitch_rpm_T_nb2.png>
 File: photo/pitch_rpm_T_nb4.png Graphic file (type bmp)
 <photo/pitch_rpm_T_nb4.png>
+
+
 [22]
 File: photo/pitch_rpm_fom_wb2.png Graphic file (type bmp)
 <photo/pitch_rpm_fom_wb2.png>
@@ -377,34 +423,56 @@ File: photo/pitch_rpm_fom_nb2.png Graphic file (type bmp)
 <photo/pitch_rpm_fom_nb2.png>
 File: photo/pitch_rpm_fom_nb4.png Graphic file (type bmp)
 <photo/pitch_rpm_fom_nb4.png>
-[23] [24] [25
+
+
+[23]
+
+[24]
+
+[25
 
 ]
 File: photo/cw_xy.jpg Graphic file (type bmp)
 <photo/cw_xy.jpg>
 File: photo/cw_yz.jpg Graphic file (type bmp)
 <photo/cw_yz.jpg>
+
+
 [26
 
 ]
 File: photo/flowchart_cw.png Graphic file (type bmp)
 <photo/flowchart_cw.png>
+
+
 [27
 
-] [28]
+]
+
+[28]
 File: photo/flowchart_power.png Graphic file (type bmp)
 <photo/flowchart_power.png>
+
+
 [29
 
-] [30
+]
+
+[30
 
 ]
 File: photo/pitch_increase.png Graphic file (type bmp)
 <photo/pitch_increase.png>
+
+
 [31
 
-]) (./chapter4.tex [32]
+]) (./chapter4.tex
+
+[32]
 第4章
+
+
 [33
 
 ]
@@ -414,7 +482,11 @@ File: photo/air_moment_nb2.png Graphic file (type bmp)
 <photo/air_moment_nb2.png>
 File: photo/air_moment_nb4.png Graphic file (type bmp)
 <photo/air_moment_nb4.png>
-[34] [35]
+
+
+[34]
+
+[35]
 Overfull \hbox (12.00772pt too wide) in paragraph at lines 117--124
  [][][][] 
  []
@@ -423,9 +495,15 @@ File: photo/NACA0009.png Graphic file (type bmp)
 <photo/NACA0009.png>
 File: photo/OAF117.png Graphic file (type bmp)
 <photo/OAF117.png>
-[36]) (./chapter5.tex [37]
+
+
+[36]) (./chapter5.tex
+
+[37]
 第5章
-) (./ref.tex [38
+) (./ref.tex
+
+[38
 
 ] (out/main.bbl
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
@@ -436,24 +514,30 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 16.
+
+
 [39
 
-])) (./thank.tex [40]) [41
+])) (./thank.tex
+
+[40])
+
+[41
 
 ] (out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
-LaTeX2e <2025-11-01>
+LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4153 strings out of 468181
- 68993 string characters out of 5438189
- 493922 words of memory out of 5000000
- 32984 multiletter control sequences out of 15000+600000
+ 4146 strings out of 469856
+ 68928 string characters out of 5479602
+ 486148 words of memory out of 5000000
+ 32643 multiletter control sequences out of 15000+600000
  643787 words of font info for 113 fonts, out of 8000000 for 9000
- 934 hyphenation exceptions out of 8191
- 67i,14n,77p,322b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 41 hyphenation exceptions out of 8191
+ 67i,14n,77p,336b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on out/main.dvi (42 pages, 118728 bytes).
