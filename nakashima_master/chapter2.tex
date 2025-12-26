@@ -24,40 +24,87 @@
     LEVEL 1 （Momentum Theory）→ LEVEL 2 （Prescribed Wake Model）→ LEVEL 3 （Free Wake Model）の順番に段階を上げて収束計算を図っている．
     初期条件としては Drees Modelを定義しており 式 （2-1）～式 （2-4）に示されるように定義される．
 
+    \begin{equation}
+        \zeta = \zeta_{0} + \zeta_{1c}\frac{r}{R}\cos\Psi +  \zeta_{1s}\frac{r}{R}\sin\Psi
+    \end{equation}
+    
+    ここで，
 
     \begin{equation}
-        T = \frac{mg}{N_\mathrm{rotor}} 
+        \zeta_{0} = \frac{c_{T}}{2\sqrt{\lambda^2_{0}+ \mu^2}} +  \mu\tan(-\Theta)
     \end{equation}
-    また，ロータに関してはFig.\ref{fig:rotor}のようにロータに固定した直交座標系を用いて考える．ブレードのスパン方向に$x$軸，
-    翼弦長の方向に$y$軸，推力を発生する方向に$z$軸をとる．
+    
+    \begin{equation}
+        \zeta_{1c} = \frac{c_{T}}{2\sqrt{\lambda^2_{0}+ \mu^2}}\frac{4}{3}[(1-8\mu^2)\sqrt{1+(\frac{\lambda}{\mu})^2} - \frac{\lambda}{\mu}]
+    \end{equation}
 
+    \begin{equation}
+        \zeta_{1s} = \frac{c_{T}}{2\sqrt{\lambda^2_{0}+ \mu^2}}(-2\mu)
+    \end{equation}
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/rotor_fixed_axis.jpg}
-        \caption{Overview of the rotor analysis model}
-        \label{fig:rotor}
-    \end{figure}
+    インフローの収束が得られたのちに，胴体に作用する各コンポーネント（メインロータ，テールロータ，胴体，水平/垂直尾翼）からの空力荷重および
+    重力が重心位置でバランスした状態での機体座標系における荷重およびモーメント，計6自由度の数式（後述する式 （5-7）参照）における左辺項を
+    $\bar{F}=\left \lfloor X, \quad Y, \quad Z, \quad L, \quad M, \quad N \right \rfloor^T$と 表記してトリム変数である
+    $\eta=\left\lfloor\Theta, \quad \Psi, \quad \theta_0, \quad \theta_{1 c}, \quad \theta_{1 s}, \quad \theta_{t r}\right\rfloor^T$について
+    初期値を$\eta_{0}$としたときに$\bar{F}$を0とするためにTaylorの1次展開式を用いて記載すると
 
-    \section{ねじり下げモーメント発生の原理}
+    \begin{equation}
+        \bar{\bar{F}}\left(\eta_0+\Delta \eta\right)=\bar{F}\left(\eta_0\right)+\left.\Delta \eta \frac{\partial \bar{F}(\eta)}{\partial \eta}\right|_{\eta=\eta_0}=0
+    \end{equation}
+
+    となり，トリム収束解を得るための次のステップとして$\Delta\eta$は\eqref{deltaeta}式の様に表現できる．
+ 
+    \begin{equation}
+        \Delta \eta=\left[\left.\frac{\partial \bar{F}(\eta)}{\partial \eta}\right|_{\eta=\eta_0}\right]^{-1} \bar{F}\left(\eta_0\right) \label{deltaeta}
+    \end{equation}
+ 
+
+    ここで，$\left.\frac{\partial \bar{F}(\eta)}{\partial \eta}\right|_{\eta=\eta_0}$は$\bar{F}(\eta)$の
+    $\eta=\eta_0$におけるヤコビ行列であり\eqref{jacobian}に示す行列となる
+
+   \begin{equation}
+            \left.\frac{\partial \bar{F}(\eta)}{\partial \eta}\right|_{\eta=\eta_0}=\left[\begin{array}{cccccc}
+            \frac{\partial X}{\partial \alpha_s} & \frac{\partial X}{\partial \varphi_s} & \frac{\partial X}{\partial \theta_0} & \frac{\partial X}{\partial \theta_{1 c}} & \frac{\partial X}{\partial \theta_{1 s}} & \frac{\partial X}{\partial \theta_{t r}} \\
+            \frac{\partial Y}{\partial \alpha_s} & \frac{\partial Y}{\partial \varphi_s} & \frac{\partial Y}{\partial \theta_0} & \frac{\partial Y}{\partial \theta_{1 c}} & \frac{\partial Y}{\partial \theta_{1 s}} & \frac{\partial Y}{\partial \theta_{t r}} \\
+            \frac{\partial Z}{\partial \alpha_s} & \frac{\partial Z}{\partial \varphi_s} & \frac{\partial Z}{\partial \theta_0} & \frac{\partial Z}{\partial \theta_{1 c}} & \frac{\partial Z}{\partial \theta_{1 s}} & \frac{\partial Z}{\partial \theta_{t r}} \\
+            \frac{\partial L}{\partial \alpha_s} & \frac{\partial L}{\partial \varphi_s} & \frac{\partial L}{\partial \theta_0} & \frac{\partial L}{\partial \theta_{1 c}} & \frac{\partial L}{\partial \theta_{1 s}} & \frac{\partial L}{\partial \theta_{t r}} \\
+            \frac{\partial M}{\partial \alpha_s} & \frac{\partial M}{\partial \varphi_s} & \frac{\partial M}{\partial \theta_0} & \frac{\partial M}{\partial \theta_{1 c}} & \frac{\partial M}{\partial \theta_{1 s}} & \frac{\partial M}{\partial \theta_{t r}} \\
+            \frac{\partial N}{\partial \alpha_s} & \frac{\partial N}{\partial \varphi_s} & \frac{\partial N}{\partial \theta_0} & \frac{\partial N}{\partial \theta_{1 c}} & \frac{\partial N}{\partial \theta_{1 s}} & \frac{\partial N}{\partial \theta_{t r}}
+            \end{array}\right]_{\eta=\eta_0}    \label{jacobian}
+    \end{equation}
+
+    \eqref{deltaeta}式で得られる$\Delta\eta$を用いて初期値$\eta_{0}$に$K\Delta\eta(0 < K < 1)$を加算して図2-1に示されるフロー全体が収束するまで，
+    つまりトリム変数$\eta$が収束するまで計算を実施することでトリム計算が完了することになる．
+
+    \section{トリム解析結果}
     \par
-    Fig.に$xy$平面から見たブレードを示す．$dF$は，ブレードの微小要素にはたらく遠心力であり，Eq.\eqref{centri1}で表される．
-    また，$dF$が$x$軸となす角度を$\psi$とする．この時，$dF\sin{\psi}$はEq.\eqref{centri2}で表される．
-    \begin{gather}
-        dF = \rho_{b}\sqrt{x^2+y^2}\omega^2dV \label{centri1}\\
-        dF\sin{\psi} = \rho_{b}y\omega^2dV  \label{centri2}  
-    \end{gather}
-    
-    Fig.に$yz$平面から見たブレードを示す．ブレードの微小要素にはたらく遠心力がつくるねじり下げモーメントは
-    Eq.\eqref{pitching1}で表される．ねじり下げモーメントは頭下げ方向を正とする．ブレード全体にはたらくねじり下げモーメントは
-    Eq.\eqref{pitching2}で求められる．
-    
-    \begin{gather}
-        dM = dF\sin{\psi} \cdot z = \rho_{b}yz\omega^2dV \label{pitching1}\\
-        M  = \int dM =  \rho_{b}\omega^2 \int yz dV  \label{pitching2}  
-    \end{gather} 
+
+    本論文では解析の対象となる機体はラジコンヘリコプタとした．（表2-1）
+
+
+    \par
+    数値解析はラジコンヘリコプタが30.8 m/s（120 kt）で高速巡航飛行している状態でのトリム解析を実施した．
+    特に振動を正確に計算する目的からメインロータブレードは弾性体としてモデル化され，20分割されている．
+    各々の要素は断面特性を正確に計算されたモデルである．
+    ここで 胴体に関しては剛体としてモデル化している．
+    これは詳しくは後述するが，メインロータシャフト，及びメインギアボックスが取りつく構造部位が有意に変形するような胴体の振動モードは
+    4/rev（25.0 Hz）からは遠く離れておりメインロータと胴体の連成を考慮に入れなくても問題は生じないためである．
+    CAMRAD $\mathrm{II}$によるトリム解析は図 2-2に示すようにベースラインCGから前方に 0.305 m，後方に1.68 mの範囲で，
+    また左/右舷 0.912 mの範囲でそれぞれ 0.152 mの刻み幅で設定された4箇所で実施した．
+    機体の慣性モーメントはどのCGの位置でもベースラインの値に統一して一定の値を使用した．
+    この仮定の下においても胴体の4/rev振動の評価には影響がないから問題はない．
+    この詳細についても後述する．
 
     \clearpage 
+
+    \par
+    その他の条件については例えばメインロータブレードの弾性変形応答に関わる構造減衰率や自由後流モデルでインフローに影響を与える
+    Wakeの周期数などあるが，ここではベースラインで使用している値と同一のものを全ての評価点で使用した．
+    また，特に水平尾翼の取付角はベースラインのラジコンヘリコプタと同じく 0 degとした．
+    図2-3にトリム変数の結果（ピッチ，ロール，フラッピング角）を示す．
+    また，図 2-4には 図 2-2に示される胴体及び水平尾翼の空力作用点に作用する機体座標系における$F_x$及び$F_z$を示す．
+    それぞれのグラフの横軸は図 2-1に示される$y$軸を示し，また縦軸は$x$軸を表しており，重心位置が変化した際のそれぞれの値のコンター図となっている．
+    それぞれの結果から次に示す所見が得られる．
 
 
     \section{ロータブレード}

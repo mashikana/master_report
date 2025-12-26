@@ -145,10 +145,6 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT ./photo/rotor_fixed_axis.jpg
-INPUT ./photo/rotor_fixed_axis.jpg
-INPUT ./photo/rotor_fixed_axis.jpg
-INPUT extractbb -B cropbox -O photo/rotor_fixed_axis.jpg
 INPUT ./chapter3.tex
 INPUT ./chapter3.tex
 INPUT chapter3.tex

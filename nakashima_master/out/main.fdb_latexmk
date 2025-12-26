@@ -1,18 +1,18 @@
 # Fdb version 4
-["bibtex out/main"] 1766553238.75754 "out/main.aux" "out/main.bbl" "out/main" 1766553253.67647 0
+["bibtex out/main"] 1766734979.81616 "out/main.aux" "out/main.bbl" "out/main" 1766734994.742 0
   "./sample.bib" 1766469742 5597 01d4a37b757abe7d768f0bf4b2998d7e ""
   "junsrt.bst" 0 -1 0 ""
-  "out/main.aux" 1766553250 9371 bc3752c41fb74e79142863095c5be72b "latex"
+  "out/main.aux" 1766734991 9059 5999e80e8ae883b7f0529ed463502789 "latex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["dvipdf"] 1766553251.34878 "out/main.dvi" "out/main.pdf" "out/main" 1766553253.68145 0
-  "out/main.dvi" 1766553250 111100 383c9bfd70c07d9afe54715ed48413e4 "latex"
+["dvipdf"] 1766734992.41768 "out/main.dvi" "out/main.pdf" "out/main" 1766734994.74832 0
+  "out/main.dvi" 1766734991 118728 052c8fc475ee4b7ae0031f89b4afad53 "latex"
   (generated)
   "out/main.pdf"
   (rewritten before read)
-["latex"] 1766553239.35199 "c:/git/nakashima_master/main.tex" "out/main.dvi" "main" 1766553253.67681 0
+["latex"] 1766734980.42252 "c:/git/nakashima_master/main.tex" "out/main.dvi" "main" 1766734994.74238 0
   "c:/git/nakashima_master/main.tex" 1766552666 884 6f0e2d4f9458c5b4a295c0299c4df89e ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1763031716 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1763034126 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -70,16 +70,16 @@
   "c:/texlive/2025/texmf-var/web2c/euptex/platex.fmt" 1763036239 3640702 391cb0f362548a5b11a872f60dfd22db ""
   "c:/texlive/2025/texmf.cnf" 1763035847 713 e69b156964470283e0530f5060668171 ""
   "chapter1.tex" 1766552666 25138 29b29f3cbdfbe0b74ba280ad796bdf53 ""
-  "chapter2.tex" 1766553225 9393 9a3cf1205c5eae91caacdbd6e99e77f4 ""
+  "chapter2.tex" 1766734966 14508 d458dadcd56dd7900426b8ac3bedda4b ""
   "chapter3.tex" 1766469651 23240 013b62eb94d93f63d7c5779d531eb4f8 ""
   "chapter4.tex" 1766469742 13465 c0823533381772cac52776c9882fe037 ""
   "chapter5.tex" 1707223003 2081 d906ae836b93d11c1faec83f85cab6f5 ""
   "main.tex" 1766552666 884 6f0e2d4f9458c5b4a295c0299c4df89e ""
-  "out/main.aux" 1766553250 9371 bc3752c41fb74e79142863095c5be72b "latex"
-  "out/main.bbl" 1766553239 3328 4185978b6551d4066972841418857b61 "bibtex out/main"
-  "out/main.lof" 1766553250 1346 4c1ac10d60cafe1fbf6d3acd305d6db3 "latex"
-  "out/main.lot" 1766553250 936 ff3db99bb569a444d2a9df1bd0dfa27c "latex"
-  "out/main.toc" 1766553250 1776 1e71b5562762d03a7b91f8dc28e4874c "latex"
+  "out/main.aux" 1766734991 9059 5999e80e8ae883b7f0529ed463502789 "latex"
+  "out/main.bbl" 1766734980 3328 4185978b6551d4066972841418857b61 "bibtex out/main"
+  "out/main.lof" 1766734991 1245 4acc399e2fa10ec544dde5d5de25e35c "latex"
+  "out/main.lot" 1766734991 936 6686d44c882620ed7f08e551649fd21a "latex"
+  "out/main.toc" 1766734991 1752 768e56f390d34f9d745cb7c01075445b "latex"
   "photo/NACA0009.png" 1707219289 5929 fe73c5826df1b823450ea914b920251a ""
   "photo/OAF117.png" 1707219315 7020 1df6daa54381df3b133c15379ccd196a ""
   "photo/air_moment_nb2.png" 1706436214 18208 7ce06808ffe16cf3d496ddebdf1bc3f5 ""
@@ -99,7 +99,6 @@
   "photo/pitch_rpm_fom_nb2.png" 1705646555 121931 fc25f4f24355d707818d842a72f2bca1 ""
   "photo/pitch_rpm_fom_nb4.png" 1705646571 110852 88b4c8e63683b45aba88be9408488dc7 ""
   "photo/pitch_rpm_fom_wb2.png" 1705646584 119542 49858f0e60c1c80d819e1fcc6359cfd3 ""
-  "photo/rotor_fixed_axis.jpg" 1702534382 52426 83c088d9ae279dc51228686f9301536e ""
   "ref.tex" 1706422097 208 ebddf8a885f5bb73430be082b840bc72 ""
   "symbols.tex" 1707194298 3195 72f2b2a94e0e359a85f212864371cc2f ""
   "thank.tex" 1766381236 1141 1cb77fa5ec75290f70beb68b7bc1332b ""
