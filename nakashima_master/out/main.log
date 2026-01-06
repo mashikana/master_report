@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  26 DEC 2025 17:43
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  6 JAN 2026 19:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -350,58 +350,62 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 ]
 
 [7]
+File: photo/MRHFM.png Graphic file (type bmp)
+<photo/MRHFM.png>
+
 
 [8
 
 ]
 
-[9
-
-]
+[9]
 
 [10]
+
+[11]
+
+[12
+
+]
 File: photo/module.png Graphic file (type bmp)
 <photo/module.png>
+
+
+[13]
 File: photo/collective_drone.jpg Graphic file (type bmp)
 <photo/collective_drone.jpg>
 
 
-[11])
+[14])
 
-[12] (./chapter2.tex
-
-[13]
-第2章
-
-
-[14
-
-]
-
-[15]
+[15] (./chapter2.tex
 
 [16]
+第2章
+
 
 [17
 
 ]
 
-[18]) (./chapter3.tex
+[18]
 
-[19
+[19]) (./chapter3.tex
+
+[20
 
 ]
 第3章
 
 
-[20
+[21
 
 ]
 File: photo/kaisekikoushi.png Graphic file (type bmp)
 <photo/kaisekikoushi.png>
 
 
-[21
+[22
 
 ]
 File: photo/pitch_rpm_T_wb2.png Graphic file (type bmp)
@@ -416,7 +420,7 @@ File: photo/pitch_rpm_T_nb4.png Graphic file (type bmp)
 <photo/pitch_rpm_T_nb4.png>
 
 
-[22]
+[23]
 File: photo/pitch_rpm_fom_wb2.png Graphic file (type bmp)
 <photo/pitch_rpm_fom_wb2.png>
 File: photo/pitch_rpm_fom_nb2.png Graphic file (type bmp)
@@ -425,11 +429,11 @@ File: photo/pitch_rpm_fom_nb4.png Graphic file (type bmp)
 <photo/pitch_rpm_fom_nb4.png>
 
 
-[23]
-
 [24]
 
-[25
+[25]
+
+[26
 
 ]
 File: photo/cw_xy.jpg Graphic file (type bmp)
@@ -438,42 +442,42 @@ File: photo/cw_yz.jpg Graphic file (type bmp)
 <photo/cw_yz.jpg>
 
 
-[26
+[27
 
 ]
 File: photo/flowchart_cw.png Graphic file (type bmp)
 <photo/flowchart_cw.png>
 
 
-[27
+[28
 
 ]
 
-[28]
+[29]
 File: photo/flowchart_power.png Graphic file (type bmp)
 <photo/flowchart_power.png>
 
 
-[29
+[30
 
 ]
 
-[30
+[31
 
 ]
 File: photo/pitch_increase.png Graphic file (type bmp)
 <photo/pitch_increase.png>
 
 
-[31
+[32
 
 ]) (./chapter4.tex
 
-[32]
+[33]
 第4章
 
 
-[33
+[34
 
 ]
 File: photo/air_moment_wb2.png Graphic file (type bmp)
@@ -484,9 +488,9 @@ File: photo/air_moment_nb4.png Graphic file (type bmp)
 <photo/air_moment_nb4.png>
 
 
-[34]
-
 [35]
+
+[36]
 Overfull \hbox (12.00772pt too wide) in paragraph at lines 117--124
  [][][][] 
  []
@@ -497,13 +501,13 @@ File: photo/OAF117.png Graphic file (type bmp)
 <photo/OAF117.png>
 
 
-[36]) (./chapter5.tex
+[37]) (./chapter5.tex
 
-[37]
+[38]
 第5章
 ) (./ref.tex
 
-[38
+[39
 
 ] (out/main.bbl
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
@@ -516,13 +520,13 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 16.
 
 
-[39
+[40
 
 ])) (./thank.tex
 
-[40])
+[41])
 
-[41
+[42
 
 ] (out/main.aux)
  ***********
@@ -532,12 +536,12 @@ L3 programming layer <2025-10-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4146 strings out of 469856
- 68928 string characters out of 5479602
- 486148 words of memory out of 5000000
- 32643 multiletter control sequences out of 15000+600000
+ 4157 strings out of 469856
+ 69153 string characters out of 5479602
+ 494148 words of memory out of 5000000
+ 32653 multiletter control sequences out of 15000+600000
  643787 words of font info for 113 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
- 67i,14n,77p,336b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,13n,77p,336b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (42 pages, 118728 bytes).
+Output written on out/main.dvi (43 pages, 132860 bytes).

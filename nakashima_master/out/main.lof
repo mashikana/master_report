@@ -1,16 +1,17 @@
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Module for controlling collective pitch}}{11}{}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Variable pitch multirotor aircraft AXM-1000}}{12}{}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 回転系におけるメインロータブレードルート部荷重 およびモーメント}}{8}{}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Module for controlling collective pitch}}{14}{}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Variable pitch multirotor aircraft AXM-1000}}{14}{}%
 \addvspace {10\jsc@mpt }
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Analysis grid}}{21}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Relationship between pitch angle, angular velocity and thrust}}{23}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Relationship between pitch angle, angular velocity and Figure of Merit}}{24}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Counterweight at 0 degree pitch angle}}{26}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Flowchart of calculation of counterweight}}{27}{}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Flowchart of calculation of power}}{29}{}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Pitch angle increase}}{31}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Analysis grid}}{22}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Relationship between pitch angle, angular velocity and thrust}}{24}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Relationship between pitch angle, angular velocity and Figure of Merit}}{25}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Counterweight at 0 degree pitch angle}}{27}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Flowchart of calculation of counterweight}}{28}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Flowchart of calculation of power}}{30}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Pitch angle increase}}{32}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Twisting down moment by aerodynamic force}}{35}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Airfoil}}{37}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Twisting down moment by aerodynamic force}}{36}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Airfoil}}{38}{}%
 \addvspace {10\jsc@mpt }

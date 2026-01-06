@@ -51,36 +51,182 @@
     それ以外の高調波成分は機体座標系に伝達する際に各々キャンセルされ，結果として極めて小さな値となり，問題とはならない．
     ここで N/rev振動 は メインロータハブ中央位置における $x_{\mathrm{hub}}$，$y_{\mathrm{hub}}$，$z_{\mathrm{hub}}$座標系で定義されるN/rev成分の
     $F_{x\mathrm{hub}}$，$F_{y\mathrm{hub}}$，$F_{z\mathrm{hub}}$，$M_{x\mathrm{hub}}$，$M_{y\mathrm{hub}}$，$M_{z\mathrm{hub}}$から生ずるものであり
-    これらのN/rev成分は，その荷重あるいはモーメントがインプレーンかアウトオブプレーンかによってメインロータ回転系における振動成分が異なる.（表 1-1～表 1-6）
+    これらのN/rev成分は，その荷重あるいはモーメントがインプレーンかアウトオブプレーンかによってメインロータ回転系における振動成分が異なる.
+    （Table.\ref{table:Sz_to_Fzhub}～Table.\ref{table:NL_to_Mzhub}）
     回転翼機の振動は他にもシングルロータにおけるテールロータからの振動やエンジンや駆動系統からの振動，さらには操縦系統からのトランジェントな入力，
     ガスト応答などがあるもののメインロータ由来のN/rev振動と比較して十分に小さいものであるため本論文では議論の対象としない．
 
     \clearpage 
 
     \par
-    表（1-1）～表（1-6）に示すメインロータハブ中央位置における荷重およびモーメントは回転するブレードが空力荷重を受けて
-    結果的に固定側である胴体側に伝わる荷重をまとめており，回転系でのブレードルート部における荷重の説明を（図1-3）に示す．
-
-    \clearpage
-
-    \par
-    ここで（図1-3）に示すように，$N$本ブレードのヘリコプタにおいて，$m$番目（アジマス角 $\Psi_m$に位置する）のブレードの
+    Table.\ref{table:Sz_to_Fzhub}～Table.\ref{table:NL_to_Mzhub}に示すメインロータハブ中央位置における荷重およびモーメントは回転するブレードが空力荷重を受けて
+    結果的に固定側である胴体側に伝わる荷重をまとめており，回転系でのブレードルート部における荷重の説明をFig.\ref{fig:MRHFM}に示す．
+    
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/MRHFM.png}
+      \caption{回転系におけるメインロータブレードルート部荷重 およびモーメント}
+      \label{fig:MRHFM}
+    \end{figure}
+    
+    
+    ここでFig.\ref{fig:MRHFM}に示すように，$N$本ブレードのヘリコプタにおいて，$m$番目（アジマス角 $\Psi_m$に位置する）のブレードの
     ルート部における荷重は一般に定常成分と1/rev成分およびその高調波成分より構成される．
-    例えば，$S_z$については，周波数ごとにその成分を記載することにより，（表 1-1）の左列の総和となる
-    （6/rev以上は省略する．また （表1-1）は$F_{z\mathrm{hub}}$について示しており，メインロータ回転面内の荷重である$F_{x\mathrm{hub}}$，$F_{y\mathrm{hub}}$については
-    （表1-2）及び（表1-3）に，また，$M_{x\mathrm{hub}}$，$M_{y\mathrm{hub}}$および，$M_{z\mathrm{hub}}$については（表 1-4～表 1-6）に示す．
-    （表1-1）～（表1-6）は 左列に周波数ごとにまとめられている．
+    例えば，$S_z$については，周波数ごとにその成分を記載することにより，Table.\ref{table:Sz_to_Fzhub}の左列の総和となる
+    （6/rev以上は省略する．）またTable.\ref{table:Sz_to_Fzhub}は$F_{z\mathrm{hub}}$について示しており，メインロータ回転面内の荷重である$F_{x\mathrm{hub}}$，$F_{y\mathrm{hub}}$については
+    Table.\ref{table:SxSr_to_Fxhub}及びTable.\ref{table:SxSr_to_Fyhub}に，また，$M_{x\mathrm{hub}}$，$M_{y\mathrm{hub}}$および，$M_{z\mathrm{hub}}$については
+    （Table.\ref{table:NF_to_Mxhub}～Table.\ref{table:NL_to_Mzhub}）に示す．
+    Table.\ref{table:Sz_to_Fzhub}～Table.\ref{table:NL_to_Mzhub}は 左列に周波数ごとにまとめられている．
     回転しているブレードルート荷重が回転をしていないMRH座標系にどのように伝達するかをまとめている．
-    これらは全てブレード枚数 N=4の結果であり，胴体系伝達後の荷重およびモーメントは（表1-1），（表1-6）の結果から分かるようにアウトオブプレーンの
-    荷重$F_{z\mathrm{hub}}$および モーメント$M_{z\mathrm{hub}}$は 定常成分および4/rev成分が周波数の変調を起こすことなく，回転系から胴体系に伝わる．
-    また，4/rev以外の高調波成分は0となる一方で，インプレーンの荷重およびモーメントは（表 1-2～表 1-5）から分かるように，
+    これらは全てブレード枚数 N=4の結果であり，胴体系伝達後の荷重およびモーメントはTable.\ref{table:Sz_to_Fzhub}，Table.\ref{table:NL_to_Mzhub}の結果から分かるように
+    アウトオブプレーンの荷重$F_{z\mathrm{hub}}$および モーメント$M_{z\mathrm{hub}}$は 定常成分および4/rev成分が周波数の変調を起こすことなく，回転系から胴体系に伝わる．
+    また，4/rev以外の高調波成分は0となる一方で，インプレーンの荷重およびモーメントは（Table.\ref{table:SxSr_to_Fyhub}～Table.\ref{table:NF_to_Myhub}）から分かるように，
     回転系の3/rev，5/revの成分が変調して，胴体系に4/revとして伝達する．
     また，1/rev成分が定常成分として伝達し，それ以外の高調波成分は0となる．（なお，伝達後のアジマス角$\psi$は$m=1$のアジマス角である）
-    それぞれの荷重モーメント成分の周波数の変調については文献10に示されている通りであるが
-    特に変調後にキャンセルされて0とならないケースについては補遺Aに示す
+    それぞれの荷重モーメント成分の周波数の変調については（文献10）に示されている通りであるが
+    特に変調後にキャンセルされて0とならないケースについては（補遺A）に示す
+
+    \begin{table}[H]
+        \centering
+        \caption{$S_z$各周波数成分の胴体系伝達後の$F_{z\mathrm{hub}}$}
+        \label{table:Sz_to_Fzhub}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|c|c|c|} \hline
+            周波数 &  $S_z$荷重成分 &   MRH荷重$F_{z\mathrm{hub}}$ N=4 \\ \hline
+            定常 &  $S_{z0}$ & $4S_{z0}$ \\ \hline
+            \raisebox{-1.2ex}{1/rev} & $S_{z1c}\cos\Psi_m$ & $0$ \\   \cline{2-3}
+                                   & $S_{z1s}\sin\Psi_m$ & $0$ \\ \hline
+            \raisebox{-1.2ex}{2/rev} & $S_{z2c}\cos 2\Psi_m$  & $0$ \\   \cline{2-3}
+                                   & $S_{z2s}\sin 2\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{3/rev} & $S_{z3c}\cos 3\Psi_m$  & $0$ \\   \cline{2-3}
+                                   & $S_{z3s}\sin 3\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{4/rev} & $S_{z4c}\cos 4\Psi_m$  & $4S_{z4c}\cos 4\psi$ \\   \cline{2-3}
+                                   & $S_{z4s}\sin 4\Psi_m$  & $4S_{z4s}\sin 4\Psi$ \\ \hline
+            \raisebox{-1.2ex}{5/rev} & $S_{z5c}\cos 5\Psi_m$  & $0$ \\    \cline{2-3}
+                                   & $S_{z5s}\sin 5\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{6/rev} & $S_{z6c}\cos 6\Psi_m$  & $0$ \\    \cline{2-3}
+                                   & $S_{z6s}\sin 6\Psi_m$  & $0$ \\ \hline
+        \end{tabular}
+    \end{table}
 
 
+    \begin{table}[H]
+        \centering
+        \caption{$S_x$,$S_r$各周波数成分の胴体系伝達後の$F_{x\mathrm{hub}}$}
+        \label{table:SxSr_to_Fxhub}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|c|c|c|c|} \hline
+            周波数 &  $S_x$荷重成分 & $S_r$荷重成分 &  MRH荷重$F_{x\mathrm{hub}}$ N=4 \\ \hline
+            定常 &  $S_{x0}$ &  $S_{r0}$ & $0$ \\ \hline
+            \raisebox{-1.2ex}{1/rev} & $S_{x1c}\cos\Psi_m$ & $S_{r1c}\cos\Psi_m$ & $2S_{r1c}$ \\   \cline{2-4}
+                                   & $S_{x1s}\sin\Psi_m$ & $S_{r1s}\sin\Psi_m$ & $2S_{r1s}$ \\ \hline
+            \raisebox{-1.2ex}{2/rev} & $S_{x2c}\cos 2\Psi_m$  & $S_{r2c}\cos 2\Psi_m$  & $0$ \\   \cline{2-4}
+                                   & $S_{x2s}\sin 2\Psi_m$  & $S_{r2s}\sin 2\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{3/rev} & $S_{x3c}\cos 3\Psi_m$  & $S_{r3c}\cos 3\Psi_m$  & $2S_{x3c}\sin 4\Psi + 2S_{r3c}\cos 4\Psi$ \\   \cline{2-4}
+                                   & $S_{x3s}\sin 3\Psi_m$  & $S_{r3s}\sin 3\Psi_m$  & $-2S_{x3s}\cos 4\Psi + 2S_{r3s}\sin 4\Psi$ \\ \hline
+            \raisebox{-1.2ex}{4/rev} & $S_{x4c}\cos 4\Psi_m$  & $S_{r4c}\cos 4\Psi_m$  & $0$ \\   \cline{2-4}
+                                   & $S_{x4s}\sin 4\Psi_m$  & $S_{r4s}\sin 4\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{5/rev} & $S_{x5c}\cos 5\Psi_m$  & $S_{r5c}\cos 5\Psi_m$  & $-2S_{x5c}\sin 4\Psi + 2S_{r5c}\cos 4\Psi$ \\    \cline{2-4}
+                                   & $S_{x5s}\sin 5\Psi_m$  & $S_{r5s}\sin 5\Psi_m$  & $2S_{x5s}\cos 4\Psi + 2S_{r5s}\sin 4\Psi$ \\ \hline
+            \raisebox{-1.2ex}{6/rev} & $S_{x6c}\cos 6\Psi_m$  & $S_{r6c}\cos 6\Psi_m$  & $0$ \\    \cline{2-4}
+                                   & $S_{x6s}\sin 6\Psi_m$  & $S_{r6s}\sin 6\Psi_m$  & $0$ \\ \hline
+        \end{tabular}
+    \end{table}
 
+    \begin{table}[H]
+        \centering
+        \caption{$S_x$,$S_r$各周波数成分の胴体系伝達後の$F_{y\mathrm{hub}}$}
+        \label{table:SxSr_to_Fyhub}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|c|c|c|c|} \hline
+            周波数 &  $S_x$荷重成分 & $S_r$荷重成分 &  MRH荷重$F_{y\mathrm{hub}}$ N=4 \\ \hline
+            定常 &  $S_{x0}$ &  $S_{r0}$ & $0$ \\ \hline
+            \raisebox{-1.2ex}{1/rev} & $S_{x1c}\cos\Psi_m$ & $S_{r1c}\cos\Psi_m$ & $-2S_{r1c}$ \\   \cline{2-4}
+                                   & $S_{x1s}\sin\Psi_m$ & $S_{r1s}\sin\Psi_m$ & $-2S_{r1s}$ \\ \hline
+            \raisebox{-1.2ex}{2/rev} & $S_{x2c}\cos 2\Psi_m$  & $S_{r2c}\cos 2\Psi_m$  & $0$ \\   \cline{2-4}
+                                   & $S_{x2s}\sin 2\Psi_m$  & $S_{r2s}\sin 2\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{3/rev} & $S_{x3c}\cos 3\Psi_m$  & $S_{r3c}\cos 3\Psi_m$  & $-2S_{x3c}\cos 4\Psi + 2S_{r3c}\sin 4\Psi$ \\   \cline{2-4}
+                                   & $S_{x3s}\sin 3\Psi_m$  & $S_{r3s}\sin 3\Psi_m$  & $-2S_{x3s}\sin 4\Psi - 2S_{r3s}\cos 4\Psi$ \\ \hline
+            \raisebox{-1.2ex}{4/rev} & $S_{x4c}\cos 4\Psi_m$  & $S_{r4c}\cos 4\Psi_m$  & $0$ \\   \cline{2-4}
+                                   & $S_{x4s}\sin 4\Psi_m$  & $S_{r4s}\sin 4\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{5/rev} & $S_{x5c}\cos 5\Psi_m$  & $S_{r5c}\cos 5\Psi_m$  & $-2S_{x5c}\cos 4\Psi - 2S_{r5c}\sin 4\Psi$ \\    \cline{2-4}
+                                   & $S_{x5s}\sin 5\Psi_m$  & $S_{r5s}\sin 5\Psi_m$  & $-2S_{x5s}\sin 4\Psi + 2S_{r5s}\cos 4\Psi$ \\ \hline
+            \raisebox{-1.2ex}{6/rev} & $S_{x6c}\cos 6\Psi_m$  & $S_{r6c}\cos 6\Psi_m$  & $0$ \\    \cline{2-4}
+                                   & $S_{x6s}\sin 6\Psi_m$  & $S_{r6s}\sin 6\Psi_m$  & $0$ \\ \hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \caption{$N_F$各周波数成分の胴体系伝達後の$M_{x\mathrm{hub}}$}
+        \label{table:NF_to_Mxhub}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|c|c|c|} \hline
+            周波数 &  $N_F$荷重成分 &   MRH荷重$M_{x\mathrm{hub}}$ N=4 \\ \hline
+            定常 &  $N_{F0}$ & $0$ \\ \hline
+            \raisebox{-1.2ex}{1/rev} & $N_{F1c}\cos\Psi_m$ & $0$ \\   \cline{2-3}
+                                   & $N_{F1s}\sin\Psi_m$ & $2N_{F1s}$ \\ \hline
+            \raisebox{-1.2ex}{2/rev} & $N_{F2c}\cos 2\Psi_m$  & $0$ \\   \cline{2-3}
+                                   & $N_{F2s}\sin 2\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{3/rev} & $N_{F3c}\cos 3\Psi_m$  & $2N_{F3c}\sin 4\psi$ \\   \cline{2-3}
+                                   & $N_{F3s}\sin 3\Psi_m$  & $-2N_{F3s}\cos 4\psi$ \\ \hline
+            \raisebox{-1.2ex}{4/rev} & $N_{F4c}\cos 4\Psi_m$  & $0$ \\   \cline{2-3}
+                                   & $N_{F4s}\sin 4\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{5/rev} & $N_{F5c}\cos 5\Psi_m$  & $-2N_{F5c}\sin 4\psi$ \\    \cline{2-3}
+                                   & $N_{F5s}\sin 5\Psi_m$  & $2N_{F5s}\cos 4\psi$ \\ \hline
+            \raisebox{-1.2ex}{6/rev} & $N_{F6c}\cos 6\Psi_m$  & $0$ \\    \cline{2-3}
+                                   & $N_{F6s}\sin 6\Psi_m$  & $0$ \\ \hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \caption{$N_F$各周波数成分の胴体系伝達後の$M_{y\mathrm{hub}}$}
+        \label{table:NF_to_Myhub}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|c|c|c|} \hline
+            周波数 &  $N_F$荷重成分 &   MRH荷重$M_{y\mathrm{hub}}$ N=4 \\ \hline
+            定常 &  $N_{F0}$ & $0$ \\ \hline
+            \raisebox{-1.2ex}{1/rev} & $N_{F1c}\cos\Psi_m$ & $-2N_{F1c}$ \\   \cline{2-3}
+                                   & $N_{F1s}\sin\Psi_m$ & $0$ \\ \hline
+            \raisebox{-1.2ex}{2/rev} & $N_{F2c}\cos 2\Psi_m$  & $0$ \\   \cline{2-3}
+                                   & $N_{F2s}\sin 2\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{3/rev} & $N_{F3c}\cos 3\Psi_m$  & $-2N_{F3c}\cos 4\psi$ \\   \cline{2-3}
+                                   & $N_{F3s}\sin 3\Psi_m$  & $-2N_{F3s}\sin 4\psi$ \\ \hline
+            \raisebox{-1.2ex}{4/rev} & $N_{F4c}\cos 4\Psi_m$  & $0$ \\   \cline{2-3}
+                                   & $N_{F4s}\sin 4\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{5/rev} & $N_{F5c}\cos 5\Psi_m$  & $-2N_{F5c}\cos 4\psi$ \\    \cline{2-3}
+                                   & $N_{F5s}\sin 5\Psi_m$  & $-2N_{F5s}\sin 4\psi$ \\ \hline
+            \raisebox{-1.2ex}{6/rev} & $N_{F6c}\cos 6\Psi_m$  & $0$ \\    \cline{2-3}
+                                   & $N_{F6s}\sin 6\Psi_m$  & $0$ \\ \hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \caption{$N_L$各周波数成分の胴体系伝達後の$M_{z\mathrm{hub}}$}
+        \label{table:NL_to_Mzhub}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|c|c|c|} \hline
+            周波数 &  $N_L$荷重成分 &   MRH荷重$M_{z\mathrm{hub}}$ N=4 \\ \hline
+            定常 &  $N_{L0}$ & $4N_{L0}$ \\ \hline
+            \raisebox{-1.2ex}{1/rev} & $N_{L1c}\cos\Psi_m$ & $0$ \\   \cline{2-3}
+                                   & $N_{L1s}\sin\Psi_m$ & $0$ \\ \hline
+            \raisebox{-1.2ex}{2/rev} & $N_{L2c}\cos 2\Psi_m$  & $0$ \\   \cline{2-3}
+                                   & $N_{L2s}\sin 2\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{3/rev} & $N_{L3c}\cos 3\Psi_m$  & $0$ \\   \cline{2-3}
+                                   & $N_{L3s}\sin 3\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{4/rev} & $N_{L4c}\cos 4\Psi_m$  & $4N_{L4c}\cos 4\psi$ \\   \cline{2-3}
+                                   & $N_{L4s}\sin 4\Psi_m$  & $4N_{L4s}\sin 4\Psi$ \\ \hline
+            \raisebox{-1.2ex}{5/rev} & $N_{L5c}\cos 5\Psi_m$  & $0$ \\    \cline{2-3}
+                                   & $N_{L5s}\sin 5\Psi_m$  & $0$ \\ \hline
+            \raisebox{-1.2ex}{6/rev} & $N_{L6c}\cos 6\Psi_m$  & $0$ \\    \cline{2-3}
+                                   & $N_{L6s}\sin 6\Psi_m$  & $0$ \\ \hline
+        \end{tabular}
+    \end{table}
+
+
+    \clearpage
 
     \section{低振動化に対する取り組み}
     \par
@@ -101,7 +247,7 @@
     それは，胴体に代表される固定系での対策とメインロータブレードを代表とする回転系における対策の2つである．
     前者については代表的なものとしてダイナミックバイブレーションアブソーバー（DVA やアクティブバイブレーションコントロール（AVCが挙げられる （18）図1-4
     一般に，DVAが十分な制振能力を発揮するためには機体質量の約2倍の動マスを保有したDVAを搭載する必要があるといわれており，航空機に搭載する装備品としては好ましくない．
-    また 固定系での対策としては他にいわゆる"nodamatic system"（19）といわれる振動絶縁装置がある．図1-5に示すように MGBの胴体取付部に梁の曲げで荷重伝達をする機構を設けて
+    また 固定系での対策としては他にいわゆる"nodamatic system"（19）といわれる振動絶縁装置がある．（図1-5）に示すように MGBの胴体取付部に梁の曲げで荷重伝達をする機構を設けて
     MGB取付部においてモード形の節の位置になるよう，あらかじめ設計しておく方法である．
     図 1-6には Dynamic Antiresonant Vibration Isolator（DAVI）（20）-（22）の 装置写真 を示す．
     DAVIは ”nodamatic system”と同様に，MGBと胴体をつなぐ荷重伝達部においてバネとウェイトから構成されており 固有振動数を応答が小さくなる反共振点になるよう設計し，
@@ -110,7 +256,7 @@
 
     \par
     一方，後者に関してはパッシブな手法としてメインロータブレードのルート部にペンデュラム（遠心振り子）やメインロータハブ 中央位置にバイファイラを装着する手法が一般的である．（図 1-7 図 1-8）
-    ペンデュラムは 図 1-1で示した $F_z$成分を低減するため，N/revに またバイファイラは同じく図 1-1で示した $F_{x\mathrm{hub}}$，$F_{y\mathrm{hub}}$成分を低減するため（N-1）/rev，
+    ペンデュラムは （図 1-1）で示した $F_z$成分を低減するため，N/revに またバイファイラは同じく図 1-1で示した $F_{x\mathrm{hub}}$，$F_{y\mathrm{hub}}$成分を低減するため（N-1）/rev，
     あるいは （N+1）/revに合わせて共振点を調整することが基本的である．
 
     \par

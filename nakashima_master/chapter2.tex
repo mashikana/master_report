@@ -105,85 +105,7 @@
     また，図 2-4には 図 2-2に示される胴体及び水平尾翼の空力作用点に作用する機体座標系における$F_x$及び$F_z$を示す．
     それぞれのグラフの横軸は図 2-1に示される$y$軸を示し，また縦軸は$x$軸を表しており，重心位置が変化した際のそれぞれの値のコンター図となっている．
     それぞれの結果から次に示す所見が得られる．
-
-
-    \section{ロータブレード}
-
-    \par 
-    Table.にロータのピッチタイプを示す．ロータの種類については固定ピッチロータと可変ピッチロータがある．
-    固定ピッチロータは低コスト，軽量で扱いやすいのが利点としてあげられる．しかしながら，角速度の変化で制御を行うため，突風のような外乱による姿勢変動に
-    対しての応答が遅いという欠点がある．それに対して，可変ピッチロータはピッチ角の増加によって制御を行うことで，応答を早くすることが可能である．
-    可変ピッチロータはピッチを変化させるためのサーボモータが必要であり，搭載するサーボモータの規格に応じて，応答の速さは決まる．
-    本研究ではアスペクト比，ソリディティの二つの観点に着目して検討を行う．Table.\ref{table:ar}，Table.\ref{table:solidity}にそれぞれの特徴を示す．高アスペクト比のブレードは揚抗比が大きく，空力性能が高い．
-    しかし，翼端失速が発生する限界ピッチ角が小さく，可変ピッチロータ搭載型マルチロータ機には適していない．また，空気抵抗が大きいという欠点もある．
-    低アスペクト比のブレードは揚抗比は高アスペクト比のものに劣るが，空気抵抗も小さく，翼端失速が発生する限界ピッチ角も大きい．
-    ソリディティについては，低いと重量，空気抵抗が小さく，構造も単純である．ソリディティが高いと揚力，推力が大きくなり，空力性能は向上する．
     
-     
-    
-
-    \begin{table}[H]
-        \centering
-        \caption{Aspect ratio}
-        \label{table:ar}
-        \setlength{\tabcolsep}{5pt}
-        \begin{tabular}{|c|c|c|} \hline
-            Aspect ratio &   Low &   High \\ \hline
-            merit &   
-            \begin{tabular}[c]{@{}c@{}}
-                large critical pitch angle  \\
-                low aerodynamic drag
-            \end{tabular}
-            &
-            \begin{tabular}[c]{@{}c@{}}
-                high lift-drag ratio
-            \end{tabular}
-            \\ \hline
-            demerit & 
-            \begin{tabular}[c]{@{}c@{}}
-                low lift-drag ratio
-            \end{tabular}
-            & 
-            \begin{tabular}[c]{@{}c@{}}
-                small critical pitch angle  \\
-                high aerodynamic drag
-            \end{tabular}
-            \\ \hline
-        \end{tabular}
-    \end{table}
-
-    \begin{table}[H]
-        \centering
-        \caption{Solidity}
-        \label{table:solidity}
-        \setlength{\tabcolsep}{5pt}
-        \begin{tabular}{|c|c|c|} \hline
-            Solidity    &   Low & High \\ \hline
-            merit &   
-            \begin{tabular}[c]{@{}c@{}}
-                light weight, low aerodynamic drag \\
-                simple structure
-            \end{tabular}
-            &
-            \begin{tabular}[c]{@{}c@{}}
-                large lift and thrust
-            \end{tabular}
-            \\ \hline
-            demerit & 
-            \begin{tabular}[c]{@{}c@{}}
-                small lift and thrust
-            \end{tabular}
-            & 
-            \begin{tabular}[c]{@{}c@{}}
-                heavy weight, high aerodynamic drag \\
-                complex structure
-            \end{tabular}
-            \\ \hline
-        \end{tabular}
-    \end{table}
-    
-
-    \clearpage
 
     \section{ブレード解析モデル}
     \par
@@ -194,11 +116,6 @@
     NB2，NB4の翼弦長(アスペクト比)は同一で，WB2の翼弦長の半分である．翼枚数を考慮したブレードソリディティは
     WB2，NB4で同一の値となり，これらに対してNB2のソリディティは半分である．
     
-<<<<<<< HEAD
-=======
-
-    
->>>>>>> 66e3e54c0511da761b21ec75822640018e35ff0d
 
     
 
