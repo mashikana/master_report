@@ -15,30 +15,137 @@
         %----- 最終ページの表の最下部 --------
         \hline\hline%\bhline{1.5pt}
         \endlastfoot
-        $b$                 	            & -		            &         number of blades\\
-        $c$                 	            & m		            &         blade chord length\\
-        $dF$                                & $\mathrm{N}$          &       centrifugal force acting on microelements \\
-        $dM$                                & $\mathrm{N}\cdot\mathrm{m}$  &  pitching moment acting on micromelements \\
-        $dV$                                & $\mathrm{m^3}$        &       microvolume of microelements \\
-        $g$       	                    & $\mathrm{m/s^2}$      &       gravitational acceleration\\
-        $m$       	                    & $\mathrm{kg}$         &        total mass of multirotor\\
-        $M$                                 & $\mathrm{N}\cdot\mathrm{m}$   &  pitching moment acting on blade      \\
-        $N_\mathrm{rotor}$ 		    & -                     &      number of rotors\\
-        $P$ 	            	            & W                     &       power consumption\\
-        %$Q$ 	            	            & $\mathrm{N}\cdot\mathrm{m}$  &       torque of rotor\\
-        %$r$ 	            	            & m                     &       radial position of blade element\\
-        $R$ 	            	            & m                     &       rotor radius\\
-        %$Re$ 	            	            & -                     &      Reynolds number\\
-        $T$              		    & $\mathrm{N}$          &      thrust\\
-        $v_\mathrm{0}$                      & $\mathrm{m/s}$        &      induced velocity   \\
-        %$\alpha$ 		            & rad or deg	    &       angle of attack\\
-        %$\hat{\alpha}$ 	            & $\mathrm{N\cdot s/m}$ &       slope of linear approximation\\
-        %$\hat{\beta}$ 	                    & $\mathrm{N}$          &       intercept of linear approximation\\
-        $\theta$ 		            & rad or deg            &       collective pitch angle\\
-        $\rho$ 	            	            & $\mathrm{kg/m^3}$     &       air density\\
-        $\rho_\mathrm{b}$ 	            & $\mathrm{kg/m^3}$     &       blade density\\
-        $\psi$                              & rad or deg            &     angle between microelements and $x$-axis  \\
-        %$\psi_\mathrm{r}$                  & rad or deg            &     azimuth angle of blade\\
-        $\omega$                            & $\mathrm{rad/s}$      &     angular velocity relative to blade pitch angle \\
-        $\Omega$                            & $\mathrm{rad/s}$      &     angular velocity of rotor\\
+        $a$                 	            & $\mathrm{m/s^2}$      &    acceleration\\
+        $D$                 	            & m		            &    rotor diameter\\
+        $d^\ast/dt$                         & deg                   &  time derivative in rotating coordinate system \\
+        $e_{0}$                             & m                     &    blade hinge offset \\
+        $F_{x\mathrm{hub}}$                 & $\mathrm{N}$          &    4/rev load acting on the MRH center position in the $x_\mathrm{hub}$ direction \\
+        $F_{y\mathrm{hub}}$                 & $\mathrm{N}$          &    4/rev load acting on the MRH center position in the $y_\mathrm{hub}$ direction \\
+        $F_{z\mathrm{hub}}$       	    & $\mathrm{N}$          &    4/rev load acting on the MRH center position in the $z_\mathrm{hub}$ direction\\
+        $h_{cg}$       	                    & m                     &    vertical distance from the center of gravity to the MRH center position\\
+        $h_{f}$       	                    & m                     &    vertical distance from the center of gravity to fuselage load application point\\
+        $h_{ht}$       	                    & m                     &    vertical distance from the center of gravity to horizontal stabilizer\\
+        $h_{vt}$       	                    & m                     &    vertical distance from the center of gravity to vertical stabilizer\\
+        $h_{tr}$       	                    & m                     &    vertical distance from the center of gravity to tail rotor head\\
+        $I_{x}$                             & $\mathrm{kg}\cdot\mathrm{m^2}$   &  moment of inertia acting about the $x$ axis \\
+        $I_{xy}$                            & $\mathrm{kg}\cdot\mathrm{m^2}$   &  product of inertia about the $x$ and $y$ axes \\
+        $I_{y}$                             & $\mathrm{kg}\cdot\mathrm{m^2}$   &  moment of inertia acting about the $y$ axis \\
+        $I_{yz}$                            & $\mathrm{kg}\cdot\mathrm{m^2}$   &  product of inertia about the $y$ and $z$ axes \\
+        $I_{z}$                             & $\mathrm{kg}\cdot\mathrm{m^2}$   &  moment of inertia acting about the $z$ axis \\
+        $I_{zx}$                            & $\mathrm{kg}\cdot\mathrm{m^2}$   &  product of inertia about the $z$ and $x$ axes \\
+        $I_{\beta}$                         & $\mathrm{kg}\cdot\mathrm{m^2}$   &  moment of inertia around blade flapping hinge \\
+        $K_{\beta}$                         & $\mathrm{N}\cdot\mathrm{m}/\mathrm{rad}$   &  rotation spring constant of blade flapping hinge  \\
+        $L$                                 & $\mathrm{N}\cdot\mathrm{m}$   &  moment acting about the $x$ axis \\
+        $L_{f}$                             & $\mathrm{N}$          &  lift of fuselage \\
+        $L_{ht}$                            & $\mathrm{N}$          &  lift of horizontal stabilizer \\
+        $L_{vt}$                            & $\mathrm{N}$          &  lift of vertical stabilizer \\
+        $\vec{l}$                           & m                     &    vector from the center of gravity to the MRH center position      \\
+        $M$                                 & $\mathrm{N}\cdot\mathrm{m}$   &  moment acting about the $y$ axis \\
+        $M_{xf}$                            & $\mathrm{N}\cdot\mathrm{m}$   &  roll moment of fuselage \\
+        $M_{x\mathrm{hub}}$ 	            & $\mathrm{N}\cdot\mathrm{m}$   &    4/rev moment acting on the MRH center position about the $x_\mathrm{hub}$ axis \\
+        $M_{yf}$                            & $\mathrm{N}\cdot\mathrm{m}$   &  pitch moment of fuselage \\
+        $M_{y\mathrm{hub}}$ 	            & $\mathrm{N}\cdot\mathrm{m}$   &    4/rev moment acting on the MRH center position about the $y_\mathrm{hub}$ axis \\
+        $M_{y\mathrm{hub}}$ 	            & $\mathrm{N}\cdot\mathrm{m}$   &    4/rev moment acting on the MRH center position about the $z_\mathrm{hub}$ axis \\
+        $m$                                 & kg                    &  aircraft mass \\
+        $\vec{m}$ 		            & m                     &    vector from the center of gravity to the pilot seat position\\
+        $N$                                 & $\mathrm{N}\cdot\mathrm{m}$   &  moment acting about the $z$ axis \\
+        $N_{F}$                             & $\mathrm{N}\cdot\mathrm{m}$   &  flap moment at the root of main rotor blade \\
+        $N_{L}$                             & $\mathrm{N}\cdot\mathrm{m}$   &  lag moment at the root of main rotor blade \\
+        $p$ 	            	            & $\mathrm{rad/s}$      &  roll angular velocity in the aircraft coordinate system  \\
+        $q$ 	            	            & $\mathrm{rad/s}$      &  pitch angular velocity in the aircraft coordinate system \\
+        $R$              		    & m                     &  rotor radius   \\
+        $r$              		    & $\mathrm{rad/s}$      &  yaw angular velocity in the aircraft coordinate system   \\
+        $\vec{r_{0}}$                       & m                     &  vector from the origin of the ground coordinate system to the center of gravity position   \\
+        $\vec{r_{i}}$ 		            & m	                    &  vector from the center of gravity position to the pilot seat position\\
+        $S_{x}$                             & $\mathrm{N}$          &  drag force at the root of main rotor blade \\
+        $S_{r}$                             & $\mathrm{N}$          &  radial force at the root of a main rotor blade \\
+        $S_{z}$                             & $\mathrm{N}$          &  lift force at the root of a main rotor blade \\
+        $S_{\beta}$                         & $\mathrm{kg}\cdot\mathrm{m^2}$   &  first flapping moment of inertia at the root of a main rotor blade \\
+        $T_{tr}$                            & $\mathrm{N}$          &  lift of tail rotor  \\
+        $u$ 	                            & $\mathrm{m/s}$        &  velocity in the $x$ axis direction in the aircraft coordinate system \\
+        $v$ 	                            & $\mathrm{m/s}$        &  velocity in the $y$ axis direction in the aircraft coordinate system \\
+        $w$ 		                    & $\mathrm{m/s}$        &  velocity in the $z$ axis direction in the aircraft coordinate system \\
+        $V_{c}$ 	            	    & $\mathrm{m/s}$        &  cruising speed\\
+        $X$                                 & $\mathrm{N}$          &  external force acting in the $x$ axis direction \\
+        $x_{cg}$              		    & m                     &  distance in the $x$ axis direction from the center of gravity to MRH   \\
+        $x_{f}$       	                    & m                     &  distance in the $x$ axis direction from the center of gravity to fuselage load application point \\
+        $x_{ht}$       	                    & m                     &  distance in the $x$ axis direction from horizontal stabilizer to MRH \\
+        $x_{tr}$       	                    & m                     &  distance in the $x$ axis direction from tail rotor head to MRH \\
+        $x_{vt}$       	                    & m                     &  distance in the $x$ axis direction from vertical stabilizer to MRH \\
+        $x_{wt}$       	                    & m                     &  distance in the $x$ axis direction from fuselage load application point to MRH \\
+        $Y$                                 & $\mathrm{N}$          &  external force acting in the $y$ axis direction \\
+        $y_{cg}$              		    & m                     &  distance in the $y$ axis direction from the center of gravity to MRH   \\
+        $Z$                                 & $\mathrm{N}$          &  external force acting in the $z$ axis direction \\
+        $x-y-z$ 	                    & -                     &  aircraft coordinate system with the center of gravity at origin\\
+        $x_{\mathrm{fus}}-y_{\mathrm{fus}}-z_{\mathrm{fus}}$  & -   &  aircraft coordinate system parallel to $x-y-z$ with MRH at origin  \\
+        $x_{\mathrm{hub}}-y_{\mathrm{hub}}-z_{\mathrm{hub}}$  & -   &  MRH coordinate system with the MRH center at origin \\
+        $\alpha$                            & deg                   &  angle of attack at the blade element \\
+        $\alpha_{f}$                        & deg                   &  angle of attack of fuselage  \\
+        $\alpha_{ht}$                       & deg                   &  angle of attack of horizontal tail  \\
+        $\alpha_{vt}$                       & deg                   &  angle of attack of vertical tail  \\
+        $\beta$                             & deg                   &  flapping angle of MRH \\
+        $\beta_{0}$                         & deg                   &  coning angle \\
+        $\beta_{c}$                         & deg                   &  longitudinal tilt angle of the main rotor tip path plane （forward tilt is positive） \\
+        $\beta_{s}$                         & deg                   &  lateral tilt angle of the main rotor tip path plane （left tilt is positive） \\
+        $\gamma_{\beta}$                    & $\mathrm{rad/s}$      &  dimensionless blade flapping natural frequency \\
+        $\zeta$                             & -                     &  inflow ratio \\
+        $\zeta_{0}$                         & -                     &  Coefficients in Drees' inflow model \\ 
+        $\zeta_{1c}$                        & -                     &  Coefficients in Drees' inflow model \\  
+        $\zeta_{1s}$                        & -                     &  Coefficients in Drees' inflow model \\  
+        $\Theta$                            & deg                   &  pitch angle \\
+        $\Theta_{bd}$                       & deg                   &  Forward/aftward tilt mounting angle of the main rotor （forward tilt is positive） \\
+        $\theta_{c}$                        & deg                   &  lateral cyclic pitch angle \\
+        $\theta_{s}$                        & deg                   &  longitudinal cyclic pitch angle \\
+        $\theta_{tr}$                       & deg                   &  tail rotor pitch angle \\
+        $\lambda$                           & -                     &  real part of complex eigenvalue \\
+        $\mu$                               & -                     &  advance ratio （$=V_{c}/\Omega R$） \\
+        $\Phi$                              & deg                   &  roll angle \\
+        $\Psi$                              & deg                   &  blade azimuth angle \\
+        $\Omega$                            & $\mathrm{rad/s}$      &  main rotor rotational angular velocity \\
+        $\omega$                            & $\mathrm{rad/s}$      &  imaginary part of complex eigenvalue （angular frequency） \\
+        $\vec{\omega}$                      & $\mathrm{rad/s}$      &  angular velocity vector of the fuselage \\
+        subscript                           &                       &   \\
+        $e$                                 & -                     &  trim point \\
+        $i$                                 & -                     &  parameters of the micro-disturbance $u$,$v$,$w$,$p$,$q$,$r$,$\Theta$,$\Psi$  \\
+\end{longtable}
+
+
+\clearpage
+
+\chapter*{略語表}
+\addcontentsline{toc}{chapter}{略語表}
+
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{longtable}{ll}
+    \hline
+    \hline
+    \textbf{Abbreviation} & \textbf{Description} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Abbreviation} & \textbf{Description} \\
+    \hline
+    \endhead
+
+    AOA           & Angle of Attack \\
+    CAMRAD $II$   & Comprehensive Analytical Model of Rotorcraft Aerodynamics \\
+    COPTER        & Comprehensive Program for Theoretical Evaluation of Rotorcraft \\
+    EOM           & Equation of Motion \\
+    FEA           & Finite Element Analysis \\
+    FFT           & Fast Fourier Transform \\
+    MRB           & Main Rotor Blade \\
+    MRH           & Main Rotor Hub \\
+    NASTRAN       & NASA Structure Analysis \\
+    PPM           & Rotations Per Minute \\
+    SAS           & Stability Augmentation System \\
+    TEF           & Trailing-Edge Flaps \\
+    TRB           & Tail Rotor Blade \\
+    TRH           & Tail Rotor Hub \\
+    UMARC         & University of Maryland Advanced Rotorcraft Code \\
+    2GCHAS        & The Second Generation Helicopter Analysis System \\
+    \hline
+    \hline
 \end{longtable}

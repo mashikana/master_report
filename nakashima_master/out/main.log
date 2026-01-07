@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  6 JAN 2026 19:54
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  7 JAN 2026 17:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -298,13 +298,13 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 23.90964pt on input line 21.
 (out/main.toc
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 6.
+(Font)              scaled to size 6.72699pt on input line 7.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 6.
+(Font)              scaled to size 4.805pt on input line 7.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 6.
+(Font)              scaled to size 6.72699pt on input line 7.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 6.
+(Font)              scaled to size 4.805pt on input line 7.
 
 
 [1
@@ -332,80 +332,119 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 [4
 
 
-] (./symbols.tex) (./chapter1.tex
+] (./symbols.tex
+Overfull \hbox (152.69865pt too wide) in alignment at lines 3--7
+ [] [] [] 
+ []
+
+
+Overfull \hbox (152.69865pt too wide) in alignment at lines 7--11
+ [] [] [] 
+ []
+
+
+Overfull \hbox (152.69865pt too wide) in alignment at lines 11--14
+ [] [] [] 
+ []
+
+
+Overfull \hbox (152.69865pt too wide) in alignment at lines 14--17
+ [] [] [] 
+ []
+
+
+Overfull \hbox (152.69865pt too wide) in alignment at lines 17--110
+ [] [] [] 
+ []
 
 [5
+
+
+] [6]
+
+[7]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 124.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 124.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 124.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 124.
+) (./chapter1.tex
+
+[8
 
 
 ]
 第1章
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 11.
+(Font)              scaled to size 13.83836pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 11.
+(Font)              scaled to size 13.83836pt on input line 12.
 
 
-[6
+[9
 
 ]
 
-[7]
+[10]
 File: photo/MRHFM.png Graphic file (type bmp)
 <photo/MRHFM.png>
 
 
-[8
+[11
 
 ]
 
-[9]
-
-[10]
-
-[11]
-
-[12
-
-]
-File: photo/module.png Graphic file (type bmp)
-<photo/module.png>
-
+[12]
 
 [13]
-File: photo/collective_drone.jpg Graphic file (type bmp)
-<photo/collective_drone.jpg>
 
+[14]
 
-[14])
-
-[15] (./chapter2.tex
+[15]
 
 [16]
+
+[17]
+
+[18
+
+]
+
+[19])
+
+[20] (./chapter2.tex
+
+[21]
 第2章
 
 
-[17
+[22
 
 ]
 
-[18]
+[23]
 
-[19]) (./chapter3.tex
+[24]
 
-[20
+[25
 
-]
+]) (./chapter3.tex
+
+[26]
 第3章
 
 
-[21
+[27
 
 ]
 File: photo/kaisekikoushi.png Graphic file (type bmp)
 <photo/kaisekikoushi.png>
 
 
-[22
+[28
 
 ]
 File: photo/pitch_rpm_T_wb2.png Graphic file (type bmp)
@@ -420,7 +459,7 @@ File: photo/pitch_rpm_T_nb4.png Graphic file (type bmp)
 <photo/pitch_rpm_T_nb4.png>
 
 
-[23]
+[29]
 File: photo/pitch_rpm_fom_wb2.png Graphic file (type bmp)
 <photo/pitch_rpm_fom_wb2.png>
 File: photo/pitch_rpm_fom_nb2.png Graphic file (type bmp)
@@ -429,11 +468,11 @@ File: photo/pitch_rpm_fom_nb4.png Graphic file (type bmp)
 <photo/pitch_rpm_fom_nb4.png>
 
 
-[24]
+[30]
 
-[25]
+[31]
 
-[26
+[32
 
 ]
 File: photo/cw_xy.jpg Graphic file (type bmp)
@@ -442,42 +481,42 @@ File: photo/cw_yz.jpg Graphic file (type bmp)
 <photo/cw_yz.jpg>
 
 
-[27
+[33
 
 ]
 File: photo/flowchart_cw.png Graphic file (type bmp)
 <photo/flowchart_cw.png>
 
 
-[28
+[34
 
 ]
 
-[29]
+[35]
 File: photo/flowchart_power.png Graphic file (type bmp)
 <photo/flowchart_power.png>
 
 
-[30
+[36
 
 ]
 
-[31
+[37
 
 ]
 File: photo/pitch_increase.png Graphic file (type bmp)
 <photo/pitch_increase.png>
 
 
-[32
+[38
 
 ]) (./chapter4.tex
 
-[33]
+[39]
 第4章
 
 
-[34
+[40
 
 ]
 File: photo/air_moment_wb2.png Graphic file (type bmp)
@@ -488,9 +527,9 @@ File: photo/air_moment_nb4.png Graphic file (type bmp)
 <photo/air_moment_nb4.png>
 
 
-[35]
+[41]
 
-[36]
+[42]
 Overfull \hbox (12.00772pt too wide) in paragraph at lines 117--124
  [][][][] 
  []
@@ -501,13 +540,13 @@ File: photo/OAF117.png Graphic file (type bmp)
 <photo/OAF117.png>
 
 
-[37]) (./chapter5.tex
+[43]) (./chapter5.tex
 
-[38]
+[44]
 第5章
 ) (./ref.tex
 
-[39
+[45
 
 ] (out/main.bbl
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
@@ -520,13 +559,13 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 16.
 
 
-[40
+[46
 
 ])) (./thank.tex
 
-[41])
+[47])
 
-[42
+[48
 
 ] (out/main.aux)
  ***********
@@ -536,12 +575,12 @@ L3 programming layer <2025-10-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4157 strings out of 469856
- 69153 string characters out of 5479602
- 494148 words of memory out of 5000000
- 32653 multiletter control sequences out of 15000+600000
- 643787 words of font info for 113 fonts, out of 8000000 for 9000
+ 4152 strings out of 469856
+ 68949 string characters out of 5479602
+ 503148 words of memory out of 5000000
+ 32649 multiletter control sequences out of 15000+600000
+ 644122 words of font info for 114 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
- 67i,13n,77p,336b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,13n,77p,336b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (43 pages, 132860 bytes).
+Output written on out/main.dvi (49 pages, 146584 bytes).

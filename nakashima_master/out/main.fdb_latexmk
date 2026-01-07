@@ -1,19 +1,20 @@
 # Fdb version 4
-["bibtex out/main"] 1767696714.35227 "out/main.aux" "out/main.bbl" "out/main" 1767696870.45867 0
+["bibtex out/main"] 1767775526.64236 "out/main.aux" "out/main.bbl" "out/main" 1767775761.27029 0
   "./sample.bib" 1766738409 5764 01d4a37b757abe7d768f0bf4b2998d7e ""
   "junsrt.bst" 0 -1 0 ""
-  "out/main.aux" 1767696867 10252 d0dd95814e7b03f207f0f06b816f3d8a "latex"
+  "out/main.aux" 1767775756 10111 7252b8a12942d10c04761a91865b3aa3 "latex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["dvipdf"] 1767696867.53454 "out/main.dvi" "out/main.pdf" "out/main" 1767696870.47259 0
-  "out/main.dvi" 1767696867 132860 52d009f362f53012ef0cfeaa09628f9a "latex"
+["dvipdf"] 1767775757.40191 "out/main.dvi" "out/main.pdf" "out/main" 1767775761.28484 0
+  "out/main.dvi" 1767775756 146584 b2c48ad6b074fcfdb24d607a213950e3 "latex"
   (generated)
   "out/main.pdf"
   (rewritten before read)
-["latex"] 1767696863.02655 "c:/git/master_report/nakashima_master/main.tex" "out/main.dvi" "main" 1767696870.45952 0
+["latex"] 1767775753.19464 "c:/git/master_report/nakashima_master/main.tex" "out/main.dvi" "main" 1767775761.27126 0
   "c:/git/master_report/nakashima_master/main.tex" 1767696862 933 6f0e2d4f9458c5b4a295c0299c4df89e ""
+  "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1761728671 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1761729147 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1761729147 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1761729147 856 7404843a5f798859944d7973a47821d5 ""
@@ -68,30 +69,28 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1761728496 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/euptex/platex.fmt" 1761729563 2363020 21b43a378cd4c2001f57fd3954ea6272 ""
   "c:/texlive/2025/texmf.cnf" 1761729390 713 e69b156964470283e0530f5060668171 ""
-  "chapter1.tex" 1767696862 35399 7cf493b915cbae0af8ab948b78a7edf9 ""
-  "chapter2.tex" 1767691562 11008 567835f7d62c1b9626f263dd23db86b9 ""
+  "chapter1.tex" 1767775521 34202 598ca6e7a414fe415c52db469e091f4a ""
+  "chapter2.tex" 1767775752 13726 d11ce8f2b6df944574bd992b4dd50732 ""
   "chapter3.tex" 1766738409 23240 013b62eb94d93f63d7c5779d531eb4f8 ""
   "chapter4.tex" 1766738409 13631 c0823533381772cac52776c9882fe037 ""
   "chapter5.tex" 1766738409 2081 d906ae836b93d11c1faec83f85cab6f5 ""
   "main.tex" 1767696862 933 6f0e2d4f9458c5b4a295c0299c4df89e ""
-  "out/main.aux" 1767696867 10252 d0dd95814e7b03f207f0f06b816f3d8a "latex"
-  "out/main.bbl" 1767696714 3328 4185978b6551d4066972841418857b61 "bibtex out/main"
-  "out/main.lof" 1767696867 1403 b6a04025c4f27fbf57d31b39879f8667 "latex"
-  "out/main.lot" 1767696867 1584 c1f01a7e19e62fd1e676a93cb2b6d28a "latex"
-  "out/main.toc" 1767696867 1682 d1b3172314cbf96aa331856d789ca949 "latex"
+  "out/main.aux" 1767775756 10111 7252b8a12942d10c04761a91865b3aa3 "latex"
+  "out/main.bbl" 1767775526 3328 4185978b6551d4066972841418857b61 "bibtex out/main"
+  "out/main.lof" 1767775756 1192 d9c85981d03f177941e56664767d3076 "latex"
+  "out/main.lot" 1767775756 1586 ee2b82be37b7ff8e9efcf1de17cdff0a "latex"
+  "out/main.toc" 1767775756 1768 a74f994463bd42c72cfbb267cb18cf4f "latex"
   "photo/MRHFM.png" 1767696543 60133 d4374e7e9bcf4eb15152e02efd94477e ""
   "photo/NACA0009.png" 1766738409 5929 fe73c5826df1b823450ea914b920251a ""
   "photo/OAF117.png" 1766738409 7020 1df6daa54381df3b133c15379ccd196a ""
   "photo/air_moment_nb2.png" 1766738409 18208 7ce06808ffe16cf3d496ddebdf1bc3f5 ""
   "photo/air_moment_nb4.png" 1766738409 18800 343ad1ecc2b5b11b81caab1e0d8b2a02 ""
   "photo/air_moment_wb2.png" 1766738409 15386 e45b5336de35b2d22f3239bf4796563f ""
-  "photo/collective_drone.jpg" 1766738409 7153 7a36364b1afaeceb23b92b2d3c0ecced ""
   "photo/cw_xy.jpg" 1766738409 64785 66de0562db189ec470a3e1b25ea65864 ""
   "photo/cw_yz.jpg" 1766738409 63064 40af2b7ab478a80180268765d4082744 ""
   "photo/flowchart_cw.png" 1766738409 43327 360471daa85f617ef98cfe3ba5fa5df9 ""
   "photo/flowchart_power.png" 1766738409 33278 d783eafb8ea896d12f6a7dc1d3daf9e8 ""
   "photo/kaisekikoushi.png" 1766738409 305857 32c7e5802cde91b436a258de1d417104 ""
-  "photo/module.png" 1766738409 175589 180057e10d86340e406c90b86f9ca97c ""
   "photo/pitch_increase.png" 1766738409 52299 c57663c73f0565a4d90d0b495b1b1f05 ""
   "photo/pitch_rpm_T_nb2.png" 1766738409 141859 95752b9eb51855e7ca61fbeb5a46fe43 ""
   "photo/pitch_rpm_T_nb4.png" 1766738409 134261 2a002c4bf63c77d37fe0de0bccb213d3 ""
@@ -100,7 +99,7 @@
   "photo/pitch_rpm_fom_nb4.png" 1766738409 110852 88b4c8e63683b45aba88be9408488dc7 ""
   "photo/pitch_rpm_fom_wb2.png" 1766738409 119542 49858f0e60c1c80d819e1fcc6359cfd3 ""
   "ref.tex" 1766738409 208 ebddf8a885f5bb73430be082b840bc72 ""
-  "symbols.tex" 1766738409 3195 72f2b2a94e0e359a85f212864371cc2f ""
+  "symbols.tex" 1767772422 13242 c61f17cd2cc09f25ce702657640d57fa ""
   "thank.tex" 1766738409 1141 1cb77fa5ec75290f70beb68b7bc1332b ""
   "title.tex" 1766738409 1090 b23761e8538947b1952c45a00b5611b9 ""
   (generated)
