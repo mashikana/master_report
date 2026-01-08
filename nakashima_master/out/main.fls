@@ -1,11 +1,12 @@
-PWD c:/git/master_report/nakashima_master
+PWD c:/git/nakashima_master
 INPUT c:/texlive/2025/texmf.cnf
 INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2025/texmf-var/web2c/euptex/platex.fmt
-INPUT c:/git/master_report/nakashima_master/main.tex
+INPUT c:/git/nakashima_master/main.tex
 OUTPUT out/main.log
 INPUT c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
 INPUT c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
+INPUT c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
@@ -61,9 +62,6 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
-INPUT out/main.aux
-INPUT out/main.aux
-INPUT out/main.aux
 OUTPUT out/main.aux
 INPUT ./title.tex
 INPUT ./title.tex
@@ -90,9 +88,12 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
-INPUT out/main.toc
-INPUT out/main.toc
-INPUT out/main.toc
+OUTPUT out/main.toc
+OUTPUT out/main.lof
+OUTPUT out/main.lot
+INPUT ./symbols.tex
+INPUT ./symbols.tex
+INPUT symbols.tex
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
@@ -108,18 +109,6 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-OUTPUT out/main.toc
-INPUT out/main.lof
-INPUT out/main.lof
-INPUT out/main.lof
-OUTPUT out/main.lof
-INPUT out/main.lot
-INPUT out/main.lot
-INPUT out/main.lot
-OUTPUT out/main.lot
-INPUT ./symbols.tex
-INPUT ./symbols.tex
-INPUT symbols.tex
 INPUT ./chapter1.tex
 INPUT ./chapter1.tex
 INPUT chapter1.tex
@@ -127,108 +116,4 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
-INPUT ./photo/MRHFM.png
-INPUT ./photo/MRHFM.png
-INPUT ./photo/MRHFM.png
-INPUT extractbb -B cropbox -O photo/MRHFM.png
-INPUT ./chapter2.tex
-INPUT ./chapter2.tex
-INPUT chapter2.tex
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT ./chapter3.tex
-INPUT ./chapter3.tex
-INPUT chapter3.tex
-INPUT ./photo/kaisekikoushi.png
-INPUT ./photo/kaisekikoushi.png
-INPUT ./photo/kaisekikoushi.png
-INPUT extractbb -B cropbox -O photo/kaisekikoushi.png
-INPUT ./photo/pitch_rpm_T_wb2.png
-INPUT ./photo/pitch_rpm_T_wb2.png
-INPUT ./photo/pitch_rpm_T_wb2.png
-INPUT extractbb -B cropbox -O photo/pitch_rpm_T_wb2.png
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-INPUT ./photo/pitch_rpm_T_nb2.png
-INPUT ./photo/pitch_rpm_T_nb2.png
-INPUT ./photo/pitch_rpm_T_nb2.png
-INPUT extractbb -B cropbox -O photo/pitch_rpm_T_nb2.png
-INPUT ./photo/pitch_rpm_T_nb4.png
-INPUT ./photo/pitch_rpm_T_nb4.png
-INPUT ./photo/pitch_rpm_T_nb4.png
-INPUT extractbb -B cropbox -O photo/pitch_rpm_T_nb4.png
-INPUT ./photo/pitch_rpm_fom_wb2.png
-INPUT ./photo/pitch_rpm_fom_wb2.png
-INPUT ./photo/pitch_rpm_fom_wb2.png
-INPUT extractbb -B cropbox -O photo/pitch_rpm_fom_wb2.png
-INPUT ./photo/pitch_rpm_fom_nb2.png
-INPUT ./photo/pitch_rpm_fom_nb2.png
-INPUT ./photo/pitch_rpm_fom_nb2.png
-INPUT extractbb -B cropbox -O photo/pitch_rpm_fom_nb2.png
-INPUT ./photo/pitch_rpm_fom_nb4.png
-INPUT ./photo/pitch_rpm_fom_nb4.png
-INPUT ./photo/pitch_rpm_fom_nb4.png
-INPUT extractbb -B cropbox -O photo/pitch_rpm_fom_nb4.png
-INPUT ./photo/cw_xy.jpg
-INPUT ./photo/cw_xy.jpg
-INPUT ./photo/cw_xy.jpg
-INPUT extractbb -B cropbox -O photo/cw_xy.jpg
-INPUT ./photo/cw_yz.jpg
-INPUT ./photo/cw_yz.jpg
-INPUT ./photo/cw_yz.jpg
-INPUT extractbb -B cropbox -O photo/cw_yz.jpg
-INPUT ./photo/flowchart_cw.png
-INPUT ./photo/flowchart_cw.png
-INPUT ./photo/flowchart_cw.png
-INPUT extractbb -B cropbox -O photo/flowchart_cw.png
-INPUT ./photo/flowchart_power.png
-INPUT ./photo/flowchart_power.png
-INPUT ./photo/flowchart_power.png
-INPUT extractbb -B cropbox -O photo/flowchart_power.png
-INPUT ./photo/pitch_increase.png
-INPUT ./photo/pitch_increase.png
-INPUT ./photo/pitch_increase.png
-INPUT extractbb -B cropbox -O photo/pitch_increase.png
-INPUT ./chapter4.tex
-INPUT ./chapter4.tex
-INPUT chapter4.tex
-INPUT ./photo/air_moment_wb2.png
-INPUT ./photo/air_moment_wb2.png
-INPUT ./photo/air_moment_wb2.png
-INPUT extractbb -B cropbox -O photo/air_moment_wb2.png
-INPUT ./photo/air_moment_nb2.png
-INPUT ./photo/air_moment_nb2.png
-INPUT ./photo/air_moment_nb2.png
-INPUT extractbb -B cropbox -O photo/air_moment_nb2.png
-INPUT ./photo/air_moment_nb4.png
-INPUT ./photo/air_moment_nb4.png
-INPUT ./photo/air_moment_nb4.png
-INPUT extractbb -B cropbox -O photo/air_moment_nb4.png
-INPUT ./photo/NACA0009.png
-INPUT ./photo/NACA0009.png
-INPUT ./photo/NACA0009.png
-INPUT extractbb -B cropbox -O photo/NACA0009.png
-INPUT ./photo/OAF117.png
-INPUT ./photo/OAF117.png
-INPUT ./photo/OAF117.png
-INPUT extractbb -B cropbox -O photo/OAF117.png
-INPUT ./chapter5.tex
-INPUT ./chapter5.tex
-INPUT chapter5.tex
-INPUT ./ref.tex
-INPUT ./ref.tex
-INPUT ref.tex
-INPUT out/main.bbl
-INPUT out/main.bbl
-INPUT out/main.bbl
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT ./thank.tex
-INPUT ./thank.tex
-INPUT thank.tex
-INPUT out/main.aux
+INPUT extractbb -B cropbox -O sh60k.jpg
