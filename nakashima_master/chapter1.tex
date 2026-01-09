@@ -19,33 +19,43 @@
     この機構により,機体の上昇・降下・前進・横進といった各方向の運動制御が行われる．
     しかしながら,メインロータが回転する際には必然的に機体に対してトルクが作用する.
     このトルクを打ち消すために,回転翼機には様々な様式がある.
-    代表的な構成として,単一のメインロータと機体尾部のテールロータによってトルクを制御するシングルロータヘリコプタ（1）が挙げられる.
-    一例として,SH-60K哨戒ヘリコプタが挙げられる.
-    さらに,前後方向に配置された2つのロータが互いのトルクを打ち消すことで機体を安定化させるタンデムロータヘリコプタ（2）が知られている.
-    この形式には,CH-47Jのような機体がある.
+    代表的な構成として,単一のメインロータと機体尾部のテールロータによってトルクを制御するシングルロータヘリコプタが挙げられる.
+    一例として,SH-60K哨戒ヘリコプタ\ref{SH-60K（シングルロータ）}が挙げられる.
+    さらに,前後方向に配置された2つのロータが互いのトルクを打ち消すことで機体を安定化させるタンデムロータヘリコプタが知られている.
+    この形式には,CH-47J\ref{CH-47J（タンデムロータ）}のような機体がある.
     タンデムロータ機は，ロータが機体前後方向に存在するため，胴体の重心移動に対してロバスト性を有する特徴を持つ．
-    また,二重反転式ロータヘリコプタ（３）として,Ka-32等の上下二段で反対方向に回転するロータを備えた形式が存在し,テールロータを不要としている.
-    さらに,二重反転ロータの機構を簡素化し整備性を向上させた交差反転式ロータヘリコプタ（４）として,K-MAX のような機体も存在する.（図1-1）
+    また,二重反転式ロータヘリコプタとして,X2\ref{X2（二重反転式ロータ）}等の上下二段で反対方向に回転するロータを備えた形式が存在し,テールロータを不要としている.
+    さらに,二重反転ロータの機構を簡素化し整備性を向上させた交差反転式ロータヘリコプタとして,K-MAX\ref{K-MAX（交差反転式ロータ）}のような機体も存在する.
+    （Fig.\ref{fig:helicopter_types}）
     これらいずれの回転翼機においても，前進飛行時にはロータ面が飛行速度ベクトルに対してほぼ平行となるエッジワイズフライトとなる．
     この状態は固定翼機におけるプロペラ運動とは大きく異なり,回転翼まわりの空気の流れに非軸対称性を生じさせ，振動の発生要因となる．
     例えば,シングルロータの上面図を（図 1-2）に示す.
     メインロータブレードに作用する空力荷重は，ブレードの位置を表すアジマス角$\Psi$に依存して異なる．
     特に，前進側ブレード（$\Psi$ = 90 deg）と後退側ブレード（$\Psi$ = 270 deg）では,ブレードに作用する相対速度が大きく異なる.
-    この相対速度は図中に示される式で表される速度から求められる.
+    前進側/後退側ブレードのRotor Station $r$ 位置の微小翼素が受けるロータ回転面内流体速度は次の式で表される.
+    （ロータ回転面は$V_{c}$に対して平行とする.）
+
+    \begin{equation}
+        V = V_{c} + r\Omega (\Psi = 90 deg)
+    \end{equation}
     
+    \begin{equation}
+        V = -V_{c} + r\Omega (_psi = 90 deg)
+    \end{equation}
+
     \begin{figure}[htbp]
     \centering
 
     % 1行目
     \begin{subfigure}[b]{0.45\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{sh60k.jpg}
+        \includegraphics[width=\linewidth]{photo/sh60k.jpg}
         \caption{SH-60K（シングルロータ）}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{CH_47J.jpg}
+        \includegraphics[width=\linewidth]{photo/CH_47J.jpg}
         \caption{CH-47J（タンデムロータ）}
     \end{subfigure}
 
@@ -54,18 +64,26 @@
     % 2行目
     \begin{subfigure}[b]{0.45\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{X2.jpg}
-        \caption{Ka-32（二重反転式ロータ）}
+        \includegraphics[width=\linewidth]{photo/X2.jpg}
+        \caption{X2（二重反転式ロータ）}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{kmax.jpg}
+        \includegraphics[width=\linewidth]{photo/KMAX.jpg}
         \caption{K-MAX（交差反転式ロータ）}
     \end{subfigure}
 
-    \caption{ヘリコプタの様式\cite{ref1,ref2,ref3,ref4}}
+    \caption{ヘリコプタの様式\cite{SH60K,CH47J,X2,KMAX}}
     \label{fig:helicopter_types}
+    \end{figure}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/forwardflight.png}
+      \caption{前進飛行時のシングルロータ （上面図 ）\cite{Prouty2001}}
+      \label{fig:forwardflight}
     \end{figure}
 
 
@@ -373,3 +391,13 @@
     解析自体は3つの大きなタスク（トリム解析,非定常解析,フラッター解析）で構成されている.
     このように CAMRAD $\mathrm{II}$はメインロータハブ位置における振動荷重やモーメントを精度よく解析することが可能 （42）となっており,本論文でも評価する過渡応答解析や安定性解析を実施することができる.
     本論文では,トリム解析においてメインロータ回転面を通過するインフローを求める際 に,自由後流モデル（ Free Wake Model）を使用した.
+
+
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/CAMRADhistory.png}
+      \caption{回転翼機の包括的解析ツール\cite{Johnson1998}}
+      \label{fig:}
+    \end{figure}

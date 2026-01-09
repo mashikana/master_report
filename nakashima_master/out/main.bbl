@@ -1,5 +1,39 @@
 \begin{thebibliography}{10}
 
+\bibitem{SH60K}
+{海上自衛隊}.
+\newblock Sh-60k 哨戒ヘリコプタ.
+\newblock \url{https://www.mod.go.jp/msdf/equipment/rotorcraft/patrol/sh60k/}.
+\newblock 最終アクセス日: 2026-01-08.
+
+\bibitem{CH47J}
+{航空自衛隊}.
+\newblock Ch-47j 輸送ヘリコプタ.
+\newblock \url{https://www.mod.go.jp/asdf/equipment/yusouki/CH-47J/}.
+\newblock 最終アクセス日: 2026-01-08.
+
+\bibitem{X2}
+{Lockheed Martin}.
+\newblock X2 technology.
+\newblock \url{https://www.lockheedmartin.com/en-us/products/x2-technology.html}.
+\newblock 最終アクセス日: 2026-01-08.
+
+\bibitem{KMAX}
+{Kaman Aerospace}.
+\newblock K-max intermeshing rotor helicopter.
+\newblock \url{https://kaman.com/our-businesses/kaman-air-vehicles/k-max/}.
+\newblock 最終アクセス日: 2026-01-09.
+
+\bibitem{Prouty2001}
+Raymond~W. Prouty.
+\newblock {\em Helicopter Performance, Stability, and Control}.
+\newblock Krieger Publishing Company, Melbourne, 2 edition, 2001.
+
+\bibitem{Johnson1998}
+Wayne Johnson.
+\newblock Rotorcraft aeromechanics: Applications of a comprehensive analysis.
+\newblock In {\em Heli Japan 98: AHS International Meeting on Advanced Rotorcraft Technology and Disaster Relief}, Nagarafukumitsu, Gifu, Japan, April 1998.
+
 \bibitem{Kato1985-04}
 寛一郎加藤, 勇生今永.
 \newblock ヘリコプタ入門.
