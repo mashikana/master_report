@@ -1,45 +1,53 @@
-\chapter{トリム解析}
+\chapter{先行研究}
 \begin{flushright}
 	\begin{minipage}{0.8\hsize}
-		\quad 本章では,シングルロータヘリコプタに関して,トリム解析を実施した結果を示す.
+		\quad 本章では,先行研究としてシングルロータヘリコプタSH-60Kに関して,トリム解析とを実施した結果と振動評価指標について示す.
 		まず,トリム解析の手順について示す.
-        次に,検討対象であるラジコンヘリコプタについて機体モデルを設定する.
-        最後に,トリム解析によって得られた結果について示す.
+        次に,検討対象であるシングルロータヘリコプタについて機体モデルを設定する.
+        そして,トリム解析によって得られた結果について示す.
+        さらに,
 	\end{minipage}
 \end{flushright}
     \section{CAMRAD $\mathrm{II}$ を用いたトリム解析}
     \par
     第\ref{chap:intro}章で述べたように回転翼機の振動はほとんどがメインロータの空力荷重に由来するものである.
-    この振動荷重およびモーメントを解析的に精度よく求めるためにCAMRAD I$\mathrm{II}$を使用する.
+    この振動荷重およびモーメントを解析的に精度よく求めるためにCAMRAD $\mathrm{II}$を使用する.
     本論文では水平飛行での周期的な振動を議論の対象としているため,水平飛行状態で機体に作用するメインロータ,テールロータ,水平尾翼,
     垂直尾翼,胴体空力荷重および重力がバランスする状態をトリム解析で求める.
     トリム解析のなかでメインロータハブ中央位置に作用する振動荷重およびモーメントも併せて得られる.
     2.2項では重心移動を実施した場合に得られるトリム変数が物理的に正しいものかを考察し,解析が正しく実行されていることを確認する.
     ここで メインロータ回転座標系におけるn/rev荷重（n:整数）を正しく見積もるためにメインロータブレードは弾性体として取り扱われる必要があり,
     かつ振動荷重の精度向上のためにブレードのチップボルテックスの取り扱いには専用のオプションを導入した.
-    図2-1に CAMRAD $\mathrm{II}$のトリム解析の流れを示す.
+    Fig.\ref{fig:trimanlysis_flow}にCAMRAD $\mathrm{II}$のトリム解析の流れを示す.
     大きくはメインロータブレード,テールロータブレードの弾性体としての変形を含むフラッピング,リードラグ,フェザリング応答とインフロー計算部での収束計算,
     また全機の6自由度の荷重およびモーメントのバランスにおける収束計算から成り立っており,この計算の早期収束性を高めるためにインフローや機体姿勢角などの初期値の設定が重要となってくる.
     インフロー計算に関しては Free Wake Modelでの収束計算については解析結果を予測しがたいため,
     LEVEL 1 （Momentum Theory）→ LEVEL 2 （Prescribed Wake Model）→ LEVEL 3 （Free Wake Model）の順番に段階を上げて収束計算を図っている.
-    初期条件としては Drees Modelを定義しており 式 （2-1）～式 （2-4）に示されるように定義される.
+    初期条件としては Drees Modelを定義しており,Eq.\ref{zeta},Eq.\ref{zeta0},Eq.\ref{zeta1c},Eq.\ref{zeta1s}に示されるように定義される.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/trimanlysis_flow.png}
+      \caption{トリム解析の流れ\cite{Yoshizaki_master}}
+      \label{fig:trimanlysis_flow}
+    \end{figure}
 
     \begin{equation}
-        \zeta = \zeta_{0} + \zeta_{1c}\frac{r}{R}\cos\Psi +  \zeta_{1s}\frac{r}{R}\sin\Psi
+        \zeta = \zeta_{0} + \zeta_{1c}\frac{r}{R}\cos\Psi +  \zeta_{1s}\frac{r}{R}\sin\Psi  \label{zeta}
     \end{equation}
     
     ここで,
 
     \begin{equation}
-        \zeta_{0} = \frac{c_{T}}{2\sqrt{\lambda^2_{0}+ \mu^2}} +  \mu\tan(-\Theta)
+        \zeta_{0} = \frac{c_{T}}{2\sqrt{\lambda^2_{0}+ \mu^2}} +  \mu\tan(-\Theta)     \label{zeta0}
     \end{equation}
     
     \begin{equation}
-        \zeta_{1c} = \frac{c_{T}}{2\sqrt{\lambda^2_{0}+ \mu^2}}\frac{4}{3}[(1-8\mu^2)\sqrt{1+(\frac{\lambda}{\mu})^2} - \frac{\lambda}{\mu}]
+        \zeta_{1c} = \frac{c_{T}}{2\sqrt{\lambda^2_{0}+ \mu^2}}\frac{4}{3}[(1-8\mu^2)\sqrt{1+(\frac{\lambda}{\mu})^2} - \frac{\lambda}{\mu}]  \label{zeta1c}
     \end{equation}
 
     \begin{equation}
-        \zeta_{1s} = \frac{c_{T}}{2\sqrt{\lambda^2_{0}+ \mu^2}}(-2\mu)
+        \zeta_{1s} = \frac{c_{T}}{2\sqrt{\lambda^2_{0}+ \mu^2}}(-2\mu)    \label{zeta1s}
     \end{equation}
 
     インフローの収束が得られたのちに,胴体に作用する各コンポーネント（メインロータ,テールロータ,胴体,水平/垂直尾翼）からの空力荷重および
@@ -73,27 +81,59 @@
             \end{array}\right]_{\eta=\eta_0}    \label{jacobian}
     \end{equation}
 
-    \eqref{deltaeta}式で得られる$\Delta\eta$を用いて初期値$\eta_{0}$に$K\Delta\eta(0 < K < 1)$を加算して図2-1に示されるフロー全体が収束するまで,
-    つまりトリム変数$\eta$が収束するまで計算を実施することでトリム計算が完了することになる.
+    \eqref{deltaeta}式で得られる$\Delta\eta$を用いて初期値$\eta_{0}$に$K\Delta\eta(0 < K < 1)$を加算してFig.\ref{fig:trimanlysis_flow}
+    に示されるフロー全体が収束するまで,つまりトリム変数$\eta$が収束するまで計算を実施することでトリム計算が完了することになる.
 
     \section{トリム解析結果}
     \par
 
-    本論文では解析の対象となる機体はラジコンヘリコプタとした.（表2-1）
+    先行研究では解析の対象となる機体は中型機であるSH-60Kとした.
+    Table.\ref{table:SH60K}にその諸元を示す．
 
+    \begin{table}[H]
+        \centering
+        \caption{SH-60K 諸元\cite{Yoshizaki_master}}
+        \label{table:SH60K}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|l|l|l|l|}
+            \hline \multicolumn{4}{|c|}{SH-60K（三菱重工業株式会社）} \\
+            \hline \multicolumn{2}{|c|}{質量} & \multicolumn{2}{|c|}{エンジン} \\
+            \hline 空虚質量[kg] & 7,167 & 型式 & T700-IHI-401 \\
+            \hline 最大全備質量[kg] & 9,979 & 数量 & 2 \\
+            \hline 最大燃料質量[kg] & 2,041 & & \\
+            \hline \multicolumn{4}{|c|}{ロータ諸元} \\
+            \hline \multicolumn{2}{|c|}{メインロータ} & \multicolumn{2}{|c|}{テールロータ} \\
+            \hline 半径[m]& 8.18 &  \multicolumn{2}{|c|}{1.68} \\
+            \hline コード長[m]& 0.550 &  \multicolumn{2}{|c|}{0.250} \\
+            \hline ソリディティ & 0.086 &  \multicolumn{2}{|c|}{0.19} \\
+            \hline ブレード枚数 & 4 &  \multicolumn{2}{|c|}{4} \\
+            \hline 回転数[rpm] & 258 &  \multicolumn{2}{|c|}{1,190} \\
+            \hline ねじれ角[deg]& 8.8 &  \multicolumn{2}{|c|}{0} \\
+            \hline ヒンジオフセット$e/R$ & 0.047 & \multicolumn{2}{|c|}{ヒンジレスロータ} \\
+            \hline 
+        \end{tabular}
+    \end{table}
 
     \par
-    数値解析はラジコンヘリコプタが30.8 m/s（120 kt）で高速巡航飛行している状態でのトリム解析を実施した.
+    数値解析は機体が30.8 m/s（120 kt）で高速巡航飛行している状態でのトリム解析を実施した.
     特に振動を正確に計算する目的からメインロータブレードは弾性体としてモデル化され,20分割されている.
     各々の要素は断面特性を正確に計算されたモデルである.
     ここで 胴体に関しては剛体としてモデル化している.
     これは詳しくは後述するが,メインロータシャフト,及びメインギアボックスが取りつく構造部位が有意に変形するような胴体の振動モードは
     4/rev（25.0 Hz）からは遠く離れておりメインロータと胴体の連成を考慮に入れなくても問題は生じないためである.
-    CAMRAD $\mathrm{II}$によるトリム解析は図 2-2に示すようにベースラインCGから前方に 0.305 m,後方に1.68 mの範囲で,
+    CAMRAD $\mathrm{II}$によるトリム解析はFig.\ref{fig:sh60k_model}に示すようにベースラインCGから前方に 0.305 m,後方に1.68 mの範囲で,
     また左/右舷 0.912 mの範囲でそれぞれ 0.152 mの刻み幅で設定された4箇所で実施した.
     機体の慣性モーメントはどのCGの位置でもベースラインの値に統一して一定の値を使用した.
     この仮定の下においても胴体の4/rev振動の評価には影響がないから問題はない.
     この詳細についても後述する.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/sh60k_model.png}
+      \caption{SH-60K 上面図及び側面図\cite{Yoshizaki_master}}
+      \label{fig:sh60k_model}
+    \end{figure}
+
 
     \clearpage 
 
@@ -102,7 +142,7 @@
     Wakeの周期数などあるが,ここではベースラインで使用している値と同一のものを全ての評価点で使用した.
     また,特に水平尾翼の取付角はベースラインのラジコンヘリコプタと同じく 0 degとした.
     図2-3にトリム変数の結果（ピッチ,ロール,フラッピング角）を示す.
-    また,図 2-4には 図 2-2に示される胴体及び水平尾翼の空力作用点に作用する機体座標系における$F_x$及び$F_z$を示す.
+    また,図 2-4にはFig.\ref{fig:sh60k_model}に示される胴体及び水平尾翼の空力作用点に作用する機体座標系における$F_x$及び$F_z$を示す.
     それぞれのグラフの横軸は図 2-1に示される$y$軸を示し,また縦軸は$x$軸を表しており,重心位置が変化した際のそれぞれの値のコンター図となっている.
     それぞれの結果から次に示す所見が得られる.
 

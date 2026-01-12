@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  9 JAN 2026 21:48
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  12 JAN 2026 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -418,15 +418,13 @@ File: photo/forwardflight.png Graphic file (type bmp)
 [10]
 
 [11]
-
-[12]
 File: photo/MRHFM.png Graphic file (type bmp)
 <photo/MRHFM.png>
 
 
-[13
+[12]
 
-]
+[13]
 
 [14]
 
@@ -438,21 +436,23 @@ File: photo/MRHFM.png Graphic file (type bmp)
 
 [18]
 
-[19]
-
-[20
+[19
 
 ]
 
-[21]
+[20]
 
-[22]
+[21]
 File: photo/CAMRADhistory.png Graphic file (type bmp)
 <photo/CAMRADhistory.png>
-) (./chapter2.tex
+)
+
+[22] (./chapter2.tex
 
 [23]
 第2章
+File: photo/trimanlysis_flow.png Graphic file (type bmp)
+<photo/trimanlysis_flow.png>
 
 
 [24
@@ -462,32 +462,31 @@ File: photo/CAMRADhistory.png Graphic file (type bmp)
 [25]
 
 [26]
+File: photo/sh60k_model.png Graphic file (type bmp)
+<photo/sh60k_model.png>
 
-[27
 
-]) (./chapter3.tex
+[27]
 
 [28]
-第3章
-
 
 [29
 
+]) (./chapter3.tex
+
+[30]
+第3章
+
+
+[31
+
 ]
-
-[30
-
-]
-
-[31]
 
 [32
 
 ]
 
-[33
-
-]
+[33]
 
 [34
 
@@ -499,15 +498,23 @@ File: photo/CAMRADhistory.png Graphic file (type bmp)
 
 [36
 
-]) (./chapter4.tex
+]
 
 [37
+
+]
+
+[38
+
+]) (./chapter4.tex
+
+[39
 
 ]
 第4章
 
 
-[38
+[40
 
 ]
 Overfull \hbox (12.00772pt too wide) in paragraph at lines 73--80
@@ -516,13 +523,13 @@ Overfull \hbox (12.00772pt too wide) in paragraph at lines 73--80
 
 
 
-[39]) (./chapter5.tex
+[41]) (./chapter5.tex
 
-[40]
+[42]
 第5章
 ) (./ref.tex
 
-[41
+[43
 
 ] (out/main.bbl
 Underfull \hbox (badness 1776) in paragraph at lines 22--26
@@ -539,13 +546,13 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 29.
 
 
-[42
+[44
 
 ])) (./thank.tex
 
-[43])
+[45])
 
-[44
+[46
 
 ] (out/main.aux)
  ***********
@@ -558,12 +565,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4068 strings out of 469856
- 66723 string characters out of 5479602
+ 4091 strings out of 469856
+ 67246 string characters out of 5479602
  503148 words of memory out of 5000000
- 32576 multiletter control sequences out of 15000+600000
+ 32597 multiletter control sequences out of 15000+600000
  644122 words of font info for 114 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
  67i,13n,77p,336b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (45 pages, 144484 bytes).
+Output written on out/main.dvi (47 pages, 152080 bytes).
