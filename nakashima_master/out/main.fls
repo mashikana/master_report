@@ -175,7 +175,37 @@ INPUT ./photo/sh60k_model.png
 INPUT ./photo/sh60k_model.png
 INPUT ./photo/sh60k_model.png
 INPUT extractbb -B cropbox -O photo/sh60k_model.png
+INPUT ./photo/altitude_sh60k.png
+INPUT ./photo/altitude_sh60k.png
+INPUT ./photo/altitude_sh60k.png
+INPUT extractbb -B cropbox -O photo/altitude_sh60k.png
+INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
+INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
+INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
+INPUT extractbb -B cropbox -O photo/FxFz_fuselage_horizontal_stabilizer.png
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT ./photo/load_moment_sh60k.png
+INPUT ./photo/load_moment_sh60k.png
+INPUT ./photo/load_moment_sh60k.png
+INPUT extractbb -B cropbox -O photo/load_moment_sh60k.png
+INPUT ./photo/load_moment_phase_sh60k.png
+INPUT ./photo/load_moment_phase_sh60k.png
+INPUT ./photo/load_moment_phase_sh60k.png
+INPUT extractbb -B cropbox -O photo/load_moment_phase_sh60k.png
+INPUT ./photo/MRH_airframe.png
+INPUT ./photo/MRH_airframe.png
+INPUT ./photo/MRH_airframe.png
+INPUT extractbb -B cropbox -O photo/MRH_airframe.png
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm
+INPUT ./photo/acceleration_4rev_pilot.png
+INPUT ./photo/acceleration_4rev_pilot.png
+INPUT ./photo/acceleration_4rev_pilot.png
+INPUT extractbb -B cropbox -O photo/acceleration_4rev_pilot.png
+INPUT ./photo/acceleration_z_4rev_pilot.png
+INPUT ./photo/acceleration_z_4rev_pilot.png
+INPUT ./photo/acceleration_z_4rev_pilot.png
+INPUT extractbb -B cropbox -O photo/acceleration_z_4rev_pilot.png
 INPUT ./chapter3.tex
 INPUT ./chapter3.tex
 INPUT chapter3.tex

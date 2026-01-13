@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  12 JAN 2026 19:12
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  13 JAN 2026 20:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -383,18 +383,6 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
 
-LaTeX Warning: Reference `SH-60K（シングルロータ）' on page 9 undefined on input line 23.
-
-
-LaTeX Warning: Reference `CH-47J（タンデムロータ）' on page 9 undefined on input line 25.
-
-
-LaTeX Warning: Reference `X2（二重反転式ロータ）' on page 9 undefined on input line 27.
-
-
-LaTeX Warning: Reference `K-MAX（交差反転式ロータ）' on page 9 undefined on input line 28.
-
-
 
 [9
 
@@ -402,9 +390,9 @@ LaTeX Warning: Reference `K-MAX（交差反転式ロータ）' on page 9 undefin
 File: photo/sh60k.jpg Graphic file (type bmp)
 <photo/sh60k.jpg>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 53.
+(Font)              scaled to size 8.64899pt on input line 54.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 53.
+(Font)              scaled to size 8.64899pt on input line 54.
 File: photo/CH_47J.jpg Graphic file (type bmp)
 <photo/CH_47J.jpg>
 File: photo/X2.jpg Graphic file (type bmp)
@@ -451,13 +439,14 @@ File: photo/CAMRADhistory.png Graphic file (type bmp)
 
 [23]
 第2章
-File: photo/trimanlysis_flow.png Graphic file (type bmp)
-<photo/trimanlysis_flow.png>
 
 
 [24
 
 ]
+File: photo/trimanlysis_flow.png Graphic file (type bmp)
+<photo/trimanlysis_flow.png>
+
 
 [25]
 
@@ -467,54 +456,102 @@ File: photo/sh60k_model.png Graphic file (type bmp)
 
 
 [27]
+File: photo/altitude_sh60k.png Graphic file (type bmp)
+<photo/altitude_sh60k.png>
+
 
 [28]
+File: photo/FxFz_fuselage_horizontal_stabilizer.png Graphic file (type bmp)
+<photo/FxFz_fuselage_horizontal_stabilizer.png>
 
-[29
 
-]) (./chapter3.tex
+[29]
 
 [30]
-第3章
+File: photo/load_moment_sh60k.png Graphic file (type bmp)
+<photo/load_moment_sh60k.png>
 
 
 [31
 
 ]
+File: photo/load_moment_phase_sh60k.png Graphic file (type bmp)
+<photo/load_moment_phase_sh60k.png>
 
-[32
 
-]
+[32]
 
 [33]
+File: photo/MRH_airframe.png Graphic file (type bmp)
+<photo/MRH_airframe.png>
+
 
 [34
 
 ]
 
-[35
+[35]
 
-]
+[36]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 417.
 
-[36
 
-]
+[37]
+File: photo/acceleration_4rev_pilot.png Graphic file (type bmp)
+<photo/acceleration_4rev_pilot.png>
 
-[37
-
-]
 
 [38
 
+]
+File: photo/acceleration_z_4rev_pilot.png Graphic file (type bmp)
+<photo/acceleration_z_4rev_pilot.png>
+
+
+[39]) (./chapter3.tex
+
+[40]
+第3章
+
+
+[41
+
+]
+
+[42
+
+]
+
+[43]
+
+[44
+
+]
+
+[45
+
+]
+
+[46
+
+]
+
+[47
+
+]
+
+[48
+
 ]) (./chapter4.tex
 
-[39
+[49
 
 ]
 第4章
 
 
-[40
+[50
 
 ]
 Overfull \hbox (12.00772pt too wide) in paragraph at lines 73--80
@@ -523,13 +560,13 @@ Overfull \hbox (12.00772pt too wide) in paragraph at lines 73--80
 
 
 
-[41]) (./chapter5.tex
+[51]) (./chapter5.tex
 
-[42]
+[52]
 第5章
 ) (./ref.tex
 
-[43
+[53
 
 ] (out/main.bbl
 Underfull \hbox (badness 1776) in paragraph at lines 22--26
@@ -546,13 +583,19 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 29.
 
 
-[44
+[54
 
-])) (./thank.tex
+]
 
-[45])
+[55]
 
-[46
+[56]
+
+[57])) (./thank.tex
+
+[58])
+
+[59
 
 ] (out/main.aux)
  ***********
@@ -560,17 +603,14 @@ pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-24>
  ***********
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 4091 strings out of 469856
- 67246 string characters out of 5479602
+ 4213 strings out of 469856
+ 70295 string characters out of 5479602
  503148 words of memory out of 5000000
- 32597 multiletter control sequences out of 15000+600000
- 644122 words of font info for 114 fonts, out of 8000000 for 9000
+ 32711 multiletter control sequences out of 15000+600000
+ 644650 words of font info for 116 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
- 67i,13n,77p,336b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,14n,77p,589b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (47 pages, 152080 bytes).
+Output written on out/main.dvi (60 pages, 190936 bytes).
