@@ -16,12 +16,14 @@
         \hline\hline%\bhline{1.5pt}
         \endlastfoot
         $a$                 	            & $\mathrm{m/s^2}$      &    acceleration\\
-        $D$                 	            & m		            &    rotor diameter\\
-        $d^\ast/dt$                         & deg                   &  time derivative in rotating coordinate system \\
+        $b$                 	            & -                     &    number of blades\\
+        $c$                 	            & m                     &    blade chord length\\
+        $D$                 	            & m		                &    rotor diameter\\
+        $d^\ast/dt$                         & deg                   &    time derivative in rotating coordinate system \\
         $e_{0}$                             & m                     &    blade hinge offset \\
         $F_{x\mathrm{hub}}$                 & $\mathrm{N}$          &    4/rev load acting on the MRH center position in the $x_\mathrm{hub}$ direction \\
         $F_{y\mathrm{hub}}$                 & $\mathrm{N}$          &    4/rev load acting on the MRH center position in the $y_\mathrm{hub}$ direction \\
-        $F_{z\mathrm{hub}}$       	    & $\mathrm{N}$          &    4/rev load acting on the MRH center position in the $z_\mathrm{hub}$ direction\\
+        $F_{z\mathrm{hub}}$       	        & $\mathrm{N}$          &    4/rev load acting on the MRH center position in the $z_\mathrm{hub}$ direction\\
         $h_{cg}$       	                    & m                     &    vertical distance from the center of gravity to the MRH center position\\
         $h_{f}$       	                    & m                     &    vertical distance from the center of gravity to fuselage load application point\\
         $h_{ht}$       	                    & m                     &    vertical distance from the center of gravity to horizontal stabilizer\\
@@ -47,16 +49,16 @@
         $M_{y\mathrm{hub}}$ 	            & $\mathrm{N}\cdot\mathrm{m}$   &    4/rev moment acting on the MRH center position about the $y_\mathrm{hub}$ axis \\
         $M_{y\mathrm{hub}}$ 	            & $\mathrm{N}\cdot\mathrm{m}$   &    4/rev moment acting on the MRH center position about the $z_\mathrm{hub}$ axis \\
         $m$                                 & kg                    &  aircraft mass \\
-        $\vec{m}$ 		            & m                     &    vector from the center of gravity to the pilot seat position\\
+        $\vec{m}$ 		                    & m                     &    vector from the center of gravity to the pilot seat position\\
         $N$                                 & $\mathrm{N}\cdot\mathrm{m}$   &  moment acting about the $z$ axis \\
         $N_{F}$                             & $\mathrm{N}\cdot\mathrm{m}$   &  flap moment at the root of main rotor blade \\
         $N_{L}$                             & $\mathrm{N}\cdot\mathrm{m}$   &  lag moment at the root of main rotor blade \\
         $p$ 	            	            & $\mathrm{rad/s}$      &  roll angular velocity in the aircraft coordinate system  \\
         $q$ 	            	            & $\mathrm{rad/s}$      &  pitch angular velocity in the aircraft coordinate system \\
-        $R$              		    & m                     &  rotor radius   \\
-        $r$              		    & $\mathrm{rad/s}$      &  yaw angular velocity in the aircraft coordinate system   \\
+        $R$              		            & m                     &  rotor radius   \\
+        $r$              		            & $\mathrm{rad/s}$      &  yaw angular velocity in the aircraft coordinate system   \\
         $\vec{r_{0}}$                       & m                     &  vector from the origin of the ground coordinate system to the center of gravity position   \\
-        $\vec{r_{i}}$ 		            & m	                    &  vector from the center of gravity position to the pilot seat position\\
+        $\vec{r_{i}}$ 		                & m	                    &  vector from the center of gravity position to the pilot seat position\\
         $S_{x}$                             & $\mathrm{N}$          &  drag force at the root of main rotor blade \\
         $S_{r}$                             & $\mathrm{N}$          &  radial force at the root of a main rotor blade \\
         $S_{z}$                             & $\mathrm{N}$          &  lift force at the root of a main rotor blade \\
@@ -64,10 +66,10 @@
         $T_{tr}$                            & $\mathrm{N}$          &  lift of tail rotor  \\
         $u$ 	                            & $\mathrm{m/s}$        &  velocity in the $x$ axis direction in the aircraft coordinate system \\
         $v$ 	                            & $\mathrm{m/s}$        &  velocity in the $y$ axis direction in the aircraft coordinate system \\
-        $w$ 		                    & $\mathrm{m/s}$        &  velocity in the $z$ axis direction in the aircraft coordinate system \\
-        $V_{c}$ 	            	    & $\mathrm{m/s}$        &  cruising speed\\
+        $w$ 		                        & $\mathrm{m/s}$        &  velocity in the $z$ axis direction in the aircraft coordinate system \\
+        $V_{c}$ 	            	        & $\mathrm{m/s}$        &  cruising speed\\
         $X$                                 & $\mathrm{N}$          &  external force acting in the $x$ axis direction \\
-        $x_{cg}$              		    & m                     &  distance in the $x$ axis direction from the center of gravity to MRH   \\
+        $x_{cg}$              		        & m                     &  distance in the $x$ axis direction from the center of gravity to MRH   \\
         $x_{f}$       	                    & m                     &  distance in the $x$ axis direction from the center of gravity to fuselage load application point \\
         $x_{ht}$       	                    & m                     &  distance in the $x$ axis direction from horizontal stabilizer to MRH \\
         $x_{tr}$       	                    & m                     &  distance in the $x$ axis direction from tail rotor head to MRH \\
@@ -101,7 +103,7 @@
         $\mu$                               & -                     &  advance ratio （$=V_{c}/\Omega R$） \\
         $\Phi$                              & deg                   &  roll angle \\
         $\Psi$                              & deg                   &  blade azimuth angle \\
-        $\Omega$                            & $\mathrm{rad/s}$      &  main rotor rotational angular velocity \\
+        $\Omega$                            & $\mathrm{rad/s}$,[RPM]      &  main rotor rotational angular velocity \\
         $\omega$                            & $\mathrm{rad/s}$      &  imaginary part of complex eigenvalue （angular frequency） \\
         $\vec{\omega}$                      & $\mathrm{rad/s}$      &  angular velocity vector of the fuselage \\
         subscript                           &                       &   \\

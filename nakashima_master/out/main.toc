@@ -14,15 +14,13 @@
 \contentsline {section}{\numberline {2.3}メインロータハブ位置での振動荷重およびモーメント}{31}{}%
 \contentsline {section}{\numberline {2.4}パイロット座席位置での加速度}{34}{}%
 \contentsline {section}{\numberline {2.5}解析結果}{38}{}%
-\contentsline {chapter}{\numberline {第3章}結果}{41}{}%
-\contentsline {section}{\numberline {3.1}トリムの決定}{41}{}%
-\contentsline {section}{\numberline {3.2}トリム時のねじり下げモーメント}{44}{}%
-\contentsline {section}{\numberline {3.3}カウンターウェイトの搭載}{45}{}%
-\contentsline {section}{\numberline {3.4}推力増加時のねじり下げモーメントの計算}{47}{}%
-\contentsline {section}{\numberline {3.5}消費パワーの計算}{49}{}%
-\contentsline {chapter}{\numberline {第4章}考察}{50}{}%
-\contentsline {section}{\numberline {4.1}空力によるねじり下げモーメント}{50}{}%
-\contentsline {section}{\numberline {4.2}翼型の影響}{51}{}%
-\contentsline {chapter}{\numberline {第5章}結論}{53}{}%
-\contentsline {chapter}{参考文献}{54}{}%
-\contentsline {chapter}{謝辞}{59}{}%
+\contentsline {chapter}{\numberline {第3章}飛行試験}{41}{}%
+\contentsline {section}{\numberline {3.1}検討対象機体}{41}{}%
+\contentsline {section}{\numberline {3.2}データ取得方法}{44}{}%
+\contentsline {section}{\numberline {3.3}計測結果}{45}{}%
+\contentsline {chapter}{\numberline {第4章}考察}{46}{}%
+\contentsline {section}{\numberline {4.1}空力によるねじり下げモーメント}{46}{}%
+\contentsline {section}{\numberline {4.2}翼型の影響}{46}{}%
+\contentsline {chapter}{\numberline {第5章}結論}{48}{}%
+\contentsline {chapter}{参考文献}{49}{}%
+\contentsline {chapter}{謝辞}{54}{}%

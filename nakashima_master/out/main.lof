@@ -14,5 +14,9 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces パイロット座席での4/rev加速度（ $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{38}{}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces パイロット座席での4/rev $z$方向加速度の比較（ $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{40}{}%
 \addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces ラジコンヘリコプタのモデル}}{41}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 飛行試験用ラジコンヘリコプタと錘取り付け位置}}{43}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces IMU(Inertial Measurement Unit)}}{44}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 飛行試験場と高度,速度のデータ}}{44}{}%
 \addvspace {10\jsc@mpt }
 \addvspace {10\jsc@mpt }

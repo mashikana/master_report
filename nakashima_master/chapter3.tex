@@ -1,7 +1,8 @@
-\chapter{結果}
+\chapter{飛行試験}
+\label{chap:flight_test}
 \begin{flushright}
 	\begin{minipage}{0.8\hsize}
-		\quad 本章では，ねじり下げモーメントを相殺するカウンターウェイトの検討と，消費パワーの計算結果を示す．
+		\quad 本章では,ラジコンヘリコプタを用いた飛行試験の概要とその結果を示す．
 		      まず，ホバリング状態における必要推力を決定し，ホバリング時の性能指数を用いて，ピッチ角，角速度を決定する．
           トリム時に発生する遠心力によるねじり下げモーメントを相殺するカウンターウェイトを搭載し，推力を増加させた際の
           ねじり下げモーメントの変化について述べる．最後に，ねじり下げモーメントによって発生する消費パワーを計算し，
@@ -10,228 +11,197 @@
 \end{flushright}
 
 
-    \section{トリムの決定}
+    \section{検討対象機体}
+    \label{sec:aircraft}
     \par
-    定常時のピッチ角，ブレード回転速度を決定するにあたって，設計上Figure of Merit(FoM)の最高点が良いと考えられる．
-    Figure of Meritとは，ホバリングするロータの効率をはかる指標であり，Eq.\eqref{fom}で表される．分子は可能な限り
-    最小なパワーという意味で，これは誘導速度と推力の積で求まる．
-    \begin{equation}
-      \mathrm{FoM} = \frac{ホバーに必要な最小のパワー}{ホバーに実際使われたパワー} = \frac{Tv_{\mathrm{0}}}{P}  \label{fom}
-    \end{equation}
+    第\ref{chap:previous_research}章の内容から,$F_{z\mathrm{hub}}$を評価指標とし,重心移動による低振動化の効果の確認を
+    飛行試験が可能なラジコンヘリコプタのサイズで行う.
+    Fig.\ref{fig:helicopter_model}にラジコンヘリコプタのモデルを示す.
+    飛行試験には,4枚ブレードのヒンジレス・ロータを持つラジコンヘリコプタを使用した.
+    また,Table.\ref{table:flight_condition}に飛行条件を示す.
+    メインロータブレードは弾性ブレードとしてモデル化し,胴体は剛体として扱った.
+    搭載するロータはTable.\ref{table:aircraft_specification}に示す諸元のものである.
 
-    Figure of Meritの最高点を決定するにあたって，CFD解析によりホバリング時のロータ周りの3次元流れ場を求め，評価した．
-    ソルバーはJAXAで開発されたrFlow3Dを用いた．rFlow3Dでは対流項の離散化制度が4次制度となっており，ロータの翼面や後流
-    における渦の捕獲制度が高い．また，時間積分は陰解法により行われ，疑似時間項を付加したLU-SGS法で，各時間ステップにおける
-    内部反復を行うことで数値粘性を軽減しつつ，非定常流れを捕獲することが可能である．また，rFlow3Dでは重合格子法が採用されている．
-    に示すように，本研究で用いた解析格子の構成はブレード格子，内部背景格子，外部背景格子からなる．
-    外部背景格子の寸法は，縦，横，高さ，いずれもロータ直径の100倍の立方体とし，格子点数は$193\times193\times135$とした．
-    内部背景格子は縦，横がロータ直径の2倍，高さが0.75倍の矩形で，格子点数は$95\times95\times37$である．ブレード格子は
-    翼端・翼根に特異点を持つ円筒(SOH)格子で格子点数は$121\times143\times61$である．
-
-    \clearpage
-
-    解析条件としては角速度$209\ \mathrm{rad/s}$，$314\ \mathrm{rad/s}$，$444\ \mathrm{rad/s}$で検討した．Fig.ブレードピッチ角を変化させた場合の推力の変化を示す．
-    翼枚数が2枚のWB2とNB2を比較すると推力はブレード面積が2倍大きなWB2の方が大きい，ただし，推力の値はWB2がNB2の約1.5倍にとどまっている．
-    一方，NB4の推力はWB2と同程度の大きさとなっていることがわかる．ピッチ角の変化に対する推力変化の勾配を比較すると，WB2とNB4は解析を行った5度から
-    20度 の範囲では直線的に変化している．一方，NB2については，ピッチ角が15度付近 で推力の勾配が変化しており，ピッチ角が大きくなると失速の傾向がやや表れていると考えられる.
-    Fig.ピッチ角の変化に対するFigure of Meritの変化を示す．
-    翼弦長が大きなWB2のFigure of MeritがNB2と比較して大きな値となっており，高いピッチ角でのFoMの落ち込みも緩やかである．
-    一方、翼弦長が小さなNB2はピッチ角が12度を超えると減少に転じている．
-    しかし，同じ翼弦長で翼枚数のみが異なるNB4を見ると，ピッチ角が12度までは正の勾配を維持しており，高いピッチ角でのFoMの落ち込みも緩やかである．
-    したがって，高いピッチ角におけるプロペラの性能低下を抑制する要因としては，翼のアスペクト比で単純に議論できるものではないことが示唆されている．
-    また，Figure of Meritの最大値は翼弦長が小さく，羽枚数が4枚のNB4のほうがWB2よりも大きい．これは、相対流れ角が最適化されているねじり下げがあるブレードにおいては，
-    翼面での剥離がない場合に翼端の影響が小さな高アスペクト比翼の利点が現れているためであると考えられる．
-
-
-
-    本解析では，推力が一定であるという条件からピッチ角と角速度の組み合わせを決定して，その組み合わせの中からFigure of Meritが最大になる点を探索した．
-    は$x$軸にピッチ角，$y$軸に角速度をとり，双線形補間を用いて推力の分布を表したものである．
-    グラフ上の赤の平面は$T=39.227\ \mathrm{N}$であり，この平面との交点が青のプロットである．を見ると，
-    どちらもピッチ角，角速度が大きくなるほど推力が増加している．また，最大値は$250\ \mathrm{N}$ほどになっている．一方でFig.を見ると，WB2,NB4と比べると最大値が低く，
-    高いピッチ角では，増加量も低くなっている．これは，NB2がWB2と比べて翼面積が小さく，WB4と比べて翼枚数が少ないことが起因していると考えられる．
-    Fig.は$x$軸にピッチ角，$y$軸に角速度をとり，双3次補間を用いて推力の分布を表したものである．
-    推力についてと同様に，Fig.には似た特徴が見られる．まず，ピッチ角とFigure of Meritの関係については緩やかに増加し，12度から14度
-    の間で最大値を迎えている．高いピッチ角ではWB2のほうが緩やかにFigure of Meritが減少している．
-    一方，Fig.では10度から12度の間で最大値を迎え，その後は急激に減少している．次に，角速度とFigure of Meritの関係について注目すると，
-    どのグラフにおいても，ピッチ角の値によって，グラフの変化が異なっていた．このことより，Figure of Meritにより影響を与えているのがピッチ角であることがわかる．
-    
-
-    で得たプロットの中でFigure of Meritが最大になる点を探索した結果をTable.\ref{table:fom}に示す．
-    NB2はピッチ角と角速度がWB2，NB4と比べて大きく，Figure of Meritが最も低くなっている．
-    Figure of Meritが最も大きいのはNB4であるが，これは相対流れ角が最適化されているねじり下げがあるブレードにおいては，
-    翼面での剥離がない場合に翼端の影響が小さな高アスペクト比翼の利点が現れているためであると考えられる．
-    以上の結果より，空力性能についてはNB4が最も優れていると考えられる．
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/helicopter_model.png}
+      \caption{ラジコンヘリコプタのモデル}
+      \label{fig:helicopter_model}
+    \end{figure} 
 
     \begin{table}[H]
-      \centering
-      \caption{Pitch angle and angular velocity($T = 39.227\ \mathrm{N}$)}
-      \label{table:fom}
-      \setlength{\tabcolsep}{5pt}
-      \begin{tabular}{cccc} \hline
-          Name & Pitch angle[deg]   & Angular velocity[rad/s]   & Figure of Merit   \\    \hline
-          WB2  &   12.879           &       218.495             &    0.6394         \\    
-          NB2  &   10.758           &       296.828             &    0.6266         \\    
-          NB4  &   13.333           &       213.747             &    0.6526         \\    \hline
-      \end{tabular}
+        \centering
+        \caption{飛行条件}
+        \label{table:flight_condition}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|l|l|}
+            \hline 飛行形態 &  前進飛行 \\
+            \hline 飛行速度 $V_c$ \, [m/s] &  30.0  \\
+            \hline メインロータ回転方向 \, [-] & CW \\
+            \hline ロータ回転数 \, $\Omega$ \, [RPM]& 1500 \\
+            \hline 
+        \end{tabular}
     \end{table}
-
-
-    \clearpage
-    
-    \section{トリム時のねじり下げモーメント}
-    トリム時のねじり下げモーメントについて比較を行う．Table.\ref{table:neziri}に計算結果を示す．
-    ピッチングモーメントはWB2が最も大きく，NB2の約10倍ほどになっている．
-    これは，翼面積が大きくなったことにより，回転中心からの距離が大きくなり，遠心力が大きくなったことによるものであると考えられる．
-    また，NB2とNB4で比較を行うとNB4のほうが2倍以上大きくなっている．この結果から，翼枚数はねじり下げモーメントの要因の一つになるが，
-    それ以上に回転中心からの距離により，遠心力によるねじり下げモーメントは増加すると考えられる．
 
     \begin{table}[H]
-      \centering
-      \caption{Twisting down moment at steady state}
-      \label{table:neziri}
-      \setlength{\tabcolsep}{5pt}
-      \begin{tabular}{cccc} \hline
-          Name & Pitch angle[deg]   & Angular velocity[rad/s]   & Twisting down moment[N$\cdot$m]   \\    \hline
-          WB2  &   12.879           &       218.495             &    2.1631                         \\    
-          NB2  &   10.758           &       296.828             &    0.2063                         \\    
-          NB4  &   13.333           &       213.747             &    0.5801                         \\    \hline
-      \end{tabular}
+        \centering
+        \caption{機体諸元}
+        \label{table:aircraft_specification}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|l|l|}
+            \hline 機体質量 \, $m$ \, [kg] &  11.70 \\
+            \hline 半径 \, $R$ \, [m] &  0.786 \\
+            \hline ブレードコード長 \, c \, [m] & 0.0617 \\
+            \hline 合計ブレード数 \, $b$ [-] & 4 \\
+            \hline 平面形  & 矩形 \\
+            \hline 翼型 & NACA0012 \\
+           \hline  リードラグヒンジオフセット \, $e_0$ \, [m] & CW \\
+            \hline 
+        \end{tabular}
     \end{table}
-    
-    \clearpage
 
-    \section{カウンターウェイトの搭載}
     \par
-    本節では，Table.に示した3パターンのブレード形状について遠心力によるねじり下げモーメントを計算し，
-    それを相殺するカウンターウェイトの搭載を検討する．Fig.に示すように，ブレードにピッチ角がついていない状態では
-    カウンターウェイトには$x$軸正方向に遠心力がはたらく．しかしながら，翼断面から見るとブレードには，モーメントがかかっていない．
-    一方，ピッチ角を付けた場合だと，Fig.のように$x$軸と$y$軸の間に遠心力が発生し，$y$軸方向成分によって
-    ねじり上げモーメントが発生し，定常時のねじり下げモーメントを相殺することが出来る．
-   
+    Fig.\ref{fig:helicopter_cgposition}にシミュレーションと飛行試験で用いたラジコンヘリコプタを示す.
+    メインロータの真下に2.7kgの錘を配置した状態を$a$とする.
+    このとき,重心はシャフトの真下である.
+    また,棒状のアームを胴体から振動が軽減されると想定される左舷後方側に伸ばし,錘をロータの前後方向位置の20\%と40\%の位置に配置し,
+    これらをそれぞれ$b$,$c$とする.
+    一方,振動が大きくなると予想される右舷後方に対してロータの前後方向位置の40\%の位置に錘を配置した状態を$d$とする.
+    Table.\ref{table:cg_position}は,これらのケースにおける重心の位置づけを整理したものである.
+  
+  
+  
+    \begin{figure}[htbp]
+    \centering
+    % 1行目
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{photo/helicopter_front.png}
+        %\caption{ラジコンヘリコプタ（前面図）}
+        \label{fig:helicopter_front}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{photo/helicopter_up.png}
+        %\caption{ラジコンヘリコプタ（上面図）}
+        \label{fig:helicopter_up}
+    \end{subfigure}
 
-    
-    \clearpage
+    \vspace{5mm}
 
-    本研究では，カウンターウェイトの搭載についてFig.のような手順で計算を行った．
-    まず，カウンターウェイトを搭載していない時に発生するねじり下げモーメントを計算する．次にカウンターウェイトが
-    そのねじり下げモーメントを相殺するだけに必要な重量を計算する．そして，その重量を追加してねじり下げモーメントを
-    計算する．この計算を繰り返して，誤差が$0.001\ \mathrm{N}\cdot \mathrm{m}$以内になったときに計算を終了する．なお，カウンターウェイトのうでの
-    長さは翼根の25％の長さと仮定して計算を行う．
+    % 2行目
+    \begin{subfigure}[b]{0.8\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{photo/weight_position.png}
+        %\caption{錘の位置}
+        \label{fig:weight_position}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.6\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{photo/weight_position_up.png}
+        %\caption{錘の位置（4ケース）}
+        \label{fig:weight_position_up}
+    \end{subfigure}
 
-     
-    以上の計算を行い,求めたカウンターウェイトの重量とその時のピッチングモーメントをTable.\ref{table:cw}に示す．
-    ピッチングモーメントはWB2が最も大きく，NB2の約10倍ほどになっている．これは，翼面積が大きくなったことにより，
-    回転中心からの距離が大きくなり，遠心力が大きくなったことによるものであると考えられる．
-    また，NB2とNB4で比較を行うとNB4のほうが2倍以上大きくなっているが
-    また，カウンターウェイトの設計にあたって，機体重量も増加し，Figure of Meritの最大値も変化することが考えられる．
-    カウンターウェイトの重量も考慮した際のピッチ角と角速度，Figure of MeritをTable. に示す．
-    Fig.\ref{table:fom}と比較してWB2のみFigure of Meritの最高点が変わっているがNB2，NB4については変わっていないことがわかる．
-    これらのピッチ角と角速度を定常時のピッチ角，角速度とし，これ以降の節では，角速度を固定して計算する．
+    \caption{飛行試験用ラジコンヘリコプタと錘取り付け位置}
+    \label{fig:helicopter_cgposition}
+    \end{figure}
+
 
     \begin{table}[H]
-      \centering
-      \caption{Twisting down moment and counterweight}
-      \label{table:cw}
-      \setlength{\tabcolsep}{5pt}
-      \begin{tabular}{cccc} \hline
-          Name & Twisting down moment[N$\cdot$m]  &      Counteweight[kg]          \\    \hline
-          WB2  &   2.0261                         &       0.1085                   \\    
-          NB2  &   0.2063                         &       0.0285                   \\    
-          NB4  &   0.5801                         &       0.0628                   \\    \hline
-      \end{tabular}
+        \centering
+        \caption{重心の構成}
+        \label{table:cg_position}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|l|l|l|l|l|l|}
+            \hline         & \multicolumn{2}{|c|}{錘の位置}                   &  \multicolumn{3}{|c|}{メインロータシャフトに対する重心位置[m]} \\
+            \hline 重心位置 & ロータ前後方向位置 [\%] & 方位角[deg]              & 前後（後方が正） & 左右（右方が正） & 上下（上方が正）  \\
+            \hline a       & \multicolumn{2}{|c|}{メインロータハブ中心の真下}   &  $-1.78\times 10^{-2}$          &  $9.11\times 10^{-4}$           &  $-2.25\times 10^{-1}$ \\
+            \hline b       & 20                     &    315                   &  $1.39\times 10^{-2}$           &  $-3.08\times 10^{-2}$          &  $-2.25\times 10^{-1}$ \\
+            \hline c       & 40                     &    315                  &  $4.57\times 10^{-2}$           &  $-6.26\times 10^{-2}$          &  $-2.25\times 10^{-1}$ \\
+            \hline d       & 40                     &    45                  &  $4.57\times 10^{-2}$           &  $6.44\times 10^{-2}$           &  $-2.25\times 10^{-1}$ \\
+            \hline 
+        \end{tabular}
     \end{table}
 
-    \begin{table}[H]
-      \centering
-      \caption{Figure of Merit with counterweight}
-      \label{table:new fom}
-      \setlength{\tabcolsep}{5pt}
-      \begin{tabular}{cccc} \hline
-          Name & Pitch angle[deg]   & Angular velocity[rad/s]   & Figure of Merit   \\    \hline
-          WB2  &   12.576           &       220.869             &    0.6395         \\    
-          NB2  &   10.758           &       296.828             &    0.6266         \\    
-          NB4  &   13.333           &       213.747             &    0.6526         \\    \hline
-      \end{tabular}
-    \end{table}
-    
-    \clearpage
-
-    \section{推力増加時のねじり下げモーメントの計算}
-    \par 
-    前節ではカウンターウェイトを搭載することで，定常時のねじ下げモーメントは打ち消すことが出来た．しかしながら，推力増加時はコレクティブピッチ
-    制御により，ピッチ角を増加させるので，遠心力によるねじり下げモーメントも増加し，この変化によるサーボモータへの負荷を考慮する必要がある．
-    そこで，本節では推力を$10\ \mathrm{N}$増加した際のねじり下げモーメントの増加を計算する．計算方法としては，のような手順で行う．
-    まず，Fig.より，推力を$10\ \mathrm{N}$増加した際のピッチ角を計算する．本解析では角速度を一定とするコレクティブピッチ制御の機体について
-    検討する．したがって，角速度の値はTable.で決定したものを用いる．
-    次に，ピッチ角を増加させた際のねじり下げモーメントを計算する．最後に0.1秒間でピッチ角を増加させるとした時の$x$軸周りの角速度を計算し，
-    ねじり下げモーメントによる消費パワーを計算する．ここで，$x$軸周りの角速度$\omega$はロータの角速度$\Omega$とは異なるため，注意が必要である．
-    $x$軸周りの角速度$\omega$と消費パワー$P$については第節で述べる．
-
-    
-    
-    推力を$10\ \mathrm{N}$増加した際のピッチ角と，増加した角度をTable.\ref{table:pitch}に示す．増加した角度についてはNB2が最も少なくなっている．
-    トリム時の角速度がWB2,NB4と比べて大きいため，ピッチ角の増加量が少なくなったと考えられる．
-
-    \begin{table}[H]
-      \centering
-      \caption{Pitch angle when thrust increases}
-      \label{table:pitch}
-      \setlength{\tabcolsep}{5pt}
-      \begin{tabular}{ccc} \hline
-          Name & Pitch angle[deg]   & Increase in pitch angle[deg]  \\    \hline
-          WB2  &   15.909           &       3.333                   \\    
-          NB2  &   13.333           &       2.575                   \\    
-          NB4  &   16.818           &       3.485                   \\    \hline
-      \end{tabular}
-    \end{table}
 
     \clearpage
+    
+    \section{データ取得方法}
+    \label{sec:data_acquisition}
+    \ref{sec:aircraft}節で紹介したラジコンヘリコプタには,メインロータシャフトの周辺に加速度/ジャイロセンサーが搭載されており,
+    メインロータが1500RPMの一定回転速度で飛行している間,300Hzのサンプリングレートで$x$,$y$,$z$角速度/加速度を
+    同時に取得し,SDカードに保存することができる.
+    また,ロータ回転速度,GPSの経度,緯度,高度,速度,気圧,温度も計測した.
 
-    ねじり下げモーメントを計算した結果をFig.に示す．
-    どのグラフにおいても解析を行った範囲では，線形性がみられている．グラフの傾きについては，WB2が0.4569，NB2が0.1191,NB4が0.1009であり，
-    WB2が最も増加率が高かった．これは，ブレード面積によるところが大きいと考えられる．翼枚数が異なるNB2とNB4で比較した際には，傾きは近い値で
-    あることから，ねじり下げモーメントにソリディティは影響が小さいのではないかと考えられる．
-    10 N増加後のねじり下げモーメントについては，WB2が最も大きくNB2の約5倍となっている．翼面積の違いにより，ねじり下げモーメントの大きさも
-    異なったと考えられる．また，ソリディティの異なるNB2,NB4を比較すると，NB4のほうがNB2よりも大きくなっているが，約1.2倍と大きな差にはなっていない．
-    これは，トリム時の角速度がNB2が大きく，それにより，遠心力も増加していることが原因であると考えられる．
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/IMU.png}
+      \caption{IMU(Inertial Measurement Unit)}
+      \label{fig:IMU}
+    \end{figure} 
 
+    \par
+    Fig.\ref{fig:cite_altitude_velocity}に示す限られた空域で飛行試験を行うため,約300mの直線飛行経路で往復動作を繰り返し行い,
+    最低高度,最高速度でほぼ定常飛行した約3秒間のデータを評価データとして取得した.
+    試験は\ref{sec:aircraft}節で述べた4ケースの重心位置で行った.
+    飛行試験当日は,曇り空ににわか雨が降るものの,風は穏やかで突風もなく,外乱の影響を受けにくい振動測定に適した気象条件であった．
+    ラジコンヘリコプタは,第\ref{chap:previous_research}章で解析・検証したヘリコプタとは異なり,メインロータが時計回りに回転する.
+    そのため,振動が最小となる重心位置は,左舷側かつ後方位置であると推定された.
+    飛行試験は自律飛行ではなくマニュアル操縦であり,速度の偏差は約30m/sから±3m/sの範囲であった.
 
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/nagara_river.png}
+            %\caption{長良川}
+            \label{fig:nagara_river}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.4\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/altitude_velocity.png}
+            %\caption{高度と速度}
+            \label{fig:altitude_velocity}
+        \end{subfigure}
+    \caption{飛行試験場と高度,速度のデータ}
+    \label{fig:cite_altitude_velocity}
+    \end{figure}
 
     \clearpage
+    \section{計測結果}
+    \label{sec:flight_test_result}
+    \par
+    Table.\ref{table:flight_test_result}に機体構成ごとの試験結果を示す.
+    この試験では,重心を通常位置から左舷後方の位置$b$に移動させることで,4/rev振動が26\%減少した.
+    重心をさらに左舷後方の位置$c$まで移動させても,通常位置の振動から16\%しか減少しなかった.
+    一方,振動が増加すると予想された右舷後方位置$d$では,振動が33\%増加し,予想通りの結果となった.
 
-    \section{消費パワーの計算} \label{パワー}
-    \par 
-    ねじり下げモーメントの増加がサーボモータにどれほどの負荷をかけるのかを考えるにあたって，指標として考えられるものにパワーがある．
-    ブレード形状によって一定の推力増加に必要なピッチ角の変化量は異なり，発生するねじり下げモーメントも異なる．
-    そのため，パワーという角度の変化量によらないもので比較することによって，サーボモータへの負荷を検討する．
-    角度の変化量が異なるので，まずは$x$軸周りの角速度を求める．角速度はEq.\eqref{omega}で表される．本研究では，ブレード形状による
-    消費パワーの比較を行うことが目的であるので，コレクティブピッチ制御にかかる時間は0.1秒間であると仮定して，計算を行う．
-    また，消費パワーはトルクと角速度の積で求めることができ，Eq.\eqref{power}で表される．
-
-    \begin{equation}
-      \omega = \frac{ピッチ角の増加量}{コレクティブピッチ制御にかかる時間}  \label{omega}
-    \end{equation}
-
-    \begin{equation}
-      P = M\omega  \label{power}
-    \end{equation}
-
-    Table.\ref{table:power}に結果を示す．WB2のパワーはNB2と比較して約6.5倍ほど大ききくなっている．低アスペクト比のブレードは
-    翼面積が大きくなるので，その影響により消費パワーも大きくなっていると考えられる．NB2とNB4を比較すると，NB4のほうが約1.5倍ほど大きくなっている．
-    同じ角速度，ピッチ角においては，ブレード枚数が2倍になると，サーボモータには2倍の負荷がかかるはずであるが，トリム時の角速度とピッチ角が異なるため，少し低くなっていると考えられる．
-    以上の結果より，サーボモータにかかるパワーを最小限にするには，NB4のような高アスペクト比でソリディティが大きいロータが最適であるといえる．
 
     \begin{table}[H]
-      \centering
-      \caption{Power}
-      \label{table:power}
-      \setlength{\tabcolsep}{5pt}
-      \begin{tabular}{cccc} \hline
-          Name & Pitch angle increase[deg] &        $\omega$[rad/s]   &     $P$[W]     \\    \hline
-          WB2  &       3.333                  &        0.5817             &    0.8866       \\    
-          NB2  &       2.575                  &        0.4494             &    0.1374       \\    
-          NB4  &       3.485                  &        0.6082             &    0.2143       \\    \hline
-      \end{tabular}
+        \centering
+        \caption{飛行試験の計測結果}
+        \label{table:flight_test_result}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+            \hline 重心位置                         & \multicolumn{2}{|c|}{$a$} &  \multicolumn{2}{|c|}{$b$} & $c$ &  \multicolumn{3}{|c|}{$d$} \\
+            \hline 計測回数                         & 1回目     & 2回目      & 1回目     &  2回目  &  1回目    & 1回目     & 2回目  &  3回目   \\
+            \hline $\Omega$ [RPM]                  & 1494      & 1521       & 1500     & 1490    &  1528     & 1489     & 1494   & 1505  \\
+            \hline 気圧 [bar]                      & 1017.08   & 1016.3     & 1015.9   & 1015.1  & 1016.6    & 1015.9   & 1015.5 & 1015.1 \\
+            \hline 気温 [°]                        & 18.3      & 18.8       & 15.8     & 16.9    & 16.1      & 14.0     & 14.7   & 15.4   \\
+            \hline 高度[m]                         & 13.5      & 18.9       & 17.6     & 27.6    & 10.5      & 10.3     & 12.5   & 18.6   \\
+            \hline 速度[m/s]                       & 31.0      & 33.7       & 31.9     & 34.0    & 31.8      & 31.0     & 28.9   & 32.0   \\
+            \hline $\Phi$[deg](右舷下げ正)          & 6.1       & 6.1        & -5.7     & -5.0    & 3.5       & 0.6      & 7.4    & 2.5    \\
+            \hline $\Theta$[deg](頭上げ正)          & -6.3      & -7.4       & -10.9    & -14.1   & -5.8      & -4.4     & -5.5   & -4.7   \\
+            \hline 4/rev $a_z$[$\mathrm{m/s^2}$]   & 1.47      & 1.57       & 1.08     & 1.18    & 1.27      & 1.86     & 1.96   & 2.06   \\
+            \hline 平均 4/rev $a_z$[$\mathrm{m/s^2}$] & \multicolumn{2}{|c|}{1.52} & \multicolumn{2}{|c|}{1.13} & 1.27 & \multicolumn{3}{|c|}{1.96}  \\
+            \hline 比率                            & \multicolumn{2}{|c|}{1.00} & \multicolumn{2}{|c|}{0.74} & 0.84 & \multicolumn{3}{|c|}{1.33}  \\
+            \hline 
+        \end{tabular}
     \end{table}
     
     

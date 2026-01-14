@@ -1,12 +1,12 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  13 JAN 2026 20:18
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  14 JAN 2026 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/git/master_report/nakashima_master/main.tex
-(c:/git/master_report/nakashima_master/main.tex
+**c:/git/nakashima_master/main.tex
+(c:/git/nakashima_master/main.tex
 pLaTeX2e <2023-02-14>+1, based on
-LaTeX2e <2025-06-01> patch level 1
+LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
 (c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
 Document Class: jsreport 2025/04/27 jsclasses (okumura, texjporg)
@@ -51,7 +51,7 @@ LaTeX Info: Redefining \LaTeXe on input line 188.
 )
 \heisei=\count283
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup5
 \symboldletters=\mathgroup6
 \symboldsymbols=\mathgroup7
@@ -98,7 +98,7 @@ Package: tascmac 2020/01/15 v2.1 ascmac package (community edition)
 \@bcal=\count284
 \shaderule=\dimen177
 )) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2025/06/16 v2.17y AMS math features
+Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip52
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -159,10 +159,10 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \multlinegap=\skip53
 \multlinetaggap=\skip54
 \mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2949.
-LaTeX Info: Redefining \] on input line 2950.
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip55
 \LTright=\skip56
 \LTpre=\skip57
@@ -279,8 +279,6 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 17.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 17.
-
-
 [1
 
 ])
@@ -305,21 +303,15 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 7.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 7.
-
-
 [1
 
 ])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
-
-
 [2] (out/main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
-
-
 
 [3
 
@@ -327,53 +319,48 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
-
-
 [4
 
 
 ] (./symbols.tex
-Overfull \hbox (152.69865pt too wide) in alignment at lines 3--7
+Overfull \hbox (165.25433pt too wide) in alignment at lines 3--7
  [] [] [] 
  []
 
 
-Overfull \hbox (152.69865pt too wide) in alignment at lines 7--11
+Overfull \hbox (165.25433pt too wide) in alignment at lines 7--11
  [] [] [] 
  []
 
 
-Overfull \hbox (152.69865pt too wide) in alignment at lines 11--14
+Overfull \hbox (165.25433pt too wide) in alignment at lines 11--14
  [] [] [] 
  []
 
 
-Overfull \hbox (152.69865pt too wide) in alignment at lines 14--17
+Overfull \hbox (165.25433pt too wide) in alignment at lines 14--17
  [] [] [] 
  []
 
 
-Overfull \hbox (152.69865pt too wide) in alignment at lines 17--110
+Overfull \hbox (165.25433pt too wide) in alignment at lines 17--112
  [] [] [] 
  []
 
-[5
+./symbols.tex:112: ignored error: Infinite glue shrinkage found in box being split [5
 
 
-] [6]
-
-[7]
+]
+./symbols.tex:112: ignored error: Infinite glue shrinkage found in box being split [6] [7]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 124.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 124.
+(Font)              scaled to size 9.60999pt on input line 126.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 124.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 124.
-) (./chapter1.tex
-
-[8
+(Font)              scaled to size 9.60999pt on input line 126.
+) (./chapter1.tex [8
 
 
 ]
@@ -382,8 +369,6 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
-
-
 [9
 
 ]
@@ -401,172 +386,95 @@ File: photo/KMAX.jpg Graphic file (type bmp)
 <photo/KMAX.jpg>
 File: photo/forwardflight.png Graphic file (type bmp)
 <photo/forwardflight.png>
-
-
-[10]
-
-[11]
+[10] [11]
 File: photo/MRHFM.png Graphic file (type bmp)
 <photo/MRHFM.png>
+[12] [13] [14] [15] [16] [17] [18] [19
 
-
-[12]
-
-[13]
-
-[14]
-
-[15]
-
-[16]
-
-[17]
-
-[18]
-
-[19
-
-]
-
-[20]
-
-[21]
+] [20] [21]
 File: photo/CAMRADhistory.png Graphic file (type bmp)
 <photo/CAMRADhistory.png>
-)
-
-[22] (./chapter2.tex
-
-[23]
+) [22] (./chapter2.tex [23]
 第2章
-
-
 [24
 
 ]
 File: photo/trimanlysis_flow.png Graphic file (type bmp)
 <photo/trimanlysis_flow.png>
-
-
-[25]
-
-[26]
+[25] [26]
 File: photo/sh60k_model.png Graphic file (type bmp)
 <photo/sh60k_model.png>
-
-
 [27]
-File: photo/altitude_sh60k.png Graphic file (type bmp)
-<photo/altitude_sh60k.png>
-
-
+File: photo/attitude_sh60k.png Graphic file (type bmp)
+<photo/attitude_sh60k.png>
 [28]
 File: photo/FxFz_fuselage_horizontal_stabilizer.png Graphic file (type bmp)
 <photo/FxFz_fuselage_horizontal_stabilizer.png>
-
-
-[29]
-
-[30]
+[29] [30]
 File: photo/load_moment_sh60k.png Graphic file (type bmp)
 <photo/load_moment_sh60k.png>
-
-
 [31
 
 ]
 File: photo/load_moment_phase_sh60k.png Graphic file (type bmp)
 <photo/load_moment_phase_sh60k.png>
-
-
-[32]
-
-[33]
+[32] [33]
 File: photo/MRH_airframe.png Graphic file (type bmp)
 <photo/MRH_airframe.png>
-
-
 [34
 
-]
-
-[35]
-
-[36]
+] [35] [36]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 417.
-
-
 [37]
 File: photo/acceleration_4rev_pilot.png Graphic file (type bmp)
 <photo/acceleration_4rev_pilot.png>
-
-
 [38
 
 ]
 File: photo/acceleration_z_4rev_pilot.png Graphic file (type bmp)
 <photo/acceleration_z_4rev_pilot.png>
-
-
-[39]) (./chapter3.tex
-
-[40]
+[39]) (./chapter3.tex [40]
 第3章
-
-
+File: photo/helicopter_model.png Graphic file (type bmp)
+<photo/helicopter_model.png>
 [41
 
 ]
+File: photo/helicopter_front.png Graphic file (type bmp)
+<photo/helicopter_front.png>
+File: photo/helicopter_up.png Graphic file (type bmp)
+<photo/helicopter_up.png>
+File: photo/weight_position.png Graphic file (type bmp)
+<photo/weight_position.png>
+File: photo/weight_position_up.png Graphic file (type bmp)
+<photo/weight_position_up.png>
 
-[42
-
-]
-
-[43]
-
-[44
-
-]
-
-[45
-
-]
-
-[46
-
-]
-
-[47
-
-]
-
-[48
-
-]) (./chapter4.tex
-
-[49
-
-]
-第4章
+LaTeX Warning: Float too large for page by 49.34637pt on input line 110.
 
 
-[50
-
-]
-Overfull \hbox (12.00772pt too wide) in paragraph at lines 73--80
+Overfull \hbox (49.42009pt too wide) in paragraph at lines 118--127
  [][][][] 
  []
 
+[42] [43]
+File: photo/IMU.png Graphic file (type bmp)
+<photo/IMU.png>
+File: photo/nagara_river.png Graphic file (type bmp)
+<photo/nagara_river.png>
+File: photo/altitude_velocity.png Graphic file (type bmp)
+<photo/altitude_velocity.png>
+[44
 
+]) (./chapter4.tex [45
 
-[51]) (./chapter5.tex
+]
+第4章
+[46
 
-[52]
+]) (./chapter5.tex [47]
 第5章
-) (./ref.tex
-
-[53
+) (./ref.tex [48
 
 ] (out/main.bbl
 Underfull \hbox (badness 1776) in paragraph at lines 22--26
@@ -581,36 +489,24 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 29.
+[49
 
-
-[54
-
-]
-
-[55]
-
-[56]
-
-[57])) (./thank.tex
-
-[58])
-
-[59
+] [50] [51] [52])) (./thank.tex [53]) [54
 
 ] (out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
-LaTeX2e <2025-06-01> patch level 1
+LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4213 strings out of 469856
- 70295 string characters out of 5479602
- 503148 words of memory out of 5000000
- 32711 multiletter control sequences out of 15000+600000
+ 4281 strings out of 468181
+ 72178 string characters out of 5438189
+ 510922 words of memory out of 5000000
+ 33105 multiletter control sequences out of 15000+600000
  644650 words of font info for 116 fonts, out of 8000000 for 9000
- 41 hyphenation exceptions out of 8191
- 67i,14n,77p,589b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 934 hyphenation exceptions out of 8191
+ 67i,14n,77p,604b,628s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (60 pages, 190936 bytes).
+Output written on out/main.dvi (55 pages, 170808 bytes).

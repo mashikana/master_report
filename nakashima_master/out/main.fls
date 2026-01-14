@@ -1,11 +1,12 @@
-PWD c:/git/master_report/nakashima_master
+PWD c:/git/nakashima_master
 INPUT c:/texlive/2025/texmf.cnf
 INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2025/texmf-var/web2c/euptex/platex.fmt
-INPUT c:/git/master_report/nakashima_master/main.tex
+INPUT c:/git/nakashima_master/main.tex
 OUTPUT out/main.log
 INPUT c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
 INPUT c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
+INPUT c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
@@ -175,10 +176,10 @@ INPUT ./photo/sh60k_model.png
 INPUT ./photo/sh60k_model.png
 INPUT ./photo/sh60k_model.png
 INPUT extractbb -B cropbox -O photo/sh60k_model.png
-INPUT ./photo/altitude_sh60k.png
-INPUT ./photo/altitude_sh60k.png
-INPUT ./photo/altitude_sh60k.png
-INPUT extractbb -B cropbox -O photo/altitude_sh60k.png
+INPUT ./photo/attitude_sh60k.png
+INPUT ./photo/attitude_sh60k.png
+INPUT ./photo/attitude_sh60k.png
+INPUT extractbb -B cropbox -O photo/attitude_sh60k.png
 INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
 INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
 INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
@@ -209,6 +210,38 @@ INPUT extractbb -B cropbox -O photo/acceleration_z_4rev_pilot.png
 INPUT ./chapter3.tex
 INPUT ./chapter3.tex
 INPUT chapter3.tex
+INPUT ./photo/helicopter_model.png
+INPUT ./photo/helicopter_model.png
+INPUT ./photo/helicopter_model.png
+INPUT extractbb -B cropbox -O photo/helicopter_model.png
+INPUT ./photo/helicopter_front.png
+INPUT ./photo/helicopter_front.png
+INPUT ./photo/helicopter_front.png
+INPUT extractbb -B cropbox -O photo/helicopter_front.png
+INPUT ./photo/helicopter_up.png
+INPUT ./photo/helicopter_up.png
+INPUT ./photo/helicopter_up.png
+INPUT extractbb -B cropbox -O photo/helicopter_up.png
+INPUT ./photo/weight_position.png
+INPUT ./photo/weight_position.png
+INPUT ./photo/weight_position.png
+INPUT extractbb -B cropbox -O photo/weight_position.png
+INPUT ./photo/weight_position_up.png
+INPUT ./photo/weight_position_up.png
+INPUT ./photo/weight_position_up.png
+INPUT extractbb -B cropbox -O photo/weight_position_up.png
+INPUT ./photo/IMU.png
+INPUT ./photo/IMU.png
+INPUT ./photo/IMU.png
+INPUT extractbb -B cropbox -O photo/IMU.png
+INPUT ./photo/nagara_river.png
+INPUT ./photo/nagara_river.png
+INPUT ./photo/nagara_river.png
+INPUT extractbb -B cropbox -O photo/nagara_river.png
+INPUT ./photo/altitude_velocity.png
+INPUT ./photo/altitude_velocity.png
+INPUT ./photo/altitude_velocity.png
+INPUT extractbb -B cropbox -O photo/altitude_velocity.png
 INPUT ./chapter4.tex
 INPUT ./chapter4.tex
 INPUT chapter4.tex
