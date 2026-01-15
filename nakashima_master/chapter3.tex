@@ -1,207 +1,371 @@
-\chapter{飛行試験}
-\label{chap:flight_test}
+\chapter{CAMRAD $\mathrm{II}$による解析}
+\label{chap:camrad_analysis}
 \begin{flushright}
 	\begin{minipage}{0.8\hsize}
-		\quad 本章では,ラジコンヘリコプタを用いた飛行試験の概要とその結果を示す．
-		      まず，ホバリング状態における必要推力を決定し，ホバリング時の性能指数を用いて，ピッチ角，角速度を決定する．
-          トリム時に発生する遠心力によるねじり下げモーメントを相殺するカウンターウェイトを搭載し，推力を増加させた際の
-          ねじり下げモーメントの変化について述べる．最後に，ねじり下げモーメントによって発生する消費パワーを計算し，
-          サーボモータに与える負荷を検討する．
+		\quad 本章では,飛行試験で用いたラジコンヘリコプタについてCAMRAD $\mathrm{II}$による解析結果を示す.
+		      まず,飛行試験とによる結果の違いについて述べる.
+			  次に，ブレード方位角$\Psi$と有効迎角$\alpha$の関係や,有効迎角 $\alpha$と揚力係数$C_l$の関係などのグラフから,低振動化に寄与する要素を特定する.
+              最後に,$r/R= 0.855$における$\alpha U^2$,$C_l U^2$の振幅の値をFFTにより求め,支配的な周波数成分の組み合わせについて述べる.
+        
 	\end{minipage}
 \end{flushright}
 
-
-    \section{検討対象機体}
-    \label{sec:aircraft}
+    \section{CAMRAD $\mathrm{II}$と飛行試験の$F_{z\mathrm{hub}}$の比較}
+    \label{sec:camrad_result}
     \par
-    第\ref{chap:previous_research}章の内容から,$F_{z\mathrm{hub}}$を評価指標とし,重心移動による低振動化の効果の確認を
-    飛行試験が可能なラジコンヘリコプタのサイズで行う.
-    Fig.\ref{fig:helicopter_model}にラジコンヘリコプタのモデルを示す.
-    飛行試験には,4枚ブレードのヒンジレス・ロータを持つラジコンヘリコプタを使用した.
-    また,Table.\ref{table:flight_condition}に飛行条件を示す.
-    メインロータブレードは弾性ブレードとしてモデル化し,胴体は剛体として扱った.
-    搭載するロータはTable.\ref{table:aircraft_specification}に示す諸元のものである.
+    飛行試験の結果に加えて,ラジコンヘリコプタのCAMRAD $\mathrm{II}$による解析を実施した．
+    Fig.\ref{fig:camrad_flight_fzhub}に解析結果を示す.
+    黒色の棒グラフが4/rev振動に強い相関のあるハブでの$z$方向の外力$F_{z\mathrm{hub}}$の4/rev成分であり,
+    灰色の棒グラフが飛行試験から得られた$a_z$と機体質量$m$の積を示している.
+    飛行試験と同様にcase $b$,case $c$はcase $a$よりも$F_{z\mathrm{hub}}$の4/rev成分が低減していることが確認できる.
+    振動が増加すると予想していたcase $d$もcase $a$より$F_{z\mathrm{hub}}$の4/rev成分が大きい.
 
     \begin{figure}[H]
       \centering
-      \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/helicopter_model.png}
-      \caption{ラジコンヘリコプタのモデル}
-      \label{fig:helicopter_model}
-    \end{figure} 
-
-    \begin{table}[H]
-        \centering
-        \caption{飛行条件}
-        \label{table:flight_condition}
-        \setlength{\tabcolsep}{5pt}
-        \begin{tabular}{|l|l|}
-            \hline 飛行形態 &  前進飛行 \\
-            \hline 飛行速度 $V_c$ \, [m/s] &  30.0  \\
-            \hline メインロータ回転方向 \, [-] & CW \\
-            \hline ロータ回転数 \, $\Omega$ \, [RPM]& 1500 \\
-            \hline 
-        \end{tabular}
-    \end{table}
-
-    \begin{table}[H]
-        \centering
-        \caption{機体諸元}
-        \label{table:aircraft_specification}
-        \setlength{\tabcolsep}{5pt}
-        \begin{tabular}{|l|l|}
-            \hline 機体質量 \, $m$ \, [kg] &  11.70 \\
-            \hline 半径 \, $R$ \, [m] &  0.786 \\
-            \hline ブレードコード長 \, c \, [m] & 0.0617 \\
-            \hline 合計ブレード数 \, $b$ [-] & 4 \\
-            \hline 平面形  & 矩形 \\
-            \hline 翼型 & NACA0012 \\
-           \hline  リードラグヒンジオフセット \, $e_0$ \, [m] & CW \\
-            \hline 
-        \end{tabular}
-    \end{table}
-
-    \par
-    Fig.\ref{fig:helicopter_cgposition}にシミュレーションと飛行試験で用いたラジコンヘリコプタを示す.
-    メインロータの真下に2.7kgの錘を配置した状態を$a$とする.
-    このとき,重心はシャフトの真下である.
-    また,棒状のアームを胴体から振動が軽減されると想定される左舷後方側に伸ばし,錘をロータの前後方向位置の20\%と40\%の位置に配置し,
-    これらをそれぞれ$b$,$c$とする.
-    一方,振動が大きくなると予想される右舷後方に対してロータの前後方向位置の40\%の位置に錘を配置した状態を$d$とする.
-    Table.\ref{table:cg_position}は,これらのケースにおける重心の位置づけを整理したものである.
-  
-  
-  
-    \begin{figure}[htbp]
-    \centering
-    % 1行目
-    \begin{subfigure}[b]{0.45\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{photo/helicopter_front.png}
-        %\caption{ラジコンヘリコプタ（前面図）}
-        \label{fig:helicopter_front}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{photo/helicopter_up.png}
-        %\caption{ラジコンヘリコプタ（上面図）}
-        \label{fig:helicopter_up}
-    \end{subfigure}
-
-    \vspace{5mm}
-
-    % 2行目
-    \begin{subfigure}[b]{0.8\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{photo/weight_position.png}
-        %\caption{錘の位置}
-        \label{fig:weight_position}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.6\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{photo/weight_position_up.png}
-        %\caption{錘の位置（4ケース）}
-        \label{fig:weight_position_up}
-    \end{subfigure}
-
-    \caption{飛行試験用ラジコンヘリコプタと錘取り付け位置}
-    \label{fig:helicopter_cgposition}
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/camrad_flight_fzhub.png}
+      \caption{CAMRAD $\mathrm{II}$と飛行試験の$F_{z\mathrm{hub}}$の比較}
+      \label{fig:camrad_flight_fzhub}
     \end{figure}
 
-
-    \begin{table}[H]
-        \centering
-        \caption{重心の構成}
-        \label{table:cg_position}
-        \setlength{\tabcolsep}{5pt}
-        \begin{tabular}{|l|l|l|l|l|l|}
-            \hline         & \multicolumn{2}{|c|}{錘の位置}                   &  \multicolumn{3}{|c|}{メインロータシャフトに対する重心位置[m]} \\
-            \hline 重心位置 & ロータ前後方向位置 [\%] & 方位角[deg]              & 前後（後方が正） & 左右（右方が正） & 上下（上方が正）  \\
-            \hline a       & \multicolumn{2}{|c|}{メインロータハブ中心の真下}   &  $-1.78\times 10^{-2}$          &  $9.11\times 10^{-4}$           &  $-2.25\times 10^{-1}$ \\
-            \hline b       & 20                     &    315                   &  $1.39\times 10^{-2}$           &  $-3.08\times 10^{-2}$          &  $-2.25\times 10^{-1}$ \\
-            \hline c       & 40                     &    315                  &  $4.57\times 10^{-2}$           &  $-6.26\times 10^{-2}$          &  $-2.25\times 10^{-1}$ \\
-            \hline d       & 40                     &    45                  &  $4.57\times 10^{-2}$           &  $6.44\times 10^{-2}$           &  $-2.25\times 10^{-1}$ \\
-            \hline 
-        \end{tabular}
-    \end{table}
-
-
-    \clearpage
-    
-    \section{データ取得方法}
-    \label{sec:data_acquisition}
-    \ref{sec:aircraft}節で紹介したラジコンヘリコプタには,メインロータシャフトの周辺に加速度/ジャイロセンサーが搭載されており,
-    メインロータが1500RPMの一定回転速度で飛行している間,300Hzのサンプリングレートで$x$,$y$,$z$角速度/加速度を
-    同時に取得し,SDカードに保存することができる.
-    また,ロータ回転速度,GPSの経度,緯度,高度,速度,気圧,温度も計測した.
-
-    \begin{figure}[H]
-      \centering
-      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/IMU.png}
-      \caption{IMU(Inertial Measurement Unit)}
-      \label{fig:IMU}
-    \end{figure} 
+    \section{有効迎角$\alpha$と揚力係数$C_l$,誘導速度$v_i$について}
+    \label{sec:psi_alpha_cl_vi}
 
     \par
-    Fig.\ref{fig:cite_altitude_velocity}に示す限られた空域で飛行試験を行うため,約300mの直線飛行経路で往復動作を繰り返し行い,
-    最低高度,最高速度でほぼ定常飛行した約3秒間のデータを評価データとして取得した.
-    試験は\ref{sec:aircraft}節で述べた4ケースの重心位置で行った.
-    飛行試験当日は,曇り空ににわか雨が降るものの,風は穏やかで突風もなく,外乱の影響を受けにくい振動測定に適した気象条件であった．
-    ラジコンヘリコプタは,第\ref{chap:previous_research}章で解析・検証したヘリコプタとは異なり,メインロータが時計回りに回転する.
-    そのため,振動が最小となる重心位置は,左舷側かつ後方位置であると推定された.
-    飛行試験は自律飛行ではなくマニュアル操縦であり,速度の偏差は約30m/sから±3m/sの範囲であった.
+    Fig.\ref{fig:psi_alpha}には各ケースにおけるブレード方位角$\Psi$と有効迎角$\alpha$の関係を示す.
+    case $a$と比較した際,重心を左舷後方にした場合のcase $b$とcase $c$では$\alpha$の振幅が小さくなっている.
+    一方,重心を右舷後方においたcase $d$においては$\alpha$の振幅が大きくなっている.
+    また,どのケースにおいても$\Psi=300°$付近で$\alpha$の減少が見られる.
+    Fig.\ref{fig:alpha_cl}には,有効迎角 $\alpha$と揚力係数$C_l$の関係を示す.
+    $C_l$は$\alpha$と翼素の揚力の非定常効果によって決まる.
+    有効迎角は準定常空気力に対応することに留意されたい. 
+    どのケースにおいても$r/R= 0.750$より$r/R= 0.855$で非線形性が大きい.
+    しかしながら、$C_l$における非定常効果によって生じるこの非線形性は大きくない.
+    なぜなら$\alpha$は失速角よりも十分に小さいためである.
+    有効迎角$\alpha$の最大値はcase $b$とcase $c$で約4°であり,case $a$では約5°,case $d$では約5.5°である．
+    これらの値の大きさの関係は,Fig.\ref{fig:camrad_flight_fzhub}に示す$F_{z\mathrm{hub}}$の4/rev成分の関係と一致することに留意されたい.
 
     \begin{figure}[htbp]
     \centering
         % 1行目
         \begin{subfigure}[b]{0.45\linewidth}
             \centering
-            \includegraphics[width=\linewidth]{photo/nagara_river.png}
-            %\caption{長良川}
-            \label{fig:nagara_river}
+            \includegraphics[width=\linewidth]{photo/psi_alpha_a.png}
+            %\caption{$a$}
+            \label{psi_alpha_a}
         \end{subfigure}
         \hfill
-        \begin{subfigure}[b]{0.4\linewidth}
+        \begin{subfigure}[b]{0.45\linewidth}
             \centering
-            \includegraphics[width=\linewidth]{photo/altitude_velocity.png}
-            %\caption{高度と速度}
-            \label{fig:altitude_velocity}
+            \includegraphics[width=\linewidth]{photo/psi_alpha_b.png}
+            %\caption{$b$}
+            \label{psi_alpha_b}
         \end{subfigure}
-    \caption{飛行試験場と高度,速度のデータ}
-    \label{fig:cite_altitude_velocity}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/psi_alpha_c.png}
+            \caption{$c$}
+            %\label{psi_alpha_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/psi_alpha_d.png}
+            %\caption{$d$}
+            \label{psi_alpha_d}
+        \end{subfigure}
+    \caption{方位角$\Psi$に対する有効迎角$\alpha$の変化}
+    \label{fig:psi_alpha}
     \end{figure}
 
-    \clearpage
-    \section{計測結果}
-    \label{sec:flight_test_result}
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/alpha_cl_a.png}
+            %\caption{$a$}
+            \label{alpha_cl_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/alpha_cl_b.png}
+            %\caption{$b$}
+            \label{alpha_cl_b}
+        \end{subfigure}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/alpha_cl_c.png}
+            %\caption{$c$}
+            \label{alpha_cl_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/alpha_cl_d.png}
+            %\caption{$d$}
+            \label{alpha_cl_d}
+        \end{subfigure}
+    \caption{有効迎角$\alpha$と揚力係数$C_l$の関係}
+    \label{fig:alpha_cl}
+    \end{figure}
+
     \par
-    Table.\ref{table:flight_test_result}に機体構成ごとの試験結果を示す.
-    この試験では,重心を通常位置から左舷後方の位置$b$に移動させることで,4/rev振動が26\%減少した.
-    重心をさらに左舷後方の位置$c$まで移動させても,通常位置の振動から16\%しか減少しなかった.
-    一方,振動が増加すると予想された右舷後方位置$d$では,振動が33\%増加し,予想通りの結果となった.
+    Fig.\ref{fig:vi}は誘導速度$v_i$の分布を表している.
+    case $a$とcase $d$においては,$\Psi=300°$付近の翼端で$v_i$が増加している．
+    Table.\ref{table:attitude_angle}に各ケースにおける航空機の姿勢角を示す.
+    case $d$ではピッチ角が0に近いため,ブレードと後流の干渉効果が増大し,Fig.\ref{fig:camrad_flight_fzhub}の
+    $F_{z\mathrm{hub}}$における大きな4/rev成分を引き起こしている.
+
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/vi_a.png}
+            %\caption{$a$}
+            \label{vi_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/vi_b.png}
+            %\caption{$b$}
+            \label{vi_b}
+        \end{subfigure}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/vi_c.png}
+            %\caption{$c$}
+            \label{vi_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/vi_d.png}
+            %\caption{$d$}
+            \label{vi_d}
+        \end{subfigure}
+    \caption{誘導速度$v_i$の分布}
+    \label{fig:vi}
+    \end{figure}
+
 
 
     \begin{table}[H]
         \centering
-        \caption{飛行試験の計測結果}
-        \label{table:flight_test_result}
+        \caption{機体の姿勢角}
+        \label{table:attitude_angle}
         \setlength{\tabcolsep}{5pt}
-        \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-            \hline 重心位置                         & \multicolumn{2}{|c|}{$a$} &  \multicolumn{2}{|c|}{$b$} & $c$ &  \multicolumn{3}{|c|}{$d$} \\
-            \hline 計測回数                         & 1回目     & 2回目      & 1回目     &  2回目  &  1回目    & 1回目     & 2回目  &  3回目   \\
-            \hline $\Omega$ [RPM]                  & 1494      & 1521       & 1500     & 1490    &  1528     & 1489     & 1494   & 1505  \\
-            \hline 気圧 [bar]                      & 1017.08   & 1016.3     & 1015.9   & 1015.1  & 1016.6    & 1015.9   & 1015.5 & 1015.1 \\
-            \hline 気温 [°]                        & 18.3      & 18.8       & 15.8     & 16.9    & 16.1      & 14.0     & 14.7   & 15.4   \\
-            \hline 高度[m]                         & 13.5      & 18.9       & 17.6     & 27.6    & 10.5      & 10.3     & 12.5   & 18.6   \\
-            \hline 速度[m/s]                       & 31.0      & 33.7       & 31.9     & 34.0    & 31.8      & 31.0     & 28.9   & 32.0   \\
-            \hline $\Phi$[deg](右舷下げ正)          & 6.1       & 6.1        & -5.7     & -5.0    & 3.5       & 0.6      & 7.4    & 2.5    \\
-            \hline $\Theta$[deg](頭上げ正)          & -6.3      & -7.4       & -10.9    & -14.1   & -5.8      & -4.4     & -5.5   & -4.7   \\
-            \hline 4/rev $a_z$[$\mathrm{m/s^2}$]   & 1.47      & 1.57       & 1.08     & 1.18    & 1.27      & 1.86     & 1.96   & 2.06   \\
-            \hline 平均 4/rev $a_z$[$\mathrm{m/s^2}$] & \multicolumn{2}{|c|}{1.52} & \multicolumn{2}{|c|}{1.13} & 1.27 & \multicolumn{3}{|c|}{1.96}  \\
-            \hline 比率                            & \multicolumn{2}{|c|}{1.00} & \multicolumn{2}{|c|}{0.74} & 0.84 & \multicolumn{3}{|c|}{1.33}  \\
+        \begin{tabular}{|l|l|l|l|l|}
+            \hline                           &    $a$       &    $b$       &     $c$    &      $d$   \\
+            \hline ロール角$\Phi$ [deg]       &   3.793      &    3.235     &  2.604     &     4.714  \\
+            \hline ピッチ角$\Theta$[deg]      &   -6.533     &    -6.653    &  -6.597    &     -5.748 \\
             \hline 
         \end{tabular}
     \end{table}
+
+
+    \clearpage
+
+    \section{$r/R= 0.855$における$\alpha$,$C_l$,$U^2$の周波数成分の分析}
+    \label{sec:alpha_u2_fft}
+
+    \par
+    翼素理論から,ロータハブに作用する荷重$F_{z\mathrm{hub}}$はEq.\eqref{Fzhub}のように表すことができる.
+    ここで,シャフト系から見たフラップ角$\beta_0$,$\beta_c$,$\beta_s$は小さいとしている.
+
+    \begin{equation}
+        F_{z\mathrm{hub}} = \frac{1}{2}\rho S U^2 C_L  \label{Fzhub}
+    \end{equation}
+
+    $U$および$C_L$は,翼のスパン方向における代表（平均）値を示す.
+    Eq.\eqref{Fzhub}の右辺において,$U^2$および$C_L$は方位角に依存し,周波数成分を有する.
+    Table.\ref{table:product_combination}に列挙されているように,周波数成分の組み合わせにより4/revが生じる.
+    この4/rev成分は,これら5つのパターンを足し合わせることで得られる.
+
+    \begin{table}[H]
+        \centering
+        \caption{4/revとなる周波数成分の組み合わせ}
+        \label{table:product_combination}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|l|l|l|}
+            \hline product  &    $\alpha$,$C_l$の周波数成分  &    $U^2$の周波数成分     \\
+            \hline 1        &       0/rev                   &         4/rev           \\
+            \hline 2        &       1/rev                   &         3/rev           \\
+            \hline 3        &       2/rev                   &         2/rev           \\
+            \hline 4        &       3/rev                   &         1/rev           \\
+            \hline 5        &       4/rev                   &         0/rev           \\
+            \hline 
+        \end{tabular}
+    \end{table}    
     
     
+    $\alpha$,$C_l$,$U^2$を以下のように方位角$\Psi$に関するFourier級数で展開する.
+    ここで,添え字は各周波数成分を表す.
+
+    \begin{align}
+    \alpha &= \alpha_0 + \sum_{i=1}^{4} \alpha_i \cos(i\Psi + \delta_i)  \label{eq:alpha_def} \\
+    C_l &= C_{l0} + \sum_{i=1}^{4} C_{li} \cos(i\Psi + \varepsilon_i)  \label{eq:cl_def} \\
+    U^2 &= U_0^2 + \sum_{i=1}^{4} U_i^2 \cos(i\Psi + \xi_i)  \label{eq:u2_def}
+    \end{align}
+
+    $\alpha U^2$と$C_l U^2$の4/revの項$(\alpha U^2)_4$,$(C_l U^2)_4$は以下のように表される.
+
+
+    \begin{align}
+    (\alpha U^2)_4
+    &= \alpha_0 U_4^2 \cos(4\Psi + \xi_4)
+    + \frac{\alpha_1 U_3^2}{2} \cos(4\Psi + \delta_1 + \xi_3)
+    + \frac{\alpha_2 U_2^2}{2} \cos(4\Psi + \delta_2 + \xi_2) \notag \\
+    &\quad
+    + \frac{\alpha_3 U_1^2}{2} \cos(4\Psi + \delta_3 + \xi_1)
+    + \alpha_4 U_0^2 \cos(4\Psi + \delta_4),
+    \end{align}
+ 
+
+    \begin{align}
+    (C_l U^2)_4
+    &= C_{l0} U_4^2 \cos(4\Psi + \xi_4)
+    + \frac{C_{l1} U_3^2}{2} \cos(4\Psi + \varepsilon_1 + \xi_3)
+    + \frac{C_{l2} U_2^2}{2} \cos(4\Psi + \varepsilon_2 + \xi_2) \notag \\
+    &\quad
+    + \frac{C_{l3} U_1^2}{2} \cos(4\Psi + \varepsilon_3 + \xi_1)
+    + C_{l4} U_0^2 \cos(4\Psi + \varepsilon_4).
+    \end{align}
+
+    \par
+    Fig.\ref{fig:product1}～Fig.\ref{fig:product5}に$r/R= 0.855$の$\alpha U^2$,$C_l U^2$の振幅の値を示す.
+    $U^2$は,ブレードの運動と前進速度によって決まる翼素への流入速度と,翼素における誘導速度によって決定される.
+    $\alpha$は,$U^2$とコレクティブピッチ角及びサイクリックピッチ角によって決定される.
+    $C_l$は前述の通り,$\alpha$と翼素の揚力に対する非定常効果によって決まる.
+
+    $\alpha U^2$と$C_l U^2$について,case $b$の値とcase $c$の値の関係は,いかなる組み合わせにおいてもFig.\ref{fig:camrad_flight_fzhub}の結果に対応しない.
+    しかしながら,Fig.\ref{fig:product2},Fig.\ref{fig:product3},Fig.\ref{fig:product5}に示されるようにFig.\ref{fig:camrad_flight_fzhub}に見られた
+    case $b$,case $c$<case $a$<case $d$という傾向に一致している.
+    Fig.\ref{fig:vi}に示されるように,$v_i$は$\Psi = 300°$付近で増加しており,翼端付近ではより顕著な増加が観察された.
+    翼端付近での誘導速度の増加がFig.\ref{fig:phi}に見られる流入角の減少を引き起こしている.
+    これが結果としてFig.\ref{fig:psi_alpha}の有効迎角$\alpha$の大幅な減少を招いている.
+    ここでの$r/R= 0.855$の点に注目した解析では,この$\alpha$の大幅な減少をとらえていないことも,Fig.\ref{fig:camrad_flight_fzhub}と
+    Fig.\ref{fig:product1}～Fig.\ref{fig:product5}の差が生じる原因である.
+    Fig.\ref{fig:product1}～Fig.\ref{fig:product5}のどの組み合わせにおいても$\alpha U^2$の振幅と$C_l U^2$の振幅の
+    各case間での大小関係が一致している.
+    これはあらゆるcase間の$\alpha$の周波数成分の大小関係が$C_l$のそれと同じになることを意味している.
+    Fig.\ref{fig:alpha_cl}から$C_l$はおよそ$0.1\alpha$と推定される.
+    ただし,Fig.\ref{fig:product5}に示されるcase $b$とcase $c$については,揚力傾斜の比率（0.1[1/deg]）との差は大きく,
+    $C_l$の4/rev成分には大きな翼の非定常効果が見られる.
+    Fig.\ref{fig:product1}～Fig.\ref{fig:product5}での$\alpha U^2$,$C_l U^2$の振幅の値から,
+    機体の4/rev振動は$\alpha$,$C_l$の4/rev成分と$U^2$の定常成分の積が主成分であることが分かる.
+    Ref.\cite{Yoshizaki2023b}では$C_l$の2/revと$U^2$の2/revの振幅に注目し,重心移動により低振動化を議論している.
+    精度の高い低周波数の現象で,4/rev振動を説明する方針のためである.
+    Fig.\ref{fig:product3}における値の大小関係は,case $b$,case $c$<case $a$<case $d$というFig.\ref{fig:camrad_flight_fzhub}の
+    $F_{z\mathrm{hub}}$の傾向と一致している.
+    Ref.\cite{Yoshizaki2023b}での$C_l$の2/revと$U^2$の2/revの振幅に注目した分析は,4/rev振動の分析として大きなエラーを持たないと推測できる.
+    さらに,Fig.\ref{fig:product3}における各caseの値の比は,他のproductでの比に比べてFig.\ref{fig:camrad_flight_fzhub}での比に近く,
+    上記方針（精度の高い低周波数の現象で,4/rev振動を説明する）の妥当性と言える.
+
+    \par 
+    Fig.\ref{fig:product_all}に$\alpha U^2$と$C_l U^2$の4/rev成分の振幅を示す.
+    Fig.\ref{fig:product_all}での4case振幅の大小関係はFig.\ref{fig:product2},Fig.\ref{fig:product3},Fig.\ref{fig:product5}
+    での関係と同一である.
+    Fig.\ref{fig:product_all}で示した振幅の値は4/rev振動の主成分であるFig.\ref{fig:product5}に示した振幅より小さい.
+    これは,Fig.\ref{fig:product5}（$\alpha$,$C_l$の4/revと$U^2$の定常成分）とFig.\ref{fig:product5}
+    （$\alpha$,$C_l$の3/revと$U^2$の1/rev）振動の位相が大きく異なり,両振動が打ち消し合うためである.
+    また,Fig.\ref{fig:product_all}に示したcase間の値の比は,Fig.\ref{fig:product2},Fig.\ref{fig:product3},Fig.\ref{fig:product5}での
+    比よりもFig.\ref{fig:camrad_flight_fzhub}での比に近いとは言えず,スパン方向の1点に注目した,本研究での分析方法の限界と考えられる.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/product1.png}
+      \caption{$\alpha U^2$,$C_l U^2$の振幅(product 1)}
+      \label{fig:product1}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/product2.png}
+      \caption{$\alpha U^2$,$C_l U^2$の振幅(product 2)}
+      \label{fig:product2}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/product3.png}
+      \caption{$\alpha U^2$,$C_l U^2$の振幅(product 3)}
+      \label{fig:product3}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/product4.png}
+      \caption{$\alpha U^2$,$C_l U^2$の振幅(product 4)}
+      \label{fig:product4}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/product5.png}
+      \caption{$\alpha U^2$,$C_l U^2$の振幅(product 5)}
+      \label{fig:product5}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.5\linewidth]{photo/product_all.png}
+      \caption{$\alpha U^2$,$C_l U^2$の振幅}
+      \label{fig:product_all}
+    \end{figure}
+
+
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/phi_a.png}
+            %\caption{$a$}
+            \label{phi_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/phi_b.png}
+            %\caption{$b$}
+            \label{phi_b}
+        \end{subfigure}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/phi_c.png}
+            %\caption{$c$}
+            \label{phi_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/phi_d.png}
+            %\caption{$d$}
+            \label{phi_d}
+        \end{subfigure}
+    \caption{流入角$\phi$の分布}
+    \label{fig:phi}
+    \end{figure}
+
+
+
+

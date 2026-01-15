@@ -162,54 +162,6 @@ INPUT extractbb -B cropbox -O photo/CAMRADhistory.png
 INPUT ./chapter2.tex
 INPUT ./chapter2.tex
 INPUT chapter2.tex
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT ./photo/trimanlysis_flow.png
-INPUT ./photo/trimanlysis_flow.png
-INPUT ./photo/trimanlysis_flow.png
-INPUT extractbb -B cropbox -O photo/trimanlysis_flow.png
-INPUT ./photo/sh60k_model.png
-INPUT ./photo/sh60k_model.png
-INPUT ./photo/sh60k_model.png
-INPUT extractbb -B cropbox -O photo/sh60k_model.png
-INPUT ./photo/attitude_sh60k.png
-INPUT ./photo/attitude_sh60k.png
-INPUT ./photo/attitude_sh60k.png
-INPUT extractbb -B cropbox -O photo/attitude_sh60k.png
-INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
-INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
-INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
-INPUT extractbb -B cropbox -O photo/FxFz_fuselage_horizontal_stabilizer.png
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT ./photo/load_moment_sh60k.png
-INPUT ./photo/load_moment_sh60k.png
-INPUT ./photo/load_moment_sh60k.png
-INPUT extractbb -B cropbox -O photo/load_moment_sh60k.png
-INPUT ./photo/load_moment_phase_sh60k.png
-INPUT ./photo/load_moment_phase_sh60k.png
-INPUT ./photo/load_moment_phase_sh60k.png
-INPUT extractbb -B cropbox -O photo/load_moment_phase_sh60k.png
-INPUT ./photo/MRH_airframe.png
-INPUT ./photo/MRH_airframe.png
-INPUT ./photo/MRH_airframe.png
-INPUT extractbb -B cropbox -O photo/MRH_airframe.png
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm
-INPUT ./photo/acceleration_4rev_pilot.png
-INPUT ./photo/acceleration_4rev_pilot.png
-INPUT ./photo/acceleration_4rev_pilot.png
-INPUT extractbb -B cropbox -O photo/acceleration_4rev_pilot.png
-INPUT ./photo/acceleration_z_4rev_pilot.png
-INPUT ./photo/acceleration_z_4rev_pilot.png
-INPUT ./photo/acceleration_z_4rev_pilot.png
-INPUT extractbb -B cropbox -O photo/acceleration_z_4rev_pilot.png
-INPUT ./chapter3.tex
-INPUT ./chapter3.tex
-INPUT chapter3.tex
 INPUT ./photo/helicopter_model.png
 INPUT ./photo/helicopter_model.png
 INPUT ./photo/helicopter_model.png
@@ -242,12 +194,148 @@ INPUT ./photo/altitude_velocity.png
 INPUT ./photo/altitude_velocity.png
 INPUT ./photo/altitude_velocity.png
 INPUT extractbb -B cropbox -O photo/altitude_velocity.png
+INPUT ./chapter3.tex
+INPUT ./chapter3.tex
+INPUT chapter3.tex
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT ./photo/camrad_flight_fzhub.png
+INPUT ./photo/camrad_flight_fzhub.png
+INPUT ./photo/camrad_flight_fzhub.png
+INPUT extractbb -B cropbox -O photo/camrad_flight_fzhub.png
+INPUT ./photo/psi_alpha_a.png
+INPUT ./photo/psi_alpha_a.png
+INPUT ./photo/psi_alpha_a.png
+INPUT extractbb -B cropbox -O photo/psi_alpha_a.png
+INPUT ./photo/psi_alpha_b.png
+INPUT ./photo/psi_alpha_b.png
+INPUT ./photo/psi_alpha_b.png
+INPUT extractbb -B cropbox -O photo/psi_alpha_b.png
+INPUT ./photo/psi_alpha_c.png
+INPUT ./photo/psi_alpha_c.png
+INPUT ./photo/psi_alpha_c.png
+INPUT extractbb -B cropbox -O photo/psi_alpha_c.png
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT ./photo/psi_alpha_d.png
+INPUT ./photo/psi_alpha_d.png
+INPUT ./photo/psi_alpha_d.png
+INPUT extractbb -B cropbox -O photo/psi_alpha_d.png
+INPUT ./photo/alpha_cl_a.png
+INPUT ./photo/alpha_cl_a.png
+INPUT ./photo/alpha_cl_a.png
+INPUT extractbb -B cropbox -O photo/alpha_cl_a.png
+INPUT ./photo/alpha_cl_b.png
+INPUT ./photo/alpha_cl_b.png
+INPUT ./photo/alpha_cl_b.png
+INPUT extractbb -B cropbox -O photo/alpha_cl_b.png
+INPUT ./photo/alpha_cl_c.png
+INPUT ./photo/alpha_cl_c.png
+INPUT ./photo/alpha_cl_c.png
+INPUT extractbb -B cropbox -O photo/alpha_cl_c.png
+INPUT ./photo/alpha_cl_d.png
+INPUT ./photo/alpha_cl_d.png
+INPUT ./photo/alpha_cl_d.png
+INPUT extractbb -B cropbox -O photo/alpha_cl_d.png
+INPUT ./photo/vi_a.png
+INPUT ./photo/vi_a.png
+INPUT ./photo/vi_a.png
+INPUT extractbb -B cropbox -O photo/vi_a.png
+INPUT ./photo/vi_b.png
+INPUT ./photo/vi_b.png
+INPUT ./photo/vi_b.png
+INPUT extractbb -B cropbox -O photo/vi_b.png
+INPUT ./photo/vi_c.png
+INPUT ./photo/vi_c.png
+INPUT ./photo/vi_c.png
+INPUT extractbb -B cropbox -O photo/vi_c.png
+INPUT ./photo/vi_d.png
+INPUT ./photo/vi_d.png
+INPUT ./photo/vi_d.png
+INPUT extractbb -B cropbox -O photo/vi_d.png
+INPUT ./photo/product1.png
+INPUT ./photo/product1.png
+INPUT ./photo/product1.png
+INPUT extractbb -B cropbox -O photo/product1.png
+INPUT ./photo/product2.png
+INPUT ./photo/product2.png
+INPUT ./photo/product2.png
+INPUT extractbb -B cropbox -O photo/product2.png
+INPUT ./photo/product3.png
+INPUT ./photo/product3.png
+INPUT ./photo/product3.png
+INPUT extractbb -B cropbox -O photo/product3.png
+INPUT ./photo/product4.png
+INPUT ./photo/product4.png
+INPUT ./photo/product4.png
+INPUT extractbb -B cropbox -O photo/product4.png
+INPUT ./photo/product5.png
+INPUT ./photo/product5.png
+INPUT ./photo/product5.png
+INPUT extractbb -B cropbox -O photo/product5.png
+INPUT ./photo/product_all.png
+INPUT ./photo/product_all.png
+INPUT ./photo/product_all.png
+INPUT extractbb -B cropbox -O photo/product_all.png
+INPUT ./photo/phi_a.png
+INPUT ./photo/phi_a.png
+INPUT ./photo/phi_a.png
+INPUT extractbb -B cropbox -O photo/phi_a.png
+INPUT ./photo/phi_b.png
+INPUT ./photo/phi_b.png
+INPUT ./photo/phi_b.png
+INPUT extractbb -B cropbox -O photo/phi_b.png
+INPUT ./photo/phi_c.png
+INPUT ./photo/phi_c.png
+INPUT ./photo/phi_c.png
+INPUT extractbb -B cropbox -O photo/phi_c.png
+INPUT ./photo/phi_d.png
+INPUT ./photo/phi_d.png
+INPUT ./photo/phi_d.png
+INPUT extractbb -B cropbox -O photo/phi_d.png
 INPUT ./chapter4.tex
 INPUT ./chapter4.tex
 INPUT chapter4.tex
 INPUT ./chapter5.tex
 INPUT ./chapter5.tex
 INPUT chapter5.tex
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT ./ref.tex
 INPUT ./ref.tex
 INPUT ref.tex
@@ -258,4 +346,45 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT ./thank.tex
 INPUT ./thank.tex
 INPUT thank.tex
+INPUT ./appendix.tex
+INPUT ./appendix.tex
+INPUT appendix.tex
+INPUT ./photo/trimanlysis_flow.png
+INPUT ./photo/trimanlysis_flow.png
+INPUT ./photo/trimanlysis_flow.png
+INPUT extractbb -B cropbox -O photo/trimanlysis_flow.png
+INPUT ./photo/sh60k_model.png
+INPUT ./photo/sh60k_model.png
+INPUT ./photo/sh60k_model.png
+INPUT extractbb -B cropbox -O photo/sh60k_model.png
+INPUT ./photo/attitude_sh60k.png
+INPUT ./photo/attitude_sh60k.png
+INPUT ./photo/attitude_sh60k.png
+INPUT extractbb -B cropbox -O photo/attitude_sh60k.png
+INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
+INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
+INPUT ./photo/FxFz_fuselage_horizontal_stabilizer.png
+INPUT extractbb -B cropbox -O photo/FxFz_fuselage_horizontal_stabilizer.png
+INPUT ./photo/load_moment_sh60k.png
+INPUT ./photo/load_moment_sh60k.png
+INPUT ./photo/load_moment_sh60k.png
+INPUT extractbb -B cropbox -O photo/load_moment_sh60k.png
+INPUT ./photo/load_moment_phase_sh60k.png
+INPUT ./photo/load_moment_phase_sh60k.png
+INPUT ./photo/load_moment_phase_sh60k.png
+INPUT extractbb -B cropbox -O photo/load_moment_phase_sh60k.png
+INPUT ./photo/MRH_airframe.png
+INPUT ./photo/MRH_airframe.png
+INPUT ./photo/MRH_airframe.png
+INPUT extractbb -B cropbox -O photo/MRH_airframe.png
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm
+INPUT ./photo/acceleration_4rev_pilot.png
+INPUT ./photo/acceleration_4rev_pilot.png
+INPUT ./photo/acceleration_4rev_pilot.png
+INPUT extractbb -B cropbox -O photo/acceleration_4rev_pilot.png
+INPUT ./photo/acceleration_z_4rev_pilot.png
+INPUT ./photo/acceleration_z_4rev_pilot.png
+INPUT ./photo/acceleration_z_4rev_pilot.png
+INPUT extractbb -B cropbox -O photo/acceleration_z_4rev_pilot.png
 INPUT out/main.aux

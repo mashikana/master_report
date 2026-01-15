@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  14 JAN 2026 22:01
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  15 JAN 2026 22:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -315,11 +315,11 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 [3
 
-] (out/main.lot)
+] [4] (out/main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
-[4
+[5
 
 
 ] (./symbols.tex
@@ -343,24 +343,24 @@ Overfull \hbox (165.25433pt too wide) in alignment at lines 14--17
  []
 
 
-Overfull \hbox (165.25433pt too wide) in alignment at lines 17--112
+Overfull \hbox (165.25433pt too wide) in alignment at lines 17--116
  [] [] [] 
  []
 
-./symbols.tex:112: ignored error: Infinite glue shrinkage found in box being split [5
+./symbols.tex:116: ignored error: Infinite glue shrinkage found in box being split [6
 
 
 ]
-./symbols.tex:112: ignored error: Infinite glue shrinkage found in box being split [6] [7]
+./symbols.tex:116: ignored error: Infinite glue shrinkage found in box being split [7] [8]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 126.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 126.
+(Font)              scaled to size 9.60999pt on input line 130.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 126.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 126.
-) (./chapter1.tex [8
+(Font)              scaled to size 9.60999pt on input line 130.
+) (./chapter1.tex [9
 
 
 ]
@@ -369,7 +369,7 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
-[9
+[10
 
 ]
 File: photo/sh60k.jpg Graphic file (type bmp)
@@ -386,59 +386,19 @@ File: photo/KMAX.jpg Graphic file (type bmp)
 <photo/KMAX.jpg>
 File: photo/forwardflight.png Graphic file (type bmp)
 <photo/forwardflight.png>
-[10] [11]
+[11] [12]
 File: photo/MRHFM.png Graphic file (type bmp)
 <photo/MRHFM.png>
-[12] [13] [14] [15] [16] [17] [18] [19
+[13] [14] [15] [16] [17] [18] [19] [20
 
-] [20] [21]
+] [21] [22]
 File: photo/CAMRADhistory.png Graphic file (type bmp)
 <photo/CAMRADhistory.png>
-) [22] (./chapter2.tex [23]
+) [23] (./chapter2.tex [24]
 第2章
-[24
-
-]
-File: photo/trimanlysis_flow.png Graphic file (type bmp)
-<photo/trimanlysis_flow.png>
-[25] [26]
-File: photo/sh60k_model.png Graphic file (type bmp)
-<photo/sh60k_model.png>
-[27]
-File: photo/attitude_sh60k.png Graphic file (type bmp)
-<photo/attitude_sh60k.png>
-[28]
-File: photo/FxFz_fuselage_horizontal_stabilizer.png Graphic file (type bmp)
-<photo/FxFz_fuselage_horizontal_stabilizer.png>
-[29] [30]
-File: photo/load_moment_sh60k.png Graphic file (type bmp)
-<photo/load_moment_sh60k.png>
-[31
-
-]
-File: photo/load_moment_phase_sh60k.png Graphic file (type bmp)
-<photo/load_moment_phase_sh60k.png>
-[32] [33]
-File: photo/MRH_airframe.png Graphic file (type bmp)
-<photo/MRH_airframe.png>
-[34
-
-] [35] [36]
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 417.
-[37]
-File: photo/acceleration_4rev_pilot.png Graphic file (type bmp)
-<photo/acceleration_4rev_pilot.png>
-[38
-
-]
-File: photo/acceleration_z_4rev_pilot.png Graphic file (type bmp)
-<photo/acceleration_z_4rev_pilot.png>
-[39]) (./chapter3.tex [40]
-第3章
 File: photo/helicopter_model.png Graphic file (type bmp)
 <photo/helicopter_model.png>
-[41
+[25
 
 ]
 File: photo/helicopter_front.png Graphic file (type bmp)
@@ -450,33 +410,98 @@ File: photo/weight_position.png Graphic file (type bmp)
 File: photo/weight_position_up.png Graphic file (type bmp)
 <photo/weight_position_up.png>
 
-LaTeX Warning: Float too large for page by 49.34637pt on input line 110.
+LaTeX Warning: Float too large for page by 49.34637pt on input line 109.
 
 
-Overfull \hbox (49.42009pt too wide) in paragraph at lines 118--127
+Overfull \hbox (49.42009pt too wide) in paragraph at lines 117--126
  [][][][] 
  []
 
-[42] [43]
+[26] [27]
 File: photo/IMU.png Graphic file (type bmp)
 <photo/IMU.png>
 File: photo/nagara_river.png Graphic file (type bmp)
 <photo/nagara_river.png>
 File: photo/altitude_velocity.png Graphic file (type bmp)
 <photo/altitude_velocity.png>
-[44
+[28
 
-]) (./chapter4.tex [45
+]) (./chapter3.tex [29
 
 ]
+第3章
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 1.
+File: photo/camrad_flight_fzhub.png Graphic file (type bmp)
+<photo/camrad_flight_fzhub.png>
+[30
+
+]
+File: photo/psi_alpha_a.png Graphic file (type bmp)
+<photo/psi_alpha_a.png>
+File: photo/psi_alpha_b.png Graphic file (type bmp)
+<photo/psi_alpha_b.png>
+File: photo/psi_alpha_c.png Graphic file (type bmp)
+<photo/psi_alpha_c.png>
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 70.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 70.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 70.
+File: photo/psi_alpha_d.png Graphic file (type bmp)
+<photo/psi_alpha_d.png>
+File: photo/alpha_cl_a.png Graphic file (type bmp)
+<photo/alpha_cl_a.png>
+File: photo/alpha_cl_b.png Graphic file (type bmp)
+<photo/alpha_cl_b.png>
+File: photo/alpha_cl_c.png Graphic file (type bmp)
+<photo/alpha_cl_c.png>
+File: photo/alpha_cl_d.png Graphic file (type bmp)
+<photo/alpha_cl_d.png>
+[31]
+File: photo/vi_a.png Graphic file (type bmp)
+<photo/vi_a.png>
+File: photo/vi_b.png Graphic file (type bmp)
+<photo/vi_b.png>
+File: photo/vi_c.png Graphic file (type bmp)
+<photo/vi_c.png>
+File: photo/vi_d.png Graphic file (type bmp)
+<photo/vi_d.png>
+[32] [33] [34
+
+]
+File: photo/product1.png Graphic file (type bmp)
+<photo/product1.png>
+[35]
+File: photo/product2.png Graphic file (type bmp)
+<photo/product2.png>
+File: photo/product3.png Graphic file (type bmp)
+<photo/product3.png>
+File: photo/product4.png Graphic file (type bmp)
+<photo/product4.png>
+[36]
+File: photo/product5.png Graphic file (type bmp)
+<photo/product5.png>
+File: photo/product_all.png Graphic file (type bmp)
+<photo/product_all.png>
+File: photo/phi_a.png Graphic file (type bmp)
+<photo/phi_a.png>
+File: photo/phi_b.png Graphic file (type bmp)
+<photo/phi_b.png>
+File: photo/phi_c.png Graphic file (type bmp)
+<photo/phi_c.png>
+File: photo/phi_d.png Graphic file (type bmp)
+<photo/phi_d.png>
+) (./chapter4.tex [37] [38]
 第4章
-[46
+) (./chapter5.tex [39
 
-]) (./chapter5.tex [47]
+]
 第5章
-) (./ref.tex [48
+[40
 
-] (out/main.bbl
+]) (./ref.tex [41] (out/main.bbl
 Underfull \hbox (badness 1776) in paragraph at lines 22--26
 []\OT1/cmr/m/n/10 Kaman Aerospace.  K-max in-ter-mesh-ing ro-tor he-li-copter.  $https : / / kaman . com /
  []
@@ -489,11 +514,51 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 29.
-[49
+[42
 
-] [50] [51] [52])) (./thank.tex [53]) [54
+] [43] [44] [45])) (./thank.tex [46]) (./appendix.tex [47
 
-] (out/main.aux)
+]
+付録A
+[48
+
+]
+File: photo/trimanlysis_flow.png Graphic file (type bmp)
+<photo/trimanlysis_flow.png>
+[49] [50]
+File: photo/sh60k_model.png Graphic file (type bmp)
+<photo/sh60k_model.png>
+[51]
+File: photo/attitude_sh60k.png Graphic file (type bmp)
+<photo/attitude_sh60k.png>
+[52]
+File: photo/FxFz_fuselage_horizontal_stabilizer.png Graphic file (type bmp)
+<photo/FxFz_fuselage_horizontal_stabilizer.png>
+[53] [54]
+File: photo/load_moment_sh60k.png Graphic file (type bmp)
+<photo/load_moment_sh60k.png>
+[55
+
+]
+File: photo/load_moment_phase_sh60k.png Graphic file (type bmp)
+<photo/load_moment_phase_sh60k.png>
+[56] [57]
+File: photo/MRH_airframe.png Graphic file (type bmp)
+<photo/MRH_airframe.png>
+[58
+
+] [59] [60]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 418.
+[61]
+File: photo/acceleration_4rev_pilot.png Graphic file (type bmp)
+<photo/acceleration_4rev_pilot.png>
+[62
+
+]
+File: photo/acceleration_z_4rev_pilot.png Graphic file (type bmp)
+<photo/acceleration_z_4rev_pilot.png>
+) [63] [64] (out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-11-01>
@@ -501,12 +566,12 @@ L3 programming layer <2025-10-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4281 strings out of 468181
- 72178 string characters out of 5438189
- 510922 words of memory out of 5000000
- 33105 multiletter control sequences out of 15000+600000
- 644650 words of font info for 116 fonts, out of 8000000 for 9000
+ 4525 strings out of 468181
+ 76882 string characters out of 5438189
+ 514087 words of memory out of 5000000
+ 33312 multiletter control sequences out of 15000+600000
+ 653810 words of font info for 150 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 67i,14n,77p,604b,628s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,14n,77p,604b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (55 pages, 170808 bytes).
+Output written on out/main.dvi (65 pages, 197856 bytes).
