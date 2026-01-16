@@ -1,19 +1,22 @@
 \addvspace {10\jsc@mpt }
-\contentsline {table}{\numberline {1.1}{\ignorespaces $S_z$各周波数成分の胴体系伝達後の$F_{z\mathrm {hub}}$}}{14}{}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces $S_x$,$S_r$各周波数成分の胴体系伝達後の$F_{x\mathrm {hub}}$}}{15}{}%
-\contentsline {table}{\numberline {1.3}{\ignorespaces $S_x$,$S_r$各周波数成分の胴体系伝達後の$F_{y\mathrm {hub}}$}}{16}{}%
-\contentsline {table}{\numberline {1.4}{\ignorespaces $N_F$各周波数成分の胴体系伝達後の$M_{x\mathrm {hub}}$}}{17}{}%
-\contentsline {table}{\numberline {1.5}{\ignorespaces $N_F$各周波数成分の胴体系伝達後の$M_{y\mathrm {hub}}$}}{18}{}%
-\contentsline {table}{\numberline {1.6}{\ignorespaces $N_L$各周波数成分の胴体系伝達後の$M_{z\mathrm {hub}}$}}{19}{}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces $S_z$各周波数成分の胴体系伝達後の$F_{z\mathrm {hub}}$}}{15}{}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces $S_x$,$S_r$各周波数成分の胴体系伝達後の$F_{x\mathrm {hub}}$}}{16}{}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces $S_x$,$S_r$各周波数成分の胴体系伝達後の$F_{y\mathrm {hub}}$}}{17}{}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces $N_F$各周波数成分の胴体系伝達後の$M_{x\mathrm {hub}}$}}{18}{}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces $N_F$各周波数成分の胴体系伝達後の$M_{y\mathrm {hub}}$}}{19}{}%
+\contentsline {table}{\numberline {1.6}{\ignorespaces $N_L$各周波数成分の胴体系伝達後の$M_{z\mathrm {hub}}$}}{20}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {table}{\numberline {2.1}{\ignorespaces 飛行条件}}{26}{}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces 機体諸元}}{26}{}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces 重心の構成}}{26}{}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces 飛行試験の計測結果}}{29}{}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces 飛行条件}}{27}{}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces 機体諸元}}{27}{}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces 重心の構成}}{27}{}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces 飛行試験の計測結果}}{30}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {table}{\numberline {3.1}{\ignorespaces 機体の姿勢角}}{32}{}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces 4/revとなる周波数成分の組み合わせ}}{34}{}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces 機体の姿勢角}}{33}{}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces 4/revとなる周波数成分の組み合わせ}}{35}{}%
+\addvspace {10\jsc@mpt }
+\contentsline {table}{\numberline {4.1}{\ignorespaces MRBの固有振動数解析結果}}{40}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces MRBの固有振動数解析結果（ヒンジレスロータ）}}{41}{}%
 \addvspace {10\jsc@mpt }
 \addvspace {10\jsc@mpt }
+\contentsline {table}{\numberline {A.1}{\ignorespaces SH-60K 諸元\cite {Yoshizaki_master}}}{57}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {table}{\numberline {A.1}{\ignorespaces SH-60K 諸元\cite {Yoshizaki_master}}}{51}{}%

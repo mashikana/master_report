@@ -11,27 +11,208 @@
 	\end{minipage}
 \end{flushright}
 
-    \section{メインローターブレードの固有振動数とモード形状}
-    \label{sec:natural_freqency_mode}
+    \section{メインロータブレードの固有振動数とモード形状}
+    \label{sec:natural_frequency_mode}
     \par
-		表7および図16は,メインローターブレードの固有振動数とモード形状を示している.
-		重心移動による固有振動数とモード形状はほぼ変化しないが,ヒンジレスロータを採用すると両者が変化する. 
-		フラップとラグはローター半径でスケーリングされ、ピッチはラジアン単位である.
+		Table.\ref{table:natural_frequency}およびFig.\ref{fig:mode_shape_lag}にメインロータブレードの固有振動数とモード形状を示す.
+		なお,フラップとラグの変位はローター半径で無次元化され、ピッチ角はラジアンである.
 		リード・ラグヒンジを採用した場合,フラッピングモードの振動周波数は4/rev周波数に極めて近接するため,振動の増大に寄与する.
+    フラップはリード・ラグに関連するが,ラジコンヘリコプタにはフラッピングヒンジが存在しないため,リード・ラグヒンジにおけるブレード拘束に自由度が生まれる.
+		したがって,リード・ラグヒンジにおける拘束条件をパラメータとして振動解析を実施した.
+		Table.\ref{table:natural_frequency_less}およびFig.\ref{fig:mode_shape_less}に,ヒンジレスロータを搭載したラジコンヘリコプタにおける
+		メインロータブレードの固有振動数とモード形状を示す.
+		ヒンジレスロータを採用すると,固有振動数とモード形状が変化することが確認できる. 
 
-    \section{リードラグヒンジがフラッピングに与える影響}
+    \begin{table}[H]
+        \centering
+        \caption{MRBの固有振動数解析結果}
+        \label{table:natural_frequency}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|l|l|l|l|}
+            \hline No. &   モード形状   &   固有振動数    &  モード形     \\
+            \hline 1   &   ラグ1次      &   0.455/rev    &  Fig.\ref{fig:mode_first_a_lag}   \\
+            \hline 2   &   フラップ1次  &   1.257/rev    &  Fig.\ref{fig:mode_second_a_lag}    \\
+            \hline 3   &   フラップ2次  &   4.058/rev    &  Fig.\ref{fig:mode_third_a_lag}   \\
+            \hline 4   &   ピッチ1次    &   4.283/rev    &  Fig.\ref{fig:mode_fourth_a_lag}    \\
+            \hline 
+        \end{tabular}
+    \end{table}
+
+		\begin{figure}[htbp]
+				\centering
+
+				\begin{subfigure}{\linewidth}
+						\centering
+						\includegraphics[height=0.2\textheight]{photo/mode_first_a_lag.png}
+						\caption{ラグ1次}
+						\label{fig:mode_first_a_lag}
+				\end{subfigure}
+
+				\begin{subfigure}{\linewidth}
+						\centering
+						\includegraphics[height=0.2\textheight]{photo/mode_second_a_lag.png}
+						\caption{フラップ1次}
+						\label{fig:mode_second_a_lag}
+				\end{subfigure}
+
+				\begin{subfigure}{\linewidth}
+						\centering
+						\includegraphics[height=0.2\textheight]{photo/mode_third_a_lag.png}
+						\caption{フラップ2次}
+						\label{fig:mode_third_a_lag}
+				\end{subfigure}
+
+				\begin{subfigure}{\linewidth}
+						\centering
+						\includegraphics[height=0.2\textheight]{photo/mode_fourth_a_lag.png}
+						\caption{ピッチ1次}
+						\label{fig:mode_fourth_a_lag}
+				\end{subfigure}
+
+				\caption{ラジコンヘリコプタのMRBのモード形}
+				\label{fig:mode_shape_lag}
+		\end{figure}
+
+
+
+    \begin{table}[H]
+        \centering
+        \caption{MRBの固有振動数解析結果（ヒンジレスロータ）}
+        \label{table:natural_frequency_less}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{|l|l|l|l|}
+            \hline No. &   モード形状   &   固有振動数    &  モード形     \\
+            \hline 1   &   フラップ1次  &   1.180/rev    &  Fig.\ref{fig:mode_first_a_less}   \\
+            \hline 2   &   ラグ1次      &   1.391/rev    &  Fig.\ref{fig:mode_second_a_less}    \\
+            \hline 3   &   ピッチ1次    &   3.741/rev    &  Fig.\ref{fig:mode_third_a_less}    \\
+            \hline 4   &   ピッチ2次    &   4.096/rev    &  Fig.\ref{fig:mode_fourth_a_less}    \\
+            \hline 
+        \end{tabular}
+    \end{table}
+
+		\begin{figure}[htbp]
+				\centering
+
+				\begin{subfigure}{\linewidth}
+						\centering
+						\includegraphics[height=0.2\textheight]{photo/mode_first_a_less.png}
+						\caption{フラップ1次}
+						\label{fig:mode_first_a_less}
+				\end{subfigure}
+
+				\begin{subfigure}{\linewidth}
+						\centering
+						\includegraphics[height=0.2\textheight]{photo/mode_second_a_less.png}
+						\caption{ラグ1次}
+						\label{fig:mode_second_a_less}
+				\end{subfigure}
+
+				\begin{subfigure}{\linewidth}
+						\centering
+						\includegraphics[height=0.2\textheight]{photo/mode_third_a_less.png}
+						\caption{ピッチ1次}
+						\label{fig:mode_third_a_less}
+				\end{subfigure}
+
+				\begin{subfigure}{\linewidth}
+						\centering
+						\includegraphics[height=0.2\textheight]{photo/mode_fourth_a_less.png}
+						\caption{ピッチ2次}
+						\label{fig:mode_fourth_a_less}
+				\end{subfigure}
+
+				\caption{ラジコンヘリコプタのMRBのモード形（ヒンジレスロータ）}
+				\label{fig:mode_shape_less}
+		\end{figure}
+
+
+		\clearpage
+    \section{リードラグヒンジがフラッピング運動に与える影響}
     \label{sec:flap}
     \par
-    前節で述べたように、ラジコンヘリコプターにおいて、羽ばたきモードの振動周波数は4/回転数に極めて近接しているため、振動の増大に寄与している.
-		フラップはリード・ラグに関連するが,ラジコンヘリコプターにはフラッピングヒンジが存在しないため,リード・ラグヒンジにおけるブレード拘束に自由度が生まれる.
-		したがって,リード・ラグヒンジにおける拘束条件をパラメータとして振動解析を実施した.
-		図17に各caseにおけるフラップを示す.
+		Fig.\ref{fig:comparison_sz}に示すように,リードラグヒンジの有無によって,空力である$S_{z}$には大きな変化は見られなかった.
+		一方,Fig.\ref{fig:comparison_fz}に示すように,ブレード4枚分の$F_{z}$には約10Nほどの違いが見られる.
+		Fig.\ref{fig:flap}に$r/R = 0.855$におけるフラップの変位を示す.
 	  重心移動により,フラップの1/rev成分が支配的となった.
 		リード・ラグヒンジを使用することで,フラップの最大値が減少する.
-		図18は、各ケースにおける4/revの$F_{z\mathrm{hub}}$を示している.
-		フラップの最大値の抑制も4/revの$F_{z\mathrm{hub}}$の低減に重要であるが,ブレードの固有振動数をずらすことによる効果の方がより顕著である.
+		これは,フラップの変位が増え,その結果として慣性力が増大したためと考えられる.
+		図18は,各ケースにおける4/revの$F_{z\mathrm{hub}}$を示している.
+		
+    \begin{figure}[htbp]
+    \centering
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/Sz_a.png}
+            \caption{with lead-lag hinge}
+            \label{fig:Sz_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/Sz_a_less.png}
+            \caption{without lead-lag hinge}
+            \label{fig:Sz_a_less}
+        \end{subfigure}
+    \caption{$z$方向空力荷重$S_z$の比較}
+    \label{fig:comparison_sz}
+    \end{figure}
 
+    \begin{figure}[htbp]
+    \centering
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/Fz_a.png}
+            \caption{with lead-lag hinge}
+            \label{fig:Fz_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/Fz_a_less.png}
+            \caption{without lead-lag hinge}
+            \label{fig:Fz_a_less}
+        \end{subfigure}
+    \caption{$z$方向荷重$F_z$の比較}
+    \label{fig:comparison_fz}
+    \end{figure}
 
+    \begin{figure}[htbp]
+    \centering
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/flap_0855_a.png}
+            \caption{with lead-lag hinge}
+            \label{fig:flap_0855_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/flap_0855_a_less.png}
+            \caption{without lead-lag hinge}
+            \label{fig:flap_0855_a_less}
+        \end{subfigure}
+    \caption{$r/R = 0.855$でのフラップ}
+    \label{fig:flap}
+    \end{figure}
     
 
+    \begin{figure}[htbp]
+    \centering
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/inertia_4blade_a.png}
+            \caption{with lead-lag hinge}
+            \label{fig:inertia_4blade_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/inertia_4blade_a_less.png}
+            \caption{without lead-lag hinge}
+            \label{fig:inertia_4blade_a_less}
+        \end{subfigure}
+    \caption{方位角$\Psi$と慣性力の関係（4ブレード）}
+    \label{fig:inertia_4blade}
+    \end{figure}
+    
 

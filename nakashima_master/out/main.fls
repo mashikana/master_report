@@ -82,15 +82,18 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 OUTPUT out/main.dvi
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT ./summary.tex
+INPUT ./summary.tex
+INPUT summary.tex
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT out/main.toc
 INPUT out/main.toc
 INPUT out/main.toc
@@ -229,14 +232,6 @@ INPUT ./photo/psi_alpha_a.png
 INPUT ./photo/psi_alpha_a.png
 INPUT ./photo/psi_alpha_a.png
 INPUT extractbb -B cropbox -O photo/psi_alpha_a.png
-INPUT ./photo/psi_alpha_b.png
-INPUT ./photo/psi_alpha_b.png
-INPUT ./photo/psi_alpha_b.png
-INPUT extractbb -B cropbox -O photo/psi_alpha_b.png
-INPUT ./photo/psi_alpha_c.png
-INPUT ./photo/psi_alpha_c.png
-INPUT ./photo/psi_alpha_c.png
-INPUT extractbb -B cropbox -O photo/psi_alpha_c.png
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
@@ -253,6 +248,14 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT ./photo/psi_alpha_b.png
+INPUT ./photo/psi_alpha_b.png
+INPUT ./photo/psi_alpha_b.png
+INPUT extractbb -B cropbox -O photo/psi_alpha_b.png
+INPUT ./photo/psi_alpha_c.png
+INPUT ./photo/psi_alpha_c.png
+INPUT ./photo/psi_alpha_c.png
+INPUT extractbb -B cropbox -O photo/psi_alpha_c.png
 INPUT ./photo/psi_alpha_d.png
 INPUT ./photo/psi_alpha_d.png
 INPUT ./photo/psi_alpha_d.png
@@ -332,6 +335,70 @@ INPUT extractbb -B cropbox -O photo/phi_d.png
 INPUT ./chapter4.tex
 INPUT ./chapter4.tex
 INPUT chapter4.tex
+INPUT ./photo/mode_first_a_lag.png
+INPUT ./photo/mode_first_a_lag.png
+INPUT ./photo/mode_first_a_lag.png
+INPUT extractbb -B cropbox -O photo/mode_first_a_lag.png
+INPUT ./photo/mode_second_a_lag.png
+INPUT ./photo/mode_second_a_lag.png
+INPUT ./photo/mode_second_a_lag.png
+INPUT extractbb -B cropbox -O photo/mode_second_a_lag.png
+INPUT ./photo/mode_third_a_lag.png
+INPUT ./photo/mode_third_a_lag.png
+INPUT ./photo/mode_third_a_lag.png
+INPUT extractbb -B cropbox -O photo/mode_third_a_lag.png
+INPUT ./photo/mode_fourth_a_lag.png
+INPUT ./photo/mode_fourth_a_lag.png
+INPUT ./photo/mode_fourth_a_lag.png
+INPUT extractbb -B cropbox -O photo/mode_fourth_a_lag.png
+INPUT ./photo/mode_first_a_less.png
+INPUT ./photo/mode_first_a_less.png
+INPUT ./photo/mode_first_a_less.png
+INPUT extractbb -B cropbox -O photo/mode_first_a_less.png
+INPUT ./photo/mode_second_a_less.png
+INPUT ./photo/mode_second_a_less.png
+INPUT ./photo/mode_second_a_less.png
+INPUT extractbb -B cropbox -O photo/mode_second_a_less.png
+INPUT ./photo/mode_third_a_less.png
+INPUT ./photo/mode_third_a_less.png
+INPUT ./photo/mode_third_a_less.png
+INPUT extractbb -B cropbox -O photo/mode_third_a_less.png
+INPUT ./photo/mode_fourth_a_less.png
+INPUT ./photo/mode_fourth_a_less.png
+INPUT ./photo/mode_fourth_a_less.png
+INPUT extractbb -B cropbox -O photo/mode_fourth_a_less.png
+INPUT ./photo/Sz_a.png
+INPUT ./photo/Sz_a.png
+INPUT ./photo/Sz_a.png
+INPUT extractbb -B cropbox -O photo/Sz_a.png
+INPUT ./photo/Sz_a_less.png
+INPUT ./photo/Sz_a_less.png
+INPUT ./photo/Sz_a_less.png
+INPUT extractbb -B cropbox -O photo/Sz_a_less.png
+INPUT ./photo/Fz_a.png
+INPUT ./photo/Fz_a.png
+INPUT ./photo/Fz_a.png
+INPUT extractbb -B cropbox -O photo/Fz_a.png
+INPUT ./photo/Fz_a_less.png
+INPUT ./photo/Fz_a_less.png
+INPUT ./photo/Fz_a_less.png
+INPUT extractbb -B cropbox -O photo/Fz_a_less.png
+INPUT ./photo/flap_0855_a.png
+INPUT ./photo/flap_0855_a.png
+INPUT ./photo/flap_0855_a.png
+INPUT extractbb -B cropbox -O photo/flap_0855_a.png
+INPUT ./photo/flap_0855_a_less.png
+INPUT ./photo/flap_0855_a_less.png
+INPUT ./photo/flap_0855_a_less.png
+INPUT extractbb -B cropbox -O photo/flap_0855_a_less.png
+INPUT ./photo/inertia_4blade_a.png
+INPUT ./photo/inertia_4blade_a.png
+INPUT ./photo/inertia_4blade_a.png
+INPUT extractbb -B cropbox -O photo/inertia_4blade_a.png
+INPUT ./photo/inertia_4blade_a_less.png
+INPUT ./photo/inertia_4blade_a_less.png
+INPUT ./photo/inertia_4blade_a_less.png
+INPUT extractbb -B cropbox -O photo/inertia_4blade_a_less.png
 INPUT ./chapter5.tex
 INPUT ./chapter5.tex
 INPUT chapter5.tex
@@ -387,4 +454,10 @@ INPUT ./photo/acceleration_z_4rev_pilot.png
 INPUT ./photo/acceleration_z_4rev_pilot.png
 INPUT ./photo/acceleration_z_4rev_pilot.png
 INPUT extractbb -B cropbox -O photo/acceleration_z_4rev_pilot.png
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT out/main.aux

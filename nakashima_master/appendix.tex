@@ -5,9 +5,9 @@
 	\begin{minipage}{0.8\hsize}
 		\quad 本章では,先行研究としてシングルロータヘリコプタSH-60Kに関して,トリム解析を実施した結果と振動評価指標について示す.
 		    まず,トリム解析の手順について示す.
-        次に,検討対象であるシングルロータヘリコプタについて機体モデルを設定する.
-        そして,トリム解析によって得られた結果について示す.
-        さらに,パイロット座席での加速度を対象として振動の評価を行い，振動評価指標の決定をする．
+            次に,検討対象であるシングルロータヘリコプタについて機体モデルを設定する.
+            そして,トリム解析によって得られた結果について示す.
+            さらに,パイロット座席での加速度を対象として振動の評価を行い，振動評価指標の決定をする．
 	\end{minipage}
 \end{flushright}
     \section{CAMRAD $\mathrm{II}$ を用いたトリム解析}
@@ -471,3 +471,625 @@
       \caption{パイロット座席での4/rev $z$方向加速度の比較（ $V_c$ = 61.7 m/s）\cite{Yoshizaki_master}}
       \label{fig:acceleration_z_4rev_pilot}
     \end{figure}
+
+\chapter{回転系のブレードルート荷重の固定系のMRH座標系への伝達}
+\label{chap:StoF}
+\begin{flushright}
+	\begin{minipage}{0.8\hsize}
+		\quad 本章では,Table.\ref{table:Sz_to_Fzhub}～Table.\ref{table:NL_to_Mzhub}に示した,
+              回転するブレードが空力荷重を受けて固定側である胴体側に伝わる荷重の導出過程を記載する.
+	\end{minipage}
+\end{flushright}
+    
+    \par
+    Table.\ref{table:Sz_to_Fzhub}～Table.\ref{table:NL_to_Mzhub}には回転する4枚のメインロータブレードのルート荷重について,
+    周波数成分ごとにMRH中央位置を原点とする固定座標系である$x_{\mathrm{hub}}$,$y_{\mathrm{hub}}$,$z_{\mathrm{hub}}$座標系での荷重およびモーメントに変換して表示している.
+    ここでは表中で,4本のブレードの荷重がキャンセルされて,結果として0となるケース以外についてその導出について示す.
+    $m=1$番目のブレードのアジマス角を$\Psi$とする.
+    
+    \subsection*{\ref{chap:StoF}-1. Table.\ref{table:Sz_to_Fzhub}}
+
+    \begin{itemize}
+    \item 定常成分
+
+    自明のため,省略する.
+
+    \item 4/rev 成分
+    \end{itemize}
+
+
+
+    \begin{align}
+    F_{z\mathrm{hub}}
+    &= \sum_{m=1}^{4}
+    \left(
+    S_{z4c}\cos 4\Psi_m + S_{z4s}\sin 4\Psi_m
+    \right)   \nonumber \\
+    &= S_{z4c}
+    \left\{
+    \cos 4\Psi
+    + \cos 4\left(\Psi + \frac{\pi}{2}\right)
+    + \cos 4\left(\Psi + \pi\right)
+    + \cos 4\left(\Psi + \frac{3\pi}{2}\right)
+    \right\} \nonumber \\
+    &\quad
+    + S_{z4s}
+    \left\{
+    \sin 4\Psi
+    + \sin 4\left(\Psi + \frac{\pi}{2}\right)
+    + \sin 4\left(\Psi + \pi\right)
+    + \sin 4\left(\Psi + \frac{3\pi}{2}\right)
+    \right\} \nonumber \\
+    &= 4\left(
+    S_{z4c}\cos 4\Psi
+    + S_{z4s}\sin 4\Psi
+    \right)
+    \end{align}
+
+    \subsection*{\ref{chap:StoF}-2. Table.\ref{table:SxSr_to_Fxhub}}
+
+    \begin{itemize}
+    \item 1/rev成分
+    \end{itemize}
+
+    [cos 成分]
+
+    \begin{align}
+    F_{x\mathrm{hub}}
+    &= \cos\Psi
+    \left(
+    S_{x1c}\sin\Psi + S_{r1c}\cos\Psi
+    \right)
+    + \cos\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x1c}\cos\Psi - S_{r1c}\sin\Psi
+    \right) \nonumber \\
+    &\quad
+    + \cos(\Psi + \pi)
+    \left(
+    - S_{x1c}\sin\Psi - S_{r1c}\cos\Psi
+    \right)
+    + \cos\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x1c}\cos\Psi + S_{r1c}\sin\Psi
+    \right) \nonumber \\
+    &= 2 S_{r1c}
+    \end{align}
+
+    [sin 成分]
+
+    \begin{align}
+    F_{x\mathrm{hub}}
+    &= \sin\Psi
+    \left(
+    S_{x1s}\sin\Psi + S_{r1s}\cos\Psi
+    \right)
+    + \sin\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x1s}\cos\Psi - S_{r1s}\sin\Psi
+    \right) \nonumber \\
+    &\quad
+    + \sin(\Psi + \pi)
+    \left(
+    - S_{x1s}\sin\Psi - S_{r1s}\cos\Psi
+    \right)
+    + \sin\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x1s}\cos\Psi + S_{r1s}\sin\Psi
+    \right) \nonumber \\
+    &= 2 S_{x1s}
+    \end{align}
+
+    \begin{itemize}
+    \item 3/rev成分
+    \end{itemize}
+
+    [cos 成分]
+
+    \begin{align}
+    F_{x,\mathrm{hub}}
+    &= \cos 3\Psi
+    \left(
+    S_{x3c}\sin\Psi + S_{r3c}\cos\Psi
+    \right)
+    + \cos 3\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x3c}\cos\Psi - S_{r3c}\sin\Psi
+    \right) \nonumber \\
+    &\quad
+    + \cos 3(\Psi + \pi)
+    \left(
+    - S_{x3c}\sin\Psi - S_{r3c}\cos\Psi
+    \right)
+    + \cos 3\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x3c}\cos\Psi + S_{r3c}\sin\Psi
+    \right) \nonumber \\
+    &= 2\left(
+    S_{r3c}\cos 4\Psi + S_{x3c}\sin 4\Psi
+    \right)
+    \end{align}
+
+    [sin 成分]
+
+    \begin{align}
+    F_{x\mathrm{hub}}
+    &= \sin 3\Psi
+    \left(
+    S_{x3s}\sin\Psi + S_{r3s}\cos\Psi
+    \right)
+    + \sin 3\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x3s}\cos\Psi - S_{r3s}\sin\Psi
+    \right) \nonumber \\
+    &\quad
+    + \sin 3(\Psi + \pi)
+    \left(
+    - S_{x3s}\sin\Psi - S_{r3s}\cos\Psi
+    \right)
+    + \sin 3\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x3s}\cos\Psi + S_{r3s}\sin\Psi
+    \right) \nonumber \\
+    &= 2\left(
+    S_{r3s}\sin 4\Psi - S_{x3s}\cos 4\Psi
+    \right)
+    \end{align}
+
+    \begin{itemize}
+    \item 5/rev 成分
+    \end{itemize}
+
+    [cos 成分]
+
+    \begin{align}
+    F_{x\mathrm{hub}}
+    &= \cos 5\Psi
+    \left(
+    S_{x5c}\sin\Psi + S_{r5c}\cos\Psi
+    \right)
+    + \cos 5\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x5c}\cos\Psi - S_{r5c}\sin\Psi
+    \right) \nonumber \\
+    &\quad
+    + \cos 5(\Psi + \pi)
+    \left(
+    - S_{x5c}\sin\Psi - S_{r5c}\cos\Psi
+    \right)
+    + \cos 5\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x5c}\cos\Psi + S_{r5c}\sin\Psi
+    \right) \nonumber \\
+    &= 2\left(
+    S_{r5c}\cos 4\Psi - S_{x5c}\sin 4\Psi
+    \right)
+    \end{align}
+
+    [sin 成分]
+
+    \begin{align}
+    F_{x\mathrm{hub}}
+    &= \sin 5\Psi
+    \left(
+    S_{x5s}\sin\Psi + S_{r5s}\cos\Psi
+    \right)
+    + \sin 5\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x5s}\cos\Psi - S_{r5s}\sin\Psi
+    \right) \nonumber \\
+    &\quad
+    + \sin 5(\Psi + \pi)
+    \left(
+    - S_{x5s}\sin\Psi - S_{r5s}\cos\Psi
+    \right)
+    + \sin 5\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x5s}\cos\Psi + S_{r5s}\sin\Psi
+    \right) \nonumber \\
+    &= 2\left(
+    S_{r5s}\cos 4\Psi - S_{x5s}\sin 4\Psi
+    \right)
+    \end{align}
+
+    \subsection*{\ref{chap:StoF}-3. Table.\ref{table:SxSr_to_Fyhub}}
+
+    \begin{itemize}
+    \item 1/rev 成分
+    \end{itemize}
+
+    [cos 成分]
+
+    \begin{align}
+    F_{y\mathrm{hub}}
+    &= \cos\Psi
+    \left(
+    - S_{x1c}\cos\Psi + S_{r1c}\sin\Psi
+    \right)
+    + \cos\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x1c}\sin\Psi + S_{r1c}\cos\Psi
+    \right) \nonumber \\
+    &\quad
+    + \cos(\Psi + \pi)
+    \left(
+    S_{x1c}\cos\Psi - S_{r1c}\sin\Psi
+    \right)
+    + \cos\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x1c}\sin\Psi - S_{r1c}\cos\Psi
+    \right) \nonumber \\
+    &= -2 S_{x1c}
+    \end{align}
+
+    [sin 成分]
+
+    \begin{align}
+    F_{y\mathrm{hub}}
+    &= \sin\Psi
+    \left(
+    - S_{x1s}\cos\Psi + S_{r1s}\sin\Psi
+    \right)
+    + \sin\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x1s}\sin\Psi + S_{r1s}\cos\Psi
+    \right) \nonumber \\
+    &\quad
+    + \sin(\Psi + \pi)
+    \left(
+    S_{x1s}\cos\Psi - S_{r1s}\sin\Psi
+    \right)
+    + \sin\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x1s}\sin\Psi - S_{r1s}\cos\Psi
+    \right) \nonumber \\
+    &= 2 S_{r1s}
+    \end{align}
+
+    \begin{itemize}
+    \item 3/rev 成分
+    \end{itemize}
+
+    [cos 成分] 
+
+    \begin{align}
+    F_{y\mathrm{hub}}
+    &= \cos 3\Psi
+    \left(
+    - S_{x3c}\cos\Psi + S_{r3c}\sin\Psi
+    \right)
+    + \cos 3\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    - S_{x3c}\sin\Psi - S_{r3c}\cos\Psi
+    \right) \nonumber \\
+    &\quad
+    + \cos 3(\Psi + \pi)
+    \left(
+    S_{x3c}\cos\Psi - S_{r3c}\sin\Psi
+    \right)
+    + \cos 3\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x3c}\sin\Psi - S_{r3c}\cos\Psi
+    \right) \nonumber \\
+    &= 2\left(
+    S_{r3c}\sin 4\Psi - S_{x3c}\cos 4\Psi
+    \right)
+    \end{align}
+
+    [sin 成分]
+
+    \begin{align}
+    F_{y\mathrm{hub}}
+    &= \sin 3\Psi
+    \left(
+    - S_{x3s}\cos\Psi + S_{r3s}\sin\Psi
+    \right)
+    + \sin 3\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x3s}\sin\Psi + S_{r3s}\cos\Psi
+    \right) \nonumber \\
+    &\quad
+    + \sin 3(\Psi + \pi)
+    \left(
+    S_{x3s}\cos\Psi - S_{r3s}\sin\Psi
+    \right)
+    + \sin 3\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x3s}\sin\Psi - S_{r3s}\cos\Psi
+    \right) \nonumber \\
+    &= -2\left(
+    S_{r3s}\cos 4\Psi + S_{x3s}\sin 4\Psi
+    \right)
+    \end{align}
+
+    \begin{itemize}
+    \item 5/rev 成分
+    \end{itemize}
+
+    [cos 成分]
+
+    \begin{align}
+    F_{y\mathrm{hub}}
+    &= \cos 5\Psi
+    \left(
+    - S_{x5c}\cos\Psi + S_{r5c}\sin\Psi
+    \right)
+    + \cos 5\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x5c}\sin\Psi + S_{r5c}\cos\Psi
+    \right) \nonumber \\
+    &\quad
+    + \cos 5(\Psi + \pi)
+    \left(
+    S_{x5c}\cos\Psi - S_{r5c}\sin\Psi
+    \right)
+    + \cos 5\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x5c}\sin\Psi - S_{r5c}\cos\Psi
+    \right) \nonumber \\
+    &= -2\left(
+    S_{r5c}\sin 4\Psi + S_{x5c}\cos 4\Psi
+    \right)
+    \end{align}
+
+    [sin 成分]
+
+    \begin{align}
+    F_{y\mathrm{hub}}
+    &= \sin 5\Psi
+    \left(
+    - S_{x5s}\cos\Psi + S_{r5s}\sin\Psi
+    \right)
+    + \sin 5\left(\Psi + \frac{\pi}{2}\right)
+    \left(
+    S_{x5s}\sin\Psi + S_{r5s}\cos\Psi
+    \right) \nonumber \\
+    &\quad
+    + \sin 5(\Psi + \pi)
+    \left(
+    S_{x5s}\cos\Psi - S_{r5s}\sin\Psi
+    \right)
+    + \sin 5\left(\Psi + \frac{3\pi}{2}\right)
+    \left(
+    - S_{x5s}\sin\Psi - S_{r5s}\cos\Psi
+    \right) \nonumber \\
+    &= -2\left(
+    S_{r5s}\sin 4\Psi + S_{x5s}\cos 4\Psi
+    \right)
+    \end{align}
+
+    \subsection*{\ref{chap:StoF}-4. Table.\ref{table:NF_to_Mxhub}}
+
+    \begin{itemize}
+    \item 1/rev 成分
+    \end{itemize}
+
+    [cos + sin 成分]
+
+    \begin{align}
+    M_{x\mathrm{hub}}
+    &= \sin\Psi
+    \left(
+    N_{F1c}\cos\Psi + N_{F1s}\sin\Psi
+    \right)
+    + \cos\Psi
+    \left(
+    N_{F1c}\cos\left(\Psi + \frac{\pi}{2}\right)
+    + N_{F1s}\sin\left(\Psi + \frac{\pi}{2}\right)
+    \right) \nonumber \\
+    &\quad
+    - \sin\Psi
+    \left(
+    N_{F1c}\cos(\Psi + \pi) + N_{F1s}\sin(\Psi + \pi)
+    \right)
+    - \cos\Psi
+    \left(
+    N_{F1c}\cos\left(\Psi + \frac{3\pi}{2}\right)
+    + N_{F1s}\sin\left(\Psi + \frac{3\pi}{2}\right)
+    \right) \nonumber \\
+    &= 2 N_{F1s}
+    \end{align}
+
+    \begin{itemize}
+    \item 3/rev 成分
+    \end{itemize}
+
+    [cos + sin 成分]
+
+    \begin{align}
+    M_{x\mathrm{hub}}
+    &= \sin\Psi
+    \left(
+    N_{F3c}\cos 3\Psi + N_{F3s}\sin 3\Psi
+    \right)
+    + \cos\Psi
+    \left(
+    N_{F3c}\cos 3\left(\Psi + \frac{\pi}{2}\right)
+    + N_{F3s}\sin 3\left(\Psi + \frac{\pi}{2}\right)
+    \right) \nonumber \\
+    &\quad
+    - \sin\Psi
+    \left(
+    N_{F3c}\cos 3(\Psi + \pi) + N_{F3s}\sin 3(\Psi + \pi)
+    \right)  \nonumber \\
+    &\quad
+    - \cos\Psi
+    \left(
+    N_{F3c}\cos 3\left(\Psi + \frac{3\pi}{2}\right)
+    + N_{F3s}\sin 3\left(\Psi + \frac{3\pi}{2}\right)
+    \right) \nonumber \\
+    &= 2\left(
+    N_{F3c}\sin 4\Psi - N_{F3s}\cos 4\Psi
+    \right)
+    \end{align}
+
+    \begin{itemize}
+    \item 5/rev 成分
+    \end{itemize}
+
+    [cos + sin 成分] 
+
+    \begin{align}
+    M_{x\mathrm{hub}}
+    &= \sin\Psi
+    \left(
+    N_{F5c}\cos 5\Psi + N_{F5s}\sin 5\Psi
+    \right)
+    + \cos\Psi
+    \left(
+    N_{F5c}\cos 5\left(\Psi + \frac{\pi}{2}\right)
+    + N_{F5s}\sin 5\left(\Psi + \frac{\pi}{2}\right)
+    \right) \nonumber \\
+    &\quad
+    - \sin\Psi
+    \left(
+    N_{F5c}\cos 5(\Psi + \pi) + N_{F5s}\sin 5(\Psi + \pi)
+    \right)  \nonumber \\
+    &\quad
+    - \cos\Psi
+    \left(
+    N_{F5c}\cos 5\left(\Psi + \frac{3\pi}{2}\right)
+    + N_{F5s}\sin 5\left(\Psi + \frac{3\pi}{2}\right)
+    \right) \nonumber \\
+    &= 2\left(
+    N_{F5s}\cos 4\Psi - N_{F5c}\sin 4\Psi
+    \right)
+    \end{align}
+ 
+    %ここから
+    \subsection*{\ref{chap:StoF}-5. Table.\ref{table:NF_to_Myhub}}
+
+    \begin{itemize}
+    \item 1/rev 成分
+    \end{itemize}
+
+    [cos + sin 成分]
+
+    \begin{align}
+    M_{y\mathrm{hub}}
+    &= -\cos\Psi
+    \left(
+    N_{F1c}\cos\Psi + N_{F1s}\sin\Psi
+    \right)
+    + \sin\Psi
+    \left(
+    N_{F1c}\cos\left(\Psi + \frac{\pi}{2}\right)
+    + N_{F1s}\sin\left(\Psi + \frac{\pi}{2}\right)
+    \right) \nonumber \\
+    &\quad
+    + \cos\Psi
+    \left(
+    N_{F1c}\cos(\Psi + \pi) + N_{F1s}\sin(\Psi + \pi)
+    \right)
+    - \sin\Psi
+    \left(
+    N_{F1c}\cos\left(\Psi + \frac{3\pi}{2}\right)
+    + N_{F1s}\sin\left(\Psi + \frac{3\pi}{2}\right)
+    \right) \nonumber \\
+    &= -2 N_{F1c}
+    \end{align}
+
+    \begin{itemize}
+    \item 3/rev 成分
+    \end{itemize}
+
+    [cos + sin 成分]  
+
+    \begin{align}
+    M_{y\mathrm{hub}}
+    &= -\cos\Psi
+    \left(
+    N_{F3c}\cos 3\Psi + N_{F3s}\sin 3\Psi
+    \right)
+    + \sin\Psi
+    \left(
+    N_{F3c}\cos 3\left(\Psi + \frac{\pi}{2}\right)
+    + N_{F3s}\sin 3\left(\Psi + \frac{\pi}{2}\right)
+    \right) \nonumber \\
+    &\quad
+    + \cos\Psi
+    \left(
+    N_{F3c}\cos 3(\Psi + \pi) + N_{F3s}\sin 3(\Psi + \pi)
+    \right)  \nonumber \\
+    &\quad
+    - \sin\Psi
+    \left(
+    N_{F3c}\cos 3\left(\Psi + \frac{3\pi}{2}\right)
+    + N_{F3s}\sin 3\left(\Psi + \frac{3\pi}{2}\right)
+    \right) \nonumber \\
+    &= -2\left(
+    N_{F3c}\cos 4\Psi + N_{F3s}\sin 4\Psi
+    \right)
+    \end{align}
+
+    \begin{itemize}
+    \item 5/rev 成分
+    \end{itemize}
+
+    [cos + sin 成分]
+
+    \begin{align}
+    M_{y\mathrm{hub}}
+    &= -\cos\Psi
+    \left(
+    N_{F5c}\cos 5\Psi + N_{F5s}\sin 5\Psi
+    \right)
+    + \sin\Psi
+    \left(
+    N_{F5c}\cos 5\left(\Psi + \frac{\pi}{2}\right)
+    + N_{F5s}\sin 5\left(\Psi + \frac{\pi}{2}\right)
+    \right) \nonumber \\
+    &\quad
+    + \cos\Psi
+    \left(
+    N_{F5c}\cos 5(\Psi + \pi) + N_{F5s}\sin 5(\Psi + \pi)
+    \right)  \nonumber \\
+    &\quad
+    - \sin\Psi
+    \left(
+    N_{F5c}\cos 5\left(\Psi + \frac{3\pi}{2}\right)
+    + N_{F5s}\sin 5\left(\Psi + \frac{3\pi}{2}\right)
+    \right) \nonumber \\
+    &= -2\left(
+    N_{F5c}\cos 4\Psi + N_{F5s}\sin 4\Psi
+    \right)
+    \end{align}
+
+    \subsection*{\ref{chap:StoF}-6. Table.\ref{table:NL_to_Mzhub}}
+
+    \begin{itemize}
+    \item 定常成分
+    \end{itemize}
+
+    自明のため,省略する.
+
+    \begin{itemize}
+    \item 4/rev 成分
+    \end{itemize}
+
+
+    \begin{align}
+    M_{z\mathrm{hub}}
+    &= \sum_{m=1}^{4}
+    \left(
+    N_{L4c}\cos 4\Psi_m + N_{L4s}\sin 4\Psi_m
+    \right)  \nonumber \\
+    &= N_{L4c}
+    \left\{
+    \cos 4\Psi
+    + \cos 4\left(\Psi + \frac{\pi}{2}\right)
+    + \cos 4(\Psi + \pi)
+    + \cos 4\left(\Psi + \frac{3\pi}{2}\right)
+    \right\} \nonumber \\
+    &\quad
+    + N_{L4s}
+    \left\{
+    \sin 4\Psi
+    + \sin 4\left(\Psi + \frac{\pi}{2}\right)
+    + \sin 4(\Psi + \pi)
+    + \sin 4\left(\Psi + \frac{3\pi}{2}\right)
+    \right\} \nonumber \\
+    &= 4\left(
+    N_{L4c}\cos 4\Psi + N_{L4s}\sin 4\Psi
+    \right)
+    \end{align}
