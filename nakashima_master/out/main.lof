@@ -2,40 +2,40 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces ヘリコプタの様式\cite {SH60K,CH47J,X2,KMAX}}}{12}{}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces 前進飛行時のシングルロータ （上面図 ）\cite {Prouty2001}}}{13}{}%
 \contentsline {figure}{\numberline {1.3}{\ignorespaces 回転系におけるメインロータブレードルート部荷重 およびモーメント}}{14}{}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces 回転翼機の包括的解析ツール\cite {Johnson1998}}}{25}{}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces 回転翼機の包括的解析ツール\cite {johnson_1998}}}{24}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces ラジコンヘリコプタのモデル}}{26}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces 飛行試験用ラジコンヘリコプタと錘取り付け位置}}{28}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces IMU(Inertial Measurement Unit)}}{29}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 飛行試験場と高度,速度のデータ}}{29}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces ラジコンヘリコプタのモデル}}{25}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 飛行試験用ラジコンヘリコプタと錘取り付け位置}}{27}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces IMU(Inertial Measurement Unit)}}{28}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 飛行試験場と高度,速度のデータ}}{28}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CAMRAD $\mathrm {II}$と飛行試験の$F_{z\mathrm {hub}}$の比較}}{31}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 方位角$\Psi $に対する有効迎角$\alpha $の変化}}{32}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 有効迎角$\alpha $と揚力係数$C_l$の関係}}{33}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 誘導速度$v_i$の分布}}{34}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 1)}}{37}{}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 2)}}{37}{}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 3)}}{37}{}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 4)}}{38}{}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 5)}}{38}{}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅}}{38}{}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 流入角$\phi $の分布}}{39}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CAMRAD $\mathrm {II}$と飛行試験の$F_{z\mathrm {hub}}$の比較}}{30}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 方位角$\Psi $に対する有効迎角$\alpha $の変化}}{31}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 有効迎角$\alpha $と揚力係数$C_l$の関係}}{32}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 誘導速度$v_i$の分布}}{33}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 1)}}{36}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 2)}}{36}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 3)}}{36}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 4)}}{37}{}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅(product 5)}}{37}{}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces $\alpha U^2$,$C_l U^2$の振幅}}{37}{}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 流入角$\phi $の分布}}{38}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces ラジコンヘリコプタのMRBのモード形}}{42}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces ラジコンヘリコプタのMRBのモード形（ヒンジレスロータ）}}{43}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces $z$方向空力荷重$S_z$の比較}}{44}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces $z$方向荷重$F_z$の比較}}{44}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces $r/R = 0.855$でのフラップ}}{45}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces 方位角$\Psi $と慣性力の関係（4ブレード）}}{45}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces ラジコンヘリコプタのMRBのモード形}}{41}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces ラジコンヘリコプタのMRBのモード形（ヒンジレスロータ）}}{42}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces $z$方向空力荷重$S_z$の比較}}{43}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces $z$方向荷重$F_z$の比較}}{43}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces $r/R = 0.855$でのフラップ}}{44}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 方位角$\Psi $と慣性力の関係（4ブレード）}}{44}{}%
 \addvspace {10\jsc@mpt }
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces トリム解析の流れ\cite {Yoshizaki_master}}}{55}{}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces SH-60K 上面図及び側面図\cite {Yoshizaki_master}}}{58}{}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces 重心移動に伴うトリム変数解析結果\cite {Yoshizaki_master}}}{59}{}%
-\contentsline {figure}{\numberline {A.4}{\ignorespaces 胴体及び水平尾翼に作用する$F_x$及び$-F_z$\cite {Yoshizaki_master}}}{60}{}%
-\contentsline {figure}{\numberline {A.5}{\ignorespaces MRH中央位置における4/rev振動荷重及びモーメント（振幅 $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{62}{}%
-\contentsline {figure}{\numberline {A.6}{\ignorespaces MRH中央位置における4/rev振動荷重及びモーメント（位相 $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{63}{}%
-\contentsline {figure}{\numberline {A.7}{\ignorespaces メインロータハブ座標系および機体座標系\cite {Yoshizaki_master}}}{64}{}%
-\contentsline {figure}{\numberline {A.8}{\ignorespaces パイロット座席での4/rev加速度（ $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{68}{}%
-\contentsline {figure}{\numberline {A.9}{\ignorespaces パイロット座席での4/rev $z$方向加速度の比較（ $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{70}{}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces トリム解析の流れ\cite {Yoshizaki_master}}}{54}{}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces SH-60K 上面図及び側面図\cite {Yoshizaki_master}}}{57}{}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces 重心移動に伴うトリム変数解析結果\cite {Yoshizaki_master}}}{58}{}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces 胴体及び水平尾翼に作用する$F_x$及び$-F_z$\cite {Yoshizaki_master}}}{59}{}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces MRH中央位置における4/rev振動荷重及びモーメント（振幅 $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{61}{}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces MRH中央位置における4/rev振動荷重及びモーメント（位相 $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{62}{}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces メインロータハブ座標系および機体座標系\cite {Yoshizaki_master}}}{63}{}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces パイロット座席での4/rev加速度（ $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{67}{}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces パイロット座席での4/rev $z$方向加速度の比較（ $V_c$ = 61.7 m/s）\cite {Yoshizaki_master}}}{69}{}%
 \addvspace {10\jsc@mpt }

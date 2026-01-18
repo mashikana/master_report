@@ -29,10 +29,10 @@ Raymond~W. Prouty.
 \newblock {\em Helicopter Performance, Stability, and Control}.
 \newblock Krieger Publishing Company, Melbourne, 2 edition, 2001.
 
-\bibitem{Johnson1998}
+\bibitem{johnson_1998}
 Wayne Johnson.
-\newblock Rotorcraft aeromechanics: Applications of a comprehensive analysis.
-\newblock In {\em Heli Japan 98: AHS International Meeting on Advanced Rotorcraft Technology and Disaster Relief}, Nagarafukumitsu, Gifu, Japan, April 1998.
+\newblock Rotorcraft aeromechanics applications of a comprehensive analysis.
+\newblock In {\em Heli Japan 98: AHS International Meeting on Advanced Rotorcraft Technology and Disaster Relief}, Nagarafukumitsu, Gifu, Japan, apr 1998.
 
 \bibitem{Yoshizaki_master}
 吉崎裕治.
@@ -40,45 +40,25 @@ Wayne Johnson.
 \newblock PhD thesis, 名古屋大学, 2023.
 \newblock 博士論文（令和5年度）.
 
-\bibitem{Yoshizaki2023b}
-Yuji YOSHIZAKI and Shigeru SUNADA.
-\newblock Analysis of rotorcraft vibration reduction using a center-of-gravity offset.
-\newblock {\em TRANSACTIONS OF THE JAPAN SOCIETY FOR AERONAUTICAL AND SPACE SCIENCES}, Vol.~66, No.~1, pp. 1--9, 2023.
+\bibitem{johnson_2013}
+Wayne Johnson.
+\newblock {\em Rotorcraft Aeromechanics}.
+\newblock Cambridge University Press, New York, 2013.
 
-\bibitem{Kato1985-04}
-寛一郎加藤, 勇生今永.
-\newblock ヘリコプタ入門.
-\newblock 東京大学出版会, 1985.
-
-\bibitem{centrifugal}
-康平斉藤.
-\newblock ヘリコプタ (航空工学講座).
-\newblock 日本航空技術協会, 2008.
-
-\bibitem{Yoshizaki2023a}
-Yuji Yoshizaki and Shigeru Sunada.
-\newblock The effect of rotorcraft cg offset on aerodynamic stability aiming to obtain vibration reduction.
-\newblock {\em JOURNAL OF THE JAPAN SOCIETY FOR AERONAUTICAL AND SPACE SCIENCES}, Vol.~71, No.~3, pp. 105--111, 2023.
-
-\bibitem{Yoshizaki2023c}
-Yuji Yoshizaki and Shigeru Sunada.
-\newblock Note on auxiliary substitution measures of cg offset aiming for rotorcraft vibration reduction.
-\newblock {\em JOURNAL OF THE JAPAN SOCIETY FOR AERONAUTICAL AND SPACE SCIENCES}, Vol.~71, No.~4, pp. 174--180, 2023.
-
-\bibitem{Stupar2012}
-S~Stupar, A~Simonovi^^c4^^87, and M~Jovanovi^^c4^^87.
+\bibitem{stupar_2012}
+S.~Stupar, A.~Simonovi{\'c}, and M.~Jovanovi{\'c}.
 \newblock Measurement and analysis of vibrations on the helicopter structure in order to detect defects of operating elements.
 \newblock {\em Scientific Technical Review}, Vol.~62, No.~1, pp. 58--63, 2012.
 
-\bibitem{Farrar2006}
-Charles~R Farrar and Nick~A.J Lieven.
-\newblock Damage prognosis: the future of structural health monitoring.
-\newblock {\em Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}, Vol. 365, No. 1851, pp. 623--632, December 2006.
+\bibitem{farrar_2007}
+C.~Farrar and N.~Lieven.
+\newblock Damage prognosis: The future of structural health monitoring.
+\newblock {\em Philosophical Transactions of the Royal Society}, Vol. 365, pp. 623--632, 2007.
 
-\bibitem{Ali2010}
-M~Ali, M~Youssef, M~Hamaad, and A~El-Butch.
+\bibitem{ali_2010}
+M.~K. Ali, M.~F.~H. Youssef, M.~A. Hamaad, and A.~A. El-Butch.
 \newblock A study on fault diagnosis by vibration analysis at different loading and speed conditions.
-\newblock In {\em Proceedings of the 13th International Conference on Aerospace Science \& Aviation Technology}, Egypt, 2010.
+\newblock In {\em 13th International Conference on Aerospace Science \& Aviation Technology}, Egypt, 2010.
 
 \bibitem{Jovanovic2010}
 Miroslav Jovanovi^^c4^^87.
@@ -105,51 +85,6 @@ Richard Bielawa.
 \newblock {\em Rotary Wing Structural Dynamics and Aeroelasticity}, pp. 239--274.
 \newblock American Institute of Aeronautics and Astronautics, Reston, VA, 1 2006.
 
-\bibitem{Lim2003}
-Joon~W. Lim, Yung~H. Yu, and Wayne Johnson.
-\newblock Calculation of rotor blade-vortex interaction airloads using a multiple-trailer free-wake model.
-\newblock {\em Journal of Aircraft}, Vol.~40, No.~6, pp. 1123--1130, November 2003.
-
-\bibitem{schwartzberg_1977}
-Milton~A. Schwartzberg, Roger~L. Smith, James~L. Means, Harold Y.~H. Law, and David~P. Chappell.
-\newblock Single-rotor helicopter design and performance estimation programs. volume i. methodology.
-\newblock Technical report, Defense Technical Information Center, 1977.
-
-\bibitem{doyle_2018}
-David Doyle.
-\newblock {\em CH-47 Chinook}.
-\newblock Squadron/Signal Publications, 2018.
-
-\bibitem{coleman_1997}
-C.~P. Coleman.
-\newblock A survey of theoretical and experimental coaxial rotor aerodynamic research.
-\newblock Technical report, NASA Ames Research Center, 1997.
-
-\bibitem{kaur_2021}
-R.~Kaur and P.~M. Kishan.
-\newblock Intermeshing rotor helicopter ``kaman k-max''.
-\newblock {\em International Research Journal of Modernization in Engineering Technology and Science}, pp. 870--874, 2021.
-
-\bibitem{johnson_2013}
-Wayne Johnson.
-\newblock {\em Rotorcraft Aeromechanics}.
-\newblock Cambridge University Press, New York, 2013.
-
-\bibitem{stupar_2012}
-S.~Stupar, A.~Simonovi{\'c}, and M.~Jovanovi{\'c}.
-\newblock Measurement and analysis of vibrations on the helicopter structure in order to detect defects of operating elements.
-\newblock {\em Scientific Technical Review}, Vol.~62, No.~1, pp. 58--63, 2012.
-
-\bibitem{farrar_2007}
-C.~Farrar and N.~Lieven.
-\newblock Damage prognosis: The future of structural health monitoring.
-\newblock {\em Philosophical Transactions of the Royal Society}, Vol. 365, pp. 623--632, 2007.
-
-\bibitem{ali_2010}
-M.~K. Ali, M.~F.~H. Youssef, M.~A. Hamaad, and A.~A. El-Butch.
-\newblock A study on fault diagnosis by vibration analysis at different loading and speed conditions.
-\newblock In {\em 13th International Conference on Aerospace Science \& Aviation Technology}, Egypt, 2010.
-
 \bibitem{gaffey_1976}
 T.~Gaffey and R.~Balke.
 \newblock Isolation of rotor induced vibration with the bell focal pylon-nodal beam system.
@@ -170,30 +105,10 @@ A.~D. Rita, J.~H. McGarvey, and R.~Jones.
 \newblock Helicopter rotor isolation evaluation utilizing the dynamic antiresonant isolator.
 \newblock {\em Journal of the American Helicopter Society}, pp. 22--29, jan 1978.
 
-\bibitem{desjardins_1980}
-R.~A. Desjardins and W.~E. Hooper.
-\newblock Antiresonant rotor isolation for vibration reduction.
-\newblock {\em Journal of the American Helicopter Society}, pp. 46--55, jul 1980.
-
-\bibitem{braun_1980}
-D.~Braun.
-\newblock Development of antiresonant force isolators for helicopter vibration reduction.
-\newblock {\em Journal of the American Helicopter Society}, pp. 37--44, oct 1980.
-
-\bibitem{halwes_1980}
-D.~R. Halwes.
-\newblock Live -- liquid inertia vibration eliminator.
-\newblock In {\em 36th Annual Forum of the American Helicopter Society}, Washington, D.C., may 1980.
-
 \bibitem{kakaley_2018}
 D.~E. Kakaley, M.~R. Jolly, and G.~D. Buckner.
 \newblock An offset hub active vibration control system for mitigating helicopter vibrations during power loss: Simulation and experimental demonstration.
 \newblock {\em Aerospace Science and Technology}, Vol.~77, pp. 610--625, 2018.
-
-\bibitem{friedmann_2004}
-P.~P. Friedmann.
-\newblock Rotary-wing aeroelasticity: Current status and future trends.
-\newblock {\em AIAA Journal}, Vol.~42, No.~10, pp. 1965--, oct 2004.
 
 \bibitem{straub_1990}
 F.~Straub and B.~Charles.
@@ -260,10 +175,75 @@ J.~H. Steiner, F.~S. Gandhi, and Y.~Yoshizaki.
 \newblock An investigation of variable rotor rpm on performance and trim.
 \newblock In {\em American Helicopter Society 64th Annual Forum}, Montreal, Canada, apr 2008.
 
-\bibitem{johnson_1998_helijapan}
-Wayne Johnson.
-\newblock Rotorcraft aeromechanics applications of a comprehensive analysis.
-\newblock In {\em Heli Japan 98: AHS International Meeting on Advanced Rotorcraft Technology and Disaster Relief}, Nagarafukumitsu, Gifu, Japan, apr 1998.
+\bibitem{Lim2003}
+Joon~W. Lim, Yung~H. Yu, and Wayne Johnson.
+\newblock Calculation of rotor blade-vortex interaction airloads using a multiple-trailer free-wake model.
+\newblock {\em Journal of Aircraft}, Vol.~40, No.~6, pp. 1123--1130, November 2003.
+
+\bibitem{Yoshizaki2023b}
+Yuji YOSHIZAKI and Shigeru SUNADA.
+\newblock Analysis of rotorcraft vibration reduction using a center-of-gravity offset.
+\newblock {\em TRANSACTIONS OF THE JAPAN SOCIETY FOR AERONAUTICAL AND SPACE SCIENCES}, Vol.~66, No.~1, pp. 1--9, 2023.
+
+\bibitem{Kato1985-04}
+寛一郎加藤, 勇生今永.
+\newblock ヘリコプタ入門.
+\newblock 東京大学出版会, 1985.
+
+\bibitem{centrifugal}
+康平斉藤.
+\newblock ヘリコプタ (航空工学講座).
+\newblock 日本航空技術協会, 2008.
+
+\bibitem{Yoshizaki2023a}
+Yuji Yoshizaki and Shigeru Sunada.
+\newblock The effect of rotorcraft cg offset on aerodynamic stability aiming to obtain vibration reduction.
+\newblock {\em JOURNAL OF THE JAPAN SOCIETY FOR AERONAUTICAL AND SPACE SCIENCES}, Vol.~71, No.~3, pp. 105--111, 2023.
+
+\bibitem{Yoshizaki2023c}
+Yuji Yoshizaki and Shigeru Sunada.
+\newblock Note on auxiliary substitution measures of cg offset aiming for rotorcraft vibration reduction.
+\newblock {\em JOURNAL OF THE JAPAN SOCIETY FOR AERONAUTICAL AND SPACE SCIENCES}, Vol.~71, No.~4, pp. 174--180, 2023.
+
+\bibitem{schwartzberg_1977}
+Milton~A. Schwartzberg, Roger~L. Smith, James~L. Means, Harold Y.~H. Law, and David~P. Chappell.
+\newblock Single-rotor helicopter design and performance estimation programs. volume i. methodology.
+\newblock Technical report, Defense Technical Information Center, 1977.
+
+\bibitem{doyle_2018}
+David Doyle.
+\newblock {\em CH-47 Chinook}.
+\newblock Squadron/Signal Publications, 2018.
+
+\bibitem{coleman_1997}
+C.~P. Coleman.
+\newblock A survey of theoretical and experimental coaxial rotor aerodynamic research.
+\newblock Technical report, NASA Ames Research Center, 1997.
+
+\bibitem{kaur_2021}
+R.~Kaur and P.~M. Kishan.
+\newblock Intermeshing rotor helicopter ``kaman k-max''.
+\newblock {\em International Research Journal of Modernization in Engineering Technology and Science}, pp. 870--874, 2021.
+
+\bibitem{desjardins_1980}
+R.~A. Desjardins and W.~E. Hooper.
+\newblock Antiresonant rotor isolation for vibration reduction.
+\newblock {\em Journal of the American Helicopter Society}, pp. 46--55, jul 1980.
+
+\bibitem{braun_1980}
+D.~Braun.
+\newblock Development of antiresonant force isolators for helicopter vibration reduction.
+\newblock {\em Journal of the American Helicopter Society}, pp. 37--44, oct 1980.
+
+\bibitem{halwes_1980}
+D.~R. Halwes.
+\newblock Live -- liquid inertia vibration eliminator.
+\newblock In {\em 36th Annual Forum of the American Helicopter Society}, Washington, D.C., may 1980.
+
+\bibitem{friedmann_2004}
+P.~P. Friedmann.
+\newblock Rotary-wing aeroelasticity: Current status and future trends.
+\newblock {\em AIAA Journal}, Vol.~42, No.~10, pp. 1965--, oct 2004.
 
 \bibitem{johnson_2013_history}
 Wayne Johnson.
@@ -285,7 +265,7 @@ A.~O. Bauchau, J.~Rodriguez, and S.~Y. Chen.
 \newblock Coupled rotor-fuselage analysis with finite motions using component mode synthesis.
 \newblock {\em Journal of the American Helicopter Society}, Vol.~49, No.~2, pp. 201--211, 2004.
 
-\bibitem{ref47_etkin_1995}
+\bibitem{etkin_1995}
 Bernard Etkin and Lloyd~D. Reid.
 \newblock {\em Dynamics of Flight: Stability and Control}.
 \newblock John Wiley and Sons Inc., Toronto, 1995.

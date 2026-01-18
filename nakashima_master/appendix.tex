@@ -19,7 +19,8 @@
     水平飛行時に生じる周期的な振動を議論の対象とするため,水平飛行状態において機体に作用するメインロータ,テールロータ,水平尾翼,垂直尾翼,
     胴体の空力荷重,および重力が釣り合う状態をトリム解析により求める.
     このトリム解析の過程において,メインロータハブ中央位置に作用する振動荷重およびモーメントも同時に算出される.
-    2.2 項では,重心移動を行った場合に得られるトリム変数が物理的に妥当なものであるかを検討し,本解析が正しく実行されていることを確認する. 
+    \ref{sec:trim_analysis_result}項では,重心移動を行った場合に得られるトリム変数が物理的に妥当なものであるかを検討し,
+    本解析が正しく実行されていることを確認する. 
     ここで,メインロータ回転座標系における$n/\mathrm{rev}$成分（$n$:整数）の振動荷重を正しく評価するためには,
     メインロータブレードを弾性体として取り扱う必要がある.
     さらに,振動荷重の精度を向上させるため,ブレード先端から発生するチップボルテックスの取り扱いに関しては,専用の解析オプションを導入した.
@@ -191,12 +192,12 @@
     \par  
     \ref{sec:trim_analysis_result}において示したトリム解析結果は,重心移動による影響が物理的に妥当な形で正しく解析されていることを明確に示している.
     したがって,これらの解析結果を用いて,メインロータハブ中央位置に作用する振動荷重およびモーメントの評価を行う.
-    前述の通り,本解析では胴体を剛体として取り扱っているが,Cheng, Q.Y., et al.（44）は,ロータおよび胴体の連成モデルにより得られた
+    前述の通り,本解析では胴体を剛体として取り扱っているが,Cheng, Q.Y., et al.\cite{cheng_2016}は,ロータおよび胴体の連成モデルにより得られた
     メインロータブレードの固有振動数が,連成を考慮しないモデルによる結果とほぼ同一であることを示している.
     この知見から,胴体を剛体と仮定したモデルは,ロータ・胴体連成モデルと等価であるとみなすことができる.
     さらに,本研究におけるSH-60Kの解析結果においても,メインロータブレードの固有振動数が4/revから十分に離れていることが確認されている.
     この結果はAppendix Bに示す通りである.
-    加えて,Hansford, R.E.（45）やBauchau et al.（46）は,メインロータ回転面に対して面外,すなわち法線方向の振動荷重については,
+    加えて,Hansford, R.E.\cite{hansford_1992}やBauchau et al.\cite{bauchau_2004}は,メインロータ回転面に対して面外,すなわち法線方向の振動荷重については,
     メインロータハブの変動応答を考慮しなくても高い精度で解析可能であることを示している.
     これらの知見を踏まえ,本解析ではメインロータブレードのフラッピング運動を評価する際にも,メインロータハブの運動を考慮せず,
     振動荷重およびモーメントを算出している.
@@ -205,7 +206,7 @@
     Fig.\ref{fig:load_moment_sh60k}およびFig.\ref{fig:load_moment_phase_sh60k}に,メインロータハブ中央位置を原点とし,
     Fig.\ref{fig:sh60k_model}に示される$x_{\mathrm{hub}}$,$y_{\mathrm{hub}}$,$z_{\mathrm{hub}}$座標系で表現される4/rev振動荷重およびモーメント
     の振幅ならびに位相角のコンタープロットをそれぞれ示す.
-    また,Johnson（10）は\ref{sec:research_background}において,4枚ブレードのヘリコプタでは4/rev振動成分が卓越することを示しており,
+    また,Johnson\cite{johnson_2013}は\ref{sec:research_background}において,4枚ブレードのヘリコプタでは4/rev振動成分が卓越することを示しており,
     本研究においても同様の周波数成分に着目して評価を行う.
     Fig.\ref{fig:load_moment_sh60k} a～fに示される結果から,各振動荷重およびモーメント成分は,それぞれ異なる重心位置において極小値をとることが確認された.
     一方で,Fig.\ref{fig:load_moment_phase_sh60k} cに示す$F_{z\mathrm{hub}}$の位相角コンタープロットは,Fig.\ref{fig:load_moment_sh60k} c
@@ -295,7 +296,7 @@
     \end{equation}
 
     \par
-    Etkin and Reid（47）によると重心に原点を置く機体座標系$x$,$y$,$z$での運動方程式はEq.\eqref{eq:motion}のように書ける.
+    Etkin and Reid\cite{etkin_1995}によると重心に原点を置く機体座標系$x$,$y$,$z$での運動方程式はEq.\eqref{eq:motion}のように書ける.
 
     \begin{equation}
         \begin{aligned}
@@ -382,8 +383,9 @@
     \label{eq:r_vector}
     \end{equation}
 
-    ここで,$\vec{r_0}$は地面固定座標系における原点から機体のCGまでのベクトルであり,$\vec{r_i}$は重心位置からパイロット座席までのオフセットベクトルである.
-    ここで$\vec{r_i}$は$\vec{\boldsymbol{\omega}}=(p, \quad q, \quad r)$で回転しているEq.\eqref{eq:r_vector}の時間微分によってパイロット座席の速度はEq.\eqref{eq:r_vector_dot}のように書き表すことができる.
+    ここで,$\vec{r_0}$は地面固定座標系における原点から機体の重心位置までのベクトルであり,$\vec{r_i}$は重心位置からパイロット座席までのオフセットベクトルである.
+    ここで$\vec{r_i}$は$\vec{\boldsymbol{\omega}}=(p, \quad q, \quad r)$で回転しているEq.\eqref{eq:r_vector}の時間微分によってパイロット座席の速度は
+    Eq.\eqref{eq:r_vector_dot}のように書き表すことができる.
 
     \begin{equation}
     \dot{\vec{\boldsymbol{r}}}=\frac{d \vec{\boldsymbol{r}}}{d t}=\frac{d \vec{\boldsymbol{r_0}}}{d t}+
@@ -401,7 +403,8 @@
         \label{eq:r_vector_2dot}
     \end{equation}
 
-    ここで,$\vec{\boldsymbol{r_i}}=(r_{ix}, \quad r_{iy}, \quad r_{iz})$は時間に依存しない成分を持つベクトルであるからEq.\eqref{eq:r_vector_2dot}はさらにEq.\eqref{eq:r_vector_2dot_new}のように書くことができる.
+    ここで,$\vec{\boldsymbol{r_i}}=(r_{ix}, \quad r_{iy}, \quad r_{iz})$は時間に依存しない成分を持つベクトルであるから
+    Eq.\eqref{eq:r_vector_2dot}はさらにEq.\eqref{eq:r_vector_2dot_new}のように書くことができる.
 
     \begin{equation}
         \begin{aligned}
@@ -415,8 +418,9 @@
         \label{eq:r_vector_2dot_new}
     \end{equation}
 
-    4/revの$F_{x}$,$F_{y}$,$F_{z}$,$M_{x}$,$M_{y}$,$M_{z}$をEq.\eqref{eq:motion}に代入して並進および回転速度をSIMULINK\textsuperscript{\textregistered} を用いて
-    数値解析的に解き,その結果をEq.\eqref{eq:r_vector_2dot_new}に代入してパイロット座席における加速度の生波形を導出した.
+    4/revの$F_{x}$,$F_{y}$,$F_{z}$,$M_{x}$,$M_{y}$,$M_{z}$をEq.\eqref{eq:motion}に代入して並進および回転速度を
+    SIMULINK\textsuperscript{\textregistered} を用いて数値解析的に解き,
+    その結果をEq.\eqref{eq:r_vector_2dot_new}に代入してパイロット座席における加速度の生波形を導出した.
     そのうえで生波形にFFT処理を実施することで4/revの加速度成分を整理することができる.
 
    \clearpage
@@ -424,8 +428,8 @@
     \section{解析結果}
     \label{sec:analysis_result_pilot}
     \par
-    メインロータハブに作用するFig.\ref{fig:load_moment_sh60k},Fig.\ref{fig:load_moment_phase_sh60k}に示される各重心位置の4/revの振動荷重およびモーメントを
-    Eq.\eqref{eq:motion}に入力,数値解析を行った.
+    メインロータハブに作用するFig.\ref{fig:load_moment_sh60k},Fig.\ref{fig:load_moment_phase_sh60k}に示される
+    各重心位置の4/revの振動荷重およびモーメントをEq.\eqref{eq:motion}に入力,数値解析を行った.
     その結果として$u$,$v$,$w$,$p$,$q$,$r$およびその時間微分項を得た.
     これらをEq.\eqref{eq:r_vector_2dot_new}に代入することにより,パイロット座席位置での$x$,$y$,$z$3方向の加速度を計算することができる.
     重心位置は,Fig.\ref{fig:sh60k_model} に示されている位置で解析を実施した.
@@ -460,8 +464,7 @@
     同様にFig.\ref{fig:acceleration_z_4rev_pilot} cはFig.\ref{fig:acceleration_z_4rev_pilot} a およびFig.\ref{fig:acceleration_z_4rev_pilot} bとよく似ていることから,
     $F_{x\mathrm{hub}}$と$F_{y\mathrm{hub}}$についても,パイロット座席位置の$z$方向の加速度にあまり影響を与えないことが分かる.
     繰り返しとなるが,このことからも$F_{z\mathrm{hub}}$そのものが最もシンプルな振動の評価基準であることが分かる.
-    以上の考察から後述のEq. （3-13）中の$F_{z\mathrm{hub}}/m$によりパイロット座席位置の$z$方向の加速度をよく見積もれることが分かった.
-    これはEq. （3-13）中の$z$方向成分の式中で第2,3項が無視できることを意味する.
+    以上の考察から$F_{z\mathrm{hub}}/m$によりパイロット座席位置の$z$方向の加速度をよく見積もれることが分かった.
     従って,ベースライン位置における機体の慣性テンソルを全ての重心位置で同一の値として使用することに問題はないことを表している.
     さらに付け加えると,$z$方向の加速度はパイロット座席を含めて任意の位置で$F_{z\mathrm{hub}}/m$で見積もることができる.
 
@@ -483,7 +486,8 @@
     
     \par
     Table.\ref{table:Sz_to_Fzhub}～Table.\ref{table:NL_to_Mzhub}には回転する4枚のメインロータブレードのルート荷重について,
-    周波数成分ごとにMRH中央位置を原点とする固定座標系である$x_{\mathrm{hub}}$,$y_{\mathrm{hub}}$,$z_{\mathrm{hub}}$座標系での荷重およびモーメントに変換して表示している.
+    周波数成分ごとにMRH中央位置を原点とする固定座標系である$x_{\mathrm{hub}}$,$y_{\mathrm{hub}}$,$z_{\mathrm{hub}}$座標系での
+    荷重およびモーメントに変換して表示している.
     ここでは表中で,4本のブレードの荷重がキャンセルされて,結果として0となるケース以外についてその導出について示す.
     $m=1$番目のブレードのアジマス角を$\Psi$とする.
     
