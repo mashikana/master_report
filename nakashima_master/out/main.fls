@@ -59,6 +59,8 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/cite/cite.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/cite/cite.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 INPUT out/main.aux
@@ -115,6 +117,7 @@ OUTPUT out/main.toc
 INPUT out/main.lof
 INPUT out/main.lof
 INPUT out/main.lof
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 OUTPUT out/main.lof
 INPUT out/main.lot
 INPUT out/main.lot
@@ -157,6 +160,46 @@ INPUT ./photo/MRHFM.png
 INPUT ./photo/MRHFM.png
 INPUT ./photo/MRHFM.png
 INPUT extractbb -B cropbox -O photo/MRHFM.png
+INPUT ./photo/DVA.png
+INPUT ./photo/DVA.png
+INPUT ./photo/DVA.png
+INPUT extractbb -B cropbox -O photo/DVA.png
+INPUT ./photo/DVA_frequency.png
+INPUT ./photo/DVA_frequency.png
+INPUT ./photo/DVA_frequency.png
+INPUT extractbb -B cropbox -O photo/DVA_frequency.png
+INPUT ./photo/AVC.png
+INPUT ./photo/AVC.png
+INPUT ./photo/AVC.png
+INPUT extractbb -B cropbox -O photo/AVC.png
+INPUT ./photo/AVC_equipment.png
+INPUT ./photo/AVC_equipment.png
+INPUT ./photo/AVC_equipment.png
+INPUT extractbb -B cropbox -O photo/AVC_equipment.png
+INPUT ./photo/nodinamic_system.png
+INPUT ./photo/nodinamic_system.png
+INPUT ./photo/nodinamic_system.png
+INPUT extractbb -B cropbox -O photo/nodinamic_system.png
+INPUT ./photo/DAVI.png
+INPUT ./photo/DAVI.png
+INPUT ./photo/DAVI.png
+INPUT extractbb -B cropbox -O photo/DAVI.png
+INPUT ./photo/pendulum_bifilar.png
+INPUT ./photo/pendulum_bifilar.png
+INPUT ./photo/pendulum_bifilar.png
+INPUT extractbb -B cropbox -O photo/pendulum_bifilar.png
+INPUT ./photo/pendulum.png
+INPUT ./photo/pendulum.png
+INPUT ./photo/pendulum.png
+INPUT extractbb -B cropbox -O photo/pendulum.png
+INPUT ./photo/bifilar.png
+INPUT ./photo/bifilar.png
+INPUT ./photo/bifilar.png
+INPUT extractbb -B cropbox -O photo/bifilar.png
+INPUT ./photo/TEF.png
+INPUT ./photo/TEF.png
+INPUT ./photo/TEF.png
+INPUT extractbb -B cropbox -O photo/TEF.png
 INPUT ./photo/CAMRADhistory.png
 INPUT ./photo/CAMRADhistory.png
 INPUT ./photo/CAMRADhistory.png
@@ -443,7 +486,6 @@ INPUT ./photo/MRH_airframe.png
 INPUT ./photo/MRH_airframe.png
 INPUT ./photo/MRH_airframe.png
 INPUT extractbb -B cropbox -O photo/MRH_airframe.png
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm
 INPUT ./photo/acceleration_4rev_pilot.png
 INPUT ./photo/acceleration_4rev_pilot.png

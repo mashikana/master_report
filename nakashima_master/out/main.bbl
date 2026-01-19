@@ -29,6 +29,47 @@ Raymond~W. Prouty.
 \newblock {\em Helicopter Performance, Stability, and Control}.
 \newblock Krieger Publishing Company, Melbourne, 2 edition, 2001.
 
+\bibitem{Bielawa2006}
+Richard Bielawa.
+\newblock {\em Rotary Wing Structural Dynamics and Aeroelasticity}, pp. 239--274.
+\newblock American Institute of Aeronautics and Astronautics, Reston, VA, 1 2006.
+
+\bibitem{AVC}
+{dSPACE MAGAZINE}.
+\newblock Active vibration control.
+\newblock \url{https://www.dspace.com/ja/jpn/home/applicationfields/stories/active-vibration-control.cfm}, 2021.
+\newblock Accessed: 2026-01-18.
+
+\bibitem{gaffey_1976}
+T.~Gaffey and R.~Balke.
+\newblock Isolation of rotor induced vibration with the bell focal pylon-nodal beam system.
+\newblock Technical Report SAE Technical Paper 760892, SAE International, 1976.
+
+\bibitem{flannelly_1966}
+W.~G. Flannelly.
+\newblock The dynamic antiresonant vibration isolator.
+\newblock In {\em 22nd Annual Forum of the American Helicopter Society}, pp. 152--160, 1966.
+
+\bibitem{schuett_1969}
+E.~P. Schuett.
+\newblock Application of passive helicopter isolation for alleviation of rotor induced vibration.
+\newblock {\em Journal of the American Helicopter Society}, pp. 34--48, apr 1969.
+
+\bibitem{rita_1978}
+A.~D. Rita, J.~H. McGarvey, and R.~Jones.
+\newblock Helicopter rotor isolation evaluation utilizing the dynamic antiresonant isolator.
+\newblock {\em Journal of the American Helicopter Society}, pp. 22--29, jan 1978.
+
+\bibitem{johnson_2013}
+Wayne Johnson.
+\newblock {\em Rotorcraft Aeromechanics}.
+\newblock Cambridge University Press, New York, 2013.
+
+\bibitem{friedmann_2004}
+P.~P. Friedmann.
+\newblock Rotary-wing aeroelasticity: Current status and future trends.
+\newblock {\em AIAA Journal}, Vol.~42, No.~10, pp. 1965--, oct 2004.
+
 \bibitem{johnson_1998}
 Wayne Johnson.
 \newblock Rotorcraft aeromechanics applications of a comprehensive analysis.
@@ -39,11 +80,6 @@ Wayne Johnson.
 \newblock 回転翼機における重心位置変更が振動に与える影響.
 \newblock PhD thesis, 名古屋大学, 2023.
 \newblock 博士論文（令和5年度）.
-
-\bibitem{johnson_2013}
-Wayne Johnson.
-\newblock {\em Rotorcraft Aeromechanics}.
-\newblock Cambridge University Press, New York, 2013.
 
 \bibitem{stupar_2012}
 S.~Stupar, A.~Simonovi{\'c}, and M.~Jovanovi{\'c}.
@@ -79,31 +115,6 @@ M~Harris.
 Kevin Ferguson and Douglas Thomson.
 \newblock Investigation of a compound helicopter flying the depart and abort mission task element.
 \newblock {\em Journal of Aircraft}, Vol.~52, No.~1, pp. 156--167, 2017.
-
-\bibitem{Bielawa2006}
-Richard Bielawa.
-\newblock {\em Rotary Wing Structural Dynamics and Aeroelasticity}, pp. 239--274.
-\newblock American Institute of Aeronautics and Astronautics, Reston, VA, 1 2006.
-
-\bibitem{gaffey_1976}
-T.~Gaffey and R.~Balke.
-\newblock Isolation of rotor induced vibration with the bell focal pylon-nodal beam system.
-\newblock Technical Report SAE Technical Paper 760892, SAE International, 1976.
-
-\bibitem{flannelly_1966}
-W.~G. Flannelly.
-\newblock The dynamic antiresonant vibration isolator.
-\newblock In {\em 22nd Annual Forum of the American Helicopter Society}, pp. 152--160, 1966.
-
-\bibitem{schuett_1969}
-E.~P. Schuett.
-\newblock Application of passive helicopter isolation for alleviation of rotor induced vibration.
-\newblock {\em Journal of the American Helicopter Society}, pp. 34--48, apr 1969.
-
-\bibitem{rita_1978}
-A.~D. Rita, J.~H. McGarvey, and R.~Jones.
-\newblock Helicopter rotor isolation evaluation utilizing the dynamic antiresonant isolator.
-\newblock {\em Journal of the American Helicopter Society}, pp. 22--29, jan 1978.
 
 \bibitem{kakaley_2018}
 D.~E. Kakaley, M.~R. Jolly, and G.~D. Buckner.
@@ -205,26 +216,6 @@ Yuji Yoshizaki and Shigeru Sunada.
 \newblock Note on auxiliary substitution measures of cg offset aiming for rotorcraft vibration reduction.
 \newblock {\em JOURNAL OF THE JAPAN SOCIETY FOR AERONAUTICAL AND SPACE SCIENCES}, Vol.~71, No.~4, pp. 174--180, 2023.
 
-\bibitem{schwartzberg_1977}
-Milton~A. Schwartzberg, Roger~L. Smith, James~L. Means, Harold Y.~H. Law, and David~P. Chappell.
-\newblock Single-rotor helicopter design and performance estimation programs. volume i. methodology.
-\newblock Technical report, Defense Technical Information Center, 1977.
-
-\bibitem{doyle_2018}
-David Doyle.
-\newblock {\em CH-47 Chinook}.
-\newblock Squadron/Signal Publications, 2018.
-
-\bibitem{coleman_1997}
-C.~P. Coleman.
-\newblock A survey of theoretical and experimental coaxial rotor aerodynamic research.
-\newblock Technical report, NASA Ames Research Center, 1997.
-
-\bibitem{kaur_2021}
-R.~Kaur and P.~M. Kishan.
-\newblock Intermeshing rotor helicopter ``kaman k-max''.
-\newblock {\em International Research Journal of Modernization in Engineering Technology and Science}, pp. 870--874, 2021.
-
 \bibitem{desjardins_1980}
 R.~A. Desjardins and W.~E. Hooper.
 \newblock Antiresonant rotor isolation for vibration reduction.
@@ -239,11 +230,6 @@ D.~Braun.
 D.~R. Halwes.
 \newblock Live -- liquid inertia vibration eliminator.
 \newblock In {\em 36th Annual Forum of the American Helicopter Society}, Washington, D.C., may 1980.
-
-\bibitem{friedmann_2004}
-P.~P. Friedmann.
-\newblock Rotary-wing aeroelasticity: Current status and future trends.
-\newblock {\em AIAA Journal}, Vol.~42, No.~10, pp. 1965--, oct 2004.
 
 \bibitem{johnson_2013_history}
 Wayne Johnson.
@@ -274,36 +260,5 @@ Bernard Etkin and Lloyd~D. Reid.
 Wayne Johnson.
 \newblock Rotorcraft aerodynamics models for a comprehensive analysis.
 \newblock In {\em American Helicopter Society 54th Annual Forum}, Washington, D.C., may 1998.
-
-\bibitem{leishman_beddoes_1989}
-J.~G. Leishman and T.~S. Beddoes.
-\newblock A semi-empirical model for dynamic stall.
-\newblock {\em Journal of the American Helicopter Society}, Vol.~24, No.~3, jul 1989.
-
-\bibitem{leishman_beddoes_1986}
-J.~G. Leishman and T.~S. Beddoes.
-\newblock A generalized model for airfoil unsteady aerodynamic behavior and dynamic stall using the indicial method.
-\newblock In {\em American Helicopter Society Forum}, jun 1986.
-
-\bibitem{leishman_crouse_1989}
-J.~G. Leishman and Jr. Crouse, G.~L.
-\newblock State-space model for unsteady airfoil behavior and dynamic stall.
-\newblock In {\em AIAA Paper}, No. AIAA-89-1319, apr 1989.
-
-\bibitem{padfield_2018}
-Gareth~D. Padfield.
-\newblock {\em Helicopter Flight Dynamics: Including a Treatment of Tiltrotor Aircraft}.
-\newblock John Wiley \& Sons, Inc., Hoboken, NJ, 3 edition, 2018.
-
-\bibitem{ads33_revE}
-{U.S. Army}.
-\newblock Ads-33e-prf: Handling qualities requirements for military rotorcraft.
-\newblock Technical report, United States Army Aviation and Missile Command, 2000.
-\newblock Revision E, Feb. 29.
-
-\bibitem{bertolino_2023}
-C.~A. Bertolino, M.~Gaidano, S.~Smorto, G.~P. Porro, and M.~Sorli.
-\newblock Development of a high-performance low-weight hydraulic damper for active vibration control of the main rotor on helicopters---part 1: Design and mathematical model.
-\newblock {\em Aerospace}, Vol.~10, No. 391, 2023.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  18 JAN 2026 12:03
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.10.29)  18 JAN 2026 22:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -222,6 +222,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box87
 \@float@everytoks=\toks27
 \@floatcapt=\box88
+) (c:/texlive/2025/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
 ) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2025-10-09 L3 backend support: dvips
 \l__pdfannot_backend_content_box=\box89
@@ -237,24 +241,24 @@ LaTeX Warning: Unused global option(s):
 (out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -304,7 +308,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 5.
 )
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 23.
+(Font)              scaled to size 9.60999pt on input line 25.
 
 
 [1
@@ -320,6 +324,9 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 
 
 [3] (out/main.lof
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 2.
+
 
 [4
 
@@ -429,25 +436,65 @@ File: photo/MRHFM.png Graphic file (type bmp)
 [19]
 
 [20]
+File: photo/DVA.png Graphic file (type bmp)
+<photo/DVA.png>
+File: photo/DVA_frequency.png Graphic file (type bmp)
+<photo/DVA_frequency.png>
+File: photo/AVC.png Graphic file (type bmp)
+<photo/AVC.png>
+File: photo/AVC_equipment.png Graphic file (type bmp)
+<photo/AVC_equipment.png>
+File: photo/nodinamic_system.png Graphic file (type bmp)
+<photo/nodinamic_system.png>
+
 
 [21
 
 ]
 
 [22]
+File: photo/DAVI.png Graphic file (type bmp)
+<photo/DAVI.png>
+
 
 [23]
-File: photo/CAMRADhistory.png Graphic file (type bmp)
-<photo/CAMRADhistory.png>
-) (./chapter2.tex
+File: photo/pendulum_bifilar.png Graphic file (type bmp)
+<photo/pendulum_bifilar.png>
+
 
 [24]
+File: photo/pendulum.png Graphic file (type bmp)
+<photo/pendulum.png>
+File: photo/bifilar.png Graphic file (type bmp)
+<photo/bifilar.png>
+File: photo/TEF.png Graphic file (type bmp)
+<photo/TEF.png>
+
+
+[25
+
+]
+
+[26]
+
+[27
+
+]
+File: photo/CAMRADhistory.png Graphic file (type bmp)
+<photo/CAMRADhistory.png>
+)
+
+[28
+
+] (./chapter2.tex
+
+[29]
 第2章
 File: photo/helicopter_model.png Graphic file (type bmp)
 <photo/helicopter_model.png>
 
 
-[25
+[30
 
 ]
 File: photo/helicopter_front.png Graphic file (type bmp)
@@ -468,9 +515,9 @@ Overfull \hbox (49.42009pt too wide) in paragraph at lines 117--126
 
 
 
-[26]
+[31]
 
-[27]
+[32]
 File: photo/IMU.png Graphic file (type bmp)
 <photo/IMU.png>
 File: photo/nagara_river.png Graphic file (type bmp)
@@ -479,11 +526,11 @@ File: photo/altitude_velocity.png Graphic file (type bmp)
 <photo/altitude_velocity.png>
 
 
-[28
+[33
 
 ]) (./chapter3.tex
 
-[29
+[34
 
 ]
 第3章
@@ -493,7 +540,7 @@ File: photo/camrad_flight_fzhub.png Graphic file (type bmp)
 <photo/camrad_flight_fzhub.png>
 
 
-[30
+[35
 
 ]
 File: photo/psi_alpha_a.png Graphic file (type bmp)
@@ -520,7 +567,7 @@ File: photo/alpha_cl_d.png Graphic file (type bmp)
 <photo/alpha_cl_d.png>
 
 
-[31]
+[36]
 File: photo/vi_a.png Graphic file (type bmp)
 <photo/vi_a.png>
 File: photo/vi_b.png Graphic file (type bmp)
@@ -531,18 +578,18 @@ File: photo/vi_d.png Graphic file (type bmp)
 <photo/vi_d.png>
 
 
-[32]
+[37]
 
-[33]
+[38]
 
-[34
+[39
 
 ]
 File: photo/product1.png Graphic file (type bmp)
 <photo/product1.png>
 
 
-[35]
+[40]
 File: photo/product2.png Graphic file (type bmp)
 <photo/product2.png>
 File: photo/product3.png Graphic file (type bmp)
@@ -551,7 +598,7 @@ File: photo/product4.png Graphic file (type bmp)
 <photo/product4.png>
 
 
-[36]
+[41]
 File: photo/product5.png Graphic file (type bmp)
 <photo/product5.png>
 File: photo/product_all.png Graphic file (type bmp)
@@ -566,9 +613,9 @@ File: photo/phi_d.png Graphic file (type bmp)
 <photo/phi_d.png>
 ) (./chapter4.tex
 
-[37]
+[42]
 
-[38]
+[43]
 第4章
 File: photo/mode_first_a_lag.png Graphic file (type bmp)
 <photo/mode_first_a_lag.png>
@@ -583,7 +630,7 @@ LaTeX Warning: Float too large for page by 7.22063pt on input line 74.
 
 
 
-[39
+[44
 
 ]
 File: photo/mode_first_a_less.png Graphic file (type bmp)
@@ -599,11 +646,11 @@ LaTeX Warning: Float too large for page by 7.22063pt on input line 126.
 
 
 
-[40]
+[45]
 
-[41]
+[46]
 
-[42]
+[47]
 File: photo/Sz_a.png Graphic file (type bmp)
 <photo/Sz_a.png>
 File: photo/Sz_a_less.png Graphic file (type bmp)
@@ -620,21 +667,25 @@ File: photo/inertia_4blade_a.png Graphic file (type bmp)
 <photo/inertia_4blade_a.png>
 File: photo/inertia_4blade_a_less.png Graphic file (type bmp)
 <photo/inertia_4blade_a_less.png>
-) (./chapter5.tex
 
-[43
+
+[48
 
 ]
 
-[44]
+[49]) (./chapter5.tex
+
+[50
+
+]
 第5章
 
 
-[45
+[51
 
 ]) (./ref.tex
 
-[46] (out/main.bbl
+[52] (out/main.bbl
 Underfull \hbox (badness 1776) in paragraph at lines 22--26
 []\OT1/cmr/m/n/10 Kaman Aerospace.  K-max in-ter-mesh-ing ro-tor he-li-copter.  $https : / / kaman . com /
  []
@@ -649,95 +700,90 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 29.
 
 
-[47
+[53
 
 ]
 
-[48]
+[54]
 
-[49]
+[55])) (./thank.tex
 
-[50])) (./thank.tex
+[56]) (./appendix.tex
 
-[51]) (./appendix.tex
-
-[52
+[57
 
 ]
 付録A
 
 
-[53
+[58
 
 ]
 File: photo/trimanlysis_flow.png Graphic file (type bmp)
 <photo/trimanlysis_flow.png>
 
 
-[54]
+[59]
 
-[55]
+[60]
 File: photo/sh60k_model.png Graphic file (type bmp)
 <photo/sh60k_model.png>
 
 
-[56]
+[61]
 File: photo/attitude_sh60k.png Graphic file (type bmp)
 <photo/attitude_sh60k.png>
 
 
-[57]
+[62]
 File: photo/FxFz_fuselage_horizontal_stabilizer.png Graphic file (type bmp)
 <photo/FxFz_fuselage_horizontal_stabilizer.png>
 
 
-[58]
+[63]
 
-[59]
+[64]
 File: photo/load_moment_sh60k.png Graphic file (type bmp)
 <photo/load_moment_sh60k.png>
 
 
-[60
+[65
 
 ]
 File: photo/load_moment_phase_sh60k.png Graphic file (type bmp)
 <photo/load_moment_phase_sh60k.png>
 
 
-[61]
+[66]
 
-[62]
+[67]
 File: photo/MRH_airframe.png Graphic file (type bmp)
 <photo/MRH_airframe.png>
 
 
-[63
+[68
 
 ]
 
-[64]
+[69]
 
-[65]
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 422.
+[70]
 
-
-[66]
+[71]
 File: photo/acceleration_4rev_pilot.png Graphic file (type bmp)
 <photo/acceleration_4rev_pilot.png>
 
 
-[67
+[72
 
 ]
 File: photo/acceleration_z_4rev_pilot.png Graphic file (type bmp)
 <photo/acceleration_z_4rev_pilot.png>
 
 
-[68]
+[73]
 
-[69]
+[74]
 付録B
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 494.
@@ -749,7 +795,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 494.
 
 
-[70
+[75
 
 ]
 Overfull \hbox (6.61237pt too wide) detected at line 615
@@ -768,14 +814,14 @@ Overfull \hbox (4.23737pt too wide) detected at line 671
 
 
 
-[71]
+[76]
 Overfull \hbox (2.81747pt too wide) detected at line 697
 []
  []
 
 
 
-[72]
+[77]
 Overfull \hbox (64.92664pt too wide) detected at line 895
 []
  []
@@ -787,7 +833,7 @@ Overfull \hbox (12.25276pt too wide) detected at line 928
 
 
 
-[73]
+[78]
 Overfull \hbox (12.25276pt too wide) detected at line 961
 []
  []
@@ -804,14 +850,14 @@ Overfull \hbox (21.46921pt too wide) detected at line 1027
 
 
 
-[74]
+[79]
 Overfull \hbox (21.46921pt too wide) detected at line 1060
 []
  []
 
 )
 
-[75] (out/main.aux)
+[80] (out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-06-01> patch level 1
@@ -819,12 +865,12 @@ L3 programming layer <2025-10-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4661 strings out of 469856
- 80615 string characters out of 5479602
- 507242 words of memory out of 5000000
- 33095 multiletter control sequences out of 15000+600000
+ 4834 strings out of 469856
+ 83677 string characters out of 5479602
+ 508996 words of memory out of 5000000
+ 33255 multiletter control sequences out of 15000+600000
  654977 words of font info for 156 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
  67i,14n,77p,589b,677s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (76 pages, 225192 bytes).
+Output written on out/main.dvi (81 pages, 231724 bytes).

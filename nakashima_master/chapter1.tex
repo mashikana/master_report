@@ -38,11 +38,11 @@
     （ロータ回転面は$V_{c}$に対して平行とする.）
 
     \begin{equation}
-        V = V_{c} + r\Omega (\Psi = 90 deg)
+        V = V_{c} + r\Omega (\Psi = 90 \mathrm{deg})
     \end{equation}
     
     \begin{equation}
-        V = -V_{c} + r\Omega (\Psi = 270 deg)
+        V = -V_{c} + r\Omega (\Psi = 270 \mathrm{deg})
     \end{equation}
 
     \begin{figure}[htbp]
@@ -80,7 +80,7 @@
         \label{K-MAX（交差反転式ロータ）}
     \end{subfigure}
 
-    \caption{ヘリコプタの様式\cite{SH60K,CH47J,X2,KMAX}}
+    \caption{ヘリコプタの様式\supcite{SH60K,CH47J,X2,KMAX}}
     \label{fig:helicopter_types}
     \end{figure}
 
@@ -88,7 +88,7 @@
     \begin{figure}[H]
       \centering
       \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/forwardflight.png}
-      \caption{前進飛行時のシングルロータ （上面図 ）\cite{Prouty2001}}
+      \caption{前進飛行時のシングルロータ （上面図 ）\supcite{Prouty2001}}
       \label{fig:forwardflight}
     \end{figure}
 
@@ -306,62 +306,165 @@
     さらに,振動の下流に位置する胴体構造に対しても疲労強度の低下を引き起こす要因となる.
     また,これらの振動荷重およびモーメントが胴体を加振することにより,パイロット座席において発生する加速度が増大し,
     パイロット人体の疲労や不快感を生起することとなる.
-    （\cite{stupar_2012},\cite{farrar_2007},\cite{ali_2010},\cite{Jovanovic2010},\cite{Jovanovic2011},\cite{Harris1996}）
+    \supcite{stupar_2012,farrar_2007,ali_2010,Jovanovic2010,Jovanovic2011,Harris1996}
     さらに,エンジン,装備品,計器類,航法支援装置,武装システムなどの機器に対しても,環境振動に関する機能上の許容値を超過するおそれが生じる.
     低振動化への対策を講じない場合,上述したダイナミックコンポーネントおよび胴体構造の疲労強度低下に対しては,
     部品の肉厚増加などの設計変更によって対応せざるを得ず,結果として機体重量の増加を招く.
     また,人体の疲労増大はミッションパフォーマンスの低下につながり,装備品の誤作動や機能停止は飛行安全そのものを脅かす要因となる.
     近年,MILスタンダードにおける振動要求値は,改訂が行われるたびに段階的に下がっており,より低振動な機体に対する要求が高まっている.
-    さらに,今後はコンパウンドヘリコプタに代表される高速飛行可能な回転翼機の需要が一層高まることが予想されている.\cite{Ferguson2017}
+    さらに,今後はコンパウンドヘリコプタに代表される高速飛行可能な回転翼機の需要が一層高まることが予想されている.\supcite{Ferguson2017}
     これらの背景から,高速巡航飛行時における振動低減技術は,今後ますます重要な技術課題となることが予想される.
 
     \par
     胴体の振動を低減する手法は,大きく分けて二つの様式に分類される.
     すなわち,胴体に代表される固定系における対策と,メインロータブレードに代表される回転系における対策である.
     前者の固定系における対策としては,ダイナミックバイブレーションアブソーバー（Dynamic Vibration Absorber,DVA）や,
-    アクティブバイブレーションコントロール（Active Vibration Control,AVC）が代表的な手法として挙げられる.\cite{Bielawa2006}
-    （図1-4）にこれらの概念を示す.
+    アクティブバイブレーションコントロール（Active Vibration Control,AVC）が代表的な手法として挙げられる.
+    Fig.\ref{fig:DVA_example},Fig.\ref{fig:AVC_example}にこれらの概念を示す.
     一般に,DVAが十分な制振性能を発揮するためには,機体質量のおよそ2倍に相当する動マスを有するDVAを搭載する必要があるとされており,
     航空機に搭載する装備品としては重量面の観点から必ずしも好ましいものではない.
-    また,固定系における対策としては,いわゆる“nodamatic system”と呼ばれる振動絶縁装置も知られている.\cite{gaffey_1976}
-    （図1-5）に示すように,MGBの胴体取付部に梁の曲げ変形を利用して荷重を伝達する機構を設け,MGB取付部がモード形状における節の位置となるよう,
-    あらかじめ設計する手法である.
-    （図1-6）には,Dynamic Antiresonant Vibration Isolator（DAVI）（\cite{flannelly_1966},\cite{schuett_1969},\cite{rita_1978}）の装置写真を示す. 
+    また,固定系における対策としては,いわゆる“nodamatic system”と呼ばれる振動絶縁装置も知られている.
+    Fig.\ref{fig:nodynamic_system}に示すように,MGBの胴体取付部に梁の曲げ変形を利用して荷重を伝達する機構を設け,
+    MGB取付部がモード形状における節の位置となるよう,あらかじめ設計する手法である.
+    Fig.\ref{fig:DAVI}には,Dynamic Antiresonant Vibration Isolator（DAVI）の装置写真を示す. 
     DAVIは“nodamatic system”と同様に,MGBと胴体を接続する荷重伝達部において,バネおよびウェイトから構成される機構を用い,
     固有振動数が応答の小さくなる反共振点となるよう設計することで,振動の伝達を低減することを目的とした装置である.
 
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/DVA.png}
+            %\caption{DVA}
+            \label{fig:DVA}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/DVA_frequency.png}
+            %\caption{周波数と振幅}
+            \label{fig:DVA_frequency}
+        \end{subfigure}
+    \caption{DVA模式図\supcite{Bielawa2006}}
+    \label{fig:DVA_example}
+    \end{figure}
+
+
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.7\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/AVC.png}
+            \caption{AVCの概要}
+            \label{fig:AVC}
+        \end{subfigure}
+        
+        \vspace{5mm}
+
+        \begin{subfigure}[b]{0.7\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/AVC_equipment.png}
+            \caption{向かって左から右の順に：動力発生用アクチュエータ,アクティブ制振および電気ユニット,アクティブ制御センサ,ヒューマンマシンインターフェース}
+            \label{fig:AVC_equipment}
+        \end{subfigure}
+    \caption{AVCの代表例\supcite{AVC}}
+    \label{fig:AVC_example}
+    \end{figure}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/nodinamic_system.png}
+      \caption{nodamatic system 概念図\supcite{gaffey_1976}}
+      \label{fig:nodynamic_system}
+    \end{figure}    
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/DAVI.png}
+      \caption{DAVI\supcite{flannelly_1966,schuett_1969,rita_1978}}
+      \label{fig:DAVI}
+    \end{figure} 
+
+
     \par
     一方,回転系における対策としては,パッシブな手法としてメインロータブレードのルート部にペンデュラム（遠心振り子）を装着する方法や,
-    メインロータハブ中央位置にバイファイラを装着する方法が一般的である（図1-7, 図1-8）
+    メインロータハブ中央位置にバイファイラを装着する方法が一般的である（Fig.\ref{fig:pendulum_bifilar}, Fig.\ref{fig:pendulum_bifilar_system}）
     ペンデュラムはTable.\ref{table:Sz_to_Fzhub}に示した$F_z$成分を低減することを目的として,$N$/revに共振点を設定する.
     一方,バイファイラはTable.\ref{table:SxSr_to_Fxhub},Table.\ref{table:SxSr_to_Fyhub}に示した
     $F_{x\mathrm{hub}}$,$F_{y\mathrm{hub}}$成分を低減するため,$(N-1)$/rev あるいは$(N+1)$/revに合わせて共振点を調整することが基本である.
     このうちバイファイラについては,遠心振り子のような完全なパッシブ装置にとどまらず,アクティブな装置についても試作品が開発されており,
     パッシブ型バイファイラと比較して大幅な重量軽減が実現されている.
-    また,飛行試験においても一定の効果が確認されているものの,実用化には至っていない.（HMVS: Hub Mounting Vibration Suppression\cite{kakaley_2018}）.
+    また,飛行試験においても一定の効果が確認されているものの,実用化には至っていない.（HMVS: Hub Mounting Vibration Suppression\supcite{kakaley_2018}）.
     これまでに述べた回転系および固定系の振動低減手法はいずれも,十分な振動低減効果を得るためには相応の質量を必要とし,航空機への搭載という観点からは課題となる.
     さらに,これらの装置は調整が極めてセンシティブであり,メインロータ回転数のわずかな変動によっても振動低減効果に有意な差が生じるため,
     調整作業に多大な労力を要する.
     また,振動低減のために増加した質量を抑制する目的でアクティブ化などの対策を講じる必要が生じ,結果としてコスト増を招き,運用者側に対する負担が大きくなる.
+    
+    
+    \begin{figure}[H]
+      \centering
+      \captionsetup{justification=centering}
+      \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/pendulum_bifilar.png}
+      \caption{ペンデュラムおよびバイファイラ\supcite{johnson_2013} \\
+               \quad （a）ペンデュラムの事例 （b）バイファイラの事例    \\
+                各写真の下部に機種名を示す.}
+      \label{fig:pendulum_bifilar}
+    \end{figure} 
+    
+    \clearpage
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/pendulum.png}
+            \caption{Blade pendulum absorbers}
+            \label{fig:pendulum}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/bifilar.png}
+            \caption{bifilar vibration absorber for rotor hub}
+            \label{fig:bifilar}
+        \end{subfigure}
+    \caption{ペンデュラムおよびバイファイラ模式図\supcite{johnson_2013}}
+    \label{fig:pendulum_bifilar_system}
+    \end{figure}     
+    
+
+    \par
     回転系における対策には,もう一つの代表的な手法としてTEF（Trailing Edge Flaps）が挙げられる.
-    （図1-9）にその概念図を示す.
-    TEFの初期のアイディアはStraub and Charles\cite{straub_1990}により紹介され,その後Ormiston\cite{ormiston_2001}によって発展が図られた.
+    Fig.\ref{fig:TEF}にその概念図を示す.
+    TEFの初期のアイディアはStraub and Charles\supcite{straub_1990}により紹介され,その後Ormiston\supcite{ormiston_2001}によって発展が図られた.
     TEFは事前の数値解析および実証試験において非常に大きな労力を要する手法であり,当初の目標であったスワッシュプレートレス設計を実現するためには,
     TEFを駆動するスマート材料において十分な変位量を確保することが困難であることが指摘されている.
-    （\cite{shen_chopra_2002a},\cite{shen_chopra_2002b},\cite{shen_chopra_2004a},\cite{shen_chopra_2006},\cite{bluman_gandhi_2011}） 
+    \supcite{shen_chopra_2002a,shen_chopra_2002b,shen_chopra_2004a,shen_chopra_2006,bluman_gandhi_2011} 
     さらに, 回転系のTEFに対して,胴体側の固定系からスリップリングを介して十分な電力を供給する点においても,技術的な困難を伴うことが明らかとなっている.
     しかしながら,TEFはこれらの技術的課題が未解決であるにもかかわらず,プライマリコントロールのみならず振動低減を目的としたデバイスとして極めて有望な手法であった.
     4 枚ブレードを有する回転翼機においては,メインロータハブ中央位置の$x_{\mathrm{hub}}$,$y_{\mathrm{hub}}$,$z_{\mathrm{hub}}$座標系における
     $F_{z\mathrm{hub}}$,および$M_{x\mathrm{hub}}$,$M_{y\mathrm{hub}}$の4/rev振動荷重およびモーメントが,約90\%低減可能であることが解析で示されている.
-    （\cite{shen_chopra_2004b},\cite{friedmann_millott_1995}）
+    \supcite{shen_chopra_2004b,friedmann_millott_1995}
     一方で, 実機においては前述のとおり,TEFを駆動するアクチュエータの変位量が不足しており,現時点ではこの水準の振動低減効果を実現することは困難である.
-    さらに,空力弾性学的な観点からも慎重な検討が必要であることが明らかとなっている.\cite{shen_chopra_2003}
+    さらに,空力弾性学的な観点からも慎重な検討が必要であることが明らかとなっている.\supcite{shen_chopra_2003}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.6\linewidth]{photo/TEF.png}
+      \caption{TEF(Trailing Edge Flaps)\supcite{friedmann_2004}}
+      \label{fig:TEF}
+    \end{figure} 
+
 
     \par    
     ここまでに述べたとおり,回転翼機の振動を低減するためには,一定の質量増加を受け入れる必要があり,またその調整には多くの時間と労力を要する.
     さらに,一部の手法については革新的な技術の進展を待たなければならない課題も存在する.
     では,生来振動の少ない機体を実現するためには,どのような方策が考えられるであろうか.
-    先行研究として,Gandhi,F.S. and Sekura,M.K.\cite{gandhi_sekura_2004}は,回転翼機後方に配置された水平尾翼の舵角を変更することにより,
+    先行研究として,Gandhi,F.S. and Sekura,M.K.\supcite{gandhi_sekura_2004}は,回転翼機後方に配置された水平尾翼の舵角を変更することにより,
     メインロータハブ中央位置に定常的なモーメント（$M_x$,$M_y$）および$F_z$を付与した場合の振動変化を解析的に検討している.
     同研究では,UH-60およびBo-105の2種類の機体を対象とし,UMARCを用いた解析により,メインロータハブ中央位置に作用する4/rev振動荷重およびモーメントが評価された.
     評価指標としては,$F_{x\mathrm{hub}}$,$F_{y\mathrm{hub}}$,$F_{z\mathrm{hub}}$,および$M_{x\mathrm{hub}}$,$M_{y\mathrm{hub}}$,$M_{z\mathrm{hub}}$
@@ -371,12 +474,14 @@
     一方で,中速域においても振動レベルは必ずしも小さくないことが知られており,さらに中速域ではスタビレータに作用する空力荷重が低下するため,
     スタビレータ舵角の変更による振動低減効果が十分に得られない可能性があると考えられる.
 
+
+    \clearpage    
     \section{本論文の目的}
     \label{sec:thesis_perpose}
     \par
     本論文では,機体の重心移動による振動低減の可能性について検討を行う.
     既に小型から中型の回転翼機においては,サイクリックピッチの代替手法として,重心移動による機体制御が可能であることが解析的に示されている.
-    （\cite{yoshizaki_2006},\cite{steiner_2008}）
+    （\supcite{yoshizaki_2006,steiner_2008}）
     本研究では,まず第2章において,メインロータハブ中央位置に作用する振動荷重およびモーメントを低減することを目的として,機体の重心位置を前後および左右方向に
     移動させることにより,機体座標系における定常的な$M_x$,$M_y$をメインロータハブ中央位置に作用させる手法について検討する.
     重心移動は,機体内部に搭載された装備品を移動させることによって実現するものとし,可動式の重心移動機構は想定しない.
@@ -389,7 +494,7 @@
     さらに,本研究では重心移動に可動方式を採用しないことから,重心移動に伴って変化するトリム状態が機体に与える影響について検討する必要がある.
     そこで第4章では,重心移動がメインロータの必要パワーおよび機体の固有安定性に与える影響について検討する.
 
-
+    \clearpage
     \section{使用する解析ツール}
     \label{sec:analysis_method}
     \par
@@ -398,7 +503,7 @@
     ならびにメインロータブレードが1回転する間の各アジマス角における諸量が得られる.
     これまでに,回転翼機の包括的解析ツールは産官学において数多く開発されてきた.
     Fig.\ref{fig:CAMRADhistory}には,代表的な解析ツールとその開発者および開発時期を示す.
-    本論文で使用する解析ツールは,回転翼機の振動解析において豊富な実績を有するCAMRAD $\mathrm{II}$\cite{johnson_1998}である.
+    本論文で使用する解析ツールは,回転翼機の振動解析において豊富な実績を有するCAMRAD $\mathrm{II}$\supcite{johnson_1998}である.
     CAMRAD $\mathrm{II}$は,シングルロータヘリコプタに限らず,多様な形態の回転翼機を対象とした包括的な空力解析ツールである.
     本ツールは,NASAに所属していたWayne Johnsonにより,NASA および米陸軍向けに開発されたCAMRADを起源としている.
     CAMRADは1978年から1979年にかけて開発され,当時は回転翼機を包括的に解析する技術が存在せず,個別の用途に応じた解析が行われていた.
@@ -410,13 +515,13 @@
     こうした背景のもと,CAMRADは最新版であるCAMRAD $\mathrm{II}$へと発展し,
     メインロータブレードを含む胴体やドライブシャフトを弾性体として取り扱うマルチボディダイナミクスと,回転翼の空気力学を統合した解析が可能となった.
     CAMRAD $\mathrm{II}$による解析は,トリム解析,非定常解析,およびフラッター解析の三つの主要なタスクから構成されている.
-    本ツールは,メインロータハブ中央位置における振動荷重およびモーメントを高い精度で解析できることが示されており\cite{Lim2003},
+    本ツールは,メインロータハブ中央位置における振動荷重およびモーメントを高い精度で解析できることが示されており\supcite{Lim2003},
     本論文で評価対象とする過渡応答解析および安定性解析も実施可能である.
     本論文では,トリム解析においてメインロータ回転面を通過するインフローを求める際に,自由後流モデル（Free Wake Model）を用いた.
 
     \begin{figure}[H]
       \centering
       \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/CAMRADhistory.png}
-      \caption{回転翼機の包括的解析ツール\cite{johnson_1998}}
+      \caption{回転翼機の包括的解析ツール\supcite{johnson_1998}}
       \label{fig:CAMRADhistory}
     \end{figure}
