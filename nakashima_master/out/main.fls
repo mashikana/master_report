@@ -1,11 +1,12 @@
-PWD c:/git/master_report/nakashima_master
+PWD c:/git/nakashima_master
 INPUT c:/texlive/2025/texmf.cnf
 INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2025/texmf-var/web2c/euptex/platex.fmt
-INPUT c:/git/master_report/nakashima_master/main.tex
+INPUT c:/git/nakashima_master/main.tex
 OUTPUT out/main.log
 INPUT c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
 INPUT c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
+INPUT c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
