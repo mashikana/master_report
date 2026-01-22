@@ -335,6 +335,110 @@ INPUT ./photo/vi_d.png
 INPUT ./photo/vi_d.png
 INPUT ./photo/vi_d.png
 INPUT extractbb -B cropbox -O photo/vi_d.png
+INPUT ./photo/attitude_angle.png
+INPUT ./photo/attitude_angle.png
+INPUT ./photo/attitude_angle.png
+INPUT extractbb -B cropbox -O photo/attitude_angle.png
+INPUT ./photo/U_a.png
+INPUT ./photo/U_a.png
+INPUT ./photo/U_a.png
+INPUT extractbb -B cropbox -O photo/U_a.png
+INPUT ./photo/U_b.png
+INPUT ./photo/U_b.png
+INPUT ./photo/U_b.png
+INPUT extractbb -B cropbox -O photo/U_b.png
+INPUT ./photo/U_c.png
+INPUT ./photo/U_c.png
+INPUT ./photo/U_c.png
+INPUT extractbb -B cropbox -O photo/U_c.png
+INPUT ./photo/U_d.png
+INPUT ./photo/U_d.png
+INPUT ./photo/U_d.png
+INPUT extractbb -B cropbox -O photo/U_d.png
+INPUT ./photo/phi_a.png
+INPUT ./photo/phi_a.png
+INPUT ./photo/phi_a.png
+INPUT extractbb -B cropbox -O photo/phi_a.png
+INPUT ./photo/phi_b.png
+INPUT ./photo/phi_b.png
+INPUT ./photo/phi_b.png
+INPUT extractbb -B cropbox -O photo/phi_b.png
+INPUT ./photo/phi_c.png
+INPUT ./photo/phi_c.png
+INPUT ./photo/phi_c.png
+INPUT extractbb -B cropbox -O photo/phi_c.png
+INPUT ./photo/phi_d.png
+INPUT ./photo/phi_d.png
+INPUT ./photo/phi_d.png
+INPUT extractbb -B cropbox -O photo/phi_d.png
+INPUT ./photo/flap_a.png
+INPUT ./photo/flap_a.png
+INPUT ./photo/flap_a.png
+INPUT extractbb -B cropbox -O photo/flap_a.png
+INPUT ./photo/flap_b.png
+INPUT ./photo/flap_b.png
+INPUT ./photo/flap_b.png
+INPUT extractbb -B cropbox -O photo/flap_b.png
+INPUT ./photo/flap_c.png
+INPUT ./photo/flap_c.png
+INPUT ./photo/flap_c.png
+INPUT extractbb -B cropbox -O photo/flap_c.png
+INPUT ./photo/flap_d.png
+INPUT ./photo/flap_d.png
+INPUT ./photo/flap_d.png
+INPUT extractbb -B cropbox -O photo/flap_d.png
+INPUT ./photo/flap_angle.png
+INPUT ./photo/flap_angle.png
+INPUT ./photo/flap_angle.png
+INPUT extractbb -B cropbox -O photo/flap_angle.png
+INPUT ./photo/alpha_a.png
+INPUT ./photo/alpha_a.png
+INPUT ./photo/alpha_a.png
+INPUT extractbb -B cropbox -O photo/alpha_a.png
+INPUT ./photo/alpha_b.png
+INPUT ./photo/alpha_b.png
+INPUT ./photo/alpha_b.png
+INPUT extractbb -B cropbox -O photo/alpha_b.png
+INPUT ./photo/alpha_c.png
+INPUT ./photo/alpha_c.png
+INPUT ./photo/alpha_c.png
+INPUT extractbb -B cropbox -O photo/alpha_c.png
+INPUT ./photo/alpha_d.png
+INPUT ./photo/alpha_d.png
+INPUT ./photo/alpha_d.png
+INPUT extractbb -B cropbox -O photo/alpha_d.png
+INPUT ./photo/cl_a.png
+INPUT ./photo/cl_a.png
+INPUT ./photo/cl_a.png
+INPUT extractbb -B cropbox -O photo/cl_a.png
+INPUT ./photo/cl_b.png
+INPUT ./photo/cl_b.png
+INPUT ./photo/cl_b.png
+INPUT extractbb -B cropbox -O photo/cl_b.png
+INPUT ./photo/cl_c.png
+INPUT ./photo/cl_c.png
+INPUT ./photo/cl_c.png
+INPUT extractbb -B cropbox -O photo/cl_c.png
+INPUT ./photo/cl_d.png
+INPUT ./photo/cl_d.png
+INPUT ./photo/cl_d.png
+INPUT extractbb -B cropbox -O photo/cl_d.png
+INPUT ./photo/theta_a.png
+INPUT ./photo/theta_a.png
+INPUT ./photo/theta_a.png
+INPUT extractbb -B cropbox -O photo/theta_a.png
+INPUT ./photo/theta_b.png
+INPUT ./photo/theta_b.png
+INPUT ./photo/theta_b.png
+INPUT extractbb -B cropbox -O photo/theta_b.png
+INPUT ./photo/theta_c.png
+INPUT ./photo/theta_c.png
+INPUT ./photo/theta_c.png
+INPUT extractbb -B cropbox -O photo/theta_c.png
+INPUT ./photo/theta_d.png
+INPUT ./photo/theta_d.png
+INPUT ./photo/theta_d.png
+INPUT extractbb -B cropbox -O photo/theta_d.png
 INPUT ./photo/product1.png
 INPUT ./photo/product1.png
 INPUT ./photo/product1.png
@@ -359,22 +463,14 @@ INPUT ./photo/product_all.png
 INPUT ./photo/product_all.png
 INPUT ./photo/product_all.png
 INPUT extractbb -B cropbox -O photo/product_all.png
-INPUT ./photo/phi_a.png
-INPUT ./photo/phi_a.png
-INPUT ./photo/phi_a.png
-INPUT extractbb -B cropbox -O photo/phi_a.png
-INPUT ./photo/phi_b.png
-INPUT ./photo/phi_b.png
-INPUT ./photo/phi_b.png
-INPUT extractbb -B cropbox -O photo/phi_b.png
-INPUT ./photo/phi_c.png
-INPUT ./photo/phi_c.png
-INPUT ./photo/phi_c.png
-INPUT extractbb -B cropbox -O photo/phi_c.png
-INPUT ./photo/phi_d.png
-INPUT ./photo/phi_d.png
-INPUT ./photo/phi_d.png
-INPUT extractbb -B cropbox -O photo/phi_d.png
+INPUT ./photo/power.png
+INPUT ./photo/power.png
+INPUT ./photo/power.png
+INPUT extractbb -B cropbox -O photo/power.png
+INPUT ./photo/roll_pitch_body.png
+INPUT ./photo/roll_pitch_body.png
+INPUT ./photo/roll_pitch_body.png
+INPUT extractbb -B cropbox -O photo/roll_pitch_body.png
 INPUT ./chapter4.tex
 INPUT ./chapter4.tex
 INPUT chapter4.tex
@@ -410,14 +506,14 @@ INPUT ./photo/mode_fourth_a_less.png
 INPUT ./photo/mode_fourth_a_less.png
 INPUT ./photo/mode_fourth_a_less.png
 INPUT extractbb -B cropbox -O photo/mode_fourth_a_less.png
-INPUT ./photo/Sz_a.png
-INPUT ./photo/Sz_a.png
-INPUT ./photo/Sz_a.png
-INPUT extractbb -B cropbox -O photo/Sz_a.png
-INPUT ./photo/Sz_a_less.png
-INPUT ./photo/Sz_a_less.png
-INPUT ./photo/Sz_a_less.png
-INPUT extractbb -B cropbox -O photo/Sz_a_less.png
+INPUT ./photo/blade_section_force.png
+INPUT ./photo/blade_section_force.png
+INPUT ./photo/blade_section_force.png
+INPUT extractbb -B cropbox -O photo/blade_section_force.png
+INPUT ./photo/blade_section_aerodynamics.png
+INPUT ./photo/blade_section_aerodynamics.png
+INPUT ./photo/blade_section_aerodynamics.png
+INPUT extractbb -B cropbox -O photo/blade_section_aerodynamics.png
 INPUT ./photo/Fz_a.png
 INPUT ./photo/Fz_a.png
 INPUT ./photo/Fz_a.png
@@ -426,6 +522,14 @@ INPUT ./photo/Fz_a_less.png
 INPUT ./photo/Fz_a_less.png
 INPUT ./photo/Fz_a_less.png
 INPUT extractbb -B cropbox -O photo/Fz_a_less.png
+INPUT ./photo/Sz_a.png
+INPUT ./photo/Sz_a.png
+INPUT ./photo/Sz_a.png
+INPUT extractbb -B cropbox -O photo/Sz_a.png
+INPUT ./photo/Sz_a_less.png
+INPUT ./photo/Sz_a_less.png
+INPUT ./photo/Sz_a_less.png
+INPUT extractbb -B cropbox -O photo/Sz_a_less.png
 INPUT ./photo/flap_0855_a.png
 INPUT ./photo/flap_0855_a.png
 INPUT ./photo/flap_0855_a.png
@@ -442,6 +546,10 @@ INPUT ./photo/inertia_4blade_a_less.png
 INPUT ./photo/inertia_4blade_a_less.png
 INPUT ./photo/inertia_4blade_a_less.png
 INPUT extractbb -B cropbox -O photo/inertia_4blade_a_less.png
+INPUT ./photo/camrad_fzhub_a.png
+INPUT ./photo/camrad_fzhub_a.png
+INPUT ./photo/camrad_fzhub_a.png
+INPUT extractbb -B cropbox -O photo/camrad_fzhub_a.png
 INPUT ./chapter5.tex
 INPUT ./chapter5.tex
 INPUT chapter5.tex

@@ -49,6 +49,7 @@
         \setlength{\tabcolsep}{5pt}
         \begin{tabular}{|l|l|}
             \hline 機体質量 \, $m$ \, [kg] &  11.70 \\
+            \hline ブレード質量（1枚） \, $m_b$ \, [kg] &  0.218 \\
             \hline 半径 \, $R$ \, [m] &  0.786 \\
             \hline ブレードコード長 \, c \, [m] & 0.0617 \\
             \hline 合計ブレード数 \, $b$ [-] & 4 \\
@@ -118,9 +119,9 @@
             \hline         & \multicolumn{2}{|c|}{錘の位置}                   &  \multicolumn{3}{|c|}{メインロータシャフトに対する重心位置[m]} \\
             \hline 重心位置 & ロータ前後方向位置 [\%] & 方位角[deg]              & 前後（後方が正） & 左右（右方が正） & 上下（上方が正）  \\
             \hline a       & \multicolumn{2}{|c|}{メインロータハブ中心の真下}   &  $-1.78\times 10^{-2}$          &  $9.11\times 10^{-4}$           &  $-2.25\times 10^{-1}$ \\
-            \hline b       & 20                     &    315                   &  $1.39\times 10^{-2}$           &  $-3.08\times 10^{-2}$          &  $-2.25\times 10^{-1}$ \\
-            \hline c       & 40                     &    315                  &  $4.57\times 10^{-2}$           &  $-6.26\times 10^{-2}$          &  $-2.25\times 10^{-1}$ \\
-            \hline d       & 40                     &    45                  &  $4.57\times 10^{-2}$           &  $6.44\times 10^{-2}$           &  $-2.25\times 10^{-1}$ \\
+            \hline b       & 20                     &    45                   &  $1.39\times 10^{-2}$           &  $-3.08\times 10^{-2}$          &  $-2.25\times 10^{-1}$ \\
+            \hline c       & 40                     &    45                   &  $4.57\times 10^{-2}$           &  $-6.26\times 10^{-2}$          &  $-2.25\times 10^{-1}$ \\
+            \hline d       & 40                     &    315                  &  $4.57\times 10^{-2}$           &  $6.44\times 10^{-2}$           &  $-2.25\times 10^{-1}$ \\
             \hline 
         \end{tabular}
     \end{table}
@@ -187,18 +188,18 @@
         \label{table:flight_test_result}
         \setlength{\tabcolsep}{5pt}
         \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-            \hline 重心位置                         & \multicolumn{2}{|c|}{$a$} &  \multicolumn{2}{|c|}{$b$} & $c$ &  \multicolumn{3}{|c|}{$d$} \\
-            \hline 計測回数                         & 1回目     & 2回目      & 1回目     &  2回目  &  1回目    & 1回目     & 2回目  &  3回目   \\
-            \hline $\Omega$ [RPM]                  & 1494      & 1521       & 1500     & 1490    &  1528     & 1489     & 1494   & 1505  \\
-            \hline 気圧 [bar]                      & 1017.08   & 1016.3     & 1015.9   & 1015.1  & 1016.6    & 1015.9   & 1015.5 & 1015.1 \\
-            \hline 気温 [°]                        & 18.3      & 18.8       & 15.8     & 16.9    & 16.1      & 14.0     & 14.7   & 15.4   \\
-            \hline 高度[m]                         & 13.5      & 18.9       & 17.6     & 27.6    & 10.5      & 10.3     & 12.5   & 18.6   \\
-            \hline 速度[m/s]                       & 31.0      & 33.7       & 31.9     & 34.0    & 31.8      & 31.0     & 28.9   & 32.0   \\
-            \hline $\Phi$[deg](右舷下げ正)          & 6.1       & 6.1        & -5.7     & -5.0    & 3.5       & 0.6      & 7.4    & 2.5    \\
-            \hline $\Theta$[deg](頭上げ正)          & -6.3      & -7.4       & -10.9    & -14.1   & -5.8      & -4.4     & -5.5   & -4.7   \\
-            \hline 4/rev $a_z$[$\mathrm{m/s^2}$]   & 1.47      & 1.57       & 1.08     & 1.18    & 1.27      & 1.86     & 1.96   & 2.06   \\
-            \hline 平均 4/rev $a_z$[$\mathrm{m/s^2}$] & \multicolumn{2}{|c|}{1.52} & \multicolumn{2}{|c|}{1.13} & 1.27 & \multicolumn{3}{|c|}{1.96}  \\
-            \hline 比率                            & \multicolumn{2}{|c|}{1.00} & \multicolumn{2}{|c|}{0.74} & 0.84 & \multicolumn{3}{|c|}{1.33}  \\
+            \hline 重心位置                         & \multicolumn{2}{|c|}{$a$} &  \multicolumn{2}{|c|}{$b$} & \multicolumn{1}{c|}{$c$} &  \multicolumn{3}{|c|}{$d$} \\
+            \hline 計測回数                         & \multicolumn{1}{c|}{1回目} & \multicolumn{1}{c|}{2回目} & \multicolumn{1}{c|}{1回目} &  \multicolumn{1}{c|}{2回目}  &  \multicolumn{1}{c|}{1回目}  & \multicolumn{1}{c|}{1回目} & \multicolumn{1}{c|}{2回目}  &  \multicolumn{1}{c|}{3回目}   \\
+            \hline $\Omega$ [RPM]                  & \multicolumn{1}{c|}{1494}  & \multicolumn{1}{c|}{1521}  & \multicolumn{1}{c|}{1500}  & \multicolumn{1}{c|}{1490}   &  \multicolumn{1}{c|}{1528}   & \multicolumn{1}{c|}{1489}  & \multicolumn{1}{c|}{1494}  & \multicolumn{1}{c|}{1505}  \\
+            \hline 気圧 [bar]                      & \multicolumn{1}{c|}{1017.08} & \multicolumn{1}{c|}{1016.3} & \multicolumn{1}{c|}{1015.9} & \multicolumn{1}{c|}{1015.1}  & \multicolumn{1}{c|}{1016.6} & \multicolumn{1}{c|}{1015.9} & \multicolumn{1}{c|}{1015.5} & \multicolumn{1}{c|}{1015.1} \\
+            \hline 気温 [°]                        & \multicolumn{1}{c|}{18.3}    & \multicolumn{1}{c|}{18.8}   & \multicolumn{1}{c|}{15.8}   & \multicolumn{1}{c|}{16.9}    & \multicolumn{1}{c|}{16.1}   & \multicolumn{1}{c|}{14.0}   & \multicolumn{1}{c|}{14.7}   & \multicolumn{1}{c|}{15.4}   \\
+            \hline 高度[m]                         & \multicolumn{1}{c|}{13.5}    & \multicolumn{1}{c|}{18.9}   & \multicolumn{1}{c|}{17.6}   & \multicolumn{1}{c|}{27.6}    & \multicolumn{1}{c|}{10.5}   & \multicolumn{1}{c|}{10.3}   & \multicolumn{1}{c|}{12.5}   & \multicolumn{1}{c|}{18.6}   \\
+            \hline 速度[m/s]                       & \multicolumn{1}{c|}{31.0}    & \multicolumn{1}{c|}{33.7}   & \multicolumn{1}{c|}{31.9}   & \multicolumn{1}{c|}{34.0}    & \multicolumn{1}{c|}{31.8}   & \multicolumn{1}{c|}{31.0}   & \multicolumn{1}{c|}{28.9}   & \multicolumn{1}{c|}{32.0}   \\
+            \hline $\Phi$[deg](右舷下げ正)          & \multicolumn{1}{c|}{6.1}     & \multicolumn{1}{c|}{6.1}    & \multicolumn{1}{c|}{-5.7}   & \multicolumn{1}{c|}{-5.0}    & \multicolumn{1}{c|}{3.5}    & \multicolumn{1}{c|}{0.6}    & \multicolumn{1}{c|}{7.4}    & \multicolumn{1}{c|}{2.5}    \\
+            \hline $\Theta$[deg](頭上げ正)          & \multicolumn{1}{c|}{-6.3}    & \multicolumn{1}{c|}{-7.4}   & \multicolumn{1}{c|}{-10.9}  & \multicolumn{1}{c|}{-14.1}   & \multicolumn{1}{c|}{-5.8}   & \multicolumn{1}{c|}{-4.4}   & \multicolumn{1}{c|}{-5.5}   & \multicolumn{1}{c|}{-4.7}   \\
+            \hline 4/rev $a_z$[$\mathrm{m/s^2}$]   & \multicolumn{1}{c|}{1.47}    & \multicolumn{1}{c|}{1.57}   & \multicolumn{1}{c|}{1.08}   & \multicolumn{1}{c|}{1.18}    & \multicolumn{1}{c|}{1.27}   & \multicolumn{1}{c|}{1.86}   & \multicolumn{1}{c|}{1.96}   & \multicolumn{1}{c|}{2.06}   \\
+            \hline 平均 4/rev $a_z$[$\mathrm{m/s^2}$] & \multicolumn{2}{|c|}{1.52} & \multicolumn{2}{|c|}{1.13} & \multicolumn{1}{c|}{1.27} & \multicolumn{3}{|c|}{1.96}  \\
+            \hline 比率                            & \multicolumn{2}{|c|}{1.00} & \multicolumn{2}{|c|}{0.74} & \multicolumn{1}{c|}{0.84} & \multicolumn{3}{|c|}{1.33}  \\
             \hline 
         \end{tabular}
     \end{table}

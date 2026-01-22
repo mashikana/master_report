@@ -1,13 +1,11 @@
-\chapter{考察}
-
+\chapter{リード・ラグヒンジが振動特性に与える影響}
+\label{chap:leadlag}
 \begin{flushright}
 	\begin{minipage}{0.8\hsize}
-		\quad 本章では,飛行試験で用いたラジコンヘリコプタについてCAMRAD $\mathrm{II}$による解析結果を示す.
-		      まず,飛行試験とによる結果の違いについて述べる.
-			  次に，ブレード方位角$\Psi$と有効迎角$\alpha$の関係や,有効迎角 $\alpha$と揚力係数$C_l$の関係などのグラフから,
-			  低振動化に寄与する要素を特定する.
-              最後に,$r/R= 0.855$における$\alpha U^2$,$C_l U^2$の振幅の値をFFTにより求め,支配的な周波数成分の組み合わせについて述べる.
-        
+		\quad 本章では,リード・ラグヒンジが振動特性に与える影響について考察を加える.
+		      まず,リード・ラグヒンジの有無によるメインロータブレードの固有振動数とモード形状の違いについて述べる.
+			  次に,数式的に$F_z$と$S_z$の違いについて述べる.
+              最後に,フラップの変位や慣性力のグラフから,ハブのコンフィグレーションによって$F_{z\mathrm{hub}}$に差が出る原因を考察する.
 	\end{minipage}
 \end{flushright}
 
@@ -16,12 +14,14 @@
     \par
     Table.\ref{table:natural_frequency}およびFig.\ref{fig:mode_shape_lag}にメインロータブレードの固有振動数とモード形状を示す.
     なお,フラップとラグの変位はローター半径で無次元化され、ピッチ角はラジアンである.
-    リード・ラグヒンジを採用した場合,フラッピングモードの振動周波数は4/rev周波数に極めて近接するため,振動の増大に寄与する.
+    リード・ラグヒンジを採用した場合,フラッピングモードの振動周波数は4/rev周波数に極めて近接する.
     フラップはリード・ラグに関連するが,ラジコンヘリコプタにはフラッピングヒンジが存在しないため,リード・ラグヒンジにおけるブレード拘束に自由度が生まれる.
     したがって,リード・ラグヒンジにおける拘束条件をパラメータとして振動解析を実施した.
     Table.\ref{table:natural_frequency_less}およびFig.\ref{fig:mode_shape_less}に,ヒンジレスロータを搭載したラジコンヘリコプタにおける
     メインロータブレードの固有振動数とモード形状を示す.
-    ヒンジレスロータを採用すると,固有振動数とモード形状が変化することが確認できる. 
+    ヒンジレスロータを採用すると,固有振動数とモード形状が変化している. 
+    特に,ピッチの1次モードが3.741/revと,リード・ラグヒンジありの場合のフラップ2次モードの4.058/revと比べて遠ざかっている.
+    また,フラップの1次モードやラグの1次モードの形状からヒンジレスロータの特性を表すことができていると確認できる.
 
 
     \clearpage
@@ -129,35 +129,189 @@
 
 
 	\clearpage
-    \section{リードラグヒンジがフラッピング運動に与える影響}
-    \label{sec:flap}
+    \section{$F_{z}$と$S_{z}$について}
+    \label{sec:sz_fz}
     \par
-    Fig.\ref{fig:comparison_sz}に示すように,リードラグヒンジの有無によって,空力である$S_{z}$には大きな変化は見られなかった.
-    一方,Fig.\ref{fig:comparison_fz}に示すように,ブレード4枚分の$F_{z}$には約10Nほどの違いが見られる.
-    Fig.\ref{fig:flap}に$r/R = 0.855$におけるフラップの変位を示す.
-    重心移動により,フラップの1/rev成分が支配的となった.
-    リード・ラグヒンジを使用することで,フラップの最大値が減少する.
-    これは,フラップの変位が増え,その結果として慣性力が増大したためと考えられる.
-    図18は,各ケースにおける4/revの$F_{z\mathrm{hub}}$を示している.
-		
-    \begin{figure}[htbp]
-    \centering
-        \begin{subfigure}[b]{0.45\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{photo/Sz_a.png}
-            \caption{with lead-lag hinge}
-            \label{fig:Sz_a}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.45\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{photo/Sz_a_less.png}
-            \caption{without lead-lag hinge}
-            \label{fig:Sz_a_less}
-        \end{subfigure}
-    \caption{$z$方向空力荷重$S_z$の比較}
-    \label{fig:comparison_sz}
+    回転翼の根本に作用する力とモーメントは,翼断面での慣性力と空気力を積分することで得られる.
+    ヒンジオフセットのない関節式ロータを考えると,翼断面にかかる鉛直方向に作用する力は
+    慣性力$m\ddot{z} = mr\ddot{\beta}$と空気力$F_z$である.
+    遠心力は常にハブプレーンと平行である.（Fig.\ref{fig:blade_section_force}参照）
+    したがって,翼根部の垂直せん断力は以下のように表される.
+
+    \begin{equation}
+        S_z = \int_{0}^{R} F_z \, dr - \ddot{\beta} \int_{0}^{R} r m \, dr  \label{sz}
+    \end{equation}
+
+    主翼のフラップモーメントは,当該断面にかかる慣性力,遠心力,および空気力の積分から得られた.
+    
+    \begin{equation}
+        N_F = \int_{0}^{R} rF_z \, dr - (\ddot{\beta} + \Omega^2 \beta) \int_{0}^{R} r^2 m \, dr  \label{nf}
+    \end{equation}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/blade_section_force.png}
+      \caption{翼根部における垂直せん断力および面外方向のモーメントを発生させる翼断面の力 \supcite{johnson_2013}}
+      \label{fig:blade_section_force}
     \end{figure}
+
+
+    この場合,翼根のモーメントは単純にヒンジモーメントである.
+    フラップヒンジにオフセットが存在しないため,ヒンジばねが存在する場合にのみモーメントがゼロ以外となる.
+    ヒンジスプリングを介してハブに伝達されるモーメントは$N_{F} = K_{\beta}(\beta-\beta_{p})$と表される.
+    ただし,${\nu_{\beta}}^2 = 1 + K_{\beta}/(I_{\beta}\Omega^2)$である.
+
+    \begin{equation}
+        N_F = I_{\beta}\Omega^2({\nu_{\beta}}^2 -1)(\beta - \beta_p)  \label{nf2}
+    \end{equation}   
+
+
+    この関係式はヒンジオフセットがある場合にも適用される.
+    次に,関節付きロータとヒンジレスロータの両方を包含する,一般的な面外曲げ運動のケースを検討する.
+    翼根における垂直せん断力は,翼に作用する空気力と慣性力を積分することで得られる.
+
+    \begin{equation}
+        S_z = \int_{0}^{R} (F_z -m \ddot{z}) \, dr  \label{sz2}
+    \end{equation}
+
+    モード展開$z = \sum_k \eta_k q_k$を代入すると,
+
+    \begin{equation}
+    S_z = \int_0^R F_z \, dr - \sum_k \ddot{q}_k \int_0^R \eta_k m \, dr  \label{sz3}
+    \end{equation}
+
+    翼根のモーメントは,翼断面にかかる空気力,慣性力,および遠心力によるフラップモーメントから得られる.
+    （Fig.\ref{fig:blade_section_force}）
+    あるいは,フラップ曲げモーメントの式を翼根位置で評価することで求まる.
+
+
+    \begin{align}
+    N_F &= \int_0^R \left[(F_z - m \ddot{z}) r - m \Omega^2 r z \right] dr     \\
+        &= \int_0^R r F_z \, dr - \sum_k \left( \ddot{q}_k + \Omega^2 q_k \right) \int_0^R r \eta_k m \, dr  \label{nf3}
+    \end{align}
+
+    $q_k$の運動の微分方程式は次の通りである.
+
+    \begin{equation}
+    I_{qk} \left( \ddot{q}_k + \nu_k^2 q_k \right) = \int_0^R \eta_k F_z \, dr  \label{Iqk}
+    \end{equation}
+
+
+    したがって,空力荷重$F_z$は直接的に翼根のせん断力とモーメントに寄与するが,同時にブレードの曲げ運動を励起し,これがハブ反力の一部を相殺する.
+    実際,フラップヒンジが導入されたのは,構造体ではなくブレードの運動によって翼根のモーメントを吸収させるためである.
+    モード形状$q_k$が完全な級数を形成するため,空力荷重は$F_z = \sum_k F_{zk} \eta_k m$として展開できる.
+    ここで,係数は$F_{zk} = \int_0^R \eta_k F_z \, dr / \int_0^R \eta_k^2 m \, dr $である.
+    $F_z$の展開式を代入すると,翼根のモーメントは次のように表せる.
+
+    \begin{equation}
+    N_F = \sum_k \left( F_{zk} - \ddot{q}_k - \Omega^2 q_k \right) \int_0^R r \eta_k m \, dr     \label{nf4}
+    \end{equation}
+
+    $q_k$の運動方程式は$F_{zk} =  \ddot{q}_k +  \nu_{k}^2 q_k  $である.したがって,
+
+    \begin{equation}
+    N_F = \sum_k  q_k \Omega^2 \left( \nu_{k}^2 - 1  \right) \int_0^R r \eta_k m \, dr     \label{nf5}
+    \end{equation}
+
+    ヒンジオフセットのない関節付きロータでは,第1モードにおいて$\nu_{1} = 1$かつ$\eta_{1} = r$となる.
+    また,それより高次のモード形状はすべて$\eta_{1} = r$に直交する.
+    したがって,要求通り$N_F = 0$となる.
+    単一のフラップモードのみを使用し,モード形状を$\eta \simeq r$で近似する場合,その式は次の形に簡約化される.
+
+    \begin{equation}
+    N_F = I_{\beta} \Omega^2 \left( \nu_{\beta}^2 - 1  \right) \beta    \label{nf6}
+    \end{equation}
+
+    したがって,ハブモーメントはフラップのたわみと基本フラップモードの固有振動数から求まる.
+    この結果の簡潔さは非常に有用である.
+    同様に,翼根の垂直せん断力は次のように表せる.
+
+    \begin{align}
+    S_z &= \sum_k \left( F_{zk} - \ddot{q}_k \right) \int_0^R \eta_k m \, dr     \\
+        &= \sum_k  q_k \Omega^2 {\nu}_k^2  \int_0^R \eta_k m \, dr   \label{sz4}
+    \end{align}
+
+    ただし,垂直せん断,ひいてはロータ推力を空気力に直接関連付ける方がより便利である.
+    モード数が大きい場合,力をブレードに沿って積分するかEq.\eqref{nf5}を用いるかにかかわらず,
+    ハブモーメントについては同じ結果が得られるはずである.
+    後者の手法では,有限モード数を使用することは,展開式$F_z = \sum_k F_{zk} \eta_k m$を切り詰めることに等しい.
+    モード数が少ない場合,これは荷重の適切な表現とならない可能性がある.
+    したがって,ハブ反力を求めるには翼断面力の積分を用いる方が一般的に良好な結果が期待できる.
+    ただし,精度向上を望む場合,単純な式ほど価値がない可能性がある.
+
+
+    Fig.\ref{fig:blade_section_areodynamics}に示すように,ロータブレード断面における空気速度と空気力を考察する.
+    空力解析にはハブプレーン基準軸系を用いる.
+    ハブプレーンはシャフトに対して固定されているため,シャフトの運動によって傾斜および変位する.
+    ピッチ角$\theta$は基準面から測定される.
+    速度$u_P$,$u_P$,$u_R$は,ブレードが受ける空気速度の成分であり,ハブプレーン軸系に分解される.
+    接線速度$u_T$はハブ面内にあり,ブレードの抗力方向に対して正となる.
+    半径方向速度$u_R$は,半径方向外向きに作用する場合に正となる.
+    垂直速度$u_P$は基準面に対して法線方向であり,ディスク面を通って下方に向かう場合に正となる.
+    翼断面内の速度は$U = \sqrt{u_T^2 + u_P^2}$であり,流入角は$\phi = \arctan{u_P/u_T}$である.
+    したがって,ブレード断面の迎角は$\alpha = \theta - \phi$となる.
+    揚力$L_b$と抗力$D_b$は,それぞれ速度$U$に対して垂直方向と平行方向に分解される.
+    $F_x$と$F_z$は翼断面の揚力と抗力をハブプレーン軸に分解した成分である.
+    半径方向力$F_r$は外側方向（ハブから遠ざかる方向）に正となる.
+    $F_r$は半径方向抗力と,ブレードのフラップ曲げによるブレード揚力の面内成分から構成される.
+    弾性軸における断面抗力モーメントは$M_a$は頭上げが正である.
+    断面の空力中心は弾性軸から$x_A$の距離だけ後方に位置する.
+    翼の揚力と抗力は翼断面係数を用いて表すことができる.
+
+
+    \begin{equation}
+    L_b = \frac{1}{2} \rho U^2 c C_l   \label{L}
+    \end{equation}
+
+    \begin{equation}
+    D_b = \frac{1}{2} \rho U^2 c C_d   \label{D}
+    \end{equation}
+
+
+    ここで,$\rho$は空気密度,$c$は翼弦長である.
+    この時点から解析では無次元量を用いるため,空気密度$\rho$は省略する.
+    ハブプレーン軸に対して分解した断面力は以下の通りである.
+
+    \begin{equation}
+    F_z = L_b \cos \phi - D_b \sin \phi  = \left( L_b u_T - D_b u_P \right) / U    \label{fz}
+    \end{equation}
+
+    \begin{equation}
+    F_x = L_b \sin \phi + D_b \cos \phi  = \left( L_b u_P + D_b u_T \right) / U    \label{fx}
+    \end{equation}
+
+    翼面揚力係数および抗力係数,$C_l = C_l \left( \alpha,M_n \right)$および$C_d = C_d \left( \alpha,M_n \right)$は,
+    迎え角およびマッハ数に関する関数である.
+
+
+    \begin{equation}
+    \alpha = \theta - \phi   \label{alpha}
+    \end{equation}
+
+    \begin{equation}
+    M_n = M_{\mathrm{tip}} U   \label{M}
+    \end{equation}
+
+    ここで,Mtipは先端マッハ数（ホバリング時の先端速度÷音速）である.
+    実際,ロータブレードの揚力と抗力は,流れの局所ヨー角や非定常な迎え角変化など他のパラメータにも依存する.
+    そのような効果は数値解析に含めることができるが,ここでは無視している.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/blade_section_aerodynamics.png}
+      \caption{ロータブレードの翼断面空気力 \supcite{johnson_2013}}
+      \label{fig:blade_section_areodynamics}
+    \end{figure}
+
+
+
+
+    \par
+    Fig.\ref{fig:comparison_fz}に示すように,リード・ラグヒンジの有無によって,空力である$F_{z}$には大きな変化は見られなかった.
+    一方,Fig.\ref{fig:comparison_sz}に示すように,ブレード4枚分の$S_{z}$には約10Nほどの違いが見られる.
+    このことから,$S_{z}$に与える影響が大きいものとして,慣性力の影響が考えられる．
+
 
     \begin{figure}[htbp]
     \centering
@@ -165,18 +319,56 @@
             \centering
             \includegraphics[width=\linewidth]{photo/Fz_a.png}
             \caption{with lead-lag hinge}
-            \label{fig:Fz_a}
+            \label{fig:Sz_a}
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.45\linewidth}
             \centering
             \includegraphics[width=\linewidth]{photo/Fz_a_less.png}
             \caption{without lead-lag hinge}
-            \label{fig:Fz_a_less}
+            \label{fig:Sz_a_less}
         \end{subfigure}
-    \caption{$z$方向荷重$F_z$の比較}
+    \caption{$z$方向空力荷重$F_z$の比較}
     \label{fig:comparison_fz}
     \end{figure}
+
+    \begin{figure}[htbp]
+    \centering
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/Sz_a.png}
+            \caption{with lead-lag hinge}
+            \label{fig:Fz_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/Sz_a_less.png}
+            \caption{without lead-lag hinge}
+            \label{fig:Fz_a_less}
+        \end{subfigure}
+    \caption{$z$方向荷重$S_z$の比較}
+    \label{fig:comparison_sz}
+    \end{figure}
+
+
+
+
+
+	\clearpage
+    \section{フラッピング}
+    \label{sec:flap}
+    
+    \par
+    Fig.\ref{fig:flap_0855}に$r/R = 0.855$におけるフラップの変位を示す.
+    リード・ラグヒンジを使用することで,フラップの最大値が1mmほど減少する.
+    また,Fig.\ref{fig:inertia_4blade}にフラップ変位の2階微分とブレード質量の積から算出した
+    慣性力の方位角$\Psi$に対する変化を示す.
+    リード・ラグヒンジがある場合は振幅が7N程度であるのに対し,リード・ラグヒンジがない場合は振幅が10N程度である.
+    この差がFig.\ref{fig:comparison_sz}に示す$S_{z}$の差につながっていると考えられる.   
+    Fig.\ref{fig:camrad_fzhub_a}は,リード・ラグヒンジの有無による$F_{z\mathrm{hub}}$の4/rev成分の違いを示している.
+    リード・ラグヒンジを用いない場合のほうが$F_{z\mathrm{hub}}$の4/rev成分の振幅は小さくなることがわかる.
+    これは慣性力の4/rev成分が$F_z$の4/rev成分を相殺しているためと考えられる.
 
     \begin{figure}[htbp]
     \centering
@@ -194,7 +386,7 @@
             \label{fig:flap_0855_a_less}
         \end{subfigure}
     \caption{$r/R = 0.855$でのフラップ}
-    \label{fig:flap}
+    \label{fig:flap_0855}
     \end{figure}
     
 
@@ -217,31 +409,11 @@
     \label{fig:inertia_4blade}
     \end{figure}
     
-	\clearpage
-    \section{重心移動がメインロータの必要パワーに与える影響について}
-    \label{sec:power}
-    \par
-    回転翼機のエンジンが消費するパワーについては大きく分けると3種類挙げることが出来る.
-    メインロータが回転するときメインロータブレードの翼型に作用する揚力がTPP（チップパスプレーン）に
-    沿って円周運動する方向に対して垂直から後方に傾いているため,揚力の正弦成分に逆らって
-    メインロータを回転し続ける必要が生じる.
-    この時に必要となるパワーをインデューストパワーと呼ぶ.
-    また,同時に翼型に抗力が働いているが,この抗力の余弦成分に対しても同様なことが言える.
-    こちらをプロファイルパワーと呼ぶ.
-    現実にはテールロータでも同様なパワーが必要となるが,ここではメインロータを駆動させるために
-    必要となるパワーのほうが支配的であるためテールロータを駆動するために必要なパワーは議論しない.
-    また,水平巡行時にはその飛行速度$V_c$の2乗に比例して増加する胴体に作用する抗力に打ち勝って
-    機体を推進させるパワーが必要であり,これをパラサイトパワーと呼ぶ.
-    一般に,平均的な$\alpha$が大きくなる条件ではインデューストパワーもプロファイルパワーも
-    その由来から分かるように大きくなる傾向がある.
-    また,パラサイトパワーについては,速度以外にもその時の機体ピッチ姿勢角で胴体の
-    等価抵抗面積の大きさが変化する影響が現れることになる.
-    図4-1は それぞれの重心位置において,巡航速度がホバリングから 72.0 m/s（140 kt）までの間で
-    メインロータに必要となるパワーを示している．
-    トータルパワーの内訳として,パラサイトパワーとプロファイルパワーとインデューストパワーを
-    それぞれグレー,オレンジ,ブルーで色分けしている.
-    また,図 4-2は機体のピッチ,およびロール角を,また胴体および水平尾翼に作用する$-z$方向の空力荷重
-    ならびに水平尾翼に作用する$-z$方向の空力荷重を示している.
-
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/camrad_fzhub_a.png}
+      \caption{リード・ラグヒンジの有無による$F_{z\mathrm{hub}}$の4/rev成分の比較}
+      \label{fig:camrad_fzhub_a}
+    \end{figure}
 
 

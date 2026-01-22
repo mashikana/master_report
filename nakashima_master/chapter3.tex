@@ -17,7 +17,7 @@
     飛行試験の結果に加えて,ラジコンヘリコプタのCAMRAD $\mathrm{II}$による解析を実施した．
     Fig.\ref{fig:camrad_flight_fzhub}に解析結果を示す.
     黒色の棒グラフが4/rev振動に強い相関のあるハブでの$z$方向の外力$F_{z\mathrm{hub}}$の4/rev成分であり,
-    灰色の棒グラフが飛行試験から得られた$a_z$と機体質量$m$の積を示している.
+    灰色の棒グラフが飛行試験から得られた$a_z$の4/rev成分と機体質量$m$の積を示している.
     飛行試験と同様にcase $b$,case $c$はcase $a$よりも$F_{z\mathrm{hub}}$の4/rev成分が低減していることが確認できる.
     振動が増加すると予想していたcase $d$もcase $a$より$F_{z\mathrm{hub}}$の4/rev成分が大きい.
 
@@ -28,7 +28,7 @@
       \label{fig:camrad_flight_fzhub}
     \end{figure}
 
-    \section{有効迎角$\alpha$と揚力係数$C_l$,誘導速度$v_i$について}
+    \section{$F_{z\mathrm{hub}}$の4/rev成分の差に対する考察}
     \label{sec:psi_alpha_cl_vi}
 
     \par
@@ -41,7 +41,7 @@
     有効迎角は準定常空気力に対応することに留意されたい. 
     どのケースにおいても$r/R= 0.750$より$r/R= 0.855$で非線形性が大きい.
     しかしながら、$C_l$における非定常効果によって生じるこの非線形性は大きくない.
-    なぜなら$\alpha$は失速角よりも十分に小さいためである.
+    なぜなら$\alpha$は失速角よりも十分に小さく,ダイナミックストールは起きていないためである.
     有効迎角$\alpha$の最大値はcase $b$とcase $c$で約4°であり,case $a$では約5°,case $d$では約5.5°である．
     これらの値の大きさの関係は,Fig.\ref{fig:camrad_flight_fzhub}に示す$F_{z\mathrm{hub}}$の4/rev成分の関係と一致することに留意されたい.
 
@@ -119,10 +119,12 @@
     \label{fig:alpha_cl}
     \end{figure}
 
+
+    \clearpage
     \par
     Fig.\ref{fig:vi}は誘導速度$v_i$の分布を表している.
     case $a$とcase $d$においては,$\Psi=300°$付近の翼端で$v_i$が増加している．
-    Table.\ref{table:attitude_angle}に各ケースにおける航空機の姿勢角を示す.
+    Fig.\ref{Fig:attitude_angle}に各ケースにおける航空機の姿勢角を示す.
     case $d$ではピッチ角が0に近いため,ブレードと後流の干渉効果が増大し,Fig.\ref{fig:camrad_flight_fzhub}の
     $F_{z\mathrm{hub}}$における大きな4/rev成分を引き起こしている.
 
@@ -164,23 +166,283 @@
     \end{figure}
 
 
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/attitude_angle.png}
+      \caption{機体の姿勢角}
+      \label{fig:attitude_angle}
+    \end{figure}
 
-    \begin{table}[H]
-        \centering
-        \caption{機体の姿勢角}
-        \label{table:attitude_angle}
-        \setlength{\tabcolsep}{5pt}
-        \begin{tabular}{|l|l|l|l|l|}
-            \hline                           &    $a$       &    $b$       &     $c$    &      $d$   \\
-            \hline ロール角$\Phi$ [deg]       &   3.793      &    3.235     &  2.604     &     4.714  \\
-            \hline ピッチ角$\Theta$[deg]      &   -6.533     &    -6.653    &  -6.597    &     -5.748 \\
-            \hline 
-        \end{tabular}
-    \end{table}
+
+    \par
+    Fig.\ref{fig:U},Fig.\ref{fig:phi}は流入速度$U$と流入角$\phi$の分布を表している.
+    Fig.\ref{fig:vi}では,case $a$とcase $d$において,$\Psi=300°$付近の翼端で$v_i$が増加している．
+    一方,Fig.\ref{fig:U}を見ると各caseの流入速度に大きな違いは見られない.
+    これは流入速度のロータ面に垂直な成分$U_P$が平行な成分$U_T$に比べて十分に小さいことを意味する.
+    つまり,ロータ回転数が大きいため，誘導速度$v_i$は流入速度$U$にそこまで影響を与えないと言える．
+    Fig.\ref{fig:vi}に見られる翼端付近での誘導速度$v_i$の増加は,Fig.\ref{fig:phi}に見られる流入角の減少を引き起こし,
+    その結果として,Fig.\ref{fig:psi_alpha}の有効迎角$\alpha$の大幅な減少を招いている.
+
+
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/U_a.png}
+            \caption{$a$}
+            \label{U_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/U_b.png}
+            \caption{$b$}
+            \label{U_b}
+        \end{subfigure}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/U_c.png}
+            \caption{$c$}
+            \label{U_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/U_d.png}
+            \caption{$d$}
+            \label{U_d}
+        \end{subfigure}
+    \caption{流入速度$U$の分布}
+    \label{fig:U}
+    \end{figure}
+
+
+
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/phi_a.png}
+            \caption{$a$}
+            \label{phi_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/phi_b.png}
+            \caption{$b$}
+            \label{phi_b}
+        \end{subfigure}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/phi_c.png}
+            \caption{$c$}
+            \label{phi_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/phi_d.png}
+            \caption{$d$}
+            \label{phi_d}
+        \end{subfigure}
+    \caption{流入角$\phi$の分布}
+    \label{fig:phi}
+    \end{figure}
+
+    \clearpage
+    \par
+    Fig.\ref{fig:flap}には各ケースにおけるフラップの分布を示している.
+    また,Fig.\ref{fig:flap_angle}には,各ケースにおける1次フラップ角を示す.
+    case $a$と比較して,重心を左舷後方においたcase $b$,$c$は$\Psi = 60°$付近でフラップが増加している.
+    一方,重心を右舷前方においたcase $d$では,$\Psi = 300°$付近でフラップが増大している.
+    これは,Fig.\ref{fig:attitude_angle}に見られるトリム姿勢の変化によるものと考えられる.
+    case $b$,$c$では,機体のピッチ角が増大し,ロール角が減少したことにより,左舷後方で必要な揚力が大きくなる.
+    一方,case $d$では,機体のピッチ角,ロール角が増大したことにより,右舷後方で必要な揚力が大きくなる.
+
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/flap_a.png}
+            \caption{$a$}
+            \label{flap_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/flap_b.png}
+            \caption{$b$}
+            \label{flap_b}
+        \end{subfigure}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/flap_c.png}
+            \caption{$c$}
+            \label{flap_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/flap_d.png}
+            \caption{$d$}
+            \label{flap_d}
+        \end{subfigure}
+    \caption{フラップの分布}
+    \label{fig:flap}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/flap_angle.png}
+      \caption{フラップ角}
+      \label{fig:flap_angle}
+    \end{figure}
+
+    \par 
+    Fig.\ref{fig:alpha}に有効迎角$\alpha$の分布,Fig.\ref{fig:cl}に揚力係数$C_l$の分布,
+    Fig.\ref{fig:theta}にサイクリックピッチ角$\theta$の分布を示す.
+    有効迎角$\alpha$については$\Psi = 260°$付近で最も大きくなっているが,
+    その度合いはcase $b$,case $c$ $<$ case $a$ $<$ case $d$の順である.
+    また,失速角に達していないことからダイナミックストールも起きていない.
+    揚力係数$C_l$についても有効迎角$\alpha$と同様の傾向が見られることから,
+    翼の非定常効果は大きくないことが確認できる.
+    サイクリックピッチ角についても振幅の大きさはcase $b$,case $c$ $<$ case $a$ $<$ case $d$の順である.
+    この傾向はFig.\ref{fig:camrad_flight_fzhub}の$F_{z\mathrm{hub}}$の4/rev成分の大小関係と一致しており,
+    低振動化のためにはサイクリックピッチは小さいほうが良いと言える.
+    
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+
+
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/alpha_a.png}
+            \caption{$a$}
+            \label{alpha_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/alpha_b.png}
+            \caption{$b$}
+            \label{alpha_b}
+        \end{subfigure}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/alpha_c.png}
+            \caption{$c$}
+            \label{alpha_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/alpha_d.png}
+            \caption{$d$}
+            \label{alpha_d}
+        \end{subfigure}
+    \caption{有効迎角$\alpha$の分布}
+    \label{fig:alpha}
+    \end{figure}
+
+
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/cl_a.png}
+            \caption{$a$}
+            \label{cl_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/cl_b.png}
+            \caption{$b$}
+            \label{cl_b}
+        \end{subfigure}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/cl_c.png}
+            \caption{$c$}
+            \label{cl_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/cl_d.png}
+            \caption{$d$}
+            \label{cl_d}
+        \end{subfigure}
+    \caption{揚力係数$C_l$の分布}
+    \label{fig:cl}
+    \end{figure}
+
+    \begin{figure}[htbp]
+    \centering
+        % 1行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/theta_a.png}
+            \caption{$a$}
+            \label{theta_a}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/theta_b.png}
+            \caption{$b$}
+            \label{theta_b}
+        \end{subfigure}
+
+        \vspace{5mm}
+
+        % 2行目
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/theta_c.png}
+            \caption{$c$}
+            \label{theta_c}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{photo/theta_d.png}
+            \caption{$d$}
+            \label{thata_d}
+        \end{subfigure}
+    \caption{サイクリックピッチ角$\theta$の分布}
+    \label{fig:theta}
+    \end{figure}
+
 
 
     \clearpage
-
     \section{$r/R= 0.855$における$\alpha$,$C_l$,$U^2$の周波数成分の分析}
     \label{sec:alpha_u2_fft}
 
@@ -255,7 +517,7 @@
 
     $\alpha U^2$と$C_l U^2$について,case $b$の値とcase $c$の値の関係は,いかなる組み合わせにおいてもFig.\ref{fig:camrad_flight_fzhub}の結果に対応しない.
     しかしながら,Fig.\ref{fig:product2},Fig.\ref{fig:product3},Fig.\ref{fig:product5}に示されるようにFig.\ref{fig:camrad_flight_fzhub}に見られた
-    case $b$,case $c$<case $a$<case $d$という傾向に一致している.
+    case $b$,case $c$ $<$ case $a$ $<$ case $d$という傾向に一致している.
     Fig.\ref{fig:vi}に示されるように,$v_i$は$\Psi = 300°$付近で増加しており,翼端付近ではより顕著な増加が観察された.
     翼端付近での誘導速度の増加がFig.\ref{fig:phi}に見られる流入角の減少を引き起こしている.
     これが結果としてFig.\ref{fig:psi_alpha}の有効迎角$\alpha$の大幅な減少を招いている.
@@ -271,7 +533,7 @@
     機体の4/rev振動は$\alpha$,$C_l$の4/rev成分と$U^2$の定常成分の積が主成分であることが分かる.
     Ref.\cite{Yoshizaki2023b}では$C_l$の2/revと$U^2$の2/revの振幅に注目し,重心移動により低振動化を議論している.
     精度の高い低周波数の現象で,4/rev振動を説明する方針のためである.
-    Fig.\ref{fig:product3}における値の大小関係は,case $b$,case $c$<case $a$<case $d$というFig.\ref{fig:camrad_flight_fzhub}の
+    Fig.\ref{fig:product3}における値の大小関係は,case $b$,case $c$ $<$ case $a$ $<$ case $d$というFig.\ref{fig:camrad_flight_fzhub}の
     $F_{z\mathrm{hub}}$の傾向と一致している.
     Ref.\cite{Yoshizaki2023b}での$C_l$の2/revと$U^2$の2/revの振幅に注目した分析は,4/rev振動の分析として大きなエラーを持たないと推測できる.
     さらに,Fig.\ref{fig:product3}における各caseの値の比は,他のproductでの比に比べてFig.\ref{fig:camrad_flight_fzhub}での比に近く,
@@ -330,43 +592,52 @@
     \end{figure}
 
 
-    \begin{figure}[htbp]
-    \centering
-        % 1行目
-        \begin{subfigure}[b]{0.45\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{photo/phi_a.png}
-            \caption{$a$}
-            \label{phi_a}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.45\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{photo/phi_b.png}
-            \caption{$b$}
-            \label{phi_b}
-        \end{subfigure}
 
-        \vspace{5mm}
 
-        % 2行目
-        \begin{subfigure}[b]{0.45\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{photo/phi_c.png}
-            \caption{$c$}
-            \label{phi_c}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.45\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{photo/phi_d.png}
-            \caption{$d$}
-            \label{phi_d}
-        \end{subfigure}
-    \caption{流入角$\phi$の分布}
-    \label{fig:phi}
+	\clearpage
+    \section{重心移動がメインロータの必要パワーに与える影響について}
+    \label{sec:power}
+    \par
+    回転翼機のエンジンが消費するパワーは,大きく分けて3種類に分類される.
+    まず,メインロータが回転する際,メインロータブレードの翼型に作用する揚力はTPP（チップパスプレーン）に沿った円周運動方向に対して,
+    垂直方向から後方に傾いて作用する.
+    そのため,揚力の正弦成分に抗してメインロータを回転させ続けるためのパワーが必要となる.
+    この成分をインデューストパワーと呼ぶ.
+    次に,翼型には同時に抗力が作用しており,この抗力の余弦成分に抗してロータを回転させるためのパワーが必要となる.
+    この成分をプロファイルパワーと呼ぶ.
+    現実には,テールロータにおいても同様のパワーが必要となるが,本研究ではメインロータを駆動するために必要なパワーが支配的であると考え,
+    テールロータ駆動に要するパワーについては議論の対象としない.
+    さらに,水平巡航時には,飛行速度$V_c$の2乗に比例して増加する胴体抗力に打ち勝って機体を推進させるためのパワーが必要となる.
+    この成分をパラサイトパワーと呼ぶ.
+    一般に,平均迎角$\alpha$が大きくなる条件では,その発生機構から分かるように,
+    インデューストパワーおよびプロファイルパワーはいずれも増加する傾向を示す.
+    また,パラサイトパワーについては,飛行速度だけでなく,機体のピッチ姿勢角の変化に伴う胴体等価抵抗面積の変化の影響も受ける.
+
+    \par
+    Fig.\ref{fig:power}は,各重心位置において巡航速度が30.0 m/s（58.3 kt）である場合のメインロータに必要なパワーを示している.
+    トータルパワーの内訳として,パラサイトパワー,プロファイルパワー,インデューストパワーをそれぞれグレー,オレンジ,ブルーで色分けして示している.
+    また,Fig.\ref{fig:roll_pitch_body}には機体のピッチ角およびロール角,ならびに胴体および水平尾翼に作用する$-z$方向の空力荷重を示している.
+    プロファイルパワーおよびインデューストパワーは,case $b$,case $c$ $<$ case $a$ $<$ case $d$ となっている.
+    これは,プロファイルパワーおよびインデューストパワーが,ブレードのピッチ角変動が大きく,各ブレードセクションにおける有効迎角$\alpha$の変動が
+    大きいほど増加するためである.（Fig.\ref{fig:psi_alpha}）
+    パラサイトパワーはcase $b$およびcase $c$がcase $a$よりも大きくなる.
+    これは,重心が後方へ移動することにより機体ピッチ角が増大するためであり,Fig.\ref{fig:roll_pitch_body}から確認できる.
+    一方で,胴体に作用する$-z$方向荷重は増加するため,メインロータ推力は低下し,その結果としてインデューストパワーは減少する.
+    このため,高速巡航飛行時における4ケースの重心位置の比較では,トータルパワーの差は小さくなる.
+    したがって,メインロータパワーの観点からは,本研究で検討した4種類の重心位置はいずれも許容可能であると判断される.
+   
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/power.png}
+      \caption{メインロータの必要パワーの比較}
+      \label{fig:power}
     \end{figure}
 
 
 
-
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/roll_pitch_body.png}
+      \caption{機体ロール/ピッチ角および胴体$-z$方向荷重}
+      \label{fig:roll_pitch_body}
+    \end{figure}
