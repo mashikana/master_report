@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex out/main"] 1769747382.35391 "out/main.aux" "out/main.bbl" "out/main" 1769749969.27079 0
+["bibtex out/main"] 1769747382.35391 "out/main.aux" "out/main.bbl" "out/main" 1769750954.77485 0
   "./sample.bib" 1769086794 18735 22aea2d20b698743dbb81df3cc3ea0b4 ""
   "junsrt.bst" 0 -1 0 ""
-  "out/main.aux" 1769749954 35100 550620a1d1850f6fcfcd1fa503f8ce74 "latex"
+  "out/main.aux" 1769750942 35100 550620a1d1850f6fcfcd1fa503f8ce74 "latex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["dvipdf"] 1769749956.13193 "out/main.dvi" "out/main.pdf" "out/main" 1769749969.28209 0
-  "out/main.dvi" 1769749954 265184 9d9a62aa35ad031ecc6c566376be7da6 "latex"
+["dvipdf"] 1769750943.68591 "out/main.dvi" "out/main.pdf" "out/main" 1769750954.78605 0
+  "out/main.dvi" 1769750942 265184 f36555b6ad9913f406786b5bec1e6e88 "latex"
   (generated)
   "out/main.pdf"
   (rewritten before read)
-["latex"] 1769749901.12497 "c:/git/nakashima_master/main.tex" "out/main.dvi" "main" 1769749969.27143 0
+["latex"] 1769750881.94347 "c:/git/nakashima_master/main.tex" "out/main.dvi" "main" 1769750954.77534 0
   "appendix.tex" 1768983498 48646 b392f11aa726f76019513352d545bca1 ""
-  "c:/git/nakashima_master/main.tex" 1769747462 1001 e44b29a36869d007a473d88a8e00b668 ""
+  "c:/git/nakashima_master/main.tex" 1769750881 1001 e44b29a36869d007a473d88a8e00b668 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1763031716 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1763031291 1536 73da8e8f1d2a4c957d51ca133585586b ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1763031291 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -90,12 +90,12 @@
   "chapter3.tex" 1769749900 29313 a4eb86441fa8251204315b2cd66c9a30 ""
   "chapter4.tex" 1769090005 20645 06720e06dc83f45bff484f19d1fb554e ""
   "chapter5.tex" 1769089633 3910 9fc18337bfc14ec4ee05582bd3b25eb8 ""
-  "main.tex" 1769747462 1001 e44b29a36869d007a473d88a8e00b668 ""
-  "out/main.aux" 1769749954 35100 550620a1d1850f6fcfcd1fa503f8ce74 "latex"
+  "main.tex" 1769750881 1001 e44b29a36869d007a473d88a8e00b668 ""
+  "out/main.aux" 1769750942 35100 550620a1d1850f6fcfcd1fa503f8ce74 "latex"
   "out/main.bbl" 1769747382 11292 5b312de2b61406b79e137e8a50736150 "bibtex out/main"
-  "out/main.lof" 1769749954 6866 1d639371bc7d9fd41ff418742a18e41f "latex"
-  "out/main.lot" 1769749954 1750 665cbbd73818b750831b1534445a6c17 "latex"
-  "out/main.toc" 1769749954 2595 563dc107df8148db7cac154cb0bcf2d1 "latex"
+  "out/main.lof" 1769750942 6866 1d639371bc7d9fd41ff418742a18e41f "latex"
+  "out/main.lot" 1769750942 1750 665cbbd73818b750831b1534445a6c17 "latex"
+  "out/main.toc" 1769750942 2595 563dc107df8148db7cac154cb0bcf2d1 "latex"
   "photo/AVC.png" 1768887197 127731 0998c385a4eacbe36d5de1c4f40bb8ad ""
   "photo/AVC_equipment.png" 1768887197 175155 cedc31821a92e5029ada2a799793aeff ""
   "photo/CAMRADhistory.png" 1768374717 186353 7d237db2d9a1e4858e6788c746f0a919 ""
@@ -151,8 +151,8 @@
   "photo/helicopter_front.png" 1768888093 168564 237f77093fe8cc3481bc5b618f968557 ""
   "photo/helicopter_model.png" 1768888423 45296 dc1056df24e468c93d135a344fefb848 ""
   "photo/helicopter_up.png" 1768888133 218899 fc68e482c548e2dca7a511bcd7e5c1aa ""
-  "photo/inertia_4blade_a.png" 1768549541 28387 27e7acab41e6a1b32538a9e7040c512e ""
-  "photo/inertia_4blade_a_less.png" 1768553073 29318 f92952a101c4fecb591911b2f4823e61 ""
+  "photo/inertia_4blade_a.png" 1769750445 25911 f79d32fb4a188a2e80c56da6385595c2 ""
+  "photo/inertia_4blade_a_less.png" 1769750651 26898 dc5bf99a7741da0a0ad789f8c0aabe4a ""
   "photo/load_moment_phase_sh60k.png" 1768374717 724621 b61fc216179054ee5f572fee4328271d ""
   "photo/load_moment_sh60k.png" 1768374717 796188 7020c4506a9f4bda68a3de14617c47e9 ""
   "photo/mode_first_a_lag.png" 1768543355 13907 5b14a56563d2274c58de105c19687c00 ""
