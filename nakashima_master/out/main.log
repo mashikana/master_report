@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  30 JAN 2026 15:45
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.13)  30 JAN 2026 16:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -708,62 +708,62 @@ File: photo/acceleration_z_4rev_pilot.png Graphic file (type bmp)
 [87] [88]
 付録B
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 495.
+(Font)              scaled to size 11.53198pt on input line 496.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 495.
+(Font)              scaled to size 11.53198pt on input line 496.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 495.
+(Font)              scaled to size 11.53198pt on input line 496.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 495.
+(Font)              scaled to size 11.53198pt on input line 496.
 [89
 
 ]
-Overfull \hbox (6.61237pt too wide) detected at line 616
+Overfull \hbox (6.61237pt too wide) detected at line 617
 []
  []
 
 
-Overfull \hbox (2.81747pt too wide) detected at line 642
+Overfull \hbox (2.81747pt too wide) detected at line 643
 []
  []
 
 
-Overfull \hbox (4.23737pt too wide) detected at line 672
+Overfull \hbox (4.23737pt too wide) detected at line 673
 []
  []
 
 [90]
-Overfull \hbox (2.81747pt too wide) detected at line 698
+Overfull \hbox (2.81747pt too wide) detected at line 699
 []
  []
 
 [91]
-Overfull \hbox (64.92664pt too wide) detected at line 896
+Overfull \hbox (64.92664pt too wide) detected at line 897
 []
  []
 
 
-Overfull \hbox (12.25276pt too wide) detected at line 929
+Overfull \hbox (12.25276pt too wide) detected at line 930
 []
  []
 
 [92]
-Overfull \hbox (12.25276pt too wide) detected at line 962
+Overfull \hbox (12.25276pt too wide) detected at line 963
 []
  []
 
 
-Overfull \hbox (64.69865pt too wide) detected at line 995
+Overfull \hbox (64.69865pt too wide) detected at line 996
 []
  []
 
 
-Overfull \hbox (21.46921pt too wide) detected at line 1028
+Overfull \hbox (21.46921pt too wide) detected at line 1029
 []
  []
 
 [93]
-Overfull \hbox (21.46921pt too wide) detected at line 1061
+Overfull \hbox (21.46921pt too wide) detected at line 1062
 []
  []
 
@@ -783,4 +783,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  67i,14n,77p,604b,685s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (95 pages, 265520 bytes).
+Output written on out/main.dvi (95 pages, 265636 bytes).
