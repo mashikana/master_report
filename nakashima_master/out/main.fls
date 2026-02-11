@@ -1,12 +1,11 @@
-PWD c:/git/nakashima_master
+PWD c:/git/master_report/nakashima_master
 INPUT c:/texlive/2025/texmf.cnf
 INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2025/texmf-var/web2c/euptex/platex.fmt
-INPUT c:/git/nakashima_master/main.tex
+INPUT c:/git/master_report/nakashima_master/main.tex
 OUTPUT out/main.log
 INPUT c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
 INPUT c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsreport.cls
-INPUT c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
@@ -212,6 +211,10 @@ INPUT ./photo/helicopter_model.png
 INPUT ./photo/helicopter_model.png
 INPUT ./photo/helicopter_model.png
 INPUT extractbb -B cropbox -O photo/helicopter_model.png
+INPUT ./photo/hub.png
+INPUT ./photo/hub.png
+INPUT ./photo/hub.png
+INPUT extractbb -B cropbox -O photo/hub.png
 INPUT ./photo/helicopter_front.png
 INPUT ./photo/helicopter_front.png
 INPUT ./photo/helicopter_front.png
@@ -240,6 +243,10 @@ INPUT ./photo/altitude_velocity.png
 INPUT ./photo/altitude_velocity.png
 INPUT ./photo/altitude_velocity.png
 INPUT extractbb -B cropbox -O photo/altitude_velocity.png
+INPUT ./photo/test_result.png
+INPUT ./photo/test_result.png
+INPUT ./photo/test_result.png
+INPUT extractbb -B cropbox -O photo/test_result.png
 INPUT ./chapter3.tex
 INPUT ./chapter3.tex
 INPUT chapter3.tex
@@ -271,6 +278,10 @@ INPUT ./photo/camrad_flight_fzhub.png
 INPUT ./photo/camrad_flight_fzhub.png
 INPUT ./photo/camrad_flight_fzhub.png
 INPUT extractbb -B cropbox -O photo/camrad_flight_fzhub.png
+INPUT ./photo/pv_qu.png
+INPUT ./photo/pv_qu.png
+INPUT ./photo/pv_qu.png
+INPUT extractbb -B cropbox -O photo/pv_qu.png
 INPUT ./photo/psi_alpha_a.png
 INPUT ./photo/psi_alpha_a.png
 INPUT ./photo/psi_alpha_a.png

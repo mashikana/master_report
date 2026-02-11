@@ -17,6 +17,7 @@
     飛行試験が可能なラジコンヘリコプタのサイズで行う.
     Fig.\ref{fig:helicopter_model}にラジコンヘリコプタのモデルを示す.
     飛行試験には,4枚ブレードのヒンジレス・ロータを持つラジコンヘリコプタを使用した.
+    ハブの概念図をFig.\ref{fig:hub}に示す.
     また,Table.\ref{table:flight_condition}に飛行条件を示す.
     メインロータブレードは弾性ブレードとしてモデル化し,胴体は剛体として扱った.
     搭載するロータはTable.\ref{table:aircraft_specification}に示す諸元のものである.
@@ -27,6 +28,14 @@
       \caption{ラジコンヘリコプタのモデル}
       \label{fig:helicopter_model}
     \end{figure} 
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.8\linewidth]{photo/hub.png}
+      \caption{関節式ローターハブと根元の概略図\supcite{johnson_2013}}
+      \label{fig:hub}
+    \end{figure}     
+
 
     \begin{table}[H]
         \centering
@@ -177,6 +186,7 @@
     \label{sec:flight_test_result}
     \par
     Table.\ref{table:flight_test_result}に機体構成ごとの試験結果を示す.
+    また,Fig.\ref{fig:test_result}にcase $a$における各データを示す．
     この試験では,重心を通常位置から左舷後方の位置$b$に移動させることで,4/rev振動が26\%減少した.
     重心をさらに左舷後方の位置$c$まで移動させても,通常位置の振動から16\%しか減少しなかった.
     一方,振動が増加すると予想された右舷後方位置$d$では,振動が33\%増加し,予想通りの結果となった.
@@ -205,4 +215,9 @@
     \end{table}
     
     
-   
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, width=0.7\linewidth]{photo/test_result.png}
+      \caption{飛行試験の各データ（case $a$）}
+      \label{fig:test_result}
+    \end{figure}
